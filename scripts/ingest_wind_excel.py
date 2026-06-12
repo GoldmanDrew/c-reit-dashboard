@@ -120,56 +120,56 @@ def _status(row: dict[str, Any], build_date: dt.date) -> str:
 def load_records(workbook: Path = DEFAULT_WORKBOOK, build_date: dt.date | None = None) -> list[dict[str, Any]]:
     build_date = build_date or dt.date.today()
     asset_groups = _load_asset_groups()
-    xls = pd.ExcelFile(workbook)
     records: list[dict[str, Any]] = []
 
-    for sheet_name in xls.sheet_names:
-        raw = pd.read_excel(workbook, sheet_name=sheet_name, header=0)
-        raw.columns = [_clean_col(c) for c in raw.columns]
+    with pd.ExcelFile(workbook) as xls:
+        for sheet_name in xls.sheet_names:
+            raw = pd.read_excel(xls, sheet_name=sheet_name, header=0)
+            raw.columns = [_clean_col(c) for c in raw.columns]
 
-        code_col = "证券代码"
-        raw[code_col] = raw[code_col].astype(str).str.strip()
-        df = raw[raw[code_col].str.match(CODE_RE, na=False)].copy()
+            code_col = "证券代码"
+            raw[code_col] = raw[code_col].astype(str).str.strip()
+            df = raw[raw[code_col].str.match(CODE_RE, na=False)].copy()
 
-        issue_size_col = next((c for c in df.columns if c.startswith("发行规模")), None)
-        close_col = next((c for c in df.columns if c.startswith("前收盘价")), None)
+            issue_size_col = next((c for c in df.columns if c.startswith("发行规模")), None)
+            close_col = next((c for c in df.columns if c.startswith("前收盘价")), None)
 
-        for _, src in df.iterrows():
-            rec: dict[str, Any] = {}
-            for cn, en in COLUMN_MAP.items():
-                rec[en] = _json_value(src.get(cn))
+            for _, src in df.iterrows():
+                rec: dict[str, Any] = {}
+                for cn, en in COLUMN_MAP.items():
+                    rec[en] = _json_value(src.get(cn))
 
-            rec["symbol"] = str(rec["symbol"]).strip()
-            rec["source_sheet"] = sheet_name
-            rec["entity_type"] = "listed_reit"
-            rec["price_asof"] = PRICE_ASOF
-            rec["issue_size_rmb_bn"] = _num(src.get(issue_size_col)) if issue_size_col else None
-            rec["offer_price_rmb"] = _num(rec.get("offer_price_rmb"))
-            rec["last_close_rmb"] = _num(src.get(close_col)) if close_col else None
-            rec["return_since_listing_pct"] = _num(rec.get("return_since_listing_pct"))
-            rec["return_since_listing"] = (
-                rec["return_since_listing_pct"] / 100.0
-                if rec["return_since_listing_pct"] is not None
-                else None
-            )
-            rec["asset_group"] = asset_groups.get(rec.get("asset_type_cn") or "", "other")
-            rec["exchange"] = "SSE" if rec["symbol"].endswith(".SH") else "SZSE"
-            rec["lifecycle_status"] = _status(rec, build_date)
-            if rec["lifecycle_status"] != "listed":
-                rec["entity_type"] = "approved_reit"
-            rec["regulatory_path"] = "default"
-            rec["regulatory_stage"] = "listing" if rec["lifecycle_status"] == "listed" else "offering_or_approved"
-            rec["zoning_type"] = None
-            rec["pipeline_multiple_of_initial_assets"] = None
-            rec["pipeline_readiness_score"] = None
-            rec["regulatory_complexity_score"] = None
-            rec["deflation_sensitivity_score"] = None
-            rec["latest_news"] = None
-            rec["source_url"] = None
-            rec["source_asof"] = PRICE_ASOF
-            rec["source_confidence"] = "seed"
-            rec["source_freshness"] = "stale_seed"
-            records.append(rec)
+                rec["symbol"] = str(rec["symbol"]).strip()
+                rec["source_sheet"] = sheet_name
+                rec["entity_type"] = "listed_reit"
+                rec["price_asof"] = PRICE_ASOF
+                rec["issue_size_rmb_bn"] = _num(src.get(issue_size_col)) if issue_size_col else None
+                rec["offer_price_rmb"] = _num(rec.get("offer_price_rmb"))
+                rec["last_close_rmb"] = _num(src.get(close_col)) if close_col else None
+                rec["return_since_listing_pct"] = _num(rec.get("return_since_listing_pct"))
+                rec["return_since_listing"] = (
+                    rec["return_since_listing_pct"] / 100.0
+                    if rec["return_since_listing_pct"] is not None
+                    else None
+                )
+                rec["asset_group"] = asset_groups.get(rec.get("asset_type_cn") or "", "other")
+                rec["exchange"] = "SSE" if rec["symbol"].endswith(".SH") else "SZSE"
+                rec["lifecycle_status"] = _status(rec, build_date)
+                if rec["lifecycle_status"] != "listed":
+                    rec["entity_type"] = "approved_reit"
+                rec["regulatory_path"] = "default"
+                rec["regulatory_stage"] = "listing" if rec["lifecycle_status"] == "listed" else "offering_or_approved"
+                rec["zoning_type"] = None
+                rec["pipeline_multiple_of_initial_assets"] = None
+                rec["pipeline_readiness_score"] = None
+                rec["regulatory_complexity_score"] = None
+                rec["deflation_sensitivity_score"] = None
+                rec["latest_news"] = None
+                rec["source_url"] = None
+                rec["source_asof"] = PRICE_ASOF
+                rec["source_confidence"] = "seed"
+                rec["source_freshness"] = "stale_seed"
+                records.append(rec)
 
     return records
 

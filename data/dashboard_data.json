@@ -1,5 +1,5 @@
 {
-  "build_time": "2026-06-12T20:43:49+00:00",
+  "build_time": "2026-06-12T23:39:08+00:00",
   "schema_v": 1,
   "source_workbook": "公募reits已发行项目清单.xlsx",
   "price_asof": "2026-06-10",
@@ -139,6 +139,31 @@
       }
     ]
   },
+  "data_quality_summary": {
+    "total_records": 87,
+    "listed_records": 82,
+    "pending_records": 5,
+    "stale_seed_price_rows": 82,
+    "pending_price_rows": 5,
+    "unexpected_missing_price_rows": 0,
+    "rows_missing_source_url": 87,
+    "status_counts": {
+      "stale_seed": 82,
+      "pending_not_listed": 5
+    },
+    "adapter_gap_counts": {
+      "source_url": 87,
+      "zoning_type": 87,
+      "pipeline_multiple_of_initial_assets": 87,
+      "latest_news": 87
+    },
+    "stale_field_counts": {
+      "last_close_rmb": 82,
+      "return_since_listing_pct": 82,
+      "price_asof": 82
+    },
+    "unexpected_missing_counts": {}
+  },
   "records": [
     {
       "symbol": "180301.SZ",
@@ -182,7 +207,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180801.SZ",
@@ -226,7 +268,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508000.SH",
@@ -270,7 +329,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508001.SH",
@@ -314,7 +390,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508006.SH",
@@ -358,7 +451,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508027.SH",
@@ -402,7 +512,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508056.SH",
@@ -446,7 +573,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180101.SZ",
@@ -490,7 +634,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180201.SZ",
@@ -534,7 +695,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508099.SH",
@@ -578,7 +756,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180202.SZ",
@@ -622,7 +817,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508018.SH",
@@ -666,7 +878,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508008.SH",
@@ -710,7 +939,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180401.SZ",
@@ -754,7 +1000,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180501.SZ",
@@ -798,7 +1061,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508058.SH",
@@ -842,7 +1122,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508068.SH",
@@ -886,7 +1183,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180102.SZ",
@@ -930,7 +1244,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508021.SH",
@@ -974,7 +1305,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508088.SH",
@@ -1018,7 +1366,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508066.SH",
@@ -1062,7 +1427,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508009.SH",
@@ -1106,7 +1488,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508077.SH",
@@ -1150,7 +1549,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180103.SZ",
@@ -1194,7 +1610,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508098.SH",
@@ -1238,7 +1671,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508028.SH",
@@ -1282,7 +1732,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508096.SH",
@@ -1326,7 +1793,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508019.SH",
@@ -1370,7 +1854,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508007.SH",
@@ -1414,7 +1915,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508031.SH",
@@ -1458,7 +1976,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508017.SH",
@@ -1502,7 +2037,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508011.SH",
@@ -1546,7 +2098,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180601.SZ",
@@ -1590,7 +2159,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508033.SH",
@@ -1634,7 +2220,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508026.SH",
@@ -1678,7 +2281,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180602.SZ",
@@ -1722,7 +2342,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508086.SH",
@@ -1766,7 +2403,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508089.SH",
@@ -1810,7 +2464,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180302.SZ",
@@ -1854,7 +2525,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508002.SH",
@@ -1898,7 +2586,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508015.SH",
@@ -1942,7 +2647,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508005.SH",
@@ -1986,7 +2708,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508022.SH",
@@ -2030,7 +2769,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180105.SZ",
@@ -2074,7 +2830,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180603.SZ",
@@ -2118,7 +2891,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180303.SZ",
@@ -2162,7 +2952,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180502.SZ",
@@ -2206,7 +3013,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180203.SZ",
@@ -2250,7 +3074,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508003.SH",
@@ -2294,7 +3135,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508069.SH",
@@ -2338,7 +3196,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180701.SZ",
@@ -2382,7 +3257,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508097.SH",
@@ -2426,7 +3318,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180402.SZ",
@@ -2470,7 +3379,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508010.SH",
@@ -2514,7 +3440,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180106.SZ",
@@ -2558,7 +3501,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508036.SH",
@@ -2602,7 +3562,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508048.SH",
@@ -2646,7 +3623,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508078.SH",
@@ -2690,7 +3684,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508012.SH",
@@ -2734,7 +3745,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180605.SZ",
@@ -2778,7 +3806,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508087.SH",
@@ -2822,7 +3867,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508092.SH",
@@ -2866,7 +3928,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508084.SH",
@@ -2910,7 +3989,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508055.SH",
@@ -2954,7 +4050,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180305.SZ",
@@ -2998,7 +4111,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508085.SH",
@@ -3042,7 +4172,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508080.SH",
@@ -3086,7 +4233,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180606.SZ",
@@ -3130,7 +4294,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508090.SH",
@@ -3174,7 +4355,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508016.SH",
@@ -3218,7 +4416,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508039.SH",
@@ -3262,7 +4477,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180901.SZ",
@@ -3306,7 +4538,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508060.SH",
@@ -3350,7 +4599,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508082.SH",
@@ -3394,7 +4660,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508091.SH",
@@ -3438,7 +4721,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180607.SZ",
@@ -3482,7 +4782,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508029.SH",
@@ -3526,7 +4843,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180306.SZ",
@@ -3570,7 +4904,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508050.SH",
@@ -3614,7 +4965,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508020.SH",
@@ -3658,7 +5026,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "180503.SZ",
@@ -3702,7 +5087,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508093.SH",
@@ -3746,7 +5148,24 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
+      "missing_expected": [],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "prices_first"
     },
     {
       "symbol": "508030.SH",
@@ -3790,7 +5209,23 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "pending_not_listed",
+      "data_quality_reason": "No trading price expected until the REIT lists.",
+      "data_quality_severity": "muted",
+      "stale_fields": [],
+      "missing_expected": [
+        "last_close_rmb",
+        "return_since_listing_pct"
+      ],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "wait_until_listed_for_prices"
     },
     {
       "symbol": "508603.SH",
@@ -3834,7 +5269,23 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "pending_not_listed",
+      "data_quality_reason": "No trading price expected until the REIT lists.",
+      "data_quality_severity": "muted",
+      "stale_fields": [],
+      "missing_expected": [
+        "last_close_rmb",
+        "return_since_listing_pct"
+      ],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "wait_until_listed_for_prices"
     },
     {
       "symbol": "508600.SH",
@@ -3878,7 +5329,23 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "pending_not_listed",
+      "data_quality_reason": "No trading price expected until the REIT lists.",
+      "data_quality_severity": "muted",
+      "stale_fields": [],
+      "missing_expected": [
+        "last_close_rmb",
+        "return_since_listing_pct"
+      ],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "wait_until_listed_for_prices"
     },
     {
       "symbol": "508602.SH",
@@ -3922,7 +5389,23 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "pending_not_listed",
+      "data_quality_reason": "No trading price expected until the REIT lists.",
+      "data_quality_severity": "muted",
+      "stale_fields": [],
+      "missing_expected": [
+        "last_close_rmb",
+        "return_since_listing_pct"
+      ],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "wait_until_listed_for_prices"
     },
     {
       "symbol": "508601.SH",
@@ -3966,7 +5449,23 @@
         "pipeline_readiness_score": "Uses 2x pipeline as an investment heuristic, not a legal rule.",
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
-      }
+      },
+      "data_quality_status": "pending_not_listed",
+      "data_quality_reason": "No trading price expected until the REIT lists.",
+      "data_quality_severity": "muted",
+      "stale_fields": [],
+      "missing_expected": [
+        "last_close_rmb",
+        "return_since_listing_pct"
+      ],
+      "missing_unexpected": [],
+      "adapter_gaps": [
+        "source_url",
+        "zoning_type",
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
+      ],
+      "fetch_priority": "wait_until_listed_for_prices"
     }
   ]
 }

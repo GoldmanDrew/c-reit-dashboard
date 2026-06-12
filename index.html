@@ -477,6 +477,7 @@
       data: null,
       metrics: null,
       health: null,
+      quality: null,
       news: null,
       events: null,
       privateWatch: null,
@@ -554,9 +555,18 @@
 
     function badgeClassForSource(source) {
       if (source === 'official') return 'badge-good';
-      if (source === 'seed' || source === 'stale_seed') return 'badge-warn';
-      if (source === 'failed') return 'badge-bad';
+      if (source === 'seed' || source === 'manual_seed' || source === 'stale_seed' || source === 'stale') return 'badge-warn';
+      if (source === 'failed' || source === 'missing_unexpected') return 'badge-bad';
+      if (source === 'pending_not_listed' || source === 'not_configured') return 'badge-muted';
       return 'badge-muted';
+    }
+
+    function qualityBySymbol(symbol) {
+      return state.quality?.items?.find(item => item.symbol === symbol) || null;
+    }
+
+    function qualitySummary() {
+      return state.quality?.summary || state.data.data_quality_summary || {};
     }
 
     function valClass(v) {
@@ -572,13 +582,14 @@
 
     function renderSummary() {
       const s = state.data.summary;
+      const q = qualitySummary();
       document.getElementById('summaryStrip').innerHTML = [
         summaryCard(langValue('Total REITs', '总数'), s.total_rows, langValue('Workbook-normalized entities', 'Excel 标准化实体')),
-        summaryCard(langValue('Listed', '已上市'), s.listed_count, langValue('Rows with workbook price', '有价格数据')),
-        summaryCard(langValue('Pending', '待上市'), s.pending_or_not_trading_count, langValue('Approved/scheduled/unknown', '获批/计划/未知')),
+        summaryCard(langValue('Listed', '已上市'), s.listed_count, langValue(`${q.stale_seed_price_rows || 0} stale seed price rows`, `${q.stale_seed_price_rows || 0} 条旧种子价格`)),
+        summaryCard(langValue('Pending', '待上市'), s.pending_or_not_trading_count, langValue(`${q.pending_price_rows || 0} expected price blanks`, `${q.pending_price_rows || 0} 条预期无价格`)),
         summaryCard(langValue('Total Issue Size', '发行规模'), `${fmtNum(s.total_issue_size_rmb_bn, 1)} bn`, 'RMB'),
-        summaryCard(langValue('Commercial REITs', '商业不动产'), `${fmtNum(s.commercial_issue_size_rmb_bn, 1)} bn`, langValue('Approved commercial REITs', '已获批商业 REITs')),
-        summaryCard(langValue('Price As Of', '价格日期'), state.data.price_asof, langValue('Seed prices are stale', '种子价格非实时')),
+        summaryCard(langValue('Source URLs', '来源链接'), `${q.rows_missing_source_url ?? s.total_rows} missing`, langValue('Workbook lacks row URLs', 'Excel 缺少逐行链接')),
+        summaryCard(langValue('Price As Of', '价格日期'), state.data.price_asof, langValue('Needs official price adapter', '需要官方价格适配器')),
       ].join('');
       document.getElementById('buildMeta').textContent = `${langValue('Built', '生成')} ${new Date(state.data.build_time).toLocaleString()} - ${state.data.price_asof}`;
       document.getElementById('priceAsOfPanel').textContent = state.data.price_asof;
@@ -624,7 +635,10 @@
         el.textContent = UI[state.lang][el.dataset.i18n] || UI.en[el.dataset.i18n] || el.textContent;
       });
       document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === state.lang));
-      document.getElementById('freshLabel').textContent = langValue('Seed data', '种子数据');
+      const q = qualitySummary();
+      document.getElementById('freshLabel').textContent = (q.stale_seed_price_rows || 0) > 0
+        ? langValue('Stale seed data', '旧种子数据')
+        : langValue('Source OK', '来源正常');
     }
 
     function renderChips() {
@@ -677,6 +691,8 @@
       tbody.innerHTML = filteredRows().map(r => {
         const selected = state.selectedSymbol === r.symbol;
         const detail = selected ? detailRow(r) : '';
+        const q = qualityBySymbol(r.symbol);
+        const qualityStatus = q?.status || r.data_quality_status || r.source_freshness;
         return `
           <tr class="data-row ${selected ? 'selected' : ''}" data-symbol="${esc(r.symbol)}">
             <td><span class="symbol-cell">${esc(r.symbol)}</span></td>
@@ -691,7 +707,7 @@
             <td class="num">${fmtNum(r.valuation_score, 1)}</td>
             <td class="num">${fmtNum(r.regulatory_complexity_score, 1)}</td>
             <td class="num">${fmtNum(r.deflation_sensitivity_score, 1)}</td>
-            <td><span class="badge ${badgeClassForSource(r.source_freshness)}">${esc(r.source_freshness)}</span></td>
+            <td><span class="badge ${badgeClassForSource(qualityStatus)}">${esc(qualityStatus)}</span></td>
           </tr>${detail}`;
       }).join('');
       tbody.querySelectorAll('tr.data-row').forEach(tr => tr.addEventListener('click', () => {
@@ -704,12 +720,21 @@
       return `<div class="detail-card"><div class="label">${esc(label)}</div><div class="value">${esc(value ?? '-')}</div>${note ? `<div class="note">${esc(note)}</div>` : ''}</div>`;
     }
 
+    function listText(items) {
+      return Array.isArray(items) && items.length ? items.join(', ') : '-';
+    }
+
     function detailRow(r) {
+      const q = qualityBySymbol(r.symbol) || {};
+      const qualityStatus = q.status || r.data_quality_status || r.source_freshness;
       return `<tr class="detail-row"><td colspan="13"><div class="detail-box">
         <div class="detail-grid">
           ${detailCard(langValue('Lifecycle', '状态'), statusText(r.lifecycle_status), r.entity_type)}
           ${detailCard(langValue('Issue size', '发行规模'), `${fmtNum(r.issue_size_rmb_bn)} RMB bn`, r.exchange)}
           ${detailCard(langValue('Return since listing', '上市以来涨跌幅'), fmtPct(r.return_since_listing_pct), `${langValue('Price as of', '价格日期')} ${r.price_asof}`)}
+          ${detailCard(langValue('Data quality', '数据质量'), qualityStatus, q.primary_reason || r.data_quality_reason)}
+          ${detailCard(langValue('Stale fields', '过期字段'), listText(q.stale_fields || r.stale_fields), langValue('Fields that need fresh online data.', '需要线上刷新数据的字段。'))}
+          ${detailCard(langValue('Adapter gaps', '适配器缺口'), listText(q.adapter_gaps || r.adapter_gaps), q.fetch_priority || r.fetch_priority)}
           ${detailCard(langValue('Originator', '原始权益人'), r.originator)}
           ${detailCard(langValue('Fund manager', '基金管理人'), r.fund_manager)}
           ${detailCard(langValue('ABS manager', '专项计划管理人'), r.abs_plan_manager)}
@@ -719,7 +744,7 @@
         </div>
         <div class="source-strip">
           <span class="badge ${badgeClassForSource(r.source_confidence)}">${esc(r.source_confidence)}</span>
-          <span class="badge ${badgeClassForSource(r.source_freshness)}">${esc(r.source_freshness)}</span>
+          <span class="badge ${badgeClassForSource(qualityStatus)}">${esc(qualityStatus)}</span>
           <span class="badge badge-muted">${esc(r.price_asof)}</span>
           ${r.source_url ? `<a class="badge badge-blue" href="${esc(r.source_url)}" target="_blank" rel="noreferrer">Source</a>` : '<span class="badge badge-muted">No source URL</span>'}
         </div>
@@ -729,8 +754,8 @@
     function renderStats() {
       const rows = Object.values(state.metrics.by_symbol || {});
       document.getElementById('statsRows').innerHTML = `<table>
-        <thead><tr><th>Symbol</th><th class="num">Close</th><th>As of</th><th class="num">NAV</th><th class="num">Prem/Disc</th><th class="num">Yield</th><th>Status</th></tr></thead>
-        <tbody>${rows.map(r => `<tr><td><span class="symbol-cell">${esc(r.symbol)}</span></td><td class="num">${fmtNum(r.last_close_rmb, 3)}</td><td>${esc(r.price_asof)}</td><td class="num">${fmtNum(r.nav_rmb)}</td><td class="num">${fmtPct(r.premium_discount_to_nav)}</td><td class="num">${fmtPct(r.distribution_yield_ttm)}</td><td><span class="badge badge-warn">${esc(r.source_status)}</span></td></tr>`).join('')}</tbody>
+        <thead><tr><th>Symbol</th><th class="num">Close</th><th>As of</th><th class="num">NAV</th><th class="num">Prem/Disc</th><th class="num">Yield</th><th>Status</th><th>Why</th></tr></thead>
+        <tbody>${rows.map(r => `<tr><td><span class="symbol-cell">${esc(r.symbol)}</span></td><td class="num">${fmtNum(r.last_close_rmb, 3)}</td><td>${esc(r.price_asof)}</td><td class="num">${fmtNum(r.nav_rmb)}</td><td class="num">${fmtPct(r.premium_discount_to_nav)}</td><td class="num">${fmtPct(r.distribution_yield_ttm)}</td><td><span class="badge ${badgeClassForSource(r.data_quality_status || r.source_status)}">${esc(r.data_quality_status || r.source_status)}</span></td><td>${esc(r.data_quality_reason || '-')}</td></tr>`).join('')}</tbody>
       </table>`;
     }
 
@@ -782,14 +807,22 @@
       if (status === 'ok') return 'badge-good';
       if (status === 'failed') return 'badge-bad';
       if (status === 'not_configured') return 'badge-muted';
+      if (status === 'stale') return 'badge-warn';
       return 'badge-warn';
     }
 
     function renderHealth() {
       const sources = state.health?.sources || [];
-      document.getElementById('healthRows').innerHTML = `<div class="table-container"><table>
-        <thead><tr><th>Source</th><th>Status</th><th>Last success</th><th class="num">Rows</th><th class="num">Coverage</th><th>License / note</th></tr></thead>
-        <tbody>${sources.map(s => `<tr><td>${esc(s.name)}</td><td><span class="badge ${healthClass(s.status)}">${esc(s.status)}</span></td><td>${esc(s.last_success || '-')}</td><td class="num">${fmtNum(s.rows_parsed, 0)}</td><td class="num">${fmtPct(s.coverage_pct)}</td><td>${esc(s.license_note)}</td></tr>`).join('')}</tbody>
+      const q = qualitySummary();
+      const auditCards = `<div class="detail-grid" style="margin-bottom:12px">
+        ${detailCard('Stale listed prices', q.stale_seed_price_rows ?? 0, 'Workbook close data needs official daily price feed.')}
+        ${detailCard('Expected pending blanks', q.pending_price_rows ?? 0, 'Approved/scheduled rows are not failures until they trade.')}
+        ${detailCard('Missing source URLs', q.rows_missing_source_url ?? 0, 'Workbook rows do not carry official per-record URLs.')}
+        ${detailCard('Unexpected missing prices', q.unexpected_missing_price_rows ?? 0, 'Listed rows with no price should stay at zero.')}
+      </div>`;
+      document.getElementById('healthRows').innerHTML = `${auditCards}<div class="table-container"><table>
+        <thead><tr><th>Source</th><th>Status</th><th>Last success</th><th class="num">Rows</th><th class="num">Coverage</th><th>Why / note</th><th>Next fetcher</th></tr></thead>
+        <tbody>${sources.map(s => `<tr><td>${esc(s.name)}</td><td><span class="badge ${healthClass(s.status)}">${esc(s.status)}</span></td><td>${esc(s.last_success || '-')}</td><td class="num">${fmtNum(s.rows_parsed, 0)}</td><td class="num">${fmtPct(s.coverage_pct)}</td><td>${esc(s.license_note)}</td><td><code>${esc(s.next_fetcher || '-')}</code></td></tr>`).join('')}</tbody>
       </table></div>`;
     }
 
@@ -826,6 +859,7 @@
       }
       state.metrics = await loadJson('data/creit_metrics_latest.json', { by_symbol: {} });
       state.health = await loadJson('data/creit_source_health.json', { sources: [] });
+      state.quality = await loadJson('data/creit_data_quality.json', { summary: {}, items: [] });
       state.news = await loadJson('data/creit_company_news.json', empty);
       state.events = await loadJson('data/creit_structured_events.json', empty);
       state.privateWatch = await loadJson('data/private_deal_watch.json', empty);

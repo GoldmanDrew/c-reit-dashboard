@@ -33,8 +33,12 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(dashboard["price_asof"], "2026-06-10")
         self.assertEqual(dashboard["summary"]["total_rows"], 87)
         self.assertEqual(dashboard["summary"]["listed_count"], 82)
+        self.assertEqual(dashboard["data_quality_summary"]["stale_seed_price_rows"], 82)
+        self.assertEqual(dashboard["data_quality_summary"]["pending_price_rows"], 5)
+        self.assertEqual(dashboard["data_quality_summary"]["unexpected_missing_price_rows"], 0)
         self.assertIs(dashboard["assumption_audit"]["pipeline_2x_is_heuristic"], True)
         self.assertTrue(dashboard["records"][0]["score_notes"])
+        self.assertTrue(dashboard["records"][0]["data_quality_reason"])
 
     def test_generated_json_is_readable_utf8(self):
         dashboard = build()
@@ -57,6 +61,23 @@ class PipelineTests(unittest.TestCase):
         self.assertIn('data-lang="en"', html)
         self.assertIn("localStorage.getItem('creit-lang')", html)
         self.assertIn("tab_screener", html)
+        self.assertIn("旧种子数据", html)
+
+    def test_data_quality_artifact_contract(self):
+        build()
+        quality_path = ROOT / "data" / "creit_data_quality.json"
+        self.assertTrue(quality_path.exists())
+        text = quality_path.read_text(encoding="utf-8")
+        self.assertIn("stale_seed", text)
+        self.assertIn("pending_not_listed", text)
+        self.assertIn("ingest_exchange_prices.py", text)
+
+    def test_source_health_has_fetcher_plan(self):
+        build()
+        health = (ROOT / "data" / "creit_source_health.json").read_text(encoding="utf-8")
+        self.assertIn("scripts/ingest_exchange_prices.py", health)
+        self.assertIn("scripts/ingest_nav_reports.py", health)
+        self.assertIn('"status": "stale"', health)
 
 
 if __name__ == "__main__":

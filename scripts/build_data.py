@@ -7,6 +7,7 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
+from audit_data_quality import audit_records
 from ingest_wind_excel import DEFAULT_WORKBOOK, PRICE_ASOF, load_records, write_outputs
 from score_creits import attach_scores
 from source_health import seed_source_health
@@ -139,7 +140,7 @@ def _empty_payload(kind: str) -> dict[str, Any]:
     }
 
 
-def _metrics_latest(records: list[dict[str, Any]]) -> dict[str, Any]:
+def _metrics_latest(records: list[dict[str, Any]], audit_by_symbol: dict[str, dict[str, Any]]) -> dict[str, Any]:
     return {
         "build_time": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(),
         "status": "seed_only",
@@ -158,6 +159,9 @@ def _metrics_latest(records: list[dict[str, Any]]) -> dict[str, Any]:
                 "turnover": None,
                 "distribution_yield_ttm": None,
                 "source_status": "seed_only",
+                "data_quality_status": audit_by_symbol.get(r["symbol"], {}).get("status", "manual_seed"),
+                "data_quality_reason": audit_by_symbol.get(r["symbol"], {}).get("primary_reason"),
+                "fetch_priority": audit_by_symbol.get(r["symbol"], {}).get("fetch_priority"),
             }
             for r in records
         },
@@ -172,6 +176,18 @@ def build() -> dict[str, Any]:
     records = load_records(DEFAULT_WORKBOOK)
     write_outputs(records, DATA_DIR)
     scored = [attach_scores(r, pipeline_threshold) for r in records]
+    quality = audit_records(scored, PRICE_ASOF)
+    audit_by_symbol = {item["symbol"]: item for item in quality["items"]}
+    for record in scored:
+        audit_item = audit_by_symbol.get(record["symbol"], {})
+        record["data_quality_status"] = audit_item.get("status")
+        record["data_quality_reason"] = audit_item.get("primary_reason")
+        record["data_quality_severity"] = audit_item.get("severity")
+        record["stale_fields"] = audit_item.get("stale_fields", [])
+        record["missing_expected"] = audit_item.get("missing_expected", [])
+        record["missing_unexpected"] = audit_item.get("missing_unexpected", [])
+        record["adapter_gaps"] = audit_item.get("adapter_gaps", [])
+        record["fetch_priority"] = audit_item.get("fetch_priority")
 
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     dashboard = {
@@ -188,14 +204,16 @@ def build() -> dict[str, Any]:
         "heuristics": heuristics,
         "source_registry": cfg.get("sources") or {},
         "summary": _summary(scored),
+        "data_quality_summary": quality["summary"],
         "records": scored,
     }
 
     DATA_DIR.mkdir(exist_ok=True)
     _json_dump(DATA_DIR / "dashboard_data.json", dashboard)
     _json_dump(DATA_DIR / "creit_aliases.json", _aliases(scored))
-    _json_dump(DATA_DIR / "creit_metrics_latest.json", _metrics_latest(scored))
-    _json_dump(DATA_DIR / "creit_source_health.json", seed_source_health(len(scored), PRICE_ASOF))
+    _json_dump(DATA_DIR / "creit_metrics_latest.json", _metrics_latest(scored, audit_by_symbol))
+    _json_dump(DATA_DIR / "creit_data_quality.json", quality)
+    _json_dump(DATA_DIR / "creit_source_health.json", seed_source_health(len(scored), PRICE_ASOF, quality))
     _json_dump(DATA_DIR / "creit_company_news.json", _empty_payload("company_news"))
     _json_dump(DATA_DIR / "creit_structured_events.json", _empty_payload("structured_events"))
     _json_dump(DATA_DIR / "creit_regulatory_events.json", _empty_payload("regulatory_events"))
