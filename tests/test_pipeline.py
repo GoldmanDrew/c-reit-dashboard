@@ -36,6 +36,28 @@ class PipelineTests(unittest.TestCase):
         self.assertIs(dashboard["assumption_audit"]["pipeline_2x_is_heuristic"], True)
         self.assertTrue(dashboard["records"][0]["score_notes"])
 
+    def test_generated_json_is_readable_utf8(self):
+        dashboard = build()
+        names = [r["name_cn"] for r in dashboard["records"]]
+        assets = set(dashboard["summary"]["by_asset_type"])
+        self.assertIn("红土创新盐田港REIT", names)
+        self.assertIn("仓储物流", assets)
+        self.assertFalse(any("å" in name for name in names))
+        self.assertEqual(dashboard["source_workbook"], "公募reits已发行项目清单.xlsx")
+
+    def test_lifecycle_statuses_have_badge_classes(self):
+        dashboard = build()
+        statuses = {r["lifecycle_status"] for r in dashboard["records"]}
+        supported = {"listed", "approved_not_listed", "listing_scheduled", "delayed_or_unknown"}
+        self.assertTrue(statuses.issubset(supported))
+
+    def test_translation_toggle_is_present(self):
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn('data-lang="zh"', html)
+        self.assertIn('data-lang="en"', html)
+        self.assertIn("localStorage.getItem('creit-lang')", html)
+        self.assertIn("tab_screener", html)
+
 
 if __name__ == "__main__":
     unittest.main()

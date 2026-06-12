@@ -6,284 +6,363 @@
   <title>China C-REIT Dashboard</title>
   <style>
     :root {
-      --bg: #f5f7fb;
-      --panel: #ffffff;
-      --ink: #172033;
-      --muted: #647085;
-      --line: #dfe5ef;
-      --accent: #0f766e;
-      --accent-soft: #e4f5f2;
-      --warn: #b45309;
-      --bad: #b91c1c;
-      --good: #047857;
-      --blue: #2563eb;
-      --shadow: 0 10px 25px rgba(31, 41, 55, 0.08);
+      --bg-primary: #0a0e17;
+      --bg-secondary: #111827;
+      --bg-card: #151d2e;
+      --bg-card-hover: #1a2438;
+      --bg-input: #0d1424;
+      --border: #273247;
+      --border-active: #3b82f6;
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #64748b;
+      --accent-blue: #3b82f6;
+      --accent-cyan: #06b6d4;
+      --accent-green: #10b981;
+      --accent-red: #ef4444;
+      --accent-amber: #f59e0b;
+      --accent-purple: #8b5cf6;
+      --positive: #10b981;
+      --negative: #ef4444;
+      --warning: #f59e0b;
+      --stale: #94a3b8;
     }
 
     * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
     body {
       margin: 0;
+      background: var(--bg-primary);
+      color: var(--text-primary);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--ink);
-      background: var(--bg);
-    }
-    header {
-      background: #111827;
-      color: #fff;
-      padding: 18px 28px 14px;
-      border-bottom: 4px solid var(--accent);
-    }
-    .topline {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-    h1 {
-      margin: 0;
-      font-size: 24px;
-      letter-spacing: 0;
-      font-weight: 760;
-    }
-    .subtitle {
-      margin-top: 6px;
-      color: #cbd5e1;
       font-size: 13px;
     }
-    .shell {
-      max-width: 1440px;
-      margin: 0 auto;
-      padding: 22px 24px 40px;
-    }
-    .pill {
-      display: inline-flex;
+    ::-webkit-scrollbar { height: 8px; width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg-primary); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    button, input, select { font: inherit; }
+
+    .app { min-height: 100vh; display: flex; flex-direction: column; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 6px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 4px 10px;
-      background: #fff;
-      color: var(--muted);
-      font-size: 12px;
+      gap: 16px;
+      padding: 12px 24px;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+    }
+    .topbar-left { display: flex; align-items: center; gap: 14px; min-width: 0; }
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       white-space: nowrap;
     }
-    header .pill { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); color: #e5e7eb; }
-    .grid {
-      display: grid;
-      gap: 14px;
-    }
-    .kpis {
-      grid-template-columns: repeat(6, minmax(130px, 1fr));
-    }
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      box-shadow: var(--shadow);
-    }
-    .kpi {
-      padding: 14px;
-      min-height: 92px;
-    }
-    .label {
-      color: var(--muted);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: .04em;
-    }
-    .value {
-      margin-top: 6px;
-      font-size: 24px;
-      font-weight: 760;
-    }
-    .sub {
-      margin-top: 4px;
-      color: var(--muted);
-      font-size: 12px;
-    }
-    .tabs {
+    .topbar-meta {
       display: flex;
+      align-items: center;
       gap: 8px;
       flex-wrap: wrap;
-      margin: 20px 0 14px;
+      color: var(--text-muted);
+      font-size: 11px;
+      min-width: 0;
     }
-    button, select, input {
-      font: inherit;
-    }
-    .tab, .btn {
-      border: 1px solid var(--line);
-      background: #fff;
-      color: var(--ink);
-      border-radius: 7px;
-      padding: 8px 11px;
+    .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+    .dot-green { background: var(--accent-green); }
+    .dot-amber { background: var(--accent-amber); }
+    .dot-red { background: var(--accent-red); }
+    .topbar-right { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+    .topbar-btn, .lang-btn {
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      color: var(--text-secondary);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 650;
       cursor: pointer;
-      min-height: 36px;
+      text-decoration: none;
+      transition: all 0.15s;
     }
-    .tab.active, .btn.primary {
-      background: var(--accent);
-      color: #fff;
-      border-color: var(--accent);
+    .topbar-btn:hover, .lang-btn:hover { color: var(--text-primary); border-color: var(--border-active); }
+    .lang-toggle { display: inline-flex; gap: 4px; }
+    .lang-btn.active { background: var(--accent-blue); border-color: var(--accent-blue); color: #fff; }
+
+    .fresh-pill, .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
     }
-    .toolbar {
+    .fresh-good, .badge-good { color: var(--positive); background: rgba(16,185,129,0.12); border-color: rgba(16,185,129,0.35); }
+    .fresh-warn, .badge-warn { color: var(--warning); background: rgba(245,158,11,0.12); border-color: rgba(245,158,11,0.35); }
+    .fresh-bad, .badge-bad { color: var(--negative); background: rgba(239,68,68,0.12); border-color: rgba(239,68,68,0.35); }
+    .badge-blue { color: var(--accent-blue); background: rgba(59,130,246,0.12); border-color: rgba(59,130,246,0.35); }
+    .badge-purple { color: var(--accent-purple); background: rgba(139,92,246,0.12); border-color: rgba(139,92,246,0.35); }
+    .badge-muted { color: var(--text-muted); background: rgba(100,116,139,0.12); border-color: rgba(100,116,139,0.3); }
+
+    .summary-strip {
       display: grid;
-      grid-template-columns: minmax(220px, 1.5fr) repeat(4, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
       gap: 10px;
-      padding: 14px;
-      margin-bottom: 14px;
+      padding: 14px 24px;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
     }
-    .toolbar input, .toolbar select {
-      width: 100%;
-      border: 1px solid var(--line);
-      border-radius: 7px;
-      padding: 9px 10px;
-      background: #fff;
-      color: var(--ink);
-    }
-    .table-wrap {
-      overflow: auto;
+    .summary-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
       border-radius: 8px;
+      padding: 11px 13px;
+      transition: border-color 0.15s;
+      min-height: 78px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 1120px;
-      background: #fff;
+    .summary-card:hover { border-color: var(--border-active); }
+    .summary-card .label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.55px;
+      color: var(--text-muted);
+      margin-bottom: 5px;
     }
-    th, td {
-      border-bottom: 1px solid var(--line);
-      padding: 9px 10px;
-      text-align: left;
-      vertical-align: top;
+    .summary-card .value { font-size: 21px; font-weight: 800; line-height: 1.1; }
+    .summary-card .sub { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+
+    .tab-bar { display: flex; align-items: center; gap: 4px; padding: 12px 24px 0; overflow-x: auto; }
+    .tab {
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text-muted);
+      padding: 9px 16px;
+      border-radius: 8px 8px 0 0;
       font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
     }
+    .tab:hover { color: var(--text-secondary); background: var(--bg-card); }
+    .tab.active { color: var(--text-primary); background: var(--bg-card); border-color: var(--border); }
+    .tab .count {
+      margin-left: 6px;
+      padding: 1px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+      color: var(--text-muted);
+      background: var(--bg-primary);
+    }
+    .tab.active .count { color: #fff; background: var(--accent-blue); }
+
+    .controls-bar {
+      display: grid;
+      grid-template-columns: minmax(260px, 1.5fr) repeat(4, minmax(135px, 1fr));
+      gap: 10px;
+      padding: 14px 24px;
+      margin: 0 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 8px 8px 8px;
+    }
+    .search-wrap { position: relative; }
+    .search-wrap span {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+    .controls-bar input, .controls-bar select {
+      width: 100%;
+      height: 34px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--bg-input);
+      color: var(--text-primary);
+      padding: 8px 11px;
+      font-size: 12px;
+      outline: none;
+    }
+    .controls-bar input { padding-left: 32px; }
+    .controls-bar input:focus, .controls-bar select:focus { border-color: var(--border-active); }
+    .quick-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 10px 24px 0;
+    }
+    .chip {
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      color: var(--text-secondary);
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .chip:hover, .chip.active { border-color: var(--border-active); color: var(--text-primary); }
+
+    .content { padding: 14px 24px 28px; flex: 1; }
+    .panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-secondary);
+    }
+    .panel-title { font-size: 14px; font-weight: 800; }
+    .panel-sub { color: var(--text-muted); font-size: 11px; margin-top: 2px; }
+
+    .table-container { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; min-width: 1160px; table-layout: fixed; }
     th {
       position: sticky;
       top: 0;
-      background: #f8fafc;
-      z-index: 1;
-      color: #334155;
-      font-size: 12px;
+      z-index: 5;
+      background: var(--bg-secondary);
+      color: var(--text-muted);
+      text-align: left;
+      font-size: 10px;
+      line-height: 1.2;
       text-transform: uppercase;
-      letter-spacing: .03em;
+      letter-spacing: 0.5px;
+      padding: 8px 9px;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
     }
-    tr:hover td { background: #f8fbff; }
-    td.num, th.num { text-align: right; }
-    .status {
-      border-radius: 999px;
-      padding: 3px 8px;
-      font-size: 12px;
-      display: inline-block;
-      background: #e5e7eb;
-      color: #374151;
-    }
-    .listed { background: #dcfce7; color: #166534; }
-    .listing_scheduled { background: #dbeafe; color: #1d4ed8; }
-    .approved_not_listed { background: #fef3c7; color: #92400e; }
-    .source {
-      color: var(--warn);
+    td {
+      padding: 8px 9px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+      color: var(--text-secondary);
       font-size: 12px;
     }
-    .panel {
-      padding: 16px;
+    tbody tr.data-row { cursor: pointer; transition: background 0.1s; }
+    tbody tr.data-row:hover, tbody tr.data-row.selected { background: var(--bg-card-hover); }
+    th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .symbol-cell { color: var(--accent-cyan); font-weight: 800; font-size: 13px; }
+    .name-cell { color: var(--text-primary); font-weight: 650; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .subtext { color: var(--text-muted); font-size: 11px; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .val-positive { color: var(--positive); }
+    .val-negative { color: var(--negative); }
+    .val-warning { color: var(--warning); }
+    .val-muted { color: var(--text-muted); }
+    .detail-row td { padding: 0; background: var(--bg-primary); }
+    .detail-box { padding: 14px 18px 16px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+    .detail-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 11px;
+      min-height: 70px;
     }
-    .panel h2 {
-      margin: 0 0 12px;
-      font-size: 18px;
+    .detail-card .label { color: var(--text-muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0.45px; margin-bottom: 4px; }
+    .detail-card .value { color: var(--text-primary); font-weight: 760; font-size: 13px; overflow-wrap: anywhere; }
+    .detail-card .note { color: var(--text-muted); font-size: 11px; margin-top: 4px; line-height: 1.35; }
+    .source-strip { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+
+    .grid-two { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr); gap: 14px; }
+    .panel-body { padding: 14px; }
+    .note-box {
+      border: 1px solid rgba(245,158,11,0.35);
+      background: rgba(245,158,11,0.08);
+      color: var(--text-secondary);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 12px;
+      line-height: 1.45;
+      margin-bottom: 12px;
     }
-    .two-col {
-      grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
-    }
-    .bars {
-      display: grid;
-      gap: 9px;
-    }
-    .bar-row {
-      display: grid;
-      grid-template-columns: 190px 1fr 70px;
-      align-items: center;
-      gap: 10px;
-      font-size: 13px;
-    }
-    .bar-bg {
-      height: 9px;
-      border-radius: 99px;
-      background: #e5e7eb;
-      overflow: hidden;
-    }
-    .bar-fill {
-      height: 100%;
-      background: var(--accent);
-    }
-    .detail {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-    }
-    .fact {
-      border: 1px solid var(--line);
-      border-radius: 7px;
-      padding: 10px;
-      background: #fbfdff;
-    }
-    .fact .label { text-transform: none; letter-spacing: 0; }
-    .fact .value { font-size: 16px; }
     .empty {
-      border: 1px dashed var(--line);
+      border: 1px dashed var(--border);
       border-radius: 8px;
       padding: 22px;
-      background: #fff;
-      color: var(--muted);
+      color: var(--text-muted);
+      background: var(--bg-primary);
+      text-align: center;
     }
-    .health-ok { color: var(--good); }
-    .health-warn { color: var(--warn); }
-    .health-bad { color: var(--bad); }
-    .note {
-      border-left: 4px solid var(--accent);
-      background: var(--accent-soft);
-      padding: 10px 12px;
-      border-radius: 6px;
-      color: #134e4a;
-      font-size: 13px;
-      margin-bottom: 14px;
-    }
-    .hidden { display: none; }
+    .bar-list { display: grid; gap: 8px; }
+    .bar-row { display: grid; grid-template-columns: 190px 1fr 45px; gap: 10px; align-items: center; }
+    .bar-label { color: var(--text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .bar-bg { height: 10px; background: var(--bg-primary); border-radius: 999px; overflow: hidden; border: 1px solid var(--border); }
+    .bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan)); border-radius: 999px; }
+    .top-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 8px 0 14px; }
+    .hidden { display: none !important; }
 
-    @media (max-width: 980px) {
-      .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .toolbar { grid-template-columns: 1fr; }
-      .two-col, .detail { grid-template-columns: 1fr; }
-      .shell { padding: 16px 12px 32px; }
+    @media (max-width: 1050px) {
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .topbar-right { justify-content: flex-start; }
+      .controls-bar { grid-template-columns: 1fr 1fr; }
+      .grid-two { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 720px) {
+      .topbar, .summary-strip, .tab-bar, .content, .quick-chips { padding-left: 12px; padding-right: 12px; }
+      .controls-bar { margin-left: 12px; margin-right: 12px; grid-template-columns: 1fr; }
+      .summary-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .logo { font-size: 18px; }
+      table { min-width: 980px; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="topline">
-      <div>
-        <h1>China C-REIT Dashboard</h1>
-        <div class="subtitle">C-REIT universe, lifecycle, valuation seed data, policy assumptions, news adapters, and source health.</div>
+  <div class="app">
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="logo">C-REIT Dashboard</div>
+        <div class="topbar-meta">
+          <span id="buildMeta">Loading data</span>
+          <span class="fresh-pill fresh-warn"><span class="dot dot-amber"></span><span id="freshLabel">Seed data</span></span>
+        </div>
       </div>
-      <div id="headerMeta" class="pill">Loading data...</div>
-    </div>
-  </header>
+      <div class="topbar-right">
+        <div class="lang-toggle" aria-label="Language">
+          <button class="lang-btn" data-lang="zh">中文</button>
+          <button class="lang-btn active" data-lang="en">English</button>
+        </div>
+        <a class="topbar-btn" href="https://github.com/GoldmanDrew/c-reit-dashboard" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="topbar-btn" href="https://goldmandrew.github.io/c-reit-dashboard/" target="_blank" rel="noreferrer">Pages</a>
+      </div>
+    </header>
 
-  <main class="shell">
-    <section id="kpis" class="grid kpis"></section>
+    <section id="summaryStrip" class="summary-strip"></section>
 
-    <nav class="tabs" id="tabs">
-      <button class="tab active" data-tab="screener">Screener</button>
-      <button class="tab" data-tab="stats">REIT Stats</button>
-      <button class="tab" data-tab="assets">Asset Types</button>
-      <button class="tab" data-tab="news">News & Events</button>
-      <button class="tab" data-tab="macro">Macro & Assumptions</button>
-      <button class="tab" data-tab="private">Private Watch</button>
-      <button class="tab" data-tab="health">Source Health</button>
+    <nav id="tabs" class="tab-bar">
+      <button class="tab active" data-tab="screener"><span data-i18n="tab_screener">Screener</span><span class="count" id="countScreener">-</span></button>
+      <button class="tab" data-tab="stats"><span data-i18n="tab_stats">REIT Stats</span><span class="count" id="countListed">-</span></button>
+      <button class="tab" data-tab="assets"><span data-i18n="tab_assets">Asset Types</span></button>
+      <button class="tab" data-tab="news"><span data-i18n="tab_news">News & Events</span><span class="count" id="countNews">0</span></button>
+      <button class="tab" data-tab="macro"><span data-i18n="tab_macro">Macro & Assumptions</span></button>
+      <button class="tab" data-tab="private"><span data-i18n="tab_private">Private Watch</span></button>
+      <button class="tab" data-tab="health"><span data-i18n="tab_health">Source Health</span><span class="count" id="countSources">-</span></button>
     </nav>
 
     <section id="screenerTab">
-      <div class="card toolbar">
-        <input id="search" placeholder="Search symbol, fund, originator, manager..." />
+      <div class="controls-bar">
+        <label class="search-wrap">
+          <span>⌕</span>
+          <input id="search" placeholder="Search symbol, fund, originator, manager..." />
+        </label>
         <select id="assetFilter"><option value="">All asset types</option></select>
         <select id="statusFilter"><option value="">All statuses</option></select>
         <select id="exchangeFilter"><option value="">All exchanges</option></select>
@@ -294,85 +373,104 @@
           <option value="deflation_sensitivity_score">Sort: deflation sensitivity</option>
         </select>
       </div>
-      <div class="card table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>REIT</th>
-              <th>Status</th>
-              <th>Asset</th>
-              <th>Exchange</th>
-              <th class="num">Issue RMB bn</th>
-              <th class="num">Offer</th>
-              <th class="num">Close</th>
-              <th class="num">Return</th>
-              <th class="num">Valuation</th>
-              <th class="num">Reg risk</th>
-              <th class="num">Deflation</th>
-              <th>Source</th>
-            </tr>
-          </thead>
-          <tbody id="rows"></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="statsTab" class="hidden">
-      <div class="grid two-col">
-        <div class="card panel">
-          <h2>REIT Stats Coverage</h2>
-          <div class="note">Seed build shows workbook price/issue fields. NAV, premium/discount, units, volume, turnover, distribution yield, occupancy, NOI, leverage, and debt maturity are adapter-ready placeholders.</div>
-          <div id="statsRows" class="table-wrap"></div>
+      <div id="quickChips" class="quick-chips"></div>
+      <main class="content">
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <div class="panel-title">C-REIT Screener</div>
+              <div class="panel-sub">Dense seed universe with lifecycle, price, score, and source status. Click a row for detail.</div>
+            </div>
+            <span class="badge badge-warn">Workbook price as of <span id="priceAsOfPanel">-</span></span>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 8%">Symbol</th>
+                  <th style="width: 15%">Name</th>
+                  <th style="width: 10%">Status</th>
+                  <th style="width: 12%">Asset</th>
+                  <th style="width: 6%">Exch</th>
+                  <th class="num" style="width: 8%">Issue</th>
+                  <th class="num" style="width: 7%">Offer</th>
+                  <th class="num" style="width: 7%">Close</th>
+                  <th class="num" style="width: 7%">Return</th>
+                  <th class="num" style="width: 7%">Valuation</th>
+                  <th class="num" style="width: 6%">Reg</th>
+                  <th class="num" style="width: 6%">Defl.</th>
+                  <th style="width: 8%">Source</th>
+                </tr>
+              </thead>
+              <tbody id="rows"></tbody>
+            </table>
+          </div>
         </div>
-        <div class="card panel" id="detailPanel">
-          <h2>Selected REIT</h2>
-          <div class="empty">Select a row in the screener to inspect details.</div>
+      </main>
+    </section>
+
+    <main class="content hidden" id="statsTab">
+      <div class="panel">
+        <div class="panel-head">
+          <div>
+            <div class="panel-title">REIT Stats Coverage</div>
+            <div class="panel-sub">NAV, premium/discount, units, volume, turnover, and yield are adapter-ready placeholders.</div>
+          </div>
+          <span class="badge badge-warn">Seed only</span>
+        </div>
+        <div class="panel-body">
+          <div class="table-container" id="statsRows"></div>
         </div>
       </div>
-    </section>
+    </main>
 
-    <section id="assetsTab" class="hidden">
-      <div class="grid two-col">
-        <div class="card panel">
-          <h2>Asset Type Mix</h2>
-          <div id="assetBars" class="bars"></div>
+    <main class="content hidden" id="assetsTab">
+      <div class="grid-two">
+        <div class="panel">
+          <div class="panel-head"><div><div class="panel-title">Asset Type Mix</div><div class="panel-sub">Count by asset class.</div></div></div>
+          <div class="panel-body"><div id="assetBars" class="bar-list"></div></div>
         </div>
-        <div class="card panel">
-          <h2>Top Lists</h2>
-          <div id="topLists"></div>
+        <div class="panel">
+          <div class="panel-head"><div><div class="panel-title">Top Lists</div><div class="panel-sub">Workbook return leaders and laggards.</div></div></div>
+          <div class="panel-body" id="topLists"></div>
         </div>
       </div>
-    </section>
+    </main>
 
-    <section id="newsTab" class="hidden">
-      <div class="card panel">
-        <h2>News & Structured Events</h2>
-        <div class="note">News flow mirrors the ETF dashboard design: aliases connect symbol, fund name, originator, manager, ABS plan manager, project company, and English/common names. The adapters are placeholders until online sources are wired.</div>
-        <div id="newsContent"></div>
+    <main class="content hidden" id="newsTab">
+      <div class="panel">
+        <div class="panel-head">
+          <div><div class="panel-title">News & Structured Events</div><div class="panel-sub">Entity alias matching is ready; online adapters are pending.</div></div>
+          <span class="badge badge-muted">Adapter pending</span>
+        </div>
+        <div class="panel-body" id="newsContent"></div>
       </div>
-    </section>
+    </main>
 
-    <section id="macroTab" class="hidden">
-      <div class="card panel">
-        <h2>Macro & Assumption Audit</h2>
-        <div id="assumptions"></div>
+    <main class="content hidden" id="macroTab">
+      <div class="panel">
+        <div class="panel-head"><div><div class="panel-title">Macro & Assumption Audit</div><div class="panel-sub">Weak assumptions stay labeled until source-backed.</div></div></div>
+        <div class="panel-body" id="assumptions"></div>
       </div>
-    </section>
+    </main>
 
-    <section id="privateTab" class="hidden">
-      <div class="card panel">
-        <h2>Private / Loan-to-Own Watchlist</h2>
-        <div id="privateWatch"></div>
+    <main class="content hidden" id="privateTab">
+      <div class="panel">
+        <div class="panel-head">
+          <div><div class="panel-title">Private / Loan-to-Own Watchlist</div><div class="panel-sub">Manual watch items before source-backed collateral data exists.</div></div>
+          <span class="badge badge-warn">Manual watch</span>
+        </div>
+        <div class="panel-body" id="privateWatch"></div>
       </div>
-    </section>
+    </main>
 
-    <section id="healthTab" class="hidden">
-      <div class="card panel">
-        <h2>Source Health</h2>
-        <div id="healthRows"></div>
+    <main class="content hidden" id="healthTab">
+      <div class="panel">
+        <div class="panel-head"><div><div class="panel-title">Source Health</div><div class="panel-sub">Provider freshness, coverage, and adapter status.</div></div></div>
+        <div class="panel-body" id="healthRows"></div>
       </div>
-    </section>
-  </main>
+    </main>
+  </div>
 
   <script>
     const state = {
@@ -382,12 +480,59 @@
       news: null,
       events: null,
       privateWatch: null,
-      selected: null,
+      selectedSymbol: null,
+      lang: localStorage.getItem('creit-lang') || 'en',
+      quick: null,
     };
 
-    const fmtNum = (v, digits = 2) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '—' : Number(v).toLocaleString(undefined, { maximumFractionDigits: digits });
-    const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '—' : `${Number(v).toFixed(1)}%`;
+    const UI = {
+      en: {
+        tab_screener: 'Screener',
+        tab_stats: 'REIT Stats',
+        tab_assets: 'Asset Types',
+        tab_news: 'News & Events',
+        tab_macro: 'Macro & Assumptions',
+        tab_private: 'Private Watch',
+        tab_health: 'Source Health',
+      },
+      zh: {
+        tab_screener: '筛选器',
+        tab_stats: 'REIT 数据',
+        tab_assets: '资产类型',
+        tab_news: '新闻与事件',
+        tab_macro: '宏观与假设',
+        tab_private: '私募观察',
+        tab_health: '数据源状态',
+      },
+    };
+
+    const ASSET_EN = {
+      '园区基础设施': 'Industrial Park',
+      '交通基础设施': 'Transport',
+      '消费基础设施': 'Consumer Infra',
+      '仓储物流': 'Logistics',
+      '能源基础设施': 'Energy',
+      '保障性租赁住房': 'Rental Housing',
+      '生态环保': 'Environmental',
+      '新型基础设施': 'New Infrastructure',
+      '水利设施': 'Water',
+      '市政设施': 'Municipal',
+      '商业不动产': 'Commercial RE',
+    };
+
+    const STATUS_LABEL = {
+      listed: { en: 'Listed', zh: '已上市' },
+      approved_not_listed: { en: 'Approved', zh: '已获批' },
+      listing_scheduled: { en: 'Scheduled', zh: '待上市' },
+      delayed_or_unknown: { en: 'Unknown', zh: '未知' },
+    };
+
+    const fmtNum = (v, digits = 2) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '-' : Number(v).toLocaleString(undefined, { maximumFractionDigits: digits });
+    const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '-' : `${Number(v).toFixed(1)}%`;
     const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;', "'":'&#39;'}[c]));
+    const langValue = (en, zh) => state.lang === 'zh' ? zh : en;
+    const assetLabel = (cn) => state.lang === 'zh' ? cn : (ASSET_EN[cn] || cn || '-');
+    const statusText = (key) => STATUS_LABEL[key]?.[state.lang] || key || '-';
 
     async function loadJson(path, fallback) {
       try {
@@ -400,21 +545,47 @@
       }
     }
 
-    function kpi(label, value, sub) {
-      return `<div class="card kpi"><div class="label">${esc(label)}</div><div class="value">${esc(value)}</div><div class="sub">${esc(sub || '')}</div></div>`;
+    function badgeClassForStatus(status) {
+      if (status === 'listed') return 'badge-good';
+      if (status === 'listing_scheduled') return 'badge-blue';
+      if (status === 'approved_not_listed') return 'badge-warn';
+      return 'badge-muted';
     }
 
-    function renderKpis() {
+    function badgeClassForSource(source) {
+      if (source === 'official') return 'badge-good';
+      if (source === 'seed' || source === 'stale_seed') return 'badge-warn';
+      if (source === 'failed') return 'badge-bad';
+      return 'badge-muted';
+    }
+
+    function valClass(v) {
+      if (v === null || v === undefined || Number.isNaN(Number(v))) return 'val-muted';
+      if (Number(v) > 0) return 'val-positive';
+      if (Number(v) < 0) return 'val-negative';
+      return 'val-muted';
+    }
+
+    function summaryCard(label, value, sub) {
+      return `<div class="summary-card"><div class="label">${esc(label)}</div><div class="value">${esc(value)}</div><div class="sub">${esc(sub)}</div></div>`;
+    }
+
+    function renderSummary() {
       const s = state.data.summary;
-      document.getElementById('kpis').innerHTML = [
-        kpi('Seed rows', s.total_rows, 'Workbook-normalized entities'),
-        kpi('Listed', s.listed_count, 'Rows with workbook price'),
-        kpi('Pending', s.pending_or_not_trading_count, 'Approved/scheduled/unknown'),
-        kpi('Issue size', `${fmtNum(s.total_issue_size_rmb_bn, 1)} bn`, 'RMB, seed workbook'),
-        kpi('Commercial', `${fmtNum(s.commercial_issue_size_rmb_bn, 1)} bn`, 'Approved commercial REITs'),
-        kpi('Price as of', state.data.price_asof, 'Seed prices are stale'),
+      document.getElementById('summaryStrip').innerHTML = [
+        summaryCard(langValue('Total REITs', '总数'), s.total_rows, langValue('Workbook-normalized entities', 'Excel 标准化实体')),
+        summaryCard(langValue('Listed', '已上市'), s.listed_count, langValue('Rows with workbook price', '有价格数据')),
+        summaryCard(langValue('Pending', '待上市'), s.pending_or_not_trading_count, langValue('Approved/scheduled/unknown', '获批/计划/未知')),
+        summaryCard(langValue('Total Issue Size', '发行规模'), `${fmtNum(s.total_issue_size_rmb_bn, 1)} bn`, 'RMB'),
+        summaryCard(langValue('Commercial REITs', '商业不动产'), `${fmtNum(s.commercial_issue_size_rmb_bn, 1)} bn`, langValue('Approved commercial REITs', '已获批商业 REITs')),
+        summaryCard(langValue('Price As Of', '价格日期'), state.data.price_asof, langValue('Seed prices are stale', '种子价格非实时')),
       ].join('');
-      document.getElementById('headerMeta').textContent = `Built ${new Date(state.data.build_time).toLocaleString()} · ${s.total_rows} records`;
+      document.getElementById('buildMeta').textContent = `${langValue('Built', '生成')} ${new Date(state.data.build_time).toLocaleString()} - ${state.data.price_asof}`;
+      document.getElementById('priceAsOfPanel').textContent = state.data.price_asof;
+      document.getElementById('countScreener').textContent = s.total_rows;
+      document.getElementById('countListed').textContent = s.listed_count;
+      document.getElementById('countNews').textContent = (state.news?.items?.length || 0) + (state.events?.items?.length || 0);
+      document.getElementById('countSources').textContent = state.health?.sources?.length || 0;
     }
 
     function unique(key) {
@@ -423,14 +594,56 @@
 
     function fillFilters() {
       const asset = document.getElementById('assetFilter');
-      unique('asset_type_cn').forEach(v => asset.insertAdjacentHTML('beforeend', `<option>${esc(v)}</option>`));
+      asset.innerHTML = `<option value="">${langValue('All asset types', '全部资产类型')}</option>`;
+      unique('asset_type_cn').forEach(v => asset.insertAdjacentHTML('beforeend', `<option value="${esc(v)}">${esc(assetLabel(v))}</option>`));
       const status = document.getElementById('statusFilter');
-      unique('lifecycle_status').forEach(v => status.insertAdjacentHTML('beforeend', `<option>${esc(v)}</option>`));
+      status.innerHTML = `<option value="">${langValue('All statuses', '全部状态')}</option>`;
+      unique('lifecycle_status').forEach(v => status.insertAdjacentHTML('beforeend', `<option value="${esc(v)}">${esc(statusText(v))}</option>`));
       const exchange = document.getElementById('exchangeFilter');
+      exchange.innerHTML = `<option value="">${langValue('All exchanges', '全部交易所')}</option>`;
       unique('exchange').forEach(v => exchange.insertAdjacentHTML('beforeend', `<option>${esc(v)}</option>`));
+    }
+
+    function bindControls() {
       ['search', 'assetFilter', 'statusFilter', 'exchangeFilter', 'sortBy'].forEach(id => {
-        document.getElementById(id).addEventListener('input', renderRows);
+        document.getElementById(id).addEventListener('input', () => {
+          state.quick = null;
+          renderChips();
+          renderRows();
+        });
       });
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.addEventListener('click', () => {
+        state.lang = btn.dataset.lang;
+        localStorage.setItem('creit-lang', state.lang);
+        renderAll();
+      }));
+    }
+
+    function renderTabs() {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        el.textContent = UI[state.lang][el.dataset.i18n] || UI.en[el.dataset.i18n] || el.textContent;
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === state.lang));
+      document.getElementById('freshLabel').textContent = langValue('Seed data', '种子数据');
+    }
+
+    function renderChips() {
+      const chips = [
+        ['listed', langValue('Listed', '已上市')],
+        ['pending', langValue('Pending', '待上市')],
+        ['SSE', 'SSE'],
+        ['SZSE', 'SZSE'],
+        ['stale_seed', langValue('Stale seed', '旧种子数据')],
+        ['commercial', langValue('Commercial', '商业不动产')],
+      ];
+      document.getElementById('quickChips').innerHTML = chips.map(([key, label]) =>
+        `<button class="chip ${state.quick === key ? 'active' : ''}" data-quick="${esc(key)}">${esc(label)}</button>`
+      ).join('');
+      document.querySelectorAll('.chip').forEach(chip => chip.addEventListener('click', () => {
+        state.quick = state.quick === chip.dataset.quick ? null : chip.dataset.quick;
+        renderChips();
+        renderRows();
+      }));
     }
 
     function filteredRows() {
@@ -441,7 +654,16 @@
       const sortBy = document.getElementById('sortBy').value;
       const rows = state.data.records.filter(r => {
         const hay = [r.symbol, r.name_cn, r.originator, r.fund_manager, r.abs_plan_manager, r.financial_advisor].join(' ').toLowerCase();
-        return (!q || hay.includes(q))
+        const quickOk =
+          !state.quick ||
+          (state.quick === 'listed' && r.lifecycle_status === 'listed') ||
+          (state.quick === 'pending' && r.lifecycle_status !== 'listed') ||
+          (state.quick === 'SSE' && r.exchange === 'SSE') ||
+          (state.quick === 'SZSE' && r.exchange === 'SZSE') ||
+          (state.quick === 'stale_seed' && r.source_freshness === 'stale_seed') ||
+          (state.quick === 'commercial' && r.asset_group === 'commercial_real_estate');
+        return quickOk
+          && (!q || hay.includes(q))
           && (!asset || r.asset_type_cn === asset)
           && (!status || r.lifecycle_status === status)
           && (!exchange || r.exchange === exchange);
@@ -452,75 +674,79 @@
 
     function renderRows() {
       const tbody = document.getElementById('rows');
-      tbody.innerHTML = filteredRows().map(r => `
-        <tr data-symbol="${esc(r.symbol)}">
-          <td><strong>${esc(r.symbol)}</strong><br><span class="sub">${esc(r.name_cn)}</span></td>
-          <td><span class="status ${esc(r.lifecycle_status)}">${esc(r.lifecycle_status)}</span></td>
-          <td>${esc(r.asset_type_cn)}<br><span class="sub">${esc(r.originator)}</span></td>
-          <td>${esc(r.exchange)}</td>
-          <td class="num">${fmtNum(r.issue_size_rmb_bn)}</td>
-          <td class="num">${fmtNum(r.offer_price_rmb, 3)}</td>
-          <td class="num">${fmtNum(r.last_close_rmb, 3)}</td>
-          <td class="num">${fmtPct(r.return_since_listing_pct)}</td>
-          <td class="num">${fmtNum(r.valuation_score, 1)}</td>
-          <td class="num">${fmtNum(r.regulatory_complexity_score, 1)}</td>
-          <td class="num">${fmtNum(r.deflation_sensitivity_score, 1)}</td>
-          <td><span class="source">${esc(r.source_freshness)}</span></td>
-        </tr>
-      `).join('');
-      tbody.querySelectorAll('tr').forEach(tr => tr.addEventListener('click', () => {
-        state.selected = state.data.records.find(r => r.symbol === tr.dataset.symbol);
-        document.querySelector('[data-tab="stats"]').click();
-        renderDetail();
+      tbody.innerHTML = filteredRows().map(r => {
+        const selected = state.selectedSymbol === r.symbol;
+        const detail = selected ? detailRow(r) : '';
+        return `
+          <tr class="data-row ${selected ? 'selected' : ''}" data-symbol="${esc(r.symbol)}">
+            <td><span class="symbol-cell">${esc(r.symbol)}</span></td>
+            <td><div class="name-cell">${esc(r.name_cn)}</div><div class="subtext">${esc(r.originator || '-')}</div></td>
+            <td><span class="badge ${badgeClassForStatus(r.lifecycle_status)}">${esc(statusText(r.lifecycle_status))}</span></td>
+            <td><div>${esc(assetLabel(r.asset_type_cn))}</div><div class="subtext">${esc(r.asset_group)}</div></td>
+            <td>${esc(r.exchange)}</td>
+            <td class="num">${fmtNum(r.issue_size_rmb_bn)}</td>
+            <td class="num">${fmtNum(r.offer_price_rmb, 3)}</td>
+            <td class="num ${r.last_close_rmb == null ? 'val-warning' : ''}">${fmtNum(r.last_close_rmb, 3)}</td>
+            <td class="num ${valClass(r.return_since_listing_pct)}">${fmtPct(r.return_since_listing_pct)}</td>
+            <td class="num">${fmtNum(r.valuation_score, 1)}</td>
+            <td class="num">${fmtNum(r.regulatory_complexity_score, 1)}</td>
+            <td class="num">${fmtNum(r.deflation_sensitivity_score, 1)}</td>
+            <td><span class="badge ${badgeClassForSource(r.source_freshness)}">${esc(r.source_freshness)}</span></td>
+          </tr>${detail}`;
+      }).join('');
+      tbody.querySelectorAll('tr.data-row').forEach(tr => tr.addEventListener('click', () => {
+        state.selectedSymbol = state.selectedSymbol === tr.dataset.symbol ? null : tr.dataset.symbol;
+        renderRows();
       }));
     }
 
+    function detailCard(label, value, note = '') {
+      return `<div class="detail-card"><div class="label">${esc(label)}</div><div class="value">${esc(value ?? '-')}</div>${note ? `<div class="note">${esc(note)}</div>` : ''}</div>`;
+    }
+
+    function detailRow(r) {
+      return `<tr class="detail-row"><td colspan="13"><div class="detail-box">
+        <div class="detail-grid">
+          ${detailCard(langValue('Lifecycle', '状态'), statusText(r.lifecycle_status), r.entity_type)}
+          ${detailCard(langValue('Issue size', '发行规模'), `${fmtNum(r.issue_size_rmb_bn)} RMB bn`, r.exchange)}
+          ${detailCard(langValue('Return since listing', '上市以来涨跌幅'), fmtPct(r.return_since_listing_pct), `${langValue('Price as of', '价格日期')} ${r.price_asof}`)}
+          ${detailCard(langValue('Originator', '原始权益人'), r.originator)}
+          ${detailCard(langValue('Fund manager', '基金管理人'), r.fund_manager)}
+          ${detailCard(langValue('ABS manager', '专项计划管理人'), r.abs_plan_manager)}
+          ${detailCard(langValue('Valuation score', '估值分数'), fmtNum(r.valuation_score, 1), r.score_notes?.valuation_score)}
+          ${detailCard(langValue('Regulatory complexity', '监管复杂度'), fmtNum(r.regulatory_complexity_score, 1), r.score_notes?.regulatory_complexity_score)}
+          ${detailCard(langValue('Deflation sensitivity', '通缩敏感度'), fmtNum(r.deflation_sensitivity_score, 1), r.score_notes?.deflation_sensitivity_score)}
+        </div>
+        <div class="source-strip">
+          <span class="badge ${badgeClassForSource(r.source_confidence)}">${esc(r.source_confidence)}</span>
+          <span class="badge ${badgeClassForSource(r.source_freshness)}">${esc(r.source_freshness)}</span>
+          <span class="badge badge-muted">${esc(r.price_asof)}</span>
+          ${r.source_url ? `<a class="badge badge-blue" href="${esc(r.source_url)}" target="_blank" rel="noreferrer">Source</a>` : '<span class="badge badge-muted">No source URL</span>'}
+        </div>
+      </div></td></tr>`;
+    }
+
     function renderStats() {
-      const by = state.metrics.by_symbol || {};
-      const rows = Object.values(by).slice(0, 120);
-      document.getElementById('statsRows').innerHTML = `
-        <table>
-          <thead><tr><th>Symbol</th><th class="num">Close</th><th>As of</th><th class="num">NAV</th><th class="num">Prem/Disc</th><th class="num">Yield</th><th>Status</th></tr></thead>
-          <tbody>${rows.map(r => `<tr><td>${esc(r.symbol)}</td><td class="num">${fmtNum(r.last_close_rmb, 3)}</td><td>${esc(r.price_asof)}</td><td class="num">${fmtNum(r.nav_rmb)}</td><td class="num">${fmtPct(r.premium_discount_to_nav)}</td><td class="num">${fmtPct(r.distribution_yield_ttm)}</td><td>${esc(r.source_status)}</td></tr>`).join('')}</tbody>
-        </table>`;
-    }
-
-    function fact(label, value, sub = '') {
-      return `<div class="fact"><div class="label">${esc(label)}</div><div class="value">${esc(value)}</div>${sub ? `<div class="sub">${esc(sub)}</div>` : ''}</div>`;
-    }
-
-    function renderDetail() {
-      const p = document.getElementById('detailPanel');
-      const r = state.selected || state.data.records[0];
-      state.selected = r;
-      p.innerHTML = `
-        <h2>${esc(r.symbol)} · ${esc(r.name_cn)}</h2>
-        <div class="detail">
-          ${fact('Lifecycle', r.lifecycle_status, r.entity_type)}
-          ${fact('Issue size', `${fmtNum(r.issue_size_rmb_bn)} RMB bn`, r.exchange)}
-          ${fact('Return since listing', fmtPct(r.return_since_listing_pct), `price as of ${r.price_asof}`)}
-          ${fact('Originator', r.originator)}
-          ${fact('Fund manager', r.fund_manager)}
-          ${fact('ABS manager', r.abs_plan_manager)}
-          ${fact('Valuation score', fmtNum(r.valuation_score, 1), r.score_notes?.valuation_score)}
-          ${fact('Regulatory complexity', fmtNum(r.regulatory_complexity_score, 1), r.score_notes?.regulatory_complexity_score)}
-          ${fact('Deflation sensitivity', fmtNum(r.deflation_sensitivity_score, 1), r.score_notes?.deflation_sensitivity_score)}
-        </div>`;
+      const rows = Object.values(state.metrics.by_symbol || {});
+      document.getElementById('statsRows').innerHTML = `<table>
+        <thead><tr><th>Symbol</th><th class="num">Close</th><th>As of</th><th class="num">NAV</th><th class="num">Prem/Disc</th><th class="num">Yield</th><th>Status</th></tr></thead>
+        <tbody>${rows.map(r => `<tr><td><span class="symbol-cell">${esc(r.symbol)}</span></td><td class="num">${fmtNum(r.last_close_rmb, 3)}</td><td>${esc(r.price_asof)}</td><td class="num">${fmtNum(r.nav_rmb)}</td><td class="num">${fmtPct(r.premium_discount_to_nav)}</td><td class="num">${fmtPct(r.distribution_yield_ttm)}</td><td><span class="badge badge-warn">${esc(r.source_status)}</span></td></tr>`).join('')}</tbody>
+      </table>`;
     }
 
     function renderAssets() {
       const counts = state.data.summary.by_asset_type || {};
-      const max = Math.max(...Object.values(counts));
-      document.getElementById('assetBars').innerHTML = Object.entries(counts).sort((a,b) => b[1]-a[1]).map(([k,v]) => `
-        <div class="bar-row"><div>${esc(k)}</div><div class="bar-bg"><div class="bar-fill" style="width:${(v/max)*100}%"></div></div><div class="num">${v}</div></div>
-      `).join('');
+      const max = Math.max(...Object.values(counts), 1);
+      document.getElementById('assetBars').innerHTML = Object.entries(counts).sort((a,b) => b[1] - a[1]).map(([k,v]) =>
+        `<div class="bar-row"><div class="bar-label">${esc(assetLabel(k))}</div><div class="bar-bg"><div class="bar-fill" style="width:${(v/max)*100}%"></div></div><div class="num">${v}</div></div>`
+      ).join('');
       const top = state.data.summary.top_return_since_listing || [];
       const weak = state.data.summary.weakest_return_since_listing || [];
       document.getElementById('topLists').innerHTML = `
-        <h3>Top return since listing</h3>
-        ${top.map(r => `<div class="pill">${esc(r.symbol)} · ${fmtPct(r.return_since_listing_pct)}</div>`).join(' ')}
-        <h3>Weakest return since listing</h3>
-        ${weak.map(r => `<div class="pill">${esc(r.symbol)} · ${fmtPct(r.return_since_listing_pct)}</div>`).join(' ')}
+        <div class="panel-sub">${langValue('Top return since listing', '上市以来涨幅最高')}</div>
+        <div class="top-list">${top.map(r => `<span class="badge badge-good">${esc(r.symbol)} ${fmtPct(r.return_since_listing_pct)}</span>`).join('')}</div>
+        <div class="panel-sub">${langValue('Weakest return since listing', '上市以来涨幅最低')}</div>
+        <div class="top-list">${weak.map(r => `<span class="badge badge-bad">${esc(r.symbol)} ${fmtPct(r.return_since_listing_pct)}</span>`).join('')}</div>
       `;
     }
 
@@ -528,38 +754,43 @@
       const n = state.news?.items || [];
       const e = state.events?.items || [];
       document.getElementById('newsContent').innerHTML = (n.length || e.length)
-        ? `<pre>${esc(JSON.stringify({news:n, events:e}, null, 2))}</pre>`
-        : `<div class="empty">No online news/event adapter has been configured yet. The dashboard is ready to display matched entity, alias, source, date, confidence, and linked structured event.</div>`;
+        ? `<pre>${esc(JSON.stringify({ news: n, events: e }, null, 2))}</pre>`
+        : `<div class="empty"><span class="badge badge-muted">Adapter pending</span><br><br>${langValue('No online news/event adapter has been configured yet. Entity alias matching is ready.', '新闻/事件数据源尚未配置。实体别名匹配结构已就绪。')}</div>`;
     }
 
     function renderMacro() {
       const a = state.data.assumption_audit || {};
       const h = state.data.heuristics || {};
-      document.getElementById('assumptions').innerHTML = `
-        <div class="note">The plan intentionally labels weak assumptions. This dashboard should surface inputs and red flags, not pretend to make legal or underwriting conclusions.</div>
-        <div class="detail">
-          ${fact('Workbook source of truth', a.workbook_source_of_truth ? 'yes' : 'no', 'Seed only')}
-          ${fact('2x pipeline', a.pipeline_2x_is_heuristic ? 'heuristic' : 'rule', h.pipeline_multiple_note)}
-          ${fact('Universal score', a.one_universal_score ? 'enabled' : 'disabled', 'Component scores only')}
-          ${fact('Legal conclusion', a.legal_conclusion_in_scope ? 'in scope' : 'out of scope')}
+      document.getElementById('assumptions').innerHTML = `<div class="note-box">${langValue('Weak assumptions stay labeled until source-backed. The dashboard surfaces inputs and red flags; it does not make legal conclusions.', '弱假设会保持标注，直到有来源支持。该看板展示输入和风险提示，不提供法律结论。')}</div>
+        <div class="detail-grid">
+          ${detailCard('Workbook source of truth', a.workbook_source_of_truth ? 'yes' : 'no', 'Seed only')}
+          ${detailCard('2x pipeline', a.pipeline_2x_is_heuristic ? 'heuristic' : 'rule', h.pipeline_multiple_note)}
+          ${detailCard('Universal score', a.one_universal_score ? 'enabled' : 'disabled', 'Component scores only')}
+          ${detailCard('Legal conclusion', a.legal_conclusion_in_scope ? 'in scope' : 'out of scope')}
         </div>`;
     }
 
     function renderPrivate() {
       const items = state.privateWatch?.items || [];
-      document.getElementById('privateWatch').innerHTML = items.length ? `
-        <table><thead><tr><th>Counterparty</th><th class="num">Size RMB mn</th><th class="num">Coupon</th><th>Collateral</th><th>Status</th></tr></thead>
-        <tbody>${items.map(i => `<tr><td>${esc(i.counterparty)}</td><td class="num">${fmtNum(i.note_size_rmb_mn)}</td><td class="num">${fmtPct(i.coupon_pct)}</td><td>${esc(i.collateral)}</td><td>${esc(i.status)}</td></tr>`).join('')}</tbody></table>`
-        : '<div class="empty">No private deals added.</div>';
+      document.getElementById('privateWatch').innerHTML = items.length ? `<div class="table-container"><table>
+        <thead><tr><th>Counterparty</th><th class="num">Size RMB mn</th><th class="num">Coupon</th><th>Collateral</th><th>Flag</th><th>Status</th></tr></thead>
+        <tbody>${items.map(i => `<tr><td>${esc(i.counterparty)}</td><td class="num">${fmtNum(i.note_size_rmb_mn)}</td><td class="num">${fmtPct(i.coupon_pct)}</td><td>${esc(i.collateral)}</td><td><span class="badge ${i.loan_to_own_flag ? 'badge-good' : 'badge-muted'}">${i.loan_to_own_flag ? 'loan-to-own' : '-'}</span></td><td><span class="badge badge-warn">${esc(i.status)}</span></td></tr>`).join('')}</tbody>
+      </table></div>` : '<div class="empty">No private deals added.</div>';
+    }
+
+    function healthClass(status) {
+      if (status === 'ok') return 'badge-good';
+      if (status === 'failed') return 'badge-bad';
+      if (status === 'not_configured') return 'badge-muted';
+      return 'badge-warn';
     }
 
     function renderHealth() {
       const sources = state.health?.sources || [];
-      document.getElementById('healthRows').innerHTML = `
-        <table>
-          <thead><tr><th>Source</th><th>Status</th><th>Last success</th><th class="num">Rows</th><th class="num">Coverage</th><th>License / note</th></tr></thead>
-          <tbody>${sources.map(s => `<tr><td>${esc(s.name)}</td><td class="${s.status === 'ok' ? 'health-ok' : 'health-warn'}">${esc(s.status)}</td><td>${esc(s.last_success || '—')}</td><td class="num">${fmtNum(s.rows_parsed, 0)}</td><td class="num">${fmtPct(s.coverage_pct)}</td><td>${esc(s.license_note)}</td></tr>`).join('')}</tbody>
-        </table>`;
+      document.getElementById('healthRows').innerHTML = `<div class="table-container"><table>
+        <thead><tr><th>Source</th><th>Status</th><th>Last success</th><th class="num">Rows</th><th class="num">Coverage</th><th>License / note</th></tr></thead>
+        <tbody>${sources.map(s => `<tr><td>${esc(s.name)}</td><td><span class="badge ${healthClass(s.status)}">${esc(s.status)}</span></td><td>${esc(s.last_success || '-')}</td><td class="num">${fmtNum(s.rows_parsed, 0)}</td><td class="num">${fmtPct(s.coverage_pct)}</td><td>${esc(s.license_note)}</td></tr>`).join('')}</tbody>
+      </table></div>`;
     }
 
     function bindTabs() {
@@ -572,11 +803,25 @@
       }));
     }
 
+    function renderAll() {
+      renderTabs();
+      renderSummary();
+      fillFilters();
+      renderChips();
+      renderRows();
+      renderStats();
+      renderAssets();
+      renderNews();
+      renderMacro();
+      renderPrivate();
+      renderHealth();
+    }
+
     async function init() {
       const empty = { items: [] };
       state.data = await loadJson('data/dashboard_data.json', null);
       if (!state.data) {
-        document.body.innerHTML = '<main class="shell"><div class="card panel">Missing data/dashboard_data.json. Run python scripts/build_data.py.</div></main>';
+        document.body.innerHTML = '<main class="content"><div class="panel"><div class="panel-body">Missing data/dashboard_data.json. Run python scripts/build_data.py.</div></div></main>';
         return;
       }
       state.metrics = await loadJson('data/creit_metrics_latest.json', { by_symbol: {} });
@@ -584,18 +829,9 @@
       state.news = await loadJson('data/creit_company_news.json', empty);
       state.events = await loadJson('data/creit_structured_events.json', empty);
       state.privateWatch = await loadJson('data/private_deal_watch.json', empty);
-      state.selected = state.data.records[0];
+      bindControls();
       bindTabs();
-      renderKpis();
-      fillFilters();
-      renderRows();
-      renderStats();
-      renderDetail();
-      renderAssets();
-      renderNews();
-      renderMacro();
-      renderPrivate();
-      renderHealth();
+      renderAll();
     }
 
     init();
