@@ -1,0 +1,28 @@
+asset_groups:
+  园区基础设施: industrial_park
+  交通基础设施: toll_road_transport
+  消费基础设施: consumer_infrastructure
+  仓储物流: logistics
+  能源基础设施: energy_infrastructure
+  保障性租赁住房: rental_housing
+  生态环保: environmental
+  新型基础设施: new_infrastructure
+  水利设施: water_conservancy
+  市政设施: municipal_facilities
+  商业不动产: commercial_real_estate
+
+lifecycle_statuses:
+  listed: Listed and trading
+  approved_not_listed: Approved or issued, but not yet listed/trading
+  listing_scheduled: Approved with future listing date
+  delayed_or_unknown: Issue row exists, but listing/trading status is unclear
+
+regulatory_paths:
+  default:
+    label: Configurable two-regulator path
+    stages:
+      - project_recommendation
+      - exchange_review
+      - csrc_registration
+      - offering
+      - listing

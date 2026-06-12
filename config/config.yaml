@@ -1,0 +1,42 @@
+dashboard:
+  title: China C-REIT Dashboard
+  price_asof: "2026-06-10"
+  source_workbook: "公募reits已发行项目清单.xlsx"
+
+heuristics:
+  pipeline_multiple_rule_of_thumb: 2.0
+  pipeline_multiple_note: "Investment heuristic; not treated as law unless a source says otherwise."
+
+sources:
+  sse_reits:
+    name: Shanghai Stock Exchange REIT product list
+    url: https://english.sse.com.cn/markets/funds/reits/list/
+    type: official_exchange
+  szse_reits:
+    name: Shenzhen Stock Exchange REIT product list
+    url: https://www.szse.cn/market/product/list/reits/index.html
+    type: official_exchange
+  ndrc_notices:
+    name: NDRC notices
+    url: https://www.ndrc.gov.cn/xwdt/tzgg/
+    type: official_regulator
+  csrc:
+    name: CSRC
+    url: https://www.csrc.gov.cn/
+    type: official_regulator
+  chinabond:
+    name: ChinaBond yield curves
+    url: https://yield.chinabond.com.cn/
+    type: macro_rates
+  pboc:
+    name: PBOC
+    url: https://www.pbc.gov.cn/
+    type: macro_policy
+  nbs:
+    name: National Bureau of Statistics
+    url: https://www.stats.gov.cn/english/PressRelease/
+    type: macro_data
+  csindex:
+    name: China Securities Index
+    url: https://www.csindex.com.cn/
+    type: benchmark
