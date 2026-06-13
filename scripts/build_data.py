@@ -22,6 +22,23 @@ def _json_dump(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def _json_load(path: Path, fallback: Any) -> Any:
+    if not path.exists():
+        return fallback
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return fallback
+
+
+def _write_placeholder_if_missing(path: Path, payload: dict[str, Any]) -> dict[str, Any]:
+    current = _json_load(path, None)
+    if current:
+        return current
+    _json_dump(path, payload)
+    return payload
+
+
 def _load_config() -> dict[str, Any]:
     # Keep runtime dependencies minimal. This parses the small repo-owned YAML shape
     # well enough for dashboard metadata and source registry defaults.
@@ -168,6 +185,26 @@ def _metrics_latest(records: list[dict[str, Any]], audit_by_symbol: dict[str, di
     }
 
 
+def _attach_latest_news(records: list[dict[str, Any]], news_payload: dict[str, Any]) -> None:
+    latest_by_symbol: dict[str, dict[str, Any]] = {}
+    for item in news_payload.get("items") or []:
+        for symbol in item.get("symbols") or []:
+            prev = latest_by_symbol.get(symbol)
+            if prev is None or str(item.get("published_at") or "") > str(prev.get("published_at") or ""):
+                latest_by_symbol[symbol] = item
+    for record in records:
+        latest = latest_by_symbol.get(record["symbol"])
+        if latest:
+            record["latest_news"] = {
+                "title": latest.get("title_zh") or latest.get("title_en"),
+                "category": latest.get("category"),
+                "published_at": latest.get("published_at"),
+                "url": latest.get("url"),
+                "confidence": latest.get("confidence"),
+                "match_tier": latest.get("match_tier"),
+            }
+
+
 def build() -> dict[str, Any]:
     cfg = _load_config()
     heuristics = cfg.get("heuristics") or {}
@@ -176,6 +213,8 @@ def build() -> dict[str, Any]:
     records = load_records(DEFAULT_WORKBOOK)
     write_outputs(records, DATA_DIR)
     scored = [attach_scores(r, pipeline_threshold) for r in records]
+    news_payload = _json_load(DATA_DIR / "creit_company_news.json", {"items": []})
+    _attach_latest_news(scored, news_payload)
     quality = audit_records(scored, PRICE_ASOF)
     audit_by_symbol = {item["symbol"]: item for item in quality["items"]}
     for record in scored:
@@ -213,10 +252,13 @@ def build() -> dict[str, Any]:
     _json_dump(DATA_DIR / "creit_aliases.json", _aliases(scored))
     _json_dump(DATA_DIR / "creit_metrics_latest.json", _metrics_latest(scored, audit_by_symbol))
     _json_dump(DATA_DIR / "creit_data_quality.json", quality)
-    _json_dump(DATA_DIR / "creit_source_health.json", seed_source_health(len(scored), PRICE_ASOF, quality))
-    _json_dump(DATA_DIR / "creit_company_news.json", _empty_payload("company_news"))
-    _json_dump(DATA_DIR / "creit_structured_events.json", _empty_payload("structured_events"))
-    _json_dump(DATA_DIR / "creit_regulatory_events.json", _empty_payload("regulatory_events"))
+    news_payload = _write_placeholder_if_missing(DATA_DIR / "creit_company_news.json", _empty_payload("company_news"))
+    events_payload = _write_placeholder_if_missing(DATA_DIR / "creit_structured_events.json", _empty_payload("structured_events"))
+    regulatory_payload = _write_placeholder_if_missing(DATA_DIR / "creit_regulatory_events.json", _empty_payload("regulatory_events"))
+    _json_dump(
+        DATA_DIR / "creit_source_health.json",
+        seed_source_health(len(scored), PRICE_ASOF, quality, news_payload, events_payload, regulatory_payload),
+    )
     _json_dump(DATA_DIR / "creit_distributions.json", _empty_payload("distributions"))
     _json_dump(DATA_DIR / "private_deal_watch.json", {
         "build_time": now,

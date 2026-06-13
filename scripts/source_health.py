@@ -5,7 +5,14 @@ import datetime as dt
 from typing import Any
 
 
-def seed_source_health(row_count: int, price_asof: str, audit: dict[str, Any] | None = None) -> dict[str, Any]:
+def seed_source_health(
+    row_count: int,
+    price_asof: str,
+    audit: dict[str, Any] | None = None,
+    news_payload: dict[str, Any] | None = None,
+    events_payload: dict[str, Any] | None = None,
+    regulatory_payload: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     audit_summary = (audit or {}).get("summary", {})
     adapter_gaps = {gap["key"]: gap for gap in (audit or {}).get("adapter_gaps", [])}
@@ -23,6 +30,49 @@ def seed_source_health(row_count: int, price_asof: str, audit: dict[str, Any] | 
             "coverage_pct": 0.0,
             "license_note": gap.get("why_missing", "Adapter placeholder."),
             "next_fetcher": gap.get("next_fetcher"),
+            "error": None,
+        }
+
+    def news_source() -> dict[str, Any]:
+        payload = news_payload or {}
+        stats = payload.get("source_stats") or {}
+        status = payload.get("status") or "not_configured"
+        if status == "empty" and stats.get("queries_run"):
+            status = "stale"
+        rows = len(payload.get("items") or [])
+        coverage = round((float(stats.get("symbols_with_news") or 0) / float(row_count or 1)) * 100, 1)
+        return {
+            "key": "news_events",
+            "name": "Company and project news",
+            "status": status,
+            "last_success": payload.get("build_time") if payload.get("status") in {"ok", "empty"} else None,
+            "source_asof": payload.get("build_time"),
+            "rows_fetched": int(stats.get("raw_articles_seen") or 0),
+            "rows_parsed": rows,
+            "coverage_pct": coverage,
+            "license_note": (
+                "Google News RSS adapter; strict alias matching with confidence tiers. "
+                f"queries={stats.get('queries_run', 0)} errors={stats.get('error_count', 0)}"
+            ),
+            "next_fetcher": "scripts/ingest_announcements.py",
+            "error": "; ".join(e.get("error", "") for e in (stats.get("errors") or [])[:2]) or None,
+        }
+
+    def event_source(key: str, name: str, payload: dict[str, Any] | None, fallback_fetcher: str) -> dict[str, Any]:
+        payload = payload or {}
+        rows = len(payload.get("items") or [])
+        status = payload.get("status") or "not_configured"
+        return {
+            "key": key,
+            "name": name,
+            "status": status,
+            "last_success": payload.get("build_time") if status in {"ok", "empty"} else None,
+            "source_asof": payload.get("build_time"),
+            "rows_fetched": rows,
+            "rows_parsed": rows,
+            "coverage_pct": 100.0 if rows else 0.0,
+            "license_note": "Derived from classified C-REIT news until official exchange/regulator adapters are added.",
+            "next_fetcher": fallback_fetcher,
             "error": None,
         }
 
@@ -59,8 +109,9 @@ def seed_source_health(row_count: int, price_asof: str, audit: dict[str, Any] | 
             gap_source("online_prices", "Online prices / volume", "stale"),
             gap_source("nav_market_cap", "NAV / market cap reports"),
             gap_source("distributions", "Distributions and yield"),
-            gap_source("news_events", "Company and project news"),
-            gap_source("regulatory_tape", "Regulatory notices"),
+            news_source(),
+            event_source("structured_events", "Structured C-REIT events", events_payload, "scripts/ingest_announcements.py"),
+            event_source("regulatory_tape", "Regulatory notices", regulatory_payload, "scripts/ingest_regulatory_events.py"),
             gap_source("pipeline_zoning", "Pipeline and zoning facts"),
             gap_source("macro_data", "Macro rates and deflation context"),
         ],

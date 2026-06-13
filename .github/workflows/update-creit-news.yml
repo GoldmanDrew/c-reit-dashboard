@@ -1,0 +1,99 @@
+name: Update C-REIT News & Events
+
+on:
+  schedule:
+    - cron: "20 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      symbols:
+        description: "Optional comma-separated symbols/codes, e.g. 508600.SH,180601.SZ"
+        required: false
+        default: ""
+      window_days:
+        description: "News lookback window in days"
+        required: false
+        default: "90"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: creit-news-refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      PYTHONIOENCODING: utf-8
+      CREIT_NEWS_WINDOW_DAYS: ${{ github.event.inputs.window_days || '90' }}
+      CREIT_NEWS_MAX_PER_QUERY: "20"
+      CREIT_NEWS_MAX_REIT_QUERIES: "90"
+      CREIT_NEWS_QUERY_DELAY_SEC: "0.15"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch C-REIT news and events
+        run: |
+          ARGS="--window-days ${CREIT_NEWS_WINDOW_DAYS}"
+          if [ -n "${{ github.event.inputs.symbols }}" ]; then
+            ARGS="$ARGS --symbols ${{ github.event.inputs.symbols }}"
+          fi
+          python scripts/ingest_announcements.py $ARGS
+
+      - name: Rebuild dashboard data
+        run: python scripts/build_data.py
+
+      - name: Run tests
+        run: python -m unittest discover -s tests
+
+      - name: Print news summary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for name in ["creit_company_news.json", "creit_structured_events.json", "creit_regulatory_events.json"]:
+              p = Path("data") / name
+              payload = json.loads(p.read_text(encoding="utf-8"))
+              stats = payload.get("source_stats") or {}
+              print(
+                  f"{name}: status={payload.get('status')} items={len(payload.get('items') or [])} "
+                  f"queries={stats.get('queries_run')} raw={stats.get('raw_articles_seen')} "
+                  f"symbols={stats.get('symbols_with_news')}"
+              )
+          PY
+
+      - name: Commit refreshed artifacts
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/creit_company_news.json \
+            data/creit_structured_events.json \
+            data/creit_regulatory_events.json \
+            data/creit_news_source_cache.json \
+            data/creit_source_health.json \
+            data/dashboard_data.json \
+            data/creit_data_quality.json \
+            data/creit_metrics_latest.json
+          if git diff --staged --quiet; then
+            echo "No news artifact changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: refresh C-REIT news [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git pull --rebase origin main
+          git push origin HEAD:main

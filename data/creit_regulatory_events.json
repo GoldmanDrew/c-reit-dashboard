@@ -1,6 +1,54 @@
 {
-  "build_time": "2026-06-12T23:39:08+00:00",
-  "status": "not_configured",
+  "build_time": "2026-06-13T00:17:35+00:00",
+  "status": "ok",
   "kind": "regulatory_events",
-  "items": []
+  "window_days": 120,
+  "source_stats": {
+    "provider": "google_news_rss",
+    "queries_run": 95,
+    "raw_articles_seen": 708,
+    "items_before_dedupe": 155,
+    "items_after_dedupe": 153,
+    "errors": [],
+    "error_count": 0,
+    "category_counts": {
+      "market_context": 65,
+      "listing_schedule": 28,
+      "listing_approval": 7,
+      "distribution": 14,
+      "originator_credit_event": 3,
+      "expansion_acquisition": 14,
+      "pipeline_asset_update": 2,
+      "offering_result": 17,
+      "nav_report": 2,
+      "regulatory_policy": 1
+    },
+    "match_tier_counts": {
+      "inferred": 45,
+      "explicit": 85,
+      "market": 22,
+      "high": 1
+    },
+    "symbols_with_news": 57
+  },
+  "items": [
+    {
+      "id": "google_news_rss:regulatory_policy:508020.SH:2026-03-19:2026全国首单-东方红隧道股份高速公路reit获证监会批复-国企动态-gzw-sh-gov-cn",
+      "symbols": [
+        "508020.SH"
+      ],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-03-19",
+      "headline_zh": "2026全国首单！东方红隧道股份高速公路REIT获证监会批复_国企动态 - gzw.sh.gov.cn",
+      "headline_en": null,
+      "summary_zh": "2026全国首单！东方红隧道股份高速公路REIT获证监会批复_国企动态 gzw.sh.gov.cn",
+      "summary_en": null,
+      "source": "gzw.sh.gov.cn",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbUdpVUtTN1BQdEN2NE5VeV83eUlyQlY5VzVvUTF3bkN3YkRNdVcyUUNyQWVIRU5WZ2NMQ3RBeVhqZjlLUHM5dmswQWFmNUVfb3JFWHFqUFpHWnZHOXItME81dm9JQ1U3c0pwLUZYV19PdVRnd0JjX2Zhc05TV25ra2Y2UVFNQkhDZm0yaDVET2g1dw?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    }
+  ]
 }

@@ -308,6 +308,23 @@
     .bar-bg { height: 10px; background: var(--bg-primary); border-radius: 999px; overflow: hidden; border: 1px solid var(--border); }
     .bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan)); border-radius: 999px; }
     .top-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 8px 0 14px; }
+    .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; margin-bottom: 12px; }
+    .news-feed { display: grid; gap: 10px; }
+    .news-card {
+      display: grid;
+      gap: 7px;
+      padding: 11px 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .news-card:hover { border-color: var(--border-active); }
+    .news-meta { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; color: var(--text-muted); font-size: 11px; }
+    .news-title-link { color: var(--text-primary); font-weight: 760; text-decoration: none; line-height: 1.35; }
+    .news-title-link:hover { color: var(--accent-cyan); text-decoration: underline; }
+    .news-summary { color: var(--text-muted); font-size: 12px; line-height: 1.45; }
+    .news-section-title { color: var(--text-secondary); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin: 14px 0 8px; }
+    .news-symbols { display: flex; gap: 5px; flex-wrap: wrap; }
     .hidden { display: none !important; }
 
     @media (max-width: 1050px) {
@@ -480,6 +497,7 @@
       quality: null,
       news: null,
       events: null,
+      regulatory: null,
       privateWatch: null,
       selectedSymbol: null,
       lang: localStorage.getItem('creit-lang') || 'en',
@@ -595,7 +613,8 @@
       document.getElementById('priceAsOfPanel').textContent = state.data.price_asof;
       document.getElementById('countScreener').textContent = s.total_rows;
       document.getElementById('countListed').textContent = s.listed_count;
-      document.getElementById('countNews').textContent = (state.news?.items?.length || 0) + (state.events?.items?.length || 0);
+      document.getElementById('countNews').textContent =
+        (state.news?.items?.length || 0) + (state.events?.items?.length || 0) + (state.regulatory?.items?.length || 0);
       document.getElementById('countSources').textContent = state.health?.sources?.length || 0;
     }
 
@@ -778,9 +797,48 @@
     function renderNews() {
       const n = state.news?.items || [];
       const e = state.events?.items || [];
-      document.getElementById('newsContent').innerHTML = (n.length || e.length)
-        ? `<pre>${esc(JSON.stringify({ news: n, events: e }, null, 2))}</pre>`
-        : `<div class="empty"><span class="badge badge-muted">Adapter pending</span><br><br>${langValue('No online news/event adapter has been configured yet. Entity alias matching is ready.', '新闻/事件数据源尚未配置。实体别名匹配结构已就绪。')}</div>`;
+      const r = state.regulatory?.items || [];
+      const stats = state.news?.source_stats || {};
+      const newest = n[0]?.published_at || e[0]?.event_date || r[0]?.event_date || null;
+      const card = (label, value, note) => `<div class="detail-card"><div class="label">${esc(label)}</div><div class="value">${esc(value)}</div><div class="note">${esc(note || '')}</div></div>`;
+      const eventCard = (item) => `
+        <div class="news-card">
+          <div class="news-meta">
+            <span class="badge badge-blue">${esc(item.category || 'event')}</span>
+            <span>${esc(item.event_date || '-')}</span>
+            <span>${esc(item.source || item.source_type || '')}</span>
+          </div>
+          <a class="news-title-link" href="${esc(item.source_url || '#')}" target="_blank" rel="noreferrer">${esc(item.headline_zh || item.headline_en || '(no title)')}</a>
+          ${item.summary_zh || item.summary_en ? `<div class="news-summary">${esc(item.summary_zh || item.summary_en)}</div>` : ''}
+          <div class="news-symbols">${(item.symbols || []).map(s => `<span class="badge badge-muted">${esc(s)}</span>`).join('') || '<span class="badge badge-muted">Market</span>'}</div>
+        </div>`;
+      const newsCard = (item) => `
+        <div class="news-card">
+          <div class="news-meta">
+            <span class="badge ${item.match_tier === 'explicit' ? 'badge-good' : item.match_tier === 'high' ? 'badge-blue' : item.match_tier === 'inferred' ? 'badge-warn' : 'badge-muted'}">${esc(item.match_tier || 'market')}</span>
+            <span class="badge badge-purple">${esc(item.category || 'news')}</span>
+            <span>${esc(item.publisher || '')}</span>
+            <span>${item.confidence != null ? `conf ${Math.round(Number(item.confidence) * 100)}%` : ''}</span>
+            <span>${esc((item.published_at || '').slice(0, 10))}</span>
+          </div>
+          <a class="news-title-link" href="${esc(item.url || '#')}" target="_blank" rel="noreferrer">${esc(item.title_zh || item.title_en || '(no title)')}</a>
+          ${item.summary_zh || item.summary_en ? `<div class="news-summary">${esc(item.summary_zh || item.summary_en)}</div>` : ''}
+          <div class="news-symbols">${(item.symbols || []).map(s => `<span class="badge badge-muted">${esc(s)}</span>`).join('') || '<span class="badge badge-muted">Market</span>'}</div>
+        </div>`;
+      document.getElementById('newsContent').innerHTML = (n.length || e.length || r.length)
+        ? `
+          <div class="news-grid">
+            ${card('Last refresh', state.news?.build_time ? new Date(state.news.build_time).toLocaleString() : '-', `newest ${newest ? String(newest).slice(0, 10) : '-'}`)}
+            ${card('Headlines', n.length, `${stats.raw_articles_seen || 0} raw articles scanned`)}
+            ${card('Matched REITs', stats.symbols_with_news || 0, `${stats.queries_run || 0} Google News RSS queries`)}
+            ${card('Events', e.length + r.length, `${e.length} structured / ${r.length} regulatory`)}
+          </div>
+          ${e.length ? `<div class="news-section-title">Structured Events</div><div class="news-feed">${e.slice(0, 12).map(eventCard).join('')}</div>` : ''}
+          ${r.length ? `<div class="news-section-title">Regulatory / Macro Events</div><div class="news-feed">${r.slice(0, 8).map(eventCard).join('')}</div>` : ''}
+          <div class="news-section-title">Latest Headlines</div>
+          <div class="news-feed">${n.slice(0, 40).map(newsCard).join('')}</div>
+        `
+        : `<div class="empty"><span class="badge badge-muted">No fetched news yet</span><br><br>${langValue('Run the C-REIT news workflow or scripts/ingest_announcements.py to populate this tab.', '运行 C-REIT 新闻工作流或 scripts/ingest_announcements.py 以填充此页面。')}</div>`;
     }
 
     function renderMacro() {
@@ -862,6 +920,7 @@
       state.quality = await loadJson('data/creit_data_quality.json', { summary: {}, items: [] });
       state.news = await loadJson('data/creit_company_news.json', empty);
       state.events = await loadJson('data/creit_structured_events.json', empty);
+      state.regulatory = await loadJson('data/creit_regulatory_events.json', empty);
       state.privateWatch = await loadJson('data/private_deal_watch.json', empty);
       bindControls();
       bindTabs();
