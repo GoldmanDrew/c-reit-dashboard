@@ -15,6 +15,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_WORKBOOK = ROOT / "公募reits已发行项目清单.xlsx"
 DATA_DIR = ROOT / "data"
+MASTER_JSON = DATA_DIR / "creit_master.json"
 CONFIG = ROOT / "config" / "asset_type_map.yaml"
 PRICE_ASOF = "2026-06-10"
 CODE_RE = re.compile(r"^\d{6}\.(SH|SZ)$")
@@ -121,6 +122,14 @@ def load_records(workbook: Path = DEFAULT_WORKBOOK, build_date: dt.date | None =
     build_date = build_date or dt.date.today()
     asset_groups = _load_asset_groups()
     records: list[dict[str, Any]] = []
+
+    if not workbook.exists():
+        if MASTER_JSON.exists():
+            payload = json.loads(MASTER_JSON.read_text(encoding="utf-8"))
+            if isinstance(payload, list):
+                return payload
+            raise ValueError(f"{MASTER_JSON} did not contain a record list")
+        raise FileNotFoundError(f"Workbook not found and no fallback JSON available: {workbook}")
 
     with pd.ExcelFile(workbook) as xls:
         for sheet_name in xls.sheet_names:

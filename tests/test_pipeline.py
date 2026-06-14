@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from build_data import build  # noqa: E402
-from ingest_wind_excel import DEFAULT_WORKBOOK, load_records  # noqa: E402
+from ingest_wind_excel import DEFAULT_WORKBOOK, MASTER_JSON, load_records  # noqa: E402
 
 
 class PipelineTests(unittest.TestCase):
@@ -54,6 +54,14 @@ class PipelineTests(unittest.TestCase):
         statuses = {r["lifecycle_status"] for r in dashboard["records"]}
         supported = {"listed", "approved_not_listed", "listing_scheduled", "delayed_or_unknown"}
         self.assertTrue(statuses.issubset(supported))
+
+    def test_load_records_falls_back_to_committed_json_when_workbook_missing(self):
+        missing = ROOT / "does-not-exist.xlsx"
+        self.assertFalse(missing.exists())
+        self.assertTrue(MASTER_JSON.exists(), f"Expected committed data file at {MASTER_JSON}")
+        records = load_records(missing)
+        self.assertEqual(len(records), 87)
+        self.assertTrue(any(record["symbol"] == "180301.SZ" for record in records))
 
     def test_translation_toggle_is_present(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
