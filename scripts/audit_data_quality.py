@@ -5,6 +5,8 @@ import datetime as dt
 from collections import Counter
 from typing import Any
 
+from trading_calendar import freshness_for_asof
+
 
 ADAPTER_GAPS = [
     {
@@ -85,8 +87,10 @@ def _price_age_days(price_asof: str | None, build_date: dt.date) -> int | None:
 def _record_audit(record: dict[str, Any], build_date: dt.date) -> dict[str, Any]:
     listed = record.get("lifecycle_status") == "listed"
     price_age = _price_age_days(record.get("price_asof"), build_date)
+    price_freshness = freshness_for_asof(record.get("price_asof"), build_date)
+    seed_price = record.get("source_freshness") == "stale_seed"
     stale_price = listed and record.get("last_close_rmb") is not None and (
-        record.get("source_freshness") == "stale_seed" or (price_age is not None and price_age > 0)
+        seed_price or price_freshness == "stale"
     )
 
     missing_expected: list[str] = []
@@ -101,7 +105,10 @@ def _record_audit(record: dict[str, Any], build_date: dt.date) -> dict[str, Any]
             reasons.append("Listed REIT is missing price fields.")
         elif stale_price:
             stale_fields.extend(["last_close_rmb", "return_since_listing_pct", "price_asof"])
-            reasons.append("Listed REIT price comes from the stale workbook seed.")
+            if seed_price:
+                reasons.append("Listed REIT price comes from the stale workbook seed.")
+            else:
+                reasons.append("Listed REIT price is older than the latest expected trading day.")
     else:
         if record.get("last_close_rmb") is None:
             missing_expected.extend(["last_close_rmb", "return_since_listing_pct"])
@@ -122,10 +129,15 @@ def _record_audit(record: dict[str, Any], build_date: dt.date) -> dict[str, Any]
         status = "missing_unexpected"
         severity = "bad"
     elif stale_fields:
-        status = "stale_seed"
+        status = "stale_seed" if seed_price else "stale"
     elif not listed and missing_expected:
         status = "pending_not_listed"
         severity = "muted"
+    elif listed and record.get("last_close_rmb") is not None:
+        status = "ok"
+        severity = "ok"
+        if not seed_price and record.get("source_confidence") != "seed":
+            reasons.append("Listed REIT price was refreshed by the automated price adapter.")
 
     return {
         "symbol": record.get("symbol"),
@@ -167,7 +179,10 @@ def audit_records(records: list[dict[str, Any]], price_asof: str, build_date: dt
             "total_records": len(records),
             "listed_records": len(listed),
             "pending_records": len(pending),
-            "stale_seed_price_rows": sum(1 for item in items if "last_close_rmb" in item["stale_fields"]),
+            "stale_seed_price_rows": sum(1 for item in items if item["status"] == "stale_seed"),
+            "stale_seed_rows": sum(1 for item in items if item["status"] == "stale_seed"),
+            "stale_non_seed_price_rows": sum(1 for item in items if item["status"] == "stale"),
+            "fresh_price_rows": sum(1 for item in items if item["status"] == "ok"),
             "pending_price_rows": sum(1 for item in items if item["status"] == "pending_not_listed"),
             "unexpected_missing_price_rows": sum(1 for item in items if item["missing_unexpected"]),
             "rows_missing_source_url": field_gap_counts.get("source_url", 0),
