@@ -9,12 +9,14 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from ingest_announcements import (  # noqa: E402
+    MASTER_DATA,
     NewsItem,
     ReitProfile,
     build_structured_events,
     classify_text,
     dedupe_news,
     fetch_news,
+    load_profiles,
     resolve_symbols,
 )
 
@@ -132,6 +134,12 @@ class CreitNewsTests(unittest.TestCase):
         self.assertEqual(len(events), 1)
         self.assertEqual(regulatory, [])
         self.assertEqual(news[0].linked_event_id, events[0]["id"])
+
+    def test_load_profiles_prefers_committed_master_json(self):
+        self.assertTrue(MASTER_DATA.exists(), f"Expected committed data file at {MASTER_DATA}")
+        profiles = load_profiles()
+        self.assertGreater(len(profiles), 0)
+        self.assertTrue(any(profile.symbol == "180301.SZ" for profile in profiles))
 
 
 if __name__ == "__main__":

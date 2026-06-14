@@ -24,11 +24,9 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
 
-from ingest_wind_excel import DEFAULT_WORKBOOK, load_records
-
-
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
+MASTER_DATA = DATA_DIR / "creit_master.json"
 OUT_NEWS = DATA_DIR / "creit_company_news.json"
 OUT_EVENTS = DATA_DIR / "creit_structured_events.json"
 OUT_REGULATORY = DATA_DIR / "creit_regulatory_events.json"
@@ -245,9 +243,21 @@ def classify_text(text: str) -> tuple[str | None, float]:
     return category, round(confidence, 3)
 
 
-def load_profiles(workbook: Path = DEFAULT_WORKBOOK) -> list[ReitProfile]:
+def _load_profile_records(workbook: Path | None = None) -> list[dict[str, Any]]:
+    if MASTER_DATA.exists():
+        payload = json.loads(MASTER_DATA.read_text(encoding="utf-8"))
+        if isinstance(payload, list):
+            return payload
+        raise ValueError(f"{MASTER_DATA} did not contain a record list")
+
+    from ingest_wind_excel import DEFAULT_WORKBOOK, load_records
+
+    return load_records(workbook or DEFAULT_WORKBOOK)
+
+
+def load_profiles(workbook: Path | None = None) -> list[ReitProfile]:
     profiles: list[ReitProfile] = []
-    for record in load_records(workbook):
+    for record in _load_profile_records(workbook):
         symbol = _norm_symbol(record.get("symbol"))
         code = symbol.split(".", 1)[0]
         strong = {
