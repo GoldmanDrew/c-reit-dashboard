@@ -12,6 +12,7 @@ def seed_source_health(
     news_payload: dict[str, Any] | None = None,
     events_payload: dict[str, Any] | None = None,
     regulatory_payload: dict[str, Any] | None = None,
+    price_payload: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     audit_summary = (audit or {}).get("summary", {})
@@ -55,6 +56,32 @@ def seed_source_health(
                 f"queries={stats.get('queries_run', 0)} errors={stats.get('error_count', 0)}"
             ),
             "next_fetcher": "scripts/ingest_announcements.py",
+            "error": "; ".join(e.get("error", "") for e in (stats.get("errors") or [])[:2]) or None,
+        }
+
+    def price_source() -> dict[str, Any]:
+        payload = price_payload or {}
+        stats = payload.get("source_stats") or {}
+        status = payload.get("status") or "missing"
+        freshness = payload.get("source_freshness")
+        if status == "ok" and freshness == "stale":
+            status = "stale"
+        elif status == "missing":
+            status = "stale" if audit_summary.get("stale_seed_price_rows") else "missing"
+        return {
+            "key": "online_prices",
+            "name": "Online prices / volume",
+            "status": status,
+            "last_success": payload.get("build_time") if payload.get("items") else None,
+            "source_asof": payload.get("source_asof"),
+            "rows_fetched": int(stats.get("symbols_requested") or 0),
+            "rows_parsed": int(stats.get("rows_parsed") or len(payload.get("items") or [])),
+            "coverage_pct": float(stats.get("coverage_pct") or 0.0),
+            "license_note": payload.get(
+                "provider_note",
+                "Only the local workbook seed is available; no exchange or licensed market-data adapter is configured.",
+            ),
+            "next_fetcher": "scripts/ingest_exchange_prices.py",
             "error": "; ".join(e.get("error", "") for e in (stats.get("errors") or [])[:2]) or None,
         }
 
@@ -106,7 +133,7 @@ def seed_source_health(
                 "next_fetcher": "scripts/audit_data_quality.py",
                 "error": None,
             },
-            gap_source("online_prices", "Online prices / volume", "stale"),
+            price_source(),
             gap_source("nav_market_cap", "NAV / market cap reports"),
             gap_source("distributions", "Distributions and yield"),
             news_source(),

@@ -11,6 +11,7 @@ from audit_data_quality import audit_records
 from ingest_wind_excel import DEFAULT_WORKBOOK, PRICE_ASOF, load_records, write_outputs
 from score_creits import attach_scores
 from source_health import seed_source_health
+from trading_calendar import freshness_for_asof
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -157,6 +158,52 @@ def _empty_payload(kind: str) -> dict[str, Any]:
     }
 
 
+def _load_price_artifact() -> dict[str, Any]:
+    return _json_load(
+        DATA_DIR / "creit_prices_latest.json",
+        {
+            "status": "missing",
+            "adapter": "online_prices",
+            "items": [],
+            "source_stats": {"rows_parsed": 0, "coverage_pct": 0.0},
+        },
+    )
+
+
+def _merge_price_artifact(records: list[dict[str, Any]], payload: dict[str, Any]) -> None:
+    by_symbol = {item.get("symbol"): item for item in payload.get("items") or [] if item.get("symbol")}
+    for record in records:
+        quote = by_symbol.get(record["symbol"])
+        if not quote:
+            continue
+        price = quote.get("last_close_rmb")
+        if price is None:
+            continue
+        record["last_close_rmb"] = price
+        record["previous_close_rmb"] = quote.get("previous_close_rmb")
+        record["daily_return_pct"] = quote.get("daily_return_pct")
+        record["daily_change_rmb"] = quote.get("daily_change_rmb")
+        record["volume"] = quote.get("volume")
+        record["turnover"] = quote.get("turnover")
+        record["price_asof"] = quote.get("price_asof")
+        offer = record.get("offer_price_rmb")
+        if offer:
+            record["return_since_listing_pct"] = round(((float(price) / float(offer)) - 1.0) * 100.0, 6)
+            record["return_since_listing"] = record["return_since_listing_pct"] / 100.0
+        record["source_url"] = quote.get("source_url") or record.get("source_url")
+        record["source_name"] = quote.get("source_name")
+        record["source_asof"] = quote.get("source_asof") or quote.get("price_asof")
+        record["source_confidence"] = quote.get("source_confidence") or "automated"
+        record["source_freshness"] = freshness_for_asof(record.get("price_asof"))
+        record["price_source"] = {
+            "source_name": quote.get("source_name"),
+            "source_url": quote.get("source_url"),
+            "source_type": quote.get("source_type"),
+            "fetch_time": quote.get("fetch_time"),
+            "quote_time": quote.get("quote_time"),
+        }
+
+
 def _metrics_latest(records: list[dict[str, Any]], audit_by_symbol: dict[str, dict[str, Any]]) -> dict[str, Any]:
     return {
         "build_time": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(),
@@ -212,6 +259,8 @@ def build() -> dict[str, Any]:
 
     records = load_records(DEFAULT_WORKBOOK)
     write_outputs(records, DATA_DIR)
+    price_payload = _load_price_artifact()
+    _merge_price_artifact(records, price_payload)
     scored = [attach_scores(r, pipeline_threshold) for r in records]
     news_payload = _json_load(DATA_DIR / "creit_company_news.json", {"items": []})
     _attach_latest_news(scored, news_payload)
@@ -234,6 +283,7 @@ def build() -> dict[str, Any]:
         "schema_v": 1,
         "source_workbook": DEFAULT_WORKBOOK.name,
         "price_asof": PRICE_ASOF,
+        "latest_price_asof": price_payload.get("source_asof") or PRICE_ASOF,
         "assumption_audit": {
             "workbook_source_of_truth": False,
             "pipeline_2x_is_heuristic": True,
@@ -257,7 +307,7 @@ def build() -> dict[str, Any]:
     regulatory_payload = _write_placeholder_if_missing(DATA_DIR / "creit_regulatory_events.json", _empty_payload("regulatory_events"))
     _json_dump(
         DATA_DIR / "creit_source_health.json",
-        seed_source_health(len(scored), PRICE_ASOF, quality, news_payload, events_payload, regulatory_payload),
+        seed_source_health(len(scored), PRICE_ASOF, quality, news_payload, events_payload, regulatory_payload, price_payload),
     )
     _json_dump(DATA_DIR / "creit_distributions.json", _empty_payload("distributions"))
     _json_dump(DATA_DIR / "private_deal_watch.json", {

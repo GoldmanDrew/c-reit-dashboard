@@ -13,6 +13,7 @@ The current build uses `公募reits已发行项目清单.xlsx` as seed data. Wor
 ## Run locally
 
 ```bash
+python scripts/ingest_exchange_prices.py
 python scripts/build_data.py
 python -m http.server 8000
 ```
@@ -22,6 +23,7 @@ Open `http://localhost:8000`.
 ## Current data contract
 
 - `data/dashboard_data.json`: primary dashboard payload
+- `data/creit_prices_latest.json`: automated latest price, volume, and turnover artifact
 - `data/creit_master.csv`: normalized workbook seed
 - `data/creit_metrics_latest.json`: seed market/stat fields plus placeholders
 - `data/creit_company_news.json`: company/project news feed placeholder
@@ -32,7 +34,7 @@ Open `http://localhost:8000`.
 
 ## First-principles rules
 
-- Treat the workbook as a manual seed, not a source of truth.
+- Treat the workbook as a manual seed, not a source of truth. Automated price data overrides workbook prices when available.
 - Label the 2x pipeline threshold as an investment heuristic unless a source proves otherwise.
 - Keep regulator stages, zoning, and asset eligibility config-driven.
 - Use entity aliases for news matching; ticker-only matching is too weak.
