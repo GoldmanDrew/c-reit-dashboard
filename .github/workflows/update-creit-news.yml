@@ -89,11 +89,14 @@ jobs:
             data/creit_source_health.json \
             data/dashboard_data.json \
             data/creit_data_quality.json \
-            data/creit_metrics_latest.json
+            data/creit_metrics_latest.json \
+            data/creit_distributions.json \
+            data/private_deal_watch.json \
+            data/creit_pipeline.json
           if git diff --staged --quiet; then
             echo "No news artifact changes to commit."
             exit 0
           fi
           git commit -m "chore: refresh C-REIT news [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-          git pull --rebase origin main
+          git pull --rebase --autostash origin main
           git push origin HEAD:main
