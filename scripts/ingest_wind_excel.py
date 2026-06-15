@@ -17,7 +17,9 @@ DEFAULT_WORKBOOK = ROOT / "公募reits已发行项目清单.xlsx"
 DATA_DIR = ROOT / "data"
 MASTER_JSON = DATA_DIR / "creit_master.json"
 CONFIG = ROOT / "config" / "asset_type_map.yaml"
-PRICE_ASOF = "2026-06-10"
+# Workbook prices are only a fallback seed. The dashboard-level as-of date
+# should come from the latest fetched online price artifact when available.
+PRICE_ASOF = None
 CODE_RE = re.compile(r"^\d{6}\.(SH|SZ)$")
 
 COLUMN_MAP = {
