@@ -1,4 +1,4 @@
-name: Update C-REIT News & Events
+name: Refresh C-REIT Dashboard Data
 
 on:
   schedule:
@@ -69,7 +69,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          for name in ["creit_company_news.json", "creit_structured_events.json", "creit_regulatory_events.json"]:
+          for name in ["creit_prices_latest.json", "creit_company_news.json", "creit_structured_events.json", "creit_regulatory_events.json"]:
               p = Path("data") / name
               payload = json.loads(p.read_text(encoding="utf-8"))
               stats = payload.get("source_stats") or {}
@@ -86,6 +86,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add \
+            data/creit_prices_latest.json \
             data/creit_company_news.json \
             data/creit_structured_events.json \
             data/creit_regulatory_events.json \
@@ -101,6 +102,6 @@ jobs:
             echo "No news artifact changes to commit."
             exit 0
           fi
-          git commit -m "chore: refresh C-REIT news & prices [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git commit -m "chore: refresh C-REIT dashboard data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           git pull --rebase --autostash origin main
           git push origin HEAD:main

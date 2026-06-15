@@ -30,7 +30,7 @@ class PipelineTests(unittest.TestCase):
     def test_dashboard_contract(self):
         dashboard = build()
         self.assertEqual(dashboard["schema_v"], 1)
-        self.assertEqual(dashboard["price_asof"], "2026-06-10")
+        self.assertEqual(dashboard["price_asof"], dashboard["latest_price_asof"])
         self.assertEqual(dashboard["latest_price_asof"], "2026-06-12")
         self.assertEqual(dashboard["summary"]["total_rows"], 87)
         self.assertEqual(dashboard["summary"]["listed_count"], 82)

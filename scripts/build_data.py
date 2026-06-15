@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from audit_data_quality import audit_records
-from ingest_wind_excel import DEFAULT_WORKBOOK, PRICE_ASOF, load_records, write_outputs
+from ingest_wind_excel import DEFAULT_WORKBOOK, load_records, write_outputs
 from score_creits import attach_scores
 from source_health import seed_source_health
 from trading_calendar import freshness_for_asof
@@ -264,7 +264,8 @@ def build() -> dict[str, Any]:
     scored = [attach_scores(r, pipeline_threshold) for r in records]
     news_payload = _json_load(DATA_DIR / "creit_company_news.json", {"items": []})
     _attach_latest_news(scored, news_payload)
-    quality = audit_records(scored, PRICE_ASOF)
+    latest_price_asof = price_payload.get("source_asof") or dt.date.today().isoformat()
+    quality = audit_records(scored, latest_price_asof)
     audit_by_symbol = {item["symbol"]: item for item in quality["items"]}
     for record in scored:
         audit_item = audit_by_symbol.get(record["symbol"], {})
@@ -282,8 +283,8 @@ def build() -> dict[str, Any]:
         "build_time": now,
         "schema_v": 1,
         "source_workbook": DEFAULT_WORKBOOK.name,
-        "price_asof": PRICE_ASOF,
-        "latest_price_asof": price_payload.get("source_asof") or PRICE_ASOF,
+        "price_asof": latest_price_asof,
+        "latest_price_asof": latest_price_asof,
         "assumption_audit": {
             "workbook_source_of_truth": False,
             "pipeline_2x_is_heuristic": True,
@@ -307,7 +308,15 @@ def build() -> dict[str, Any]:
     regulatory_payload = _write_placeholder_if_missing(DATA_DIR / "creit_regulatory_events.json", _empty_payload("regulatory_events"))
     _json_dump(
         DATA_DIR / "creit_source_health.json",
-        seed_source_health(len(scored), PRICE_ASOF, quality, news_payload, events_payload, regulatory_payload, price_payload),
+        seed_source_health(
+            len(scored),
+            latest_price_asof,
+            quality,
+            news_payload,
+            events_payload,
+            regulatory_payload,
+            price_payload,
+        ),
     )
     _json_dump(DATA_DIR / "creit_distributions.json", _empty_payload("distributions"))
     _json_dump(DATA_DIR / "private_deal_watch.json", {
