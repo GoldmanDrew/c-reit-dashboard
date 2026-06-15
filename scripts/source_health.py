@@ -13,6 +13,8 @@ def seed_source_health(
     events_payload: dict[str, Any] | None = None,
     regulatory_payload: dict[str, Any] | None = None,
     price_payload: dict[str, Any] | None = None,
+    translation_payload: dict[str, Any] | None = None,
+    roles_payload: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     audit_summary = (audit or {}).get("summary", {})
@@ -85,6 +87,42 @@ def seed_source_health(
             "error": "; ".join(e.get("error", "") for e in (stats.get("errors") or [])[:2]) or None,
         }
 
+    def translation_source() -> dict[str, Any]:
+        payload = translation_payload or {}
+        coverage = payload.get("coverage") or {}
+        rows = int(coverage.get("records_with_name_en") or 0)
+        return {
+            "key": "english_translations",
+            "name": "English name translations",
+            "status": "ok" if rows else "missing",
+            "last_success": payload.get("build_time"),
+            "source_asof": payload.get("last_reviewed"),
+            "rows_fetched": int(coverage.get("total_records") or row_count),
+            "rows_parsed": rows,
+            "coverage_pct": float(coverage.get("coverage_pct") or 0.0),
+            "license_note": "Rule-based draft translations; manual review should promote high-confidence official names.",
+            "next_fetcher": "data/creit_name_translations.json manual/source-document review",
+            "error": None,
+        }
+
+    def role_source() -> dict[str, Any]:
+        payload = roles_payload or {}
+        coverage = payload.get("coverage") or {}
+        rows = int(coverage.get("roles_parsed") or 0)
+        return {
+            "key": "institution_roles",
+            "name": "Broker, banker, and manager roles",
+            "status": "ok" if rows else "missing",
+            "last_success": payload.get("build_time"),
+            "source_asof": None,
+            "rows_fetched": int(coverage.get("total_records") or row_count),
+            "rows_parsed": rows,
+            "coverage_pct": float(coverage.get("coverage_pct") or 0.0),
+            "license_note": "Normalized from workbook seed; prospectus and disclosure adapters should refine roles.",
+            "next_fetcher": "prospectus/report role parser",
+            "error": None,
+        }
+
     def event_source(key: str, name: str, payload: dict[str, Any] | None, fallback_fetcher: str) -> dict[str, Any]:
         payload = payload or {}
         rows = len(payload.get("items") or [])
@@ -134,6 +172,8 @@ def seed_source_health(
                 "error": None,
             },
             price_source(),
+            translation_source(),
+            role_source(),
             gap_source("nav_market_cap", "NAV / market cap reports"),
             gap_source("distributions", "Distributions and yield"),
             news_source(),

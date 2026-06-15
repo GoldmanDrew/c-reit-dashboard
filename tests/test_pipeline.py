@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -45,6 +46,13 @@ class PipelineTests(unittest.TestCase):
         self.assertIs(dashboard["assumption_audit"]["pipeline_2x_is_heuristic"], True)
         self.assertTrue(dashboard["records"][0]["score_notes"])
         self.assertTrue(dashboard["records"][0]["data_quality_reason"])
+        self.assertIn("name_cn", dashboard["records"][0])
+        self.assertIn("name_en", dashboard["records"][0])
+        self.assertIn("originator_en", dashboard["records"][0])
+        self.assertIn("fund_manager_en", dashboard["records"][0])
+        self.assertIn("abs_plan_manager_en", dashboard["records"][0])
+        self.assertIn("financial_advisor_en", dashboard["records"][0])
+        self.assertIn(dashboard["records"][0]["translation_confidence"], {"high", "medium", "low"})
 
     def test_generated_json_is_readable_utf8(self):
         dashboard = build()
@@ -74,8 +82,47 @@ class PipelineTests(unittest.TestCase):
         self.assertIn('data-lang="zh"', html)
         self.assertIn('data-lang="en"', html)
         self.assertIn("localStorage.getItem('creit-lang')", html)
+        self.assertIn("displayName", html)
+        self.assertIn("name_en", html)
+        self.assertIn("originator_en", html)
+        self.assertIn("financial_advisor_en", html)
         self.assertIn("tab_screener", html)
         self.assertIn("旧种子数据", html)
+
+    def test_translation_and_institution_role_artifacts(self):
+        dashboard = build()
+        translation_path = ROOT / "data" / "creit_name_translations.json"
+        roles_path = ROOT / "data" / "creit_institution_roles.json"
+        self.assertTrue(translation_path.exists())
+        self.assertTrue(roles_path.exists())
+        translations = json.loads(translation_path.read_text(encoding="utf-8"))
+        roles = json.loads(roles_path.read_text(encoding="utf-8"))
+        self.assertEqual(translations["coverage"]["total_records"], 87)
+        self.assertGreater(translations["coverage"]["records_with_name_en"], 0)
+        self.assertIn(dashboard["records"][0]["symbol"], translations["items"])
+        self.assertGreater(roles["coverage"]["roles_parsed"], 0)
+        self.assertTrue(any(item["role"] == "financial_advisor" for item in roles["items"]))
+        self.assertTrue(any(item["role"] == "abs_plan_manager" for item in roles["items"]))
+
+    def test_metrics_latest_carries_trading_and_future_valuation_fields(self):
+        build()
+        metrics = json.loads((ROOT / "data" / "creit_metrics_latest.json").read_text(encoding="utf-8"))
+        sample = next(item for item in metrics["by_symbol"].values() if item["last_close_rmb"] is not None)
+        for key in (
+            "previous_close_rmb",
+            "daily_return_pct",
+            "daily_change_rmb",
+            "volume",
+            "turnover",
+            "nav_rmb",
+            "units_outstanding",
+            "market_cap_rmb_bn",
+            "premium_discount_to_nav",
+            "distribution_yield_ttm",
+        ):
+            self.assertIn(key, sample)
+        self.assertIsNone(sample["nav_rmb"])
+        self.assertIsNone(sample["market_cap_rmb_bn"])
 
     def test_data_quality_artifact_contract(self):
         build()
@@ -92,6 +139,9 @@ class PipelineTests(unittest.TestCase):
         self.assertIn("scripts/ingest_exchange_prices.py", health)
         self.assertIn("scripts/ingest_nav_reports.py", health)
         self.assertIn('"key": "online_prices"', health)
+        self.assertIn('"key": "english_translations"', health)
+        self.assertIn('"key": "institution_roles"', health)
+        self.assertIn("NAV / market cap reports", health)
         self.assertIn('"status": "ok"', health)
 
 

@@ -550,6 +550,18 @@
     const fmtPct = (v) => (v === null || v === undefined || Number.isNaN(Number(v))) ? '-' : `${Number(v).toFixed(1)}%`;
     const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;', "'":'&#39;'}[c]));
     const langValue = (en, zh) => state.lang === 'zh' ? zh : en;
+    const missing = (v) => (v === null || v === undefined || v === '') ? '-' : v;
+    const displayField = (r, enKey, cnKey) => state.lang === 'en'
+      ? (r[enKey] || r[cnKey])
+      : (r[cnKey] || r[enKey]);
+    const dualNote = (r, enKey, cnKey) => (
+      state.lang === 'en' && r[enKey] && r[cnKey] && r[enKey] !== r[cnKey]
+    ) ? r[cnKey] : '';
+    const displayName = (r) => displayField(r, 'name_en', 'name_cn');
+    const displayOriginator = (r) => displayField(r, 'originator_en', 'originator');
+    const displayFundManager = (r) => displayField(r, 'fund_manager_en', 'fund_manager');
+    const displayAbsManager = (r) => displayField(r, 'abs_plan_manager_en', 'abs_plan_manager');
+    const displayAdvisor = (r) => displayField(r, 'financial_advisor_en', 'financial_advisor');
     const assetLabel = (cn) => state.lang === 'zh' ? cn : (ASSET_EN[cn] || cn || '-');
     const statusText = (key) => STATUS_LABEL[key]?.[state.lang] || key || '-';
 
@@ -686,7 +698,19 @@
       const exchange = document.getElementById('exchangeFilter').value;
       const sortBy = document.getElementById('sortBy').value;
       const rows = state.data.records.filter(r => {
-        const hay = [r.symbol, r.name_cn, r.originator, r.fund_manager, r.abs_plan_manager, r.financial_advisor].join(' ').toLowerCase();
+        const hay = [
+          r.symbol,
+          r.name_cn,
+          r.name_en,
+          r.originator,
+          r.originator_en,
+          r.fund_manager,
+          r.fund_manager_en,
+          r.abs_plan_manager,
+          r.abs_plan_manager_en,
+          r.financial_advisor,
+          r.financial_advisor_en,
+        ].join(' ').toLowerCase();
         const quickOk =
           !state.quick ||
           (state.quick === 'listed' && r.lifecycle_status === 'listed') ||
@@ -715,7 +739,7 @@
         return `
           <tr class="data-row ${selected ? 'selected' : ''}" data-symbol="${esc(r.symbol)}">
             <td><span class="symbol-cell">${esc(r.symbol)}</span></td>
-            <td><div class="name-cell">${esc(r.name_cn)}</div><div class="subtext">${esc(r.originator || '-')}</div></td>
+            <td><div class="name-cell">${esc(displayName(r))}</div><div class="subtext">${esc(displayOriginator(r) || '-')}</div></td>
             <td><span class="badge ${badgeClassForStatus(r.lifecycle_status)}">${esc(statusText(r.lifecycle_status))}</span></td>
             <td><div>${esc(assetLabel(r.asset_type_cn))}</div><div class="subtext">${esc(r.asset_group)}</div></td>
             <td>${esc(r.exchange)}</td>
@@ -748,6 +772,19 @@
       const qualityStatus = q.status || r.data_quality_status || r.source_freshness;
       return `<tr class="detail-row"><td colspan="13"><div class="detail-box">
         <div class="detail-grid">
+          ${detailCard(langValue('English name', 'English name'), missing(displayName(r)), dualNote(r, 'name_en', 'name_cn'))}
+          ${detailCard(langValue('Sponsor / Originator', 'Sponsor / Originator'), missing(displayOriginator(r)), dualNote(r, 'originator_en', 'originator'))}
+          ${detailCard(langValue('Fund manager', 'Fund manager'), missing(displayFundManager(r)), dualNote(r, 'fund_manager_en', 'fund_manager'))}
+          ${detailCard(langValue('ABS manager', 'ABS manager'), missing(displayAbsManager(r)), dualNote(r, 'abs_plan_manager_en', 'abs_plan_manager'))}
+          ${detailCard(langValue('Financial advisor', 'Financial advisor'), missing(displayAdvisor(r)), dualNote(r, 'financial_advisor_en', 'financial_advisor'))}
+          ${detailCard(langValue('Close', 'Close'), fmtNum(r.last_close_rmb, 3), `${langValue('Previous', 'Previous')} ${fmtNum(r.previous_close_rmb, 3)}`)}
+          ${detailCard(langValue('Daily return', 'Daily return'), fmtPct(r.daily_return_pct), `${langValue('Change', 'Change')} ${fmtNum(r.daily_change_rmb, 3)}`)}
+          ${detailCard(langValue('Volume', 'Volume'), fmtNum(r.volume, 0), `${langValue('Turnover', 'Turnover')} ${fmtNum(r.turnover, 2)}`)}
+          ${detailCard(langValue('Quote source', 'Quote source'), missing(r.source_name || r.source_confidence), r.source_url || langValue('Source URL missing', 'Source URL missing'))}
+          ${detailCard(langValue('NAV', 'NAV'), fmtNum(r.nav_rmb, 3), langValue('NAV adapter gap', 'NAV adapter gap'))}
+          ${detailCard(langValue('Market cap', 'Market cap'), fmtNum(r.market_cap_rmb_bn, 2), langValue('Units outstanding missing', 'Units outstanding missing'))}
+          ${detailCard(langValue('Premium / discount', 'Premium / discount'), fmtPct(r.premium_discount_to_nav), langValue('Requires NAV and close', 'Requires NAV and close'))}
+          ${detailCard(langValue('Distribution yield', 'Distribution yield'), fmtPct(r.distribution_yield_ttm), langValue('Distribution adapter gap', 'Distribution adapter gap'))}
           ${detailCard(langValue('Lifecycle', '状态'), statusText(r.lifecycle_status), r.entity_type)}
           ${detailCard(langValue('Issue size', '发行规模'), `${fmtNum(r.issue_size_rmb_bn)} RMB bn`, r.exchange)}
           ${detailCard(langValue('Return since listing', '上市以来涨跌幅'), fmtPct(r.return_since_listing_pct), `${langValue('Price as of', '价格日期')} ${r.price_asof}`)}
@@ -773,8 +810,8 @@
     function renderStats() {
       const rows = Object.values(state.metrics.by_symbol || {});
       document.getElementById('statsRows').innerHTML = `<table>
-        <thead><tr><th>Symbol</th><th class="num">Close</th><th>As of</th><th class="num">NAV</th><th class="num">Prem/Disc</th><th class="num">Yield</th><th>Status</th><th>Why</th></tr></thead>
-        <tbody>${rows.map(r => `<tr><td><span class="symbol-cell">${esc(r.symbol)}</span></td><td class="num">${fmtNum(r.last_close_rmb, 3)}</td><td>${esc(r.price_asof)}</td><td class="num">${fmtNum(r.nav_rmb)}</td><td class="num">${fmtPct(r.premium_discount_to_nav)}</td><td class="num">${fmtPct(r.distribution_yield_ttm)}</td><td><span class="badge ${badgeClassForSource(r.data_quality_status || r.source_status)}">${esc(r.data_quality_status || r.source_status)}</span></td><td>${esc(r.data_quality_reason || '-')}</td></tr>`).join('')}</tbody>
+        <thead><tr><th>Symbol</th><th class="num">Close</th><th class="num">Prev</th><th class="num">Daily</th><th class="num">Volume</th><th class="num">Turnover</th><th>As of</th><th class="num">NAV</th><th class="num">Market Cap</th><th class="num">Prem/Disc</th><th class="num">Yield</th><th>Status</th><th>Why</th></tr></thead>
+        <tbody>${rows.map(r => `<tr><td><span class="symbol-cell">${esc(r.symbol)}</span></td><td class="num">${fmtNum(r.last_close_rmb, 3)}</td><td class="num">${fmtNum(r.previous_close_rmb, 3)}</td><td class="num ${valClass(r.daily_return_pct)}">${fmtPct(r.daily_return_pct)}</td><td class="num">${fmtNum(r.volume, 0)}</td><td class="num">${fmtNum(r.turnover, 2)}</td><td>${esc(r.price_asof)}</td><td class="num">${fmtNum(r.nav_rmb)}</td><td class="num">${fmtNum(r.market_cap_rmb_bn)}</td><td class="num">${fmtPct(r.premium_discount_to_nav)}</td><td class="num">${fmtPct(r.distribution_yield_ttm)}</td><td><span class="badge ${badgeClassForSource(r.data_quality_status || r.source_status)}">${esc(r.data_quality_status || r.source_status)}</span></td><td>${esc(r.data_quality_reason || '-')}</td></tr>`).join('')}</tbody>
       </table>`;
     }
 
@@ -871,12 +908,15 @@
 
     function renderHealth() {
       const sources = state.health?.sources || [];
+      const sourceByKey = Object.fromEntries(sources.map(s => [s.key, s]));
       const q = qualitySummary();
       const auditCards = `<div class="detail-grid" style="margin-bottom:12px">
         ${detailCard('Stale listed prices', q.stale_seed_price_rows ?? 0, 'Workbook close data needs official daily price feed.')}
         ${detailCard('Expected pending blanks', q.pending_price_rows ?? 0, 'Approved/scheduled rows are not failures until they trade.')}
         ${detailCard('Missing source URLs', q.rows_missing_source_url ?? 0, 'Workbook rows do not carry official per-record URLs.')}
         ${detailCard('Unexpected missing prices', q.unexpected_missing_price_rows ?? 0, 'Listed rows with no price should stay at zero.')}
+        ${detailCard('English translations', `${sourceByKey.english_translations?.rows_parsed ?? 0}/${sourceByKey.english_translations?.rows_fetched ?? 0}`, 'English display-name coverage.')}
+        ${detailCard('Institution roles', sourceByKey.institution_roles?.rows_parsed ?? 0, 'Workbook broker, banker, manager, and sponsor roles normalized.')}
       </div>`;
       document.getElementById('healthRows').innerHTML = `${auditCards}<div class="table-container"><table>
         <thead><tr><th>Source</th><th>Status</th><th>Last success</th><th class="num">Rows</th><th class="num">Coverage</th><th>Why / note</th><th>Next fetcher</th></tr></thead>

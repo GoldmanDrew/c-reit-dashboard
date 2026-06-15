@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from audit_data_quality import audit_records
+from enrichment import apply_translations, build_institution_roles, build_translation_artifact
 from ingest_wind_excel import DEFAULT_WORKBOOK, load_records, write_outputs
 from score_creits import attach_scores
 from source_health import seed_source_health
@@ -140,10 +141,15 @@ def _aliases(records: list[dict[str, Any]]) -> dict[str, Any]:
         aliases = [
             r.get("symbol"),
             r.get("name_cn"),
+            r.get("name_en"),
             r.get("originator"),
+            r.get("originator_en"),
             r.get("fund_manager"),
+            r.get("fund_manager_en"),
             r.get("abs_plan_manager"),
+            r.get("abs_plan_manager_en"),
             r.get("financial_advisor"),
+            r.get("financial_advisor_en"),
         ]
         items[r["symbol"]] = sorted({str(a).strip() for a in aliases if a})
     return {"items": items}
@@ -212,15 +218,19 @@ def _metrics_latest(records: list[dict[str, Any]], audit_by_symbol: dict[str, di
             r["symbol"]: {
                 "symbol": r["symbol"],
                 "last_close_rmb": r.get("last_close_rmb"),
+                "previous_close_rmb": r.get("previous_close_rmb"),
+                "daily_return_pct": r.get("daily_return_pct"),
+                "daily_change_rmb": r.get("daily_change_rmb"),
                 "price_asof": r.get("price_asof"),
                 "issue_size_rmb_bn": r.get("issue_size_rmb_bn"),
                 "offer_price_rmb": r.get("offer_price_rmb"),
                 "return_since_listing_pct": r.get("return_since_listing_pct"),
                 "nav_rmb": None,
+                "units_outstanding": None,
                 "premium_discount_to_nav": None,
                 "market_cap_rmb_bn": None,
-                "volume": None,
-                "turnover": None,
+                "volume": r.get("volume"),
+                "turnover": r.get("turnover"),
                 "distribution_yield_ttm": None,
                 "source_status": "seed_only",
                 "data_quality_status": audit_by_symbol.get(r["symbol"], {}).get("status", "manual_seed"),
@@ -261,6 +271,12 @@ def build() -> dict[str, Any]:
     write_outputs(records, DATA_DIR)
     price_payload = _load_price_artifact()
     _merge_price_artifact(records, price_payload)
+    translation_payload = build_translation_artifact(
+        records,
+        _json_load(DATA_DIR / "creit_name_translations.json", {}).get("items", {}),
+    )
+    apply_translations(records, translation_payload)
+    roles_payload = build_institution_roles(records)
     scored = [attach_scores(r, pipeline_threshold) for r in records]
     news_payload = _json_load(DATA_DIR / "creit_company_news.json", {"items": []})
     _attach_latest_news(scored, news_payload)
@@ -277,6 +293,19 @@ def build() -> dict[str, Any]:
         record["missing_unexpected"] = audit_item.get("missing_unexpected", [])
         record["adapter_gaps"] = audit_item.get("adapter_gaps", [])
         record["fetch_priority"] = audit_item.get("fetch_priority")
+        for key in (
+            "previous_close_rmb",
+            "daily_return_pct",
+            "daily_change_rmb",
+            "volume",
+            "turnover",
+            "nav_rmb",
+            "units_outstanding",
+            "market_cap_rmb_bn",
+            "premium_discount_to_nav",
+            "distribution_yield_ttm",
+        ):
+            record.setdefault(key, None)
 
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     dashboard = {
@@ -300,6 +329,8 @@ def build() -> dict[str, Any]:
 
     DATA_DIR.mkdir(exist_ok=True)
     _json_dump(DATA_DIR / "dashboard_data.json", dashboard)
+    _json_dump(DATA_DIR / "creit_name_translations.json", translation_payload)
+    _json_dump(DATA_DIR / "creit_institution_roles.json", roles_payload)
     _json_dump(DATA_DIR / "creit_aliases.json", _aliases(scored))
     _json_dump(DATA_DIR / "creit_metrics_latest.json", _metrics_latest(scored, audit_by_symbol))
     _json_dump(DATA_DIR / "creit_data_quality.json", quality)
@@ -316,6 +347,8 @@ def build() -> dict[str, Any]:
             events_payload,
             regulatory_payload,
             price_payload,
+            translation_payload,
+            roles_payload,
         ),
     )
     _json_dump(DATA_DIR / "creit_distributions.json", _empty_payload("distributions"))
