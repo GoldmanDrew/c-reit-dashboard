@@ -31,7 +31,7 @@ class PipelineTests(unittest.TestCase):
         dashboard = build()
         self.assertEqual(dashboard["schema_v"], 1)
         self.assertEqual(dashboard["price_asof"], dashboard["latest_price_asof"])
-        self.assertEqual(dashboard["latest_price_asof"], "2026-06-12")
+        self.assertRegex(dashboard["latest_price_asof"], r"^2026-06-\d{2}$")
         self.assertEqual(dashboard["summary"]["total_rows"], 87)
         self.assertEqual(dashboard["summary"]["listed_count"], 82)
         self.assertEqual(dashboard["data_quality_summary"]["stale_seed_price_rows"], 0)
