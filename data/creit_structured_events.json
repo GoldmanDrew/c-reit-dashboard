@@ -1,34 +1,34 @@
 {
-  "build_time": "2026-06-16T11:35:38+00:00",
+  "build_time": "2026-06-16T17:22:13+00:00",
   "status": "ok",
   "kind": "structured_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 704,
-    "items_before_dedupe": 137,
-    "items_after_dedupe": 137,
+    "raw_articles_seen": 717,
+    "items_before_dedupe": 150,
+    "items_after_dedupe": 149,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 58,
-      "expansion_acquisition": 17,
-      "listing_schedule": 25,
-      "originator_credit_event": 3,
+      "market_context": 63,
+      "expansion_acquisition": 16,
+      "originator_credit_event": 7,
+      "listing_schedule": 30,
       "listing_approval": 5,
       "distribution": 8,
-      "offering_result": 17,
+      "offering_result": 16,
       "pipeline_asset_update": 3,
       "regulatory_policy": 1
     },
     "match_tier_counts": {
-      "explicit": 76,
-      "market": 15,
-      "high": 2,
-      "inferred": 44
+      "explicit": 83,
+      "high": 3,
+      "market": 17,
+      "inferred": 46
     },
-    "symbols_with_news": 57
+    "symbols_with_news": 61
   },
   "items": [
     {
@@ -45,7 +45,115 @@
       "summary_en": null,
       "source": "观点网",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1OdTVCa1cwbnhKWU1iT2N6U3JZamJpV1VJanFVM3lXMmkyUUxDVmk4Z3NMZ3NGZFU3dldvRTBwZlFxOXJVSExkUTl4eEtlT2ZnVWpZMTduRnBYSFVIX08tVFh3?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE00RUFuT1JoWXZSUllpV0FqckdDaEdZMzdDaXVGTnNxd2FrU3FKLWtOSU5nT2NuTm45a2lua29WYzQzS0NrTVBpU1ZqLVFMUQ?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:originator_credit_event:180306.SZ:2026-06-16:华夏安博仓储reit-180306-华夏基金管理有限公司关于华夏安博仓储物流封闭式基础设施证券投资基金新增流动性服务商-中财网",
+      "symbols": [
+        "180306.SZ"
+      ],
+      "category": "originator_credit_event",
+      "status": "observed",
+      "event_date": "2026-06-16",
+      "headline_zh": "华夏安博仓储REIT (180306): 华夏基金管理有限公司关于华夏安博仓储物流封闭式基础设施证券投资基金新增流动性服务商 - 中财网",
+      "headline_en": null,
+      "summary_zh": "华夏安博仓储REIT (180306): 华夏基金管理有限公司关于华夏安博仓储物流封闭式基础设施证券投资基金新增流动性服务商 中财网",
+      "summary_en": null,
+      "source": "中财网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB6TUw4aHhPV2lKTnExUVBFMmFnQllNaWRXQnpYczFRMVN3TUhkckp4Rm9oRGlZbmJXeWhSVXp6bW9zNnlmamVsMjZNUG1GQjBaNFNBbXJ3?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:originator_credit_event:180305.SZ:2026-06-16:南方基金管理股份有限公司关于南方润泽科技数据中心封闭式基础设施证券投资基金流动性服务商-cfi-cn-中财网-中财网",
+      "symbols": [
+        "180305.SZ"
+      ],
+      "category": "originator_credit_event",
+      "status": "observed",
+      "event_date": "2026-06-16",
+      "headline_zh": "南方基金管理股份有限公司关于南方润泽科技数据中心封闭式基础设施证券投资基金流动性服务商- CFi.CN 中财网 - 中财网",
+      "headline_en": null,
+      "summary_zh": "南方基金管理股份有限公司关于南方润泽科技数据中心封闭式基础设施证券投资基金流动性服务商- CFi.CN 中财网 中财网",
+      "summary_en": null,
+      "source": "中财网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5FR3U4R2VKdW9ucGlLWTcwZ000S2x5ZHpmanF3QnJPVUpKMU5lUmQ5dWJiNS16R0RNTERqd0h3Qk1uZDJuRDJjSWtGN281bjhFei1WME5B?oc=5",
+      "confidence": 0.82,
+      "match_tier": "high"
+    },
+    {
+      "id": "google_news_rss:originator_credit_event:180901.SZ:2026-06-16:南方基金管理股份有限公司关于南方润泽科技数据中心封闭式基础设施证券投资基金流动性服务商-cfi-cn-中财网-中财网",
+      "symbols": [
+        "180901.SZ"
+      ],
+      "category": "originator_credit_event",
+      "status": "observed",
+      "event_date": "2026-06-16",
+      "headline_zh": "南方基金管理股份有限公司关于南方润泽科技数据中心封闭式基础设施证券投资基金流动性服务商- CFi.CN 中财网 - 中财网",
+      "headline_en": null,
+      "summary_zh": "南方基金管理股份有限公司关于南方润泽科技数据中心封闭式基础设施证券投资基金流动性服务商- CFi.CN 中财网 中财网",
+      "summary_en": null,
+      "source": "中财网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5FR3U4R2VKdW9ucGlLWTcwZ000S2x5ZHpmanF3QnJPVUpKMU5lUmQ5dWJiNS16R0RNTERqd0h3Qk1uZDJuRDJjSWtGN281bjhFei1WME5B?oc=5",
+      "confidence": 0.82,
+      "match_tier": "high"
+    },
+    {
+      "id": "google_news_rss:originator_credit_event:508060.SH:2026-06-16:南方基金管理股份有限公司关于南方润泽科技数据中心封闭式基础设施证券投资基金流动性服务商-cfi-cn-中财网-中财网",
+      "symbols": [
+        "508060.SH"
+      ],
+      "category": "originator_credit_event",
+      "status": "observed",
+      "event_date": "2026-06-16",
+      "headline_zh": "南方基金管理股份有限公司关于南方润泽科技数据中心封闭式基础设施证券投资基金流动性服务商- CFi.CN 中财网 - 中财网",
+      "headline_en": null,
+      "summary_zh": "南方基金管理股份有限公司关于南方润泽科技数据中心封闭式基础设施证券投资基金流动性服务商- CFi.CN 中财网 中财网",
+      "summary_en": null,
+      "source": "中财网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5FR3U4R2VKdW9ucGlLWTcwZ000S2x5ZHpmanF3QnJPVUpKMU5lUmQ5dWJiNS16R0RNTERqd0h3Qk1uZDJuRDJjSWtGN281bjhFei1WME5B?oc=5",
+      "confidence": 0.82,
+      "match_tier": "high"
+    },
+    {
+      "id": "google_news_rss:originator_credit_event:180607.SZ:2026-06-16:华夏中海消费reit-180607-华夏基金管理有限公司关于华夏中海消费封闭式基础设施证券投资基金新增流动性服务商-中财网",
+      "symbols": [
+        "180607.SZ"
+      ],
+      "category": "originator_credit_event",
+      "status": "observed",
+      "event_date": "2026-06-16",
+      "headline_zh": "华夏中海消费REIT (180607): 华夏基金管理有限公司关于华夏中海消费封闭式基础设施证券投资基金新增流动性服务商 - 中财网",
+      "headline_en": null,
+      "summary_zh": "华夏中海消费REIT (180607): 华夏基金管理有限公司关于华夏中海消费封闭式基础设施证券投资基金新增流动性服务商 中财网",
+      "summary_en": null,
+      "source": "中财网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE92YW5VN21NN3ZHaV9oOF9zclowZlc1N1FZWXBxS3RtVEtMcUNFc2hNMzZsZ2dyR200bVY5UGh3NDlNenJPb1hnbUtDeEpWcG5UdzNXbHlB?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:originator_credit_event:180305.SZ:2026-06-16:南方顺丰物流reit-180305-南方基金管理股份有限公司关于南方顺丰仓储物流封闭式基础设施证券投资基金流动性服务商-中财网",
+      "symbols": [
+        "180305.SZ"
+      ],
+      "category": "originator_credit_event",
+      "status": "observed",
+      "event_date": "2026-06-16",
+      "headline_zh": "南方顺丰物流REIT (180305): 南方基金管理股份有限公司关于南方顺丰仓储物流封闭式基础设施证券投资基金流动性服务商 - 中财网",
+      "headline_en": null,
+      "summary_zh": "南方顺丰物流REIT (180305): 南方基金管理股份有限公司关于南方顺丰仓储物流封闭式基础设施证券投资基金流动性服务商 中财网",
+      "summary_en": null,
+      "source": "中财网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5oemNNSFExeE5mRnFPZGNrNTJ0NUFJMUlKSXoyLWk5ZUNVQXVXWDdRM1FFVTVLekhUOVVRbk5lQ2lUZWJwRnZ0RVpTa0I0SnMxQnlxdmpR?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
@@ -136,6 +244,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNNFc5TTA1SGtESjBaMVpFS25TZnh4RDFHaFlLVjVtVS00a0RYaUh3REF0MVpOZmxHUjlLY3prSldVWms1VkQzZ2wzVFNyTDgxQUluRFV0X0ZyYWRRalpucGJ1MFZqdw?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:listing_schedule:508600.SH:2026-06-15:长线资金-积极抢筹-首批商业不动产reits本周上市交易-新浪财经",
+      "symbols": [
+        "508600.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-06-15",
+      "headline_zh": "“长线资金”积极抢筹 首批商业不动产REITs本周上市交易 - 新浪财经",
+      "headline_en": null,
+      "summary_zh": "“长线资金”积极抢筹 首批商业不动产REITs本周上市交易 新浪财经",
+      "summary_en": null,
+      "source": "新浪财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdVZteURCTWZrclM5OEhyenNoLW1DZDR0WXRHMmdqOFc3M0Y2STExd0dMRF91WEhGaHBza243RENXLXhIdExGWUYwLXk0bjN2dldob3JDaGllUGNpN0toLW9RTnJhUjFPMXI2SFZISTB0dTBWSTNERjFSVFNBYVpveGl5bWF5SnU4aElIejY2TWdlWHBvNk0zTA?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
     },
     {
       "id": "google_news_rss:originator_credit_event:180202.SZ:2026-06-14:华夏越秀高速reit-180202-华夏基金管理有限公司关于华夏越秀高速公路封闭式基础设施证券投资基金新增流动性服务商-中财网",
@@ -498,6 +624,24 @@
       "match_tier": "high"
     },
     {
+      "id": "google_news_rss:listing_schedule:508601.SH:2026-06-14:中信建投首农商业reit将于6月18-日上市-msn",
+      "symbols": [
+        "508601.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-06-14",
+      "headline_zh": "中信建投首农商业REIT将于6月18 日上市 - MSN",
+      "headline_en": null,
+      "summary_zh": "中信建投首农商业REIT将于6月18 日上市 MSN",
+      "summary_en": null,
+      "source": "MSN",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxONG51TkNydG9nVU9CMV90cWp0MWFUYmFMdUlMXzM3SnlWVUNwT0M5QUtuTTBLYWl1UGJKVFhlWnZmbkhVUU1DaGwtcFEyb2JLWEF4V2VNMndZYUcyUTFPc1h3d281SjA4RGlMTWhjdk9vTDZiOXJaMFhPZnE4ZWw2Ti1UNDJXQ1VhLWo5dkdPVHlPcjNOZGRZU05ZMFBMZXZ2WkZMaHVxdTE5cHVjd0szMFhObGhBamprdGNTRVZpc0RPV1dDQUdJX1o0TzV6WFIxS3VYTkxnb3prYjlNRDZ6TlptYjdtSG9jel9za09zRTZRTmZHakJUaV9uUWNfeHpwSkFvOWNqWk5kbFNjbEY0?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
       "id": "google_news_rss:listing_approval:MARKET:2026-06-14:reits周报-6-5-6-12-中信建投广州发展能源reit获受理-招商系两项目分别首发及扩募申报-sina-finance",
       "symbols": [],
       "category": "listing_approval",
@@ -550,20 +694,20 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_schedule:508603.SH:2026-06-11:中金唯品会商业reit将于6月18日正式上市-sohu",
+      "id": "google_news_rss:listing_schedule:508603.SH:2026-06-11:中金唯品会商业reit将于6月18-日正式上市-msn",
       "symbols": [
         "508603.SH"
       ],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-06-11",
-      "headline_zh": "中金唯品会商业REIT将于6月18日正式上市 - Sohu",
+      "headline_zh": "中金唯品会商业REIT将于6月18 日正式上市 - MSN",
       "headline_en": null,
-      "summary_zh": "中金唯品会商业REIT将于6月18日正式上市 Sohu",
+      "summary_zh": "中金唯品会商业REIT将于6月18 日正式上市 MSN",
       "summary_en": null,
-      "source": "Sohu",
+      "source": "MSN",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQjNxOHh0NjFBZGZ4dFc4Vjk5ZEN6WFdVbVJncXZJalVtQnJFTzdkbDdyNGdHYUVRM3dwcDJWNW9BZjdNeFB5X0V6TmQ0NmhZQTdmUE5OLVIxS0s1R0Y5akVLM3EtZ1MzMEJOc0d1SEhvSmZYWGF4bm51bTdpbm44ZjJ4MjVXX0t5?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNbG5vN3AtcmJOel9VbEhlRzVUSFhwT3RpQWVBbnJUeDFKSUQ5ZXhrbDhrTDhtSlFMZjBBZzl5S0ZiWnFhZEh2dXZjMUFIT2czNVVvLWp6WkhFUm5UUmlKb25XSzNxalVlQ09OVlVyc3JEaUZEYUtCN09oT0l1N2t6Nlp2dFFNR2huWkR6VjFldERrbGlHUnhLTVlWQkZ3NDBDRUkwZGI2WnViRUc5eGU3MlNVY0FPbHZ2bUs1YW1qUllVdjV1UXFQUERxRnVIajdza0lBNjBRMzdRZ2QxWHpJM1YtSWppRFZoVXFOaEpIRDhhN2lKNFFXQUNoOG0yN1NVX0xTR1RObFdtcXEyemNOOEY1XzFEcFc1T0M0?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
@@ -796,24 +940,6 @@
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:expansion_acquisition:508000.SH:2026-06-07:华安张江产业园reit近6905万份扩募份额将解禁-新浪财经",
-      "symbols": [
-        "508000.SH"
-      ],
-      "category": "expansion_acquisition",
-      "status": "observed",
-      "event_date": "2026-06-07",
-      "headline_zh": "华安张江产业园REIT近6905万份扩募份额将解禁 - 新浪财经",
-      "headline_en": null,
-      "summary_zh": "华安张江产业园REIT近6905万份扩募份额将解禁 新浪财经",
-      "summary_en": null,
-      "source": "新浪财经",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBwZlhJVTBUQ254TmRac1M4Nk9IWFQ5STk3aVNWc05RQkNIZHA5VFZGVmVrUWJNZ3BOUUlUN0lkd180SkZmQm8wb1plODBveWZKSG9Ua0ZiM0J6aldoZWp4RklwNUpoWGhWVmdhWGN5RmpqNExhTTFHaVlTeVI?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
-    },
-    {
       "id": "google_news_rss:expansion_acquisition:508048.SH:2026-06-07:方案优化调整-外高桥暂停华安reit扩募-转道专项计划盘活资产-东方财富",
       "symbols": [
         "508048.SH"
@@ -904,24 +1030,6 @@
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:listing_schedule:508058.SH:2026-06-04:中金厦门安居reit扩募份额上市交易-sina-finance",
-      "symbols": [
-        "508058.SH"
-      ],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-06-04",
-      "headline_zh": "中金厦门安居REIT扩募份额上市交易！ - Sina finance",
-      "headline_en": null,
-      "summary_zh": "中金厦门安居REIT扩募份额上市交易！ Sina finance",
-      "summary_en": null,
-      "source": "Sina finance",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbTVUSjlHSzBlTU5wQ3N6bEJoTmJibm1wQ2ljWXVSLTMyaFlLdXQwMUdhYkJVcnZvbkZ6OEF1N3JWVWw2bVBiY0tOX2xGT21QbmxFcnJoTXNVbWktMzYwVFZiMkdBWU85MXhOSExlX28yUkVTTi16RGppVmtON2hPYzJuamhHX2dCVXc?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
-    },
-    {
       "id": "google_news_rss:distribution:180601.SZ:2026-06-04:华夏华润消费reit-180601-华夏基金管理有限公司关于华夏华润消费封闭式基础设施证券投资基金收益分配-中财网",
       "symbols": [
         "180601.SZ"
@@ -1010,6 +1118,24 @@
       "match_tier": "explicit"
     },
     {
+      "id": "google_news_rss:listing_schedule:508603.SH:2026-06-01:中金快讯-中金唯品会商业reit正式成立-sohu",
+      "symbols": [
+        "508603.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-06-01",
+      "headline_zh": "中金快讯 | 中金唯品会商业REIT正式成立 - Sohu",
+      "headline_en": null,
+      "summary_zh": "中金快讯 | 中金唯品会商业REIT正式成立 Sohu",
+      "summary_en": null,
+      "source": "Sohu",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5XYUtuVkk3Q25uREtDeEdNTWlNSnhxcFpiWDFxVmxCYmFZSmUtYjlhM1dibE93alp3VFB5YXZSX1NsaTNNbkNJaVFEOE45c05nYkNYQVNR?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
       "id": "google_news_rss:listing_schedule:508601.SH:2026-06-01:中信建投首农商业reit基金合同生效-观点网",
       "symbols": [
         "508601.SH"
@@ -1046,6 +1172,24 @@
       "match_tier": "explicit"
     },
     {
+      "id": "google_news_rss:listing_schedule:508603.SH:2026-06-01:中金唯品会商业reit正式成立-sina-finance",
+      "symbols": [
+        "508603.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-06-01",
+      "headline_zh": "中金唯品会商业REIT正式成立！ - Sina finance",
+      "headline_en": null,
+      "summary_zh": "中金唯品会商业REIT正式成立！ Sina finance",
+      "summary_en": null,
+      "source": "Sina finance",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNb0NfZWVyWmhxWjdOQ3pidGxuejVGYkp4QlRRUHNmODhVeExvN3RWYThreDJtdlM3RFdPbTVvUmNoMHQ3X0ZvbWNDYnhUMDRvajhIeEJJeDNsTXJkVmpPMTJGOEU4SDZCT19CNjk5QWY2Ym5qa3dORkhMSXdVU2tCWFFtT3lzNlVIYXc?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
       "id": "google_news_rss:listing_schedule:508601.SH:2026-06-01:中信建投首农商业reit基金合同生效-moomoo",
       "symbols": [
         "508601.SH"
@@ -1078,6 +1222,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9pVENPTl9pMkZhMU50cmdxNG5JU05oOWNKdlFGYXpSVmpPb0RrNkxjeXpvcDVlWnZ5UENGanZaRnU4dUJCNzJuVkQxbGd1UQ?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:listing_schedule:508058.SH:2026-05-31:中金厦门安居reit扩募份额将于6月4日上市-募资总额约7-89亿元-sohu",
+      "symbols": [
+        "508058.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-05-31",
+      "headline_zh": "中金厦门安居REIT扩募份额将于6月4日上市 募资总额约7.89亿元 - Sohu",
+      "headline_en": null,
+      "summary_zh": "中金厦门安居REIT扩募份额将于6月4日上市 募资总额约7.89亿元 Sohu",
+      "summary_en": null,
+      "source": "Sohu",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWlZ1TkxSOUg5aVNfUXZjSDRidFNfdkhabUJRM1JVOGFQN21QdlVFckE4bEVjQl9xYUNNVlh5TFBLUDNOS25MdW5tYTR3Q0Y0V2U4Y0dxUXlpVVM5dnJtVERtM0hVa3lWUFNVUHN1cndUVW1DWDRSNmZVZnlXeUt0Qno1X2FoUG1T?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
     },
     {
       "id": "google_news_rss:offering_result:508600.SH:2026-05-30:申万固收-reits-五千亿资金参与商业不动产reits认购-sohu",
@@ -1188,27 +1350,9 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_schedule:508093.SH:2026-05-26:广西首单公募reits落地-易方达广西北投高速reit今日上市-新浪财经",
+      "id": "google_news_rss:offering_result:508602.SH:2026-05-26:三单商业不动产reits提前结募-网下认购热度不一-公募reits面面观-财联社",
       "symbols": [
-        "508093.SH"
-      ],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-05-26",
-      "headline_zh": "广西首单公募REITs落地 易方达广西北投高速REIT今日上市 - 新浪财经",
-      "headline_en": null,
-      "summary_zh": "广西首单公募REITs落地 易方达广西北投高速REIT今日上市 新浪财经",
-      "summary_en": null,
-      "source": "新浪财经",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPVDZyeEJBMVlqdDcwcUhwS0hHMUhZaE9taktxNWNtOHczTlNIRkJjZHEycjVNaERvNzJzeFdEUl8yY1lnZEZsbVNCcDd1VFhfV0hIcDBfSURzLUlKZkI0QU02MVp2S043dndNSU1RQ1h5dkhsYzBjUTMxdzQ4elZFNnFsWWZPeHNUZ0prRXBEZTNnSmxDc0ttZ25yTWFQWEhLT1FiMDlUclBpQTdpSE1sclhJY0NhRlVKRW5qMC1CZnB2M2pEUTdpN1dnV0R2Z1FxOVFN?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
-    },
-    {
-      "id": "google_news_rss:offering_result:508603.SH:2026-05-26:三单商业不动产reits提前结募-网下认购热度不一-公募reits面面观-财联社",
-      "symbols": [
-        "508603.SH"
+        "508602.SH"
       ],
       "category": "offering_result",
       "status": "observed",
@@ -1638,24 +1782,6 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:offering_result:508602.SH:2026-05-22:商业地产一周回顾-招商蛇口拟开展商业不动产reits申报发行-观点网",
-      "symbols": [
-        "508602.SH"
-      ],
-      "category": "offering_result",
-      "status": "observed",
-      "event_date": "2026-05-22",
-      "headline_zh": "商业地产一周回顾 | 招商蛇口拟开展商业不动产REITs申报发行 - 观点网",
-      "headline_en": null,
-      "summary_zh": "商业地产一周回顾 | 招商蛇口拟开展商业不动产REITs申报发行 观点网",
-      "summary_en": null,
-      "source": "观点网",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BUHliNGpUZW5mbFF0bEdLUm1Ebk1RZG5qYTY3RWtjM1U0ejQ1MFhRVWV5cUMweFdGbC05eGJSUVJGTThoaGttMGx0bTMzRGRyTjc4MTZ6eWViYkZpazVvQ2NR?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
       "id": "google_news_rss:offering_result:508602.SH:2026-05-21:国泰海通砂之船商业reit将于5月25日开始发售-观点网",
       "symbols": [
         "508602.SH"
@@ -1744,9 +1870,9 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:offering_result:180305.SZ:2026-05-18:公募reits上周延续调整-首批四只商业不动产reits启动询价-sina-finance",
+      "id": "google_news_rss:offering_result:180203.SZ:2026-05-18:公募reits上周延续调整-首批四只商业不动产reits启动询价-sina-finance",
       "symbols": [
-        "180305.SZ"
+        "180203.SZ"
       ],
       "category": "offering_result",
       "status": "observed",
@@ -1850,6 +1976,22 @@
       "match_tier": "explicit"
     },
     {
+      "id": "google_news_rss:listing_schedule:MARKET:2026-04-29:从ipo折戟到reit上市-阿里系聚光灯外的菜鸟等待破局-新浪财经",
+      "symbols": [],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-04-29",
+      "headline_zh": "从IPO折戟到REIT上市 阿里系聚光灯外的菜鸟等待破局 - 新浪财经",
+      "headline_en": null,
+      "summary_zh": "从IPO折戟到REIT上市 阿里系聚光灯外的菜鸟等待破局 新浪财经",
+      "summary_en": null,
+      "source": "新浪财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBwVmVFejhmYVF2dnlvaXpMcDU2bk9rTGQzUFBwaWVTSUlRUUN1RlVHaG5hRlAtSFYyUEV1VHdPUlFObzZQaFNON1VtQWJhTDBmQWZqcURMS0N2aVhrQVdqTzBmTFBYRUFrdUVQWjdB?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    },
+    {
       "id": "google_news_rss:expansion_acquisition:180601.SZ:2026-04-29:睿见丨从分拆到扩募-华润reits给行业上了一课-新浪财经",
       "symbols": [
         "180601.SZ"
@@ -1864,6 +2006,24 @@
       "source": "新浪财经",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1uRUpPZzlvNnl2cmM2X3ZLWWIzVUdjaDNRMUdtLUpPSkJmM3pLMS1GZmgycEpCeVFNZE5lRmZVRVAwQXRTSEoxUGt5cFZRSVAxOGxiVUtham5GUkJpcmpNYV9DSGVsNnVtOGlpUkJlcw?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
+      "id": "google_news_rss:listing_schedule:180503.SZ:2026-04-29:成都产业资本集团资管计划首单公募reits投资项目于深交所上市-央广网",
+      "symbols": [
+        "180503.SZ"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-04-29",
+      "headline_zh": "成都产业资本集团资管计划首单公募REITs投资项目于深交所上市 - 央广网",
+      "headline_en": null,
+      "summary_zh": "成都产业资本集团资管计划首单公募REITs投资项目于深交所上市 央广网",
+      "summary_en": null,
+      "source": "央广网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5xdmFTc0szWXZGUmVfLXh1Mi1lem9pbVNranpKTEVGZWdLeDNXVnNMMkNDaVN3M3lVQUtLQnByeHhVMldkeUZDLV9RSW5JSjhIZWVYSi1fX21CREJZNENZYjVsNkRtaTNKZHJsQ21pNA?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
     },
@@ -1920,10 +2080,8 @@
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:listing_schedule:508020.SH:2026-04-23:首单隧道reit上市-智慧运营成基建企业生意逻辑-上观新闻",
-      "symbols": [
-        "508020.SH"
-      ],
+      "id": "google_news_rss:listing_schedule:MARKET:2026-04-23:首单隧道reit上市-智慧运营成基建企业生意逻辑-上观新闻",
+      "symbols": [],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-04-23",
@@ -1934,8 +2092,8 @@
       "source": "上观新闻",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA5WndkY0tRMkQ0b3ZYNlpKZnVWekZza05VSjFuVG1OT1pYdEtlZ1Z6Vm1pUzBRRF9LZFRfNEFjTVB2NXI5VU9oT0RuMHJmT2xQX0ZvLUM4cjhBdXc?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
+      "confidence": 0.68,
+      "match_tier": "market"
     },
     {
       "id": "google_news_rss:listing_schedule:508020.SH:2026-04-22:国内首单隧道公募reits成功上市-21财经",
