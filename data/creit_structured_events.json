@@ -1,36 +1,71 @@
 {
-  "build_time": "2026-06-16T21:20:48+00:00",
+  "build_time": "2026-06-17T11:18:26+00:00",
   "status": "ok",
   "kind": "structured_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 700,
-    "items_before_dedupe": 148,
-    "items_after_dedupe": 145,
+    "raw_articles_seen": 730,
+    "items_before_dedupe": 156,
+    "items_after_dedupe": 154,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 62,
-      "expansion_acquisition": 15,
+      "expansion_acquisition": 18,
+      "market_context": 66,
+      "listing_schedule": 30,
       "originator_credit_event": 7,
-      "listing_schedule": 28,
       "listing_approval": 6,
       "distribution": 8,
-      "offering_result": 15,
-      "pipeline_asset_update": 3,
-      "regulatory_policy": 1
+      "offering_result": 16,
+      "pipeline_asset_update": 3
     },
     "match_tier_counts": {
-      "explicit": 83,
+      "explicit": 90,
       "high": 3,
-      "market": 17,
-      "inferred": 42
+      "inferred": 44,
+      "market": 17
     },
-    "symbols_with_news": 59
+    "symbols_with_news": 60
   },
   "items": [
+    {
+      "id": "google_news_rss:expansion_acquisition:508003.SH:2026-06-17:中金联东科创reit拟申请扩募-新浪财经",
+      "symbols": [
+        "508003.SH"
+      ],
+      "category": "expansion_acquisition",
+      "status": "observed",
+      "event_date": "2026-06-17",
+      "headline_zh": "中金联东科创REIT拟申请扩募！ - 新浪财经",
+      "headline_en": null,
+      "summary_zh": "中金联东科创REIT拟申请扩募！ 新浪财经",
+      "summary_en": null,
+      "source": "新浪财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9wZzVRLWd4N1RTX29KYmhUbk00MG82WEhxcHRwNGotM1dnNkppOXpoY3dCRzIxN0FyaC1HQXNsOW1HVjFwTHg2TFdRZk5NaFh6M0s5NmhDbDhxekpfZ2d6bEhXbEpseEpFWWE0NTlSQ3ZOLTVGY1E?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:listing_schedule:180503.SZ:2026-06-17:中航北京昌保租赁住房reit登陆深交所-公众认购倍数达1249-33倍-msn",
+      "symbols": [
+        "180503.SZ"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-06-17",
+      "headline_zh": "中航北京昌保租赁住房REIT登陆深交所 公众认购倍数达1249.33倍 - MSN",
+      "headline_en": null,
+      "summary_zh": "中航北京昌保租赁住房REIT登陆深交所 公众认购倍数达1249.33倍 MSN",
+      "summary_en": null,
+      "source": "MSN",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMilwRBVV95cUxQQVhoQUlxZFFJcVdobkxrMVg4YmxwRHo2ZlRQOW5TRUpKdFhDNXVkSWU2Ym5YQWVHdEFoejM3dS1BRXdaZVprcXozQ2RySTk0VS05cHhZYnFfdzgtMEJZWnprakNsMXVwRDh4LVhMM3d3M0owNTAyZ0RkQlh1OGZGYjhHazJkeVB4VXZBNmE3YThHelJGM2M1aDViVGJXSjY1QkFfcW8tcm5nV3B4ZDJrOU1OTzRMOG1uUUVaMVY0Rl9FSjBMT09Wdzh0azJ6RFZkLWVMSU5udmlJVkJXb0Fud2stcHRFNFJiVmVhVS16TVcxalpTalRPVjVFc3FxTWxCekNQSldxVnlhS3d5UWFnVmUyVEtPc0FsVTM3dDF2WWFndURUS1dYdGZqTXY4VENZREtyQTRSX1lLZ0JBVU9WMTJnOHZQMmNmRnI0M2pDUmthUG9DRVhfVTJac05kQVBKMjJNZ2E4U0tpYWtfZE9JSWtCcVlfRjlFNF9hclIzbHNUQVVzUThfaVBlYWRZQ3dyRXRTMENqeGQ4VVIxUGFTbkg0cVJ4UktlWVk5OXF0ZWpCRXdHLTVzaFpfUUlFQmF6MmFoSVlzMXliVDRReks1VDdkanhDQWVfaHJkajQzN3dwNXEzVFpSNEZJZlRXZTJZNHYxeThtN3prdVVFc0JQbUg5MmszSm5yY2pjdVh1R2p2TWhlZzhn?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
     {
       "id": "google_news_rss:expansion_acquisition:508058.SH:2026-06-16:中金厦门安居reit披露2025年度扩募项目交割审计情况-观点网",
       "symbols": [
@@ -158,6 +193,24 @@
       "match_tier": "explicit"
     },
     {
+      "id": "google_news_rss:listing_schedule:508602.SH:2026-06-16:公募reits里程碑丨四单商业不动产reits即将上市-国泰海通砂之船商业reit蓄势登场-新浪财经",
+      "symbols": [
+        "508602.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-06-16",
+      "headline_zh": "公募REITs里程碑丨四单商业不动产REITs即将上市，国泰海通砂之船商业REIT蓄势登场 - 新浪财经",
+      "headline_en": null,
+      "summary_zh": "公募REITs里程碑丨四单商业不动产REITs即将上市，国泰海通砂之船商业REIT蓄势登场 新浪财经",
+      "summary_en": null,
+      "source": "新浪财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaUNuc1RRUFpYSmtCZmJfbks0V04zU1NYOTcwR3VvNWZ6WXZwSnVXYXFmckFBVFpfcEx2WGM4RHQzQW9vWkp1VlZFTDZJRHFsUlFlUlc3LUpLOURKNVAydURZU0M3WTFvTXd6dEVteGtkS3QyWHViSmFhREpnVjhPc0s3OE0?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
       "id": "google_news_rss:listing_schedule:508602.SH:2026-06-16:四单商业不动产reits即将上市-国泰海通砂之船商业reit蓄势登场-新浪财经",
       "symbols": [
         "508602.SH"
@@ -207,7 +260,7 @@
       "summary_en": null,
       "source": "Sohu",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcXhubGd5SklucjZqdkM4eGN5ZEs0dGN3OXd0RWhOVzNEMXk5VkVKYlVZMm5CZG5HSFV1Z2VNdGdVM3RVbkdEVkRYQUEtRFhmUGtIdDFRc2hkakYxT3QyR2pLdTc3TnBGaHZIYkJmOTNRVE9ZemhPOFBGT1lCVmEzSGNFaldvSVZR?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCS2d1TllORVB3dUx4c3YySWZRYi1wOElaMS1HNTFxUXh4R2w4d0N1WlJnMmlXUFVjenpUb3dKLUtaazVoczh1WFlVNlRRRm9oT2c?oc=5",
       "confidence": 0.96,
       "match_tier": "explicit"
     },
@@ -244,6 +297,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNNFc5TTA1SGtESjBaMVpFS25TZnh4RDFHaFlLVjVtVS00a0RYaUh3REF0MVpOZmxHUjlLY3prSldVWms1VkQzZ2wzVFNyTDgxQUluRFV0X0ZyYWRRalpucGJ1MFZqdw?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:expansion_acquisition:508000.SH:2026-06-15:华安张江产业园reit-6904-89万份扩募份额6月16日解禁-观点网",
+      "symbols": [
+        "508000.SH"
+      ],
+      "category": "expansion_acquisition",
+      "status": "observed",
+      "event_date": "2026-06-15",
+      "headline_zh": "华安张江产业园REIT：6904.89万份扩募份额6月16日解禁 - 观点网",
+      "headline_en": null,
+      "summary_zh": "华安张江产业园REIT：6904.89万份扩募份额6月16日解禁 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xQmliQTVOWGRKZkJjVEVpQmdaUEVqbWxIcXlrVS02YjVYamFNelpKdFY0eVd4QmhYQUJPb3lwRkU0X3hhRU9Icm5QZlBYUQ?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
     },
     {
       "id": "google_news_rss:originator_credit_event:180202.SZ:2026-06-14:华夏越秀高速reit-180202-华夏基金管理有限公司关于华夏越秀高速公路封闭式基础设施证券投资基金新增流动性服务商-中财网",
@@ -606,24 +677,6 @@
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:listing_schedule:508601.SH:2026-06-14:中信建投首农商业reit将于6月18-日上市-msn",
-      "symbols": [
-        "508601.SH"
-      ],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-06-14",
-      "headline_zh": "中信建投首农商业REIT将于6月18 日上市 - MSN",
-      "headline_en": null,
-      "summary_zh": "中信建投首农商业REIT将于6月18 日上市 MSN",
-      "summary_en": null,
-      "source": "MSN",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxONG51TkNydG9nVU9CMV90cWp0MWFUYmFMdUlMXzM3SnlWVUNwT0M5QUtuTTBLYWl1UGJKVFhlWnZmbkhVUU1DaGwtcFEyb2JLWEF4V2VNMndZYUcyUTFPc1h3d281SjA4RGlMTWhjdk9vTDZiOXJaMFhPZnE4ZWw2Ti1UNDJXQ1VhLWo5dkdPVHlPcjNOZGRZU05ZMFBMZXZ2WkZMaHVxdTE5cHVjd0szMFhObGhBamprdGNTRVZpc0RPV1dDQUdJX1o0TzV6WFIxS3VYTkxnb3prYjlNRDZ6TlptYjdtSG9jel9za09zRTZRTmZHakJUaV9uUWNfeHpwSkFvOWNqWk5kbFNjbEY0?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
-    },
-    {
       "id": "google_news_rss:listing_approval:MARKET:2026-06-14:reits周报-6-5-6-12-中信建投广州发展能源reit获受理-招商系两项目分别首发及扩募申报-新浪财经",
       "symbols": [],
       "category": "listing_approval",
@@ -658,58 +711,58 @@
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:listing_schedule:508601.SH:2026-06-11:中信建投首农商业reit将于6月18日上市-sohu",
+      "id": "google_news_rss:listing_schedule:508601.SH:2026-06-11:中信建投首农商业reit将于6月18日上市-观点网",
       "symbols": [
         "508601.SH"
       ],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-06-11",
-      "headline_zh": "中信建投首农商业REIT将于6月18日上市 - Sohu",
+      "headline_zh": "中信建投首农商业REIT将于6月18日上市 - 观点网",
       "headline_en": null,
-      "summary_zh": "中信建投首农商业REIT将于6月18日上市 Sohu",
+      "summary_zh": "中信建投首农商业REIT将于6月18日上市 观点网",
       "summary_en": null,
-      "source": "Sohu",
+      "source": "观点网",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8xRUhTbTNMa3kwLW9DTS1kT0xCSUtKQURLWktLd3lUMTliUDl6M1E2R0lOMXBMWWtIV0hFZkh2cEF2a0daWUtmdGJJdDhDS1R1Q0E?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB6eVlPOFZIZVpWRWxEdHB0ZEpHOVFEWDhQYlg5TVJGaHBIN0FEYmVQdE9fMEZLeklNWUhISlY4eW9uSGwteHVORXA2UHBydVFvd1RxektGeW9KVW1Cc2xoR0FB?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_schedule:508603.SH:2026-06-11:中金唯品会商业reit将于6月18日正式上市-sohu",
-      "symbols": [
-        "508603.SH"
-      ],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-06-11",
-      "headline_zh": "中金唯品会商业REIT将于6月18日正式上市 - Sohu",
-      "headline_en": null,
-      "summary_zh": "中金唯品会商业REIT将于6月18日正式上市 Sohu",
-      "summary_en": null,
-      "source": "Sohu",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQjNxOHh0NjFBZGZ4dFc4Vjk5ZEN6WFdVbVJncXZJalVtQnJFTzdkbDdyNGdHYUVRM3dwcDJWNW9BZjdNeFB5X0V6TmQ0NmhZQTdmUE5OLVIxS0s1R0Y5akVLM3EtZ1MzMEJOc0d1SEhvSmZYWGF4bm51bTdpbm44ZjJ4MjVXX0t5?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
-    },
-    {
-      "id": "google_news_rss:listing_schedule:508600.SH:2026-06-11:首批商业不动产reits一周后上市-年内新增发行或近千亿-供给压力激增-新浪财经",
+      "id": "google_news_rss:listing_schedule:508600.SH:2026-06-11:首批商业不动产reits一周后上市-年内新增发行或近千亿-供给压力激增-公募reits面面观-财联社",
       "symbols": [
         "508600.SH"
       ],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-06-11",
-      "headline_zh": "首批商业不动产REITs一周后上市，年内新增发行或近千亿，供给压力激增 - 新浪财经",
+      "headline_zh": "首批商业不动产REITs一周后上市，年内新增发行或近千亿，供给压力激增| 公募REITs面面观 - 财联社",
       "headline_en": null,
-      "summary_zh": "首批商业不动产REITs一周后上市，年内新增发行或近千亿，供给压力激增 新浪财经",
+      "summary_zh": "首批商业不动产REITs一周后上市，年内新增发行或近千亿，供给压力激增| 公募REITs面面观 财联社",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "财联社",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxOcG5mQjdqWHk2Ry1ROEtWbkpQakpFbFVaSHUxRXZob056ZnpxejVuRllSNTdUVFU4bTIyMGxnaUtFQks1eEk5U054MTVCbDlkeVZ0UUgwQ19sRnM4SjQ2RW9QUXJ1dG9lR3BjalBjaE1nNGFlc3ZqYlltRmNpNzYwNXVDQ0MxVE81XzZfdVgyWkpCTWx1YUZaVGI3Nk50YUlqRkVUbGZ4N0RxY2cxVFhsYUlvOFdvUWJDb1hKR203YkFpbXFSVDdvTFRiVXNNWG1WNktidTktemVicEl0dUhPaUx2V3RxemtkTDlRYjNEOTBKeTlEV1drRjkyOEtDdF9zdjJuWDI3MFlaY1ZwRnNvcWFScVVlT1ZjZjEtMGlCTlc1Y0t4dTE4UWNCdVhXSFBHSU9RMGZyYUpDN0hSMjBEYmtBcEJCRE00Zkc4?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE44SThJNlRJbGpaSWg0MnZqWHNub1NFbHNMTjdkT21TT0oxMXlEQ3FSaFZweWtjZkhlZUhhNHBIYXZKY2g4VHpFRw?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
+    },
+    {
+      "id": "google_news_rss:listing_schedule:508603.SH:2026-06-11:中金唯品会商业reit将于6月18-日正式上市-msn",
+      "symbols": [
+        "508603.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-06-11",
+      "headline_zh": "中金唯品会商业REIT将于6月18 日正式上市 - MSN",
+      "headline_en": null,
+      "summary_zh": "中金唯品会商业REIT将于6月18 日正式上市 MSN",
+      "summary_en": null,
+      "source": "MSN",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNbG5vN3AtcmJOel9VbEhlRzVUSFhwT3RpQWVBbnJUeDFKSUQ5ZXhrbDhrTDhtSlFMZjBBZzl5S0ZiWnFhZEh2dXZjMUFIT2czNVVvLWp6WkhFUm5UUmlKb25XSzNxalVlQ09OVlVyc3JEaUZEYUtCN09oT0l1N2t6Nlp2dFFNR2huWkR6VjFldERrbGlHUnhLTVlWQkZ3NDBDRUkwZGI2WnViRUc5eGU3MlNVY0FPbHZ2bUs1YW1qUllVdjV1UXFQUERxRnVIajdza0lBNjBRMzdRZ2QxWHpJM1YtSWppRFZoVXFOaEpIRDhhN2lKNFFXQUNoOG0yN1NVX0xTR1RObFdtcXEyemNOOEY1XzFEcFc1T0M0?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
     },
     {
       "id": "google_news_rss:listing_approval:MARKET:2026-06-11:一年多审核收官-凯德商业31-5亿机构间reits获上交所通过-新浪财经",
@@ -744,20 +797,20 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_schedule:508602.SH:2026-06-10:国泰海通砂之船商业reit将于6月18日再上交所上市-观点网",
+      "id": "google_news_rss:listing_schedule:508602.SH:2026-06-10:国泰海通砂之船商业reit将于6月18日上交所上市-sohu",
       "symbols": [
         "508602.SH"
       ],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-06-10",
-      "headline_zh": "国泰海通砂之船商业REIT将于6月18日再上交所上市 - 观点网",
+      "headline_zh": "国泰海通砂之船商业REIT将于6月18日上交所上市 - Sohu",
       "headline_en": null,
-      "summary_zh": "国泰海通砂之船商业REIT将于6月18日再上交所上市 观点网",
+      "summary_zh": "国泰海通砂之船商业REIT将于6月18日上交所上市 Sohu",
       "summary_en": null,
-      "source": "观点网",
+      "source": "Sohu",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5hTWlfcE1JUlFlZFlSbFB3Nmk2VS1TUnNLOXpNa042Q3RuSnNXMGZKcTBvbmU0bVR0RG1lWXJES21JNldPcERwMjBUMER2dw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ON2FqUnpmSG5JV1NIVE9Cc3VqcUo5c1JfMTRQRHlwLWN3QUVnYnl5NXQzczlHQnJqZi1tc0dBUUNYYmI5YTlqSnY1ZUJyaWF5N2c?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
@@ -868,6 +921,24 @@
       "match_tier": "explicit"
     },
     {
+      "id": "google_news_rss:offering_result:508082.SH:2026-06-08:砂之船vs唯品会-两大奥莱reit前后询价-谁在说真话-wenxuan-news",
+      "symbols": [
+        "508082.SH"
+      ],
+      "category": "offering_result",
+      "status": "observed",
+      "event_date": "2026-06-08",
+      "headline_zh": "砂之船vs唯品会：两大奥莱REIT前后询价，谁在说真话 - wenxuan.news",
+      "headline_en": null,
+      "summary_zh": "砂之船vs唯品会：两大奥莱REIT前后询价，谁在说真话 wenxuan.news",
+      "summary_en": null,
+      "source": "wenxuan.news",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEeE1qMGdMdzNKUkJuMHdSV2hLS3NhRGtjeGtFaGxaYmtvOUQ5a2pCVmZsMnJfS1E0Y3diX2dYYnZsdk5jdDRYT2ZOemZRcEpSX3EwcVZB?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
       "id": "google_news_rss:expansion_acquisition:508048.SH:2026-06-07:外高桥-暂停参与华安外高桥reit扩募相关事项-东方财富",
       "symbols": [
         "508048.SH"
@@ -882,6 +953,24 @@
       "source": "东方财富",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjOHdoTHkwYnZWdThhUXQtck9qZ052dmtqNUR3d3RKdE4wZHYtX2Z2MGpuelV0cHh1ODlFaHlNTWFFZkZ1VkhnZndYMEdnOUc3XzluTDJkVldzWU1YZ1N6Mlg1TG9uZw?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:expansion_acquisition:508000.SH:2026-06-07:华安张江产业园reit近6905万份扩募份额将解禁-观点网",
+      "symbols": [
+        "508000.SH"
+      ],
+      "category": "expansion_acquisition",
+      "status": "observed",
+      "event_date": "2026-06-07",
+      "headline_zh": "华安张江产业园REIT近6905万份扩募份额将解禁 - 观点网",
+      "headline_en": null,
+      "summary_zh": "华安张江产业园REIT近6905万份扩募份额将解禁 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE80TGdnd0xxdHA2MnEzUU5PcDBOMmN5MGtHaVg1eGN4MWNBZEVaUXV1SHUzQU9heUVfc0VZdm1TRjRJakI0SDdkbk1LcDF1QQ?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
@@ -974,24 +1063,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMirARBVV95cUxPbHNwVUhLX1BvSndyQ2N3eE9FaC1WdGlpUWNHLTJ5cFQtVDJJRkxxVENodTVZR010YW55Vk1veDM3MFpZcU90WDNFZlJXdUk2SFNhUkN5MkxyRHBGM3BBcDhhV0RCVVlOQVFYYXY5NE8zR1dRaTFEaVdKSHMzTW1ETzVHdTVMUUpCWkRFUnlJcG5EMDhtOXAyQjZjakxpNUZZSGx0Nm1HT29GMWxYMUdBS09JZDdwd21ROTBDY0RJeHo1QXBkbkx5YUVJLUw2bEJhZ1d2SmhBZzJKV1E2THNYaFkxNF8xZG13YmhyUnFPVlJLb1BpZTZzZ0VGRVBwSnJ0WkJDaDV4V2NVUnZqaFVYTWJkOVd0TXNoQjFaWWNxRzFEZVh4UEdZWEMyeks4eW5XdnEtX1BYT0xpblRJcHp0d3hnTHJXMGRLQUNpcV93YWpKSFBiRmF4WjJGTzI1cmlQZlVvaGNtNVJCb0dnV3UyNWUyWDdBOE94TmhnYi13WEJBWlA5WWlUX2oxdURhTTFRblFMSkRKc1p5WXpJcHVRRzh6VEpxdFhlb1dUdHVjTVN4enlqQklYMzRBMnAzRFN3MXROeXNtT3FnTXlyaVpIT2QtUHBOSWIzZkVsWHFDT1N6SlJ5WTlfQ1JpWUdFbXJrQU5HZ01DZmFWMkx2aTg2cFR3RzdNT0RCRVFjQlFpNktMMy13VXpIMC1VMW5Gd1dqeURqc1dTNkd2RVVa?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
-    },
-    {
-      "id": "google_news_rss:listing_schedule:508058.SH:2026-06-04:中金厦门安居reit扩募份额上市交易-新浪财经",
-      "symbols": [
-        "508058.SH"
-      ],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-06-04",
-      "headline_zh": "中金厦门安居REIT扩募份额上市交易！ - 新浪财经",
-      "headline_en": null,
-      "summary_zh": "中金厦门安居REIT扩募份额上市交易！ 新浪财经",
-      "summary_en": null,
-      "source": "新浪财经",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbTVUSjlHSzBlTU5wQ3N6bEJoTmJibm1wQ2ljWXVSLTMyaFlLdXQwMUdhYkJVcnZvbkZ6OEF1N3JWVWw2bVBiY0tOX2xGT21QbmxFcnJoTXNVbWktMzYwVFZiMkdBWU85MXhOSExlX28yUkVTTi16RGppVmtON2hPYzJuamhHX2dCVXc?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
     },
     {
       "id": "google_news_rss:distribution:180601.SZ:2026-06-04:华夏华润消费reit-180601-华夏基金管理有限公司关于华夏华润消费封闭式基础设施证券投资基金收益分配-中财网",
@@ -1154,6 +1225,24 @@
       "match_tier": "explicit"
     },
     {
+      "id": "google_news_rss:listing_schedule:508603.SH:2026-06-01:中金快讯-中金唯品会商业reit正式成立-sohu",
+      "symbols": [
+        "508603.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-06-01",
+      "headline_zh": "中金快讯 | 中金唯品会商业REIT正式成立 - Sohu",
+      "headline_en": null,
+      "summary_zh": "中金快讯 | 中金唯品会商业REIT正式成立 Sohu",
+      "summary_en": null,
+      "source": "Sohu",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5XYUtuVkk3Q25uREtDeEdNTWlNSnhxcFpiWDFxVmxCYmFZSmUtYjlhM1dibE93alp3VFB5YXZSX1NsaTNNbkNJaVFEOE45c05nYkNYQVNR?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
       "id": "google_news_rss:listing_schedule:508601.SH:2026-06-01:中信建投首农商业reit基金合同生效-moomoo",
       "symbols": [
         "508601.SH"
@@ -1172,6 +1261,24 @@
       "match_tier": "explicit"
     },
     {
+      "id": "google_news_rss:listing_schedule:508602.SH:2026-06-01:国泰海通砂之船商业reit基金合同生效-sohu",
+      "symbols": [
+        "508602.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-06-01",
+      "headline_zh": "国泰海通砂之船商业REIT基金合同生效 - Sohu",
+      "headline_en": null,
+      "summary_zh": "国泰海通砂之船商业REIT基金合同生效 Sohu",
+      "summary_en": null,
+      "source": "Sohu",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE05NWpUSHVzUldaR2MwSmRTb19fdWFJbU5TaTZPZ1ZCYVhJbUlxbHd4V0M3aWtFZ2lWZ2hRMkZhenlrNnNsbXpYQ3NyVU5RNzF3Rnc?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
       "id": "google_news_rss:expansion_acquisition:MARKET:2026-05-31:京东产发加速-退出-公募reits扩募后再发42亿私募reits-观点网",
       "symbols": [],
       "category": "expansion_acquisition",
@@ -1186,6 +1293,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9pVENPTl9pMkZhMU50cmdxNG5JU05oOWNKdlFGYXpSVmpPb0RrNkxjeXpvcDVlWnZ5UENGanZaRnU4dUJCNzJuVkQxbGd1UQ?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:listing_schedule:508058.SH:2026-05-31:中金厦门安居reit扩募份额将于6月4日上市-募资总额约7-89亿元-sohu",
+      "symbols": [
+        "508058.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-05-31",
+      "headline_zh": "中金厦门安居REIT扩募份额将于6月4日上市 募资总额约7.89亿元 - Sohu",
+      "headline_en": null,
+      "summary_zh": "中金厦门安居REIT扩募份额将于6月4日上市 募资总额约7.89亿元 Sohu",
+      "summary_en": null,
+      "source": "Sohu",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWlZ1TkxSOUg5aVNfUXZjSDRidFNfdkhabUJRM1JVOGFQN21QdlVFckE4bEVjQl9xYUNNVlh5TFBLUDNOS25MdW5tYTR3Q0Y0V2U4Y0dxUXlpVVM5dnJtVERtM0hVa3lWUFNVUHN1cndUVW1DWDRSNmZVZnlXeUt0Qno1X2FoUG1T?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
     },
     {
       "id": "google_news_rss:offering_result:508600.SH:2026-05-30:申万固收-reits-五千亿资金参与商业不动产reits认购-sohu",
@@ -1278,9 +1403,9 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:offering_result:508603.SH:2026-05-26:三单商业不动产reits提前结募-网下认购热度不一-公募reits面面观-财联社",
+      "id": "google_news_rss:offering_result:508600.SH:2026-05-26:三单商业不动产reits提前结募-网下认购热度不一-公募reits面面观-财联社",
       "symbols": [
-        "508603.SH"
+        "508600.SH"
       ],
       "category": "offering_result",
       "status": "observed",
@@ -1710,24 +1835,6 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:offering_result:508601.SH:2026-05-22:商业地产一周回顾-招商蛇口拟开展商业不动产reits申报发行-观点网",
-      "symbols": [
-        "508601.SH"
-      ],
-      "category": "offering_result",
-      "status": "observed",
-      "event_date": "2026-05-22",
-      "headline_zh": "商业地产一周回顾 | 招商蛇口拟开展商业不动产REITs申报发行 - 观点网",
-      "headline_en": null,
-      "summary_zh": "商业地产一周回顾 | 招商蛇口拟开展商业不动产REITs申报发行 观点网",
-      "summary_en": null,
-      "source": "观点网",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BUHliNGpUZW5mbFF0bEdLUm1Ebk1RZG5qYTY3RWtjM1U0ejQ1MFhRVWV5cUMweFdGbC05eGJSUVJGTThoaGttMGx0bTMzRGRyTjc4MTZ6eWViYkZpazVvQ2NR?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
       "id": "google_news_rss:offering_result:508602.SH:2026-05-21:国泰海通砂之船商业reit将于5月25日开始发售-观点网",
       "symbols": [
         "508602.SH"
@@ -1800,9 +1907,9 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:offering_result:180203.SZ:2026-05-18:公募reits上周延续调整-首批四只商业不动产reits启动询价-新浪财经",
+      "id": "google_news_rss:offering_result:508099.SH:2026-05-18:公募reits上周延续调整-首批四只商业不动产reits启动询价-新浪财经",
       "symbols": [
-        "180203.SZ"
+        "508099.SH"
       ],
       "category": "offering_result",
       "status": "observed",
@@ -1814,6 +1921,24 @@
       "source": "新浪财经",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5aVWtaSFk4V1hJZnFQby1YNnhfRXYxWGdUSjJpendtVkVISFhleFZGdko5VkFPMHdkSEx0bm9kLWZ5bi1mc0RTcFptVGJMSEZuWTF5M3JsMlJQY3Awa3pwb3BlRGRPVU54TGRKWWRaVVV5M0FwYTFDMA?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
+      "id": "google_news_rss:offering_result:508601.SH:2026-05-15:第三单商业不动产reits项目启动询价-新浪财经",
+      "symbols": [
+        "508601.SH"
+      ],
+      "category": "offering_result",
+      "status": "observed",
+      "event_date": "2026-05-15",
+      "headline_zh": "第三单商业不动产REITs项目启动询价！ - 新浪财经",
+      "headline_en": null,
+      "summary_zh": "第三单商业不动产REITs项目启动询价！ 新浪财经",
+      "summary_en": null,
+      "source": "新浪财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9uaS1ucXcyTnJqYUk3dzQwb0NpZzZsLXlYSk0yOGg4WmRxWDMyWlNqZll5NUpyV3ZZNXVMSTVFbkh4dHFIWk8tQXk4SjlkUTdQXzB1RDhFS1FqWkF4a1M1RWVpekNZaHhMQWZ2TnNmY0Ryekh1bEE?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
     },
@@ -2129,24 +2254,6 @@
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBaUDBXU09TdzRJZjhzUWRCRl94djlOWVcwbmxmSnI4TXZIU3RlODBib0pfaF9Rank3aXJqZmRxZndDWVJwSFV3bzNsd3lXQQ?oc=5",
       "confidence": 0.98,
-      "match_tier": "explicit"
-    },
-    {
-      "id": "google_news_rss:listing_schedule:508055.SH:2026-03-31:发行表现亮眼-汇添富上海地产租赁住房reit上市-证券时报",
-      "symbols": [
-        "508055.SH"
-      ],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-03-31",
-      "headline_zh": "发行表现亮眼！ 汇添富上海地产租赁住房REIT上市 - 证券时报",
-      "headline_en": null,
-      "summary_zh": "发行表现亮眼！ 汇添富上海地产租赁住房REIT上市 证券时报",
-      "summary_en": null,
-      "source": "证券时报",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5xMVhjSV8zQnZ5elEtZy1GMzlfbDlRbUFwNWZYdlI5blY2NjY1M01adzREclFDcl9OMkROXzJnUURSaUxpVjhqRHlTdUM4azBlRmFpOTB5VQ?oc=5",
-      "confidence": 0.88,
       "match_tier": "explicit"
     },
     {

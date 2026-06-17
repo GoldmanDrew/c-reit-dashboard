@@ -1,53 +1,33 @@
 {
-  "build_time": "2026-06-16T21:20:48+00:00",
-  "status": "ok",
+  "build_time": "2026-06-17T11:18:26+00:00",
+  "status": "empty",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 700,
-    "items_before_dedupe": 148,
-    "items_after_dedupe": 145,
+    "raw_articles_seen": 730,
+    "items_before_dedupe": 156,
+    "items_after_dedupe": 154,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 62,
-      "expansion_acquisition": 15,
+      "expansion_acquisition": 18,
+      "market_context": 66,
+      "listing_schedule": 30,
       "originator_credit_event": 7,
-      "listing_schedule": 28,
       "listing_approval": 6,
       "distribution": 8,
-      "offering_result": 15,
-      "pipeline_asset_update": 3,
-      "regulatory_policy": 1
+      "offering_result": 16,
+      "pipeline_asset_update": 3
     },
     "match_tier_counts": {
-      "explicit": 83,
+      "explicit": 90,
       "high": 3,
-      "market": 17,
-      "inferred": 42
+      "inferred": 44,
+      "market": 17
     },
-    "symbols_with_news": 59
+    "symbols_with_news": 60
   },
-  "items": [
-    {
-      "id": "google_news_rss:regulatory_policy:508020.SH:2026-03-19:2026全国首单-东方红隧道股份高速公路reit获证监会批复-国企动态-gzw-sh-gov-cn",
-      "symbols": [
-        "508020.SH"
-      ],
-      "category": "regulatory_policy",
-      "status": "observed",
-      "event_date": "2026-03-19",
-      "headline_zh": "2026全国首单！东方红隧道股份高速公路REIT获证监会批复_国企动态 - gzw.sh.gov.cn",
-      "headline_en": null,
-      "summary_zh": "2026全国首单！东方红隧道股份高速公路REIT获证监会批复_国企动态 gzw.sh.gov.cn",
-      "summary_en": null,
-      "source": "gzw.sh.gov.cn",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbUdpVUtTN1BQdEN2NE5VeV83eUlyQlY5VzVvUTF3bkN3YkRNdVcyUUNyQWVIRU5WZ2NMQ3RBeVhqZjlLUHM5dmswQWFmNUVfb3JFWHFqUFpHWnZHOXItME81dm9JQ1U3c0pwLUZYV19PdVRnd0JjX2Zhc05TV25ra2Y2UVFNQkhDZm0yaDVET2g1dw?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
-    }
-  ]
+  "items": []
 }
