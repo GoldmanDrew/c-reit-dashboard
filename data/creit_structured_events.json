@@ -1,21 +1,21 @@
 {
-  "build_time": "2026-06-27T04:17:11+00:00",
+  "build_time": "2026-06-27T08:50:25+00:00",
   "status": "ok",
   "kind": "structured_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 791,
-    "items_before_dedupe": 178,
-    "items_after_dedupe": 175,
+    "raw_articles_seen": 799,
+    "items_before_dedupe": 181,
+    "items_after_dedupe": 178,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 85,
+      "market_context": 88,
       "listing_approval": 8,
-      "listing_schedule": 53,
-      "distribution": 5,
+      "distribution": 6,
+      "listing_schedule": 52,
       "offering_result": 11,
       "originator_credit_event": 2,
       "expansion_acquisition": 10,
@@ -23,10 +23,10 @@
     },
     "match_tier_counts": {
       "inferred": 50,
-      "market": 28,
-      "explicit": 97
+      "market": 27,
+      "explicit": 101
     },
-    "symbols_with_news": 55
+    "symbols_with_news": 54
   },
   "items": [
     {
@@ -46,6 +46,24 @@
       "match_tier": "market"
     },
     {
+      "id": "google_news_rss:distribution:180302.SZ:2026-06-25:华夏深国际reit实施年内首次分红-每10份0-2947元-新浪财经",
+      "symbols": [
+        "180302.SZ"
+      ],
+      "category": "distribution",
+      "status": "observed",
+      "event_date": "2026-06-25",
+      "headline_zh": "华夏深国际REIT实施年内首次分红 每10份0.2947元 - 新浪财经",
+      "headline_en": null,
+      "summary_zh": "华夏深国际REIT实施年内首次分红 每10份0.2947元 新浪财经",
+      "summary_en": null,
+      "source": "新浪财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVmV6NXJCdDVTR01KdmRDNmlPamdtTEsydkNHcDNRVWpaNXV0S3JKTlFPamlZbXJBY09sOWc5bmc4TnRvMU1Xa01LdkpWeEdYbVZ0Q2piV29DZDkwSmJqYmVSYndFbTA4TlBtZnJfYVZxMEpFSXNvQmdkZDZERXF1TGY1aw?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
       "id": "google_news_rss:listing_schedule:MARKET:2026-06-25:首批商业不动产reits上市-二批火速获批-哪些资产更易过审-新京报",
       "symbols": [],
       "category": "listing_schedule",
@@ -57,7 +75,7 @@
       "summary_en": null,
       "source": "新京报",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE91UVM3bFdCdENwN2NxZnVsWTBNV0QxUDVoVkQ4bEpCcGNZanQwd3ctUC1TM0RBUXBmTlpLXy1abHVmZE9oVVFHSTVpelR0QmxBaGczdzNnVGRsX2ZsZTF1eExEclY?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBJTnV3S3JSREY0SjhLeXJtUW9EVVBNZnFGc0UwcUIzaXhRZ3d2Q3h1Vkd1dEZUNFFGSTRNVGFqZ2tRbDQ5MGtLdDR2ZEF3QklSQlh2eDVjZ19JQUJ1cU9uY2JB?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
     },
@@ -564,22 +582,6 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_schedule:MARKET:2026-06-18:首批商业不动产公募reits上市-上观新闻",
-      "symbols": [],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-06-18",
-      "headline_zh": "首批商业不动产公募REITs上市 - 上观新闻",
-      "headline_en": null,
-      "summary_zh": "首批商业不动产公募REITs上市 上观新闻",
-      "summary_en": null,
-      "source": "上观新闻",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5QVnNfbzF1eGZBaTZEWEtqZEhua3NYQVhSWGlkTkIwV183VTU3ZjM1Q1o5bl85Vmo1NlpEOEJhWW9sYVE2UTUzdVY3QmIzZ1h3SVJDS3lxYWVta2NFUm8wMUk5R1NBc1I0dXdDckZiRQ?oc=5",
-      "confidence": 0.68,
-      "match_tier": "market"
-    },
-    {
       "id": "google_news_rss:listing_schedule:508603.SH:2026-06-18:首批商业不动产reits上市-万亿存量资产迎来-证券化时代-cb-com-cn",
       "symbols": [
         "508603.SH"
@@ -652,24 +654,6 @@
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:listing_schedule:508602.SH:2026-06-18:首批商业不动产reits正式上市-配套政策已在路上-搜狐网",
-      "symbols": [
-        "508602.SH"
-      ],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-06-18",
-      "headline_zh": "首批商业不动产REITs正式上市，配套政策已在路上 - 搜狐网",
-      "headline_en": null,
-      "summary_zh": "首批商业不动产REITs正式上市，配套政策已在路上 搜狐网",
-      "summary_en": null,
-      "source": "搜狐网",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbVZlUUlMVHAxOC04amNEUHR0MDkzRDNuUUk5YXJTMTdfMkVaTW1mS0FFVGxyRUE4YUlvSGJVbTlnZFpkdHFHRVVyRElWeE9xWXoySkVxQk9QSVZyeFJsNXgwdDRkUTA2R0o5WEtJRU9PVV85cUJ4cmpFc1lWb251M2Y3cTh1R3Z1?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
       "id": "google_news_rss:listing_schedule:MARKET:2026-06-18:首批商业不动产reits上市-健全reits市场生态体系-证券时报",
       "symbols": [],
       "category": "listing_schedule",
@@ -720,10 +704,8 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_schedule:508600.SH:2026-06-18:全国首批-上海首单-上海地产商业reit今天上市-shobserver-com",
-      "symbols": [
-        "508600.SH"
-      ],
+      "id": "google_news_rss:listing_schedule:MARKET:2026-06-18:全国首批-上海首单-上海地产商业reit今天上市-shobserver-com",
+      "symbols": [],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-06-18",
@@ -734,8 +716,8 @@
       "source": "shobserver.com",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1faGtyTVhkbnUtTDR2b20yNXYyRGtnaFFuR0VCR3pyX2ctMF9LdE9xWkhIbGVfNVlTRVNrQ2hJenRKZEJpbXFVTjZQNnBUVjhFUzdzZDF5Rkx3dTExYVE?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
+      "confidence": 0.68,
+      "match_tier": "market"
     },
     {
       "id": "google_news_rss:listing_schedule:MARKET:2026-06-18:德勤中国协助中金唯品会商业不动产reit在上交所挂牌上市发行-deloitte",
@@ -752,6 +734,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSjEzYVpucVVqSGNxOU9idHZFWFQwNzR3bWFSeko2UHNvV2ZITHdZX25VM0MtT2xleWVBa2tIZHJFTXdWTlRzSHhpZFhVUW0xS0dDTzZYa0UwS1BYQWZLVU5Cb2luWkVLRlVZdU9wTGNhaS1SWWFOOEhCS0tNRmduSmVzM1RmT1lzR3Q0VUtOa2VEN3AzaVp2cFptWmdhQjlLcUEzLUlmNmdDV3pZUklzcjNORk1iQnVZNTlYaS14cw?oc=5",
       "confidence": 0.76,
       "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:listing_schedule:508603.SH:2026-06-18:首批商业不动产reits正式上市-配套政策已在路上-新浪财经",
+      "symbols": [
+        "508603.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-06-18",
+      "headline_zh": "首批商业不动产REITs正式上市，配套政策已在路上 - 新浪财经",
+      "headline_en": null,
+      "summary_zh": "首批商业不动产REITs正式上市，配套政策已在路上 新浪财经",
+      "summary_en": null,
+      "source": "新浪财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMinwNBVV95cUxOd1A2Y25EaHRZSGxNanNUQVlKTXUxZzEtWldzbkRtd1RwTkRFeHprZFZlZWhtMEZ3QWpBWUNJbXltMEhwbG5BaWx2b0Z5RTZUZkMySHBJOFp0MFJYOXp4TXdCNDhiaU1nbVc2TEVyYjNGbURYVlNhMlNBd2JxYkxGdGlSV3RhOWp5WjNFRHR5QlBEdjh2ZHJOVHZoS2h3MC1OSjBMdDEyeXU5ZnVhZEt0VUxPdHBlbEt5TG9KOXRkUjdYa1hTWVRSZDd6ZXVGYU1FVWp6YWhzem9Bb3BQM2VqOC01c2xfVk04NGhVUWZRYWJlZTdfNFl1RW9DOS1RcGV2dXVwZnROQXNkSXR6Rmk4dzJ2a0s3Z0o3a04tU1FlSlh2UjJWTkJZd3FMM1pKOHRfbFVKTVVpUlRXU3BMMkpOQlREc3MwRlNLQ0NXTkNiYkw5V2RUa0JRMWd4dklMT3VSUDhKU0h4V083ZkxTWFZzb2QyVU9TVGFRUVZ1Y1ctVnBydnpxSks3ZjhVYkVaanhBS2drdklJYjVDUzBUV2xv?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
     },
     {
       "id": "google_news_rss:listing_schedule:MARKET:2026-06-18:全国首批-上海首单-上海地产商业reit上市-双平台激活城市更新存量资产-上观新闻",
@@ -1268,9 +1268,9 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:offering_result:508602.SH:2026-05-26:三单商业不动产reits提前结募-网下认购热度不一-公募reits面面观-财联社",
+      "id": "google_news_rss:offering_result:508603.SH:2026-05-26:三单商业不动产reits提前结募-网下认购热度不一-公募reits面面观-财联社",
       "symbols": [
-        "508602.SH"
+        "508603.SH"
       ],
       "category": "offering_result",
       "status": "observed",
