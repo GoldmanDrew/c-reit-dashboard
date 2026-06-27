@@ -1,34 +1,50 @@
 {
-  "build_time": "2026-06-27T08:50:25+00:00",
+  "build_time": "2026-06-27T14:07:18+00:00",
   "status": "ok",
   "kind": "structured_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 799,
-    "items_before_dedupe": 181,
-    "items_after_dedupe": 178,
+    "raw_articles_seen": 790,
+    "items_before_dedupe": 184,
+    "items_after_dedupe": 179,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 88,
-      "listing_approval": 8,
+      "market_context": 91,
+      "listing_approval": 7,
       "distribution": 6,
-      "listing_schedule": 52,
-      "offering_result": 11,
+      "listing_schedule": 50,
+      "offering_result": 12,
       "originator_credit_event": 2,
       "expansion_acquisition": 10,
       "pipeline_asset_update": 1
     },
     "match_tier_counts": {
-      "inferred": 50,
-      "market": 27,
-      "explicit": 101
+      "inferred": 51,
+      "market": 28,
+      "explicit": 100
     },
-    "symbols_with_news": 54
+    "symbols_with_news": 55
   },
   "items": [
+    {
+      "id": "google_news_rss:listing_approval:MARKET:2026-06-26:6单商业reits获批-新浪新闻-新浪网",
+      "symbols": [],
+      "category": "listing_approval",
+      "status": "observed",
+      "event_date": "2026-06-26",
+      "headline_zh": "6单商业REITs获批_新浪新闻 - 新浪网",
+      "headline_en": null,
+      "summary_zh": "6单商业REITs获批_新浪新闻 新浪网",
+      "summary_en": null,
+      "source": "新浪网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9IamhHWC1PMWFCcDZSQXRUY0J4ZTN6S055MERxd0Q5Q2hkaVNSTDl2YkZkT25ZSElYR1Nxc092ZWVRM1pFcTZQNVpqdFhNdC1PZl8wYVBDdHdfSGNwa0pOQXl1cw?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    },
     {
       "id": "google_news_rss:listing_approval:MARKET:2026-06-26:一周内新增6单商业不动产reits获批-什么信号-21财经",
       "symbols": [],
@@ -218,20 +234,20 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_approval:508048.SH:2026-06-24:酒店商业不动产reits亮相-华安锦江商业reit正式获批-新浪财经",
+      "id": "google_news_rss:offering_result:508020.SH:2026-06-23:总市值突破2200亿-年内拟发行规模超千亿-reits市场加速扩容至82只-搜狐网",
       "symbols": [
-        "508048.SH"
+        "508020.SH"
       ],
-      "category": "listing_approval",
+      "category": "offering_result",
       "status": "observed",
-      "event_date": "2026-06-24",
-      "headline_zh": "酒店商业不动产REITs亮相 华安锦江商业REIT正式获批 - 新浪财经",
+      "event_date": "2026-06-23",
+      "headline_zh": "总市值突破2200亿、年内拟发行规模超千亿 REITs市场加速扩容至82只 - 搜狐网",
       "headline_en": null,
-      "summary_zh": "酒店商业不动产REITs亮相 华安锦江商业REIT正式获批 新浪财经",
+      "summary_zh": "总市值突破2200亿、年内拟发行规模超千亿 REITs市场加速扩容至82只 搜狐网",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "搜狐网",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOUElBSkRuWlVyTEY4NTdRNHFwZVQ5SW1vNG02OTl5ZmNJU0pfM0VZX3RiN2M0YWlxRG5NQkxPNGpNcThvRFd6MVNVVXZqZlcwakNqUFNhWEttdXppUE4zWVU3al9IR0ZGbnVtLWMtTGF4ZkdIdkZob09OandvMnZINnJKV1ZaZEVwRzFqRjNRT2NIUlRxTzFsRDE0cnlQR2pQXzJEbmlRdHpNbTFnQmZrN0gzY3FHSUhHN3FjZDBtcm9EU1NYWDZvaTFVTzNiaXlnUlNLMEVCLUF4UjZtSVhxS19wc0paNnFNSWtYOVlIRzBuWEhVaHh5M0tZSkVXNjRQX1FIQm0zWW95allsZ2JlLUJwOVBsUQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOUJMNWJDWWNQSXJGb2R0ZGEtS3NNb2VCRnVwYVRQQ0JINmF5UldiWmdfT1pMU3ZSdjh4REZEaGVSWUxSM2NCc1JYZ04wNmhkZzM1ZFpuNjdHLXdFNGtkekVlR2w1MElfWThvVmdSTkpkQ2ZYa2EzUkdJQTQ5MXZBMmtzbzVHSG5R?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
     },
@@ -559,7 +575,7 @@
       "summary_en": null,
       "source": "pai.com.cn",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9hV25lNVdkdm54QVpDdVhYV2ZSQnNScUY4VTZBZlJDaEpuU3gyeWFCQW9pZllsbzJHeW9VN3p0Q0phdGR1d2VlT0pUaDd6dFd0VVpvN3h3R09KdTF4cXRlTWlvUGs?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE80UUtVb2hhbVBtUzAtRW1nRUpVcWFpLWx0a1Z4Q1J6Y2dPajBhMlJvdTRLZENYX2FoRmNpUHJuanZHM2Vfc19JMTNub2tFQlduWUUwWldQc0p4WS1qY1k0Tg?oc=5",
       "confidence": 0.96,
       "match_tier": "explicit"
     },
@@ -618,27 +634,9 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_schedule:508603.SH:2026-06-18:首批商业不动产reits上市-房企迈向-资管时代-新浪财经",
+      "id": "google_news_rss:listing_schedule:508601.SH:2026-06-18:首批商业不动产reits上市-房企迈向-资管时代-东方财富",
       "symbols": [
-        "508603.SH"
-      ],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-06-18",
-      "headline_zh": "首批商业不动产REITs上市，房企迈向“资管时代” - 新浪财经",
-      "headline_en": null,
-      "summary_zh": "首批商业不动产REITs上市，房企迈向“资管时代” 新浪财经",
-      "summary_en": null,
-      "source": "新浪财经",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1YQk5EU0lSblVDWmlKUDdUTTdDVE11SWJYRFpPUFdBUG9WY2hwXzhrTGJWWlNTOVFUbTVBTjBVdWp5RlY1NWFTYXpTcG80U1ZvZ1lXbGpSLUdZYXlxT3VoNWxEZEpPX0dxdWo4cjJfSmtjbmhWY2lHUw?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
-      "id": "google_news_rss:listing_schedule:508602.SH:2026-06-18:首批商业不动产reits上市-房企迈向-资管时代-东方财富",
-      "symbols": [
-        "508602.SH"
+        "508601.SH"
       ],
       "category": "listing_schedule",
       "status": "observed",
@@ -736,6 +734,24 @@
       "match_tier": "market"
     },
     {
+      "id": "google_news_rss:listing_schedule:508602.SH:2026-06-18:首批商业不动产reits正式上市-配套政策已在路上-新浪财经",
+      "symbols": [
+        "508602.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-06-18",
+      "headline_zh": "首批商业不动产REITs正式上市，配套政策已在路上 - 新浪财经",
+      "headline_en": null,
+      "summary_zh": "首批商业不动产REITs正式上市，配套政策已在路上 新浪财经",
+      "summary_en": null,
+      "source": "新浪财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNSDJfbGFiWXZwQ20tNkIta2pvTENiYlFLeE1ENVhvSzZfazN3T2d6QUk4MWVxek1xRU9xTGF3MTI1bzAtZVM2LXZ5RFlLWi1yajNlRUd6ZXVQbEY5Wi1Ma2Mwbkp2d1pfVUI0T1Y3QjNhY0k3T1FzUEdacnE0bXdkc3FReTVLVnpkZ1h6OVhPS1RhQWdmZUJ1UXlVM05LN0xtWGJYMmRLdWZ6UW1iZm4zd05UQnhkcFBQTGMtSm9Ya2VwcHNpcUNWZ3JkZmlEekZUcGN3M3YzYnV2VFlMYW44S1BWMkNHbWFoM2ZwSjV2U1oyaDRoa0haNjVod2Vsb2VhNFRvNFRMYk96SUs3dXgzejdhdw?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
       "id": "google_news_rss:listing_schedule:508603.SH:2026-06-18:首批商业不动产reits正式上市-配套政策已在路上-新浪财经",
       "symbols": [
         "508603.SH"
@@ -749,31 +765,13 @@
       "summary_en": null,
       "source": "新浪财经",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMinwNBVV95cUxOd1A2Y25EaHRZSGxNanNUQVlKTXUxZzEtWldzbkRtd1RwTkRFeHprZFZlZWhtMEZ3QWpBWUNJbXltMEhwbG5BaWx2b0Z5RTZUZkMySHBJOFp0MFJYOXp4TXdCNDhiaU1nbVc2TEVyYjNGbURYVlNhMlNBd2JxYkxGdGlSV3RhOWp5WjNFRHR5QlBEdjh2ZHJOVHZoS2h3MC1OSjBMdDEyeXU5ZnVhZEt0VUxPdHBlbEt5TG9KOXRkUjdYa1hTWVRSZDd6ZXVGYU1FVWp6YWhzem9Bb3BQM2VqOC01c2xfVk04NGhVUWZRYWJlZTdfNFl1RW9DOS1RcGV2dXVwZnROQXNkSXR6Rmk4dzJ2a0s3Z0o3a04tU1FlSlh2UjJWTkJZd3FMM1pKOHRfbFVKTVVpUlRXU3BMMkpOQlREc3MwRlNLQ0NXTkNiYkw5V2RUa0JRMWd4dklMT3VSUDhKU0h4V083ZkxTWFZzb2QyVU9TVGFRUVZ1Y1ctVnBydnpxSks3ZjhVYkVaanhBS2drdklJYjVDUzBUV2xv?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNSDJfbGFiWXZwQ20tNkIta2pvTENiYlFLeE1ENVhvSzZfazN3T2d6QUk4MWVxek1xRU9xTGF3MTI1bzAtZVM2LXZ5RFlLWi1yajNlRUd6ZXVQbEY5Wi1Ma2Mwbkp2d1pfVUI0T1Y3QjNhY0k3T1FzUEdacnE0bXdkc3FReTVLVnpkZ1h6OVhPS1RhQWdmZUJ1UXlVM05LN0xtWGJYMmRLdWZ6UW1iZm4zd05UQnhkcFBQTGMtSm9Ya2VwcHNpcUNWZ3JkZmlEekZUcGN3M3YzYnV2VFlMYW44S1BWMkNHbWFoM2ZwSjV2U1oyaDRoa0haNjVod2Vsb2VhNFRvNFRMYk96SUs3dXgzejdhdw?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:listing_schedule:MARKET:2026-06-18:全国首批-上海首单-上海地产商业reit上市-双平台激活城市更新存量资产-上观新闻",
+      "id": "google_news_rss:listing_schedule:MARKET:2026-06-18:全国首批-上海首单-上海地产商业reit上市-双平台激活城市更新存量资产-shobserver-com",
       "symbols": [],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-06-18",
-      "headline_zh": "全国首批、上海首单，上海地产商业REIT上市！双平台激活城市更新存量资产 - 上观新闻",
-      "headline_en": null,
-      "summary_zh": "全国首批、上海首单，上海地产商业REIT上市！双平台激活城市更新存量资产 上观新闻",
-      "summary_en": null,
-      "source": "上观新闻",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBNMnFpNE9wbm5IdlF3emRJMFhnTUlIcVZvRVBqelJWdzc4V25UenBpU0xDd3JJeHRiYzJ0R1Jpek1mYlg4c3hKeDFoRF9TNk9WRTdBcUtkYlpuWmc?oc=5",
-      "confidence": 0.68,
-      "match_tier": "market"
-    },
-    {
-      "id": "google_news_rss:listing_schedule:508600.SH:2026-06-18:全国首批-上海首单-上海地产商业reit上市-双平台激活城市更新存量资产-shobserver-com",
-      "symbols": [
-        "508600.SH"
-      ],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-06-18",
@@ -784,8 +782,8 @@
       "source": "shobserver.com",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9FZWdqdnJpUUpzSEwyN0g0ZzRVOEpTajhiRVFhMThjV01sX2pGWWo4aFZ0YTA1WFZXT1AwRU5iR1RObHFobFBUYUxyQTJicU1EeGUwdXpJV2NFVnhNaFE?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
+      "confidence": 0.68,
+      "match_tier": "market"
     },
     {
       "id": "google_news_rss:listing_schedule:508602.SH:2026-06-17:国泰海通砂之船商业reit上市首日涨跌幅限制30-观点网",
@@ -1304,6 +1302,24 @@
       "match_tier": "inferred"
     },
     {
+      "id": "google_news_rss:offering_result:508601.SH:2026-05-22:商业地产一周回顾-招商蛇口拟开展商业不动产reits申报发行-观点网",
+      "symbols": [
+        "508601.SH"
+      ],
+      "category": "offering_result",
+      "status": "observed",
+      "event_date": "2026-05-22",
+      "headline_zh": "商业地产一周回顾 | 招商蛇口拟开展商业不动产REITs申报发行 - 观点网",
+      "headline_en": null,
+      "summary_zh": "商业地产一周回顾 | 招商蛇口拟开展商业不动产REITs申报发行 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BUHliNGpUZW5mbFF0bEdLUm1Ebk1RZG5qYTY3RWtjM1U0ejQ1MFhRVWV5cUMweFdGbC05eGJSUVJGTThoaGttMGx0bTMzRGRyTjc4MTZ6eWViYkZpazVvQ2NR?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
       "id": "google_news_rss:offering_result:508601.SH:2026-05-21:中信建投首农商业reit将于5月25日开始发售-观点网",
       "symbols": [
         "508601.SH"
@@ -1340,8 +1356,10 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:offering_result:MARKET:2026-05-18:公募reits上周延续调整-首批四只商业不动产reits启动询价-新浪财经",
-      "symbols": [],
+      "id": "google_news_rss:offering_result:508099.SH:2026-05-18:公募reits上周延续调整-首批四只商业不动产reits启动询价-新浪财经",
+      "symbols": [
+        "508099.SH"
+      ],
       "category": "offering_result",
       "status": "observed",
       "event_date": "2026-05-18",
@@ -1352,8 +1370,8 @@
       "source": "新浪财经",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAzdmdXc0VkRDRhVlRsaFZSemdqMXpzTGxFX3ZHcllkQWxMbGR6cm9UdWJnN2o1OUsyenRFRkFyek1IbkJmZDFpYXN1WUhfQTluWUEwNm16YmRCOUNrTjdoWlo0a0NXT2hfcnFMQVljdkxtZG9KaVhtYg?oc=5",
-      "confidence": 0.68,
-      "match_tier": "market"
+      "confidence": 0.64,
+      "match_tier": "inferred"
     },
     {
       "id": "google_news_rss:offering_result:508600.SH:2026-05-14:4只商业不动产reits即将询价-新浪财经",
@@ -1494,24 +1512,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1LTkR1S3RMUlNCOWU4ZUZnRnBFa2M0OGNDOG1sQTRTbmdQdV9kSndISTFUSERCb3hfNUFwdWp6ZDJYR2lLWG05X19FT1haTm45bWxuaWF0N0VrYnBnTXZJM2RLVXhMc1VWMUlCcmpNc3dtUzg?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
-    },
-    {
-      "id": "google_news_rss:listing_approval:508093.SH:2026-04-13:广西首单高速公路reits正式获批-央视网",
-      "symbols": [
-        "508093.SH"
-      ],
-      "category": "listing_approval",
-      "status": "observed",
-      "event_date": "2026-04-13",
-      "headline_zh": "广西首单高速公路REITs正式获批 - 央视网",
-      "headline_en": null,
-      "summary_zh": "广西首单高速公路REITs正式获批 央视网",
-      "summary_en": null,
-      "source": "央视网",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBHVFlLdmpReFFTVVpVaDgzek1hOUlpYjNaS0kzR0hnM3VBNkZ5Y1hmS2dhY3VRQjJnY0V1MEVBR0xfaFIwT3FtaFpBanNSVUVjbnVvMjh6MFhIaUNRM2wzVFBwWHhURUlaMVdPdDg2ZnEwRDhQY0d4STVB?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
     },
     {
       "id": "google_news_rss:listing_approval:508022.SH:2026-04-10:又有2只reits-获批-东方财富",
