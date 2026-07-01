@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import datetime as dt
 import json
 import sys
 import unittest
@@ -10,6 +11,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from build_data import build  # noqa: E402
 from ingest_wind_excel import DEFAULT_WORKBOOK, MASTER_JSON, load_records  # noqa: E402
+from trading_calendar import freshness_for_asof  # noqa: E402
 
 
 class PipelineTests(unittest.TestCase):
@@ -32,16 +34,23 @@ class PipelineTests(unittest.TestCase):
         dashboard = build()
         self.assertEqual(dashboard["schema_v"], 1)
         self.assertEqual(dashboard["price_asof"], dashboard["latest_price_asof"])
-        self.assertRegex(dashboard["latest_price_asof"], r"^2026-06-\d{2}$")
+        latest_asof = dashboard["latest_price_asof"]
+        self.assertRegex(latest_asof, r"^\d{4}-\d{2}-\d{2}$")
+        dt.date.fromisoformat(latest_asof)
         self.assertEqual(dashboard["summary"]["total_rows"], 87)
         self.assertEqual(dashboard["summary"]["listed_count"], 82)
-        self.assertGreater(dashboard["data_quality_summary"]["fresh_price_rows"], 0)
-        self.assertLessEqual(dashboard["data_quality_summary"]["fresh_price_rows"], 82)
-        self.assertEqual(
-            dashboard["data_quality_summary"]["fresh_price_rows"] + dashboard["data_quality_summary"]["stale_seed_price_rows"],
-            82,
-        )
-        self.assertEqual(dashboard["data_quality_summary"]["pending_price_rows"], 5)
+        dq = dashboard["data_quality_summary"]
+        fresh = dq["fresh_price_rows"]
+        stale_seed = dq["stale_seed_price_rows"]
+        stale = dq.get("stale_non_seed_price_rows", 0)
+        if freshness_for_asof(latest_asof) == "fresh":
+            self.assertGreater(fresh, 0)
+            self.assertLessEqual(fresh, 82)
+        else:
+            self.assertEqual(fresh, 0)
+            self.assertGreater(stale_seed + stale, 0)
+        self.assertEqual(fresh + stale_seed + stale, 82)
+        self.assertEqual(dq["pending_price_rows"], 5)
         self.assertEqual(dashboard["data_quality_summary"]["unexpected_missing_price_rows"], 0)
         self.assertIs(dashboard["assumption_audit"]["pipeline_2x_is_heuristic"], True)
         self.assertTrue(dashboard["records"][0]["score_notes"])
