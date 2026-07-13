@@ -1,5 +1,5 @@
 {
-  "build_time": "2026-07-13T09:48:03+00:00",
+  "build_time": "2026-07-13T15:12:46+00:00",
   "schema_v": 1,
   "source_workbook": "公募reits已发行项目清单.xlsx",
   "price_asof": "2026-07-13",
@@ -116,7 +116,7 @@
       {
         "symbol": "508099.SH",
         "name_cn": "建信中关村REIT",
-        "return_since_listing_pct": -61.625
+        "return_since_listing_pct": -61.72789375
       },
       {
         "symbol": "180102.SZ",
@@ -144,24 +144,29 @@
     "total_records": 87,
     "listed_records": 82,
     "pending_records": 5,
-    "stale_seed_price_rows": 0,
-    "stale_seed_rows": 0,
+    "stale_seed_price_rows": 2,
+    "stale_seed_rows": 2,
     "stale_non_seed_price_rows": 0,
-    "fresh_price_rows": 82,
+    "fresh_price_rows": 80,
     "pending_price_rows": 5,
     "unexpected_missing_price_rows": 0,
-    "rows_missing_source_url": 5,
+    "rows_missing_source_url": 7,
     "status_counts": {
-      "ok": 82,
+      "ok": 80,
+      "stale_seed": 2,
       "pending_not_listed": 5
     },
     "adapter_gap_counts": {
       "zoning_type": 87,
       "pipeline_multiple_of_initial_assets": 87,
-      "latest_news": 21,
-      "source_url": 5
+      "latest_news": 23,
+      "source_url": 7
     },
-    "stale_field_counts": {},
+    "stale_field_counts": {
+      "last_close_rmb": 2,
+      "return_since_listing_pct": 2,
+      "price_asof": 2
+    },
     "unexpected_missing_counts": {}
   },
   "records": [
@@ -216,7 +221,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180301.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:45+00:00"
       },
       "name_en": "Hongtu Innovation Yan Tian Port REIT",
@@ -296,7 +301,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180801.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:06+00:00"
       },
       "name_en": "AVIC Shougang Green Energy REIT",
@@ -363,12 +368,12 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "连续反弹后，公募REITs二级市场上周出现调整 - 每日经济新闻",
+        "title": "华安张江产业园REIT二季度末出租率88.12% - 观点网",
         "category": "market_context",
-        "published_at": "2026-07-13T07:52:00+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE43NlF3RHd3ODhZUVpJd2UxTVJWS19udWhKZ0hpZlk0enpBdm02UTRfNU82ZEZJZFpvRkhIRUU3bkZYUXhuNDAtbUJCRUxuaThZQmkyQkFwV3A1dmgtSWpoVHZsVHYyUQ?oc=5",
-        "confidence": 0.72,
-        "match_tier": "inferred"
+        "published_at": "2026-07-02T14:52:33+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9JUzV1bVRkRnk5em51MUh1bDg3NVJibG1qT3lLVDYxbkVtOUlpcUxnOXpVdlBxVjEzY2dBd3ZwTHF3SVNqZkFNLUIwckZrUQ?oc=5",
+        "confidence": 0.88,
+        "match_tier": "explicit"
       },
       "source_url": "https://quote.eastmoney.com/sh508000.html",
       "source_asof": "2026-07-13",
@@ -384,7 +389,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508000.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:33+00:00"
       },
       "name_en": "Hua An Zhangjiang Industrial Park REIT",
@@ -450,7 +455,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "浙商沪杭甬REIT披露5月经营数据 短期环比承压累计表现平稳 - 新浪网",
+        "title": "浙商沪杭甬REIT披露5月经营数据 短期环比承压累计表现平稳 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-06-24T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaFVkNUpicHdjeU9nYmw4czZEeUJHQlhGOTF2RGYxS1d6Rko3Sk5WMDlCSjc1dFRWckdla3VlXzFSOWVQV0lUbVlWa0RJTUl4Z0xxZ1hlSTQ1cEJzVE10blAwNU5CT1VyZEJQSVBQM2lKY0RuSlg3b1pwMUJ3Z001c2RUd1hmZUprSG1J?oc=5",
@@ -471,7 +476,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508001.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:36+00:00"
       },
       "name_en": "Zheshang Shanghai-Hangzhou-Ningbo REIT",
@@ -536,14 +541,7 @@
       "pipeline_readiness_score": null,
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 60.0,
-      "latest_news": {
-        "title": "富国首创水务REIT运管机构高管调整 王征戍出任首创环保总经理 - 新浪网",
-        "category": "market_context",
-        "published_at": "2026-06-09T07:00:00+00:00",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbUJtSlVVcUtmekllS3FRd2E2V0Vod21rWS0tRF9GMFFlOFBfWlppZWJKcnI3RHdDUmhfQVkwMl9ncW15NHQzOXRxaUpqRkF2dHVickVvOXZiMHdKdHlrVHd6MXRyRERLeTUzRzFzNFozcHh6UHZKRHl3Y1dmMmlJQUFEYmo?oc=5",
-        "confidence": 0.88,
-        "match_tier": "explicit"
-      },
+      "latest_news": null,
       "source_url": "https://quote.eastmoney.com/sh508006.html",
       "source_asof": "2026-07-13",
       "source_confidence": "public_quote",
@@ -558,7 +556,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508006.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:12:02+00:00"
       },
       "name_en": "Fullgoal Capital Water REIT",
@@ -585,7 +583,8 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first",
       "nav_rmb": null,
@@ -645,7 +644,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508027.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:37+00:00"
       },
       "name_en": "Soochow Suzhou Industrial Park REIT",
@@ -732,7 +731,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508056.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:57+00:00"
       },
       "name_en": "CICC GLP REIT",
@@ -819,7 +818,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180101.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:09+00:00"
       },
       "name_en": "Bosera Shekou Industrial Park REIT",
@@ -906,7 +905,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180201.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:42+00:00"
       },
       "name_en": "Ping An Guangzhou Guanghe Expressway REIT",
@@ -954,13 +953,13 @@
       "abs_plan_manager": "建信资本管理有限责任公司",
       "fund_manager": "建信基金管理有限责任公司",
       "offer_price_rmb": 3.2,
-      "return_since_listing_pct": -61.625,
+      "return_since_listing_pct": -61.72789375,
       "source_sheet": "基础设施不动产REITs",
       "entity_type": "listed_reit",
-      "price_asof": "2026-07-13",
+      "price_asof": null,
       "issue_size_rmb_bn": 28.8,
-      "last_close_rmb": 1.228,
-      "return_since_listing": -0.61625,
+      "last_close_rmb": 1.448,
+      "return_since_listing": -0.6172789375,
       "asset_group": "industrial_park",
       "exchange": "SSE",
       "lifecycle_status": "listed",
@@ -979,23 +978,10 @@
         "confidence": 0.88,
         "match_tier": "explicit"
       },
-      "source_url": "https://quote.eastmoney.com/sh508099.html",
-      "source_asof": "2026-07-13",
-      "source_confidence": "public_quote",
-      "source_freshness": "fresh",
-      "previous_close_rmb": 1.219,
-      "daily_return_pct": 0.74,
-      "daily_change_rmb": 0.009,
-      "volume": 99657.0,
-      "turnover": 12190170.0,
-      "source_name": "Eastmoney public quote endpoint",
-      "price_source": {
-        "source_name": "Eastmoney public quote endpoint",
-        "source_url": "https://quote.eastmoney.com/sh508099.html",
-        "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
-        "quote_time": "2026-07-13T08:11:41+00:00"
-      },
+      "source_url": null,
+      "source_asof": null,
+      "source_confidence": "seed",
+      "source_freshness": "stale_seed",
       "name_en": "CCB Principal Zhongguancun REIT",
       "originator_en": "北京中关村软件园发展",
       "fund_manager_en": "建信基金管理",
@@ -1003,7 +989,7 @@
       "financial_advisor_en": "CITIC Securities",
       "translation_source": "rules",
       "translation_confidence": "medium",
-      "valuation_score": 19.2,
+      "valuation_score": 19.1,
       "liquidity_score": 43.2,
       "score_notes": {
         "valuation_score": "Seed v1 proxy from since-listing return until NAV/premium data is online.",
@@ -1012,17 +998,27 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
+        "source_url",
         "zoning_type",
         "pipeline_multiple_of_initial_assets"
       ],
       "fetch_priority": "prices_first",
+      "previous_close_rmb": null,
+      "daily_return_pct": null,
+      "daily_change_rmb": null,
+      "volume": null,
+      "turnover": null,
       "nav_rmb": null,
       "units_outstanding": null,
       "market_cap_rmb_bn": null,
@@ -1073,7 +1069,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180202.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:42+00:00"
       },
       "name_en": "Huaxia Yuexiu Expressway REIT",
@@ -1139,14 +1135,7 @@
       "pipeline_readiness_score": null,
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
-      "latest_news": {
-        "title": "首批4只公募REITs指数基金正式申报中金研报盘点被收录“产品”清单-慧眼识基金 - 金融界",
-        "category": "market_context",
-        "published_at": "2026-05-20T07:00:00+00:00",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE13MXNJelZXUEVoRzNsbDZUVlJQYmVkZ2hBemxOWndoZlJ5dTJjTHlsSlFNYzFkZlZyZzN5ek1WVGlaV1M2ZXg4Q05SMFBZTlZhc3Mwdmx0WEFzVkU5bC1fWWFYTGpxeHpVZ1YxRnN2SEY?oc=5",
-        "confidence": 0.72,
-        "match_tier": "inferred"
-      },
+      "latest_news": null,
       "source_url": "https://quote.eastmoney.com/sh508018.html",
       "source_asof": "2026-07-13",
       "source_confidence": "public_quote",
@@ -1161,7 +1150,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508018.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:34+00:00"
       },
       "name_en": "Huaxia China Communications Construction REIT",
@@ -1188,7 +1177,8 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first",
       "nav_rmb": null,
@@ -1248,7 +1238,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508008.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:59+00:00"
       },
       "name_en": "Sinolink China Railway Construction REIT",
@@ -1328,7 +1318,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180401.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:00+00:00"
       },
       "name_en": "Penghua Shenzhen Energy REIT",
@@ -1416,7 +1406,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180501.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:48+00:00"
       },
       "name_en": "Hongtu Innovation Shenzhen Anju REIT",
@@ -1503,7 +1493,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508058.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:33+00:00"
       },
       "name_en": "CICC Xiamen Anju REIT",
@@ -1583,7 +1573,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508068.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:42+00:00"
       },
       "name_en": "Huaxia Beijing Affordable Housing REIT",
@@ -1671,7 +1661,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180102.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:39+00:00"
       },
       "name_en": "Huaxia Hefei High-Tech REIT",
@@ -1751,7 +1741,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508021.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:59+00:00"
       },
       "name_en": "Guotai Haitong Lingang Innovation Industrial Park REIT",
@@ -1839,7 +1829,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508088.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:12:02+00:00"
       },
       "name_en": "Guotai Haitong D&J New Economy REIT",
@@ -1919,7 +1909,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508066.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:45+00:00"
       },
       "name_en": "Huatai Jiangsu Communications Holding REIT",
@@ -1986,12 +1976,12 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "中金安徽交控REIT一季度净亏1482万元 可供分配金额同比下降超10% - 观点网",
+        "title": "首批4只公募REITs指数基金正式申报中金研报盘点被收录“产品”清单-慧眼识基金 - 金融界",
         "category": "market_context",
-        "published_at": "2026-04-21T07:00:00+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5Eb05vbDBlR2w1U3dfSU9hQk52SHVYTkRSVUNtTURFdjVVbXRpc1Eya1JtN2hIVEVuMlZETXFxNUIwWC05Z09JRUgzWS0wQQ?oc=5",
-        "confidence": 0.88,
-        "match_tier": "explicit"
+        "published_at": "2026-05-20T07:00:00+00:00",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE13MXNJelZXUEVoRzNsbDZUVlJQYmVkZ2hBemxOWndoZlJ5dTJjTHlsSlFNYzFkZlZyZzN5ek1WVGlaV1M2ZXg4Q05SMFBZTlZhc3Mwdmx0WEFzVkU5bC1fWWFYTGpxeHpVZ1YxRnN2SEY?oc=5",
+        "confidence": 0.72,
+        "match_tier": "inferred"
       },
       "source_url": "https://quote.eastmoney.com/sh508009.html",
       "source_asof": "2026-07-13",
@@ -2007,7 +1997,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508009.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:33+00:00"
       },
       "name_en": "CICC Anhui Transportation Holding REIT",
@@ -2094,7 +2084,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508077.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:57+00:00"
       },
       "name_en": "Huaxia Fund China Resources Youchao REIT",
@@ -2181,7 +2171,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180103.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:24+00:00"
       },
       "name_en": "Huaxia Heda High-Tech REIT",
@@ -2229,13 +2219,13 @@
       "abs_plan_manager": "嘉实资本管理有限公司",
       "fund_manager": "嘉实基金管理有限公司",
       "offer_price_rmb": 3.514,
-      "return_since_listing_pct": -1.024474,
+      "return_since_listing_pct": 3.37845271475912,
       "source_sheet": "基础设施不动产REITs",
       "entity_type": "listed_reit",
-      "price_asof": "2026-07-13",
+      "price_asof": null,
       "issue_size_rmb_bn": 17.57,
-      "last_close_rmb": 3.478,
-      "return_since_listing": -0.01024474,
+      "last_close_rmb": 3.531,
+      "return_since_listing": 0.0337845271475912,
       "asset_group": "logistics",
       "exchange": "SSE",
       "lifecycle_status": "listed",
@@ -2247,23 +2237,10 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 45.0,
       "latest_news": null,
-      "source_url": "https://quote.eastmoney.com/sh508098.html",
-      "source_asof": "2026-07-13",
-      "source_confidence": "public_quote",
-      "source_freshness": "fresh",
-      "previous_close_rmb": 3.502,
-      "daily_return_pct": -0.69,
-      "daily_change_rmb": -0.024,
-      "volume": 1762.0,
-      "turnover": 614647.0,
-      "source_name": "Eastmoney public quote endpoint",
-      "price_source": {
-        "source_name": "Eastmoney public quote endpoint",
-        "source_url": "https://quote.eastmoney.com/sh508098.html",
-        "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
-        "quote_time": "2026-07-13T08:11:37+00:00"
-      },
+      "source_url": null,
+      "source_asof": null,
+      "source_confidence": "seed",
+      "source_freshness": "stale_seed",
       "name_en": "Harvest JD Warehousing REIT",
       "originator_en": "北京京东世纪贸易",
       "fund_manager_en": "Harvest Fund Management",
@@ -2271,7 +2248,7 @@
       "financial_advisor_en": "CITIC Securities",
       "translation_source": "rules",
       "translation_confidence": "medium",
-      "valuation_score": 49.5,
+      "valuation_score": 51.7,
       "liquidity_score": 26.4,
       "score_notes": {
         "valuation_score": "Seed v1 proxy from since-listing return until NAV/premium data is online.",
@@ -2280,18 +2257,28 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale_seed",
+      "data_quality_reason": "Listed REIT price comes from the stale workbook seed.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
+        "source_url",
         "zoning_type",
         "pipeline_multiple_of_initial_assets",
         "latest_news"
       ],
       "fetch_priority": "prices_first",
+      "previous_close_rmb": null,
+      "daily_return_pct": null,
+      "daily_change_rmb": null,
+      "volume": null,
+      "turnover": null,
       "nav_rmb": null,
       "units_outstanding": null,
       "market_cap_rmb_bn": null,
@@ -2342,7 +2329,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508028.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:43+00:00"
       },
       "name_en": "CSC SPIC New Energy REIT",
@@ -2409,7 +2396,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "中航京能国际能源REIT：混装资产协同发力，创新驱动高质量发展 - 新浪网",
+        "title": "中航京能国际能源REIT：混装资产协同发力，创新驱动高质量发展 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-06-18T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZktMd3JQR0FDdWc4NmJ5RC1QNEZaXzBWTlBkcHJObkFrYUNDaVBUblROOTBoOF9nSU9KUVhLdUFud3d2MkNOY2llQ19YbzBMRG9uakkxSkctbzlKRFpKZXZkMjQ4OGpEUm5MQTRVZjFzT09UNmlPbFhBUDhBMnV0NWVlY2E?oc=5",
@@ -2430,7 +2417,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508096.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:40+00:00"
       },
       "name_en": "AVIC Jingneng International Energy REIT",
@@ -2517,7 +2504,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508019.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:12:02+00:00"
       },
       "name_en": "CICC Hubei Science & Technology Investment Optics Valley REIT",
@@ -2583,7 +2570,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "公募REITs周报 | 2026.6.8-2026.6.12 - 新浪网",
+        "title": "公募REITs周报 | 2026.6.8-2026.6.12 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-06-15T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNN1pCejhTQTVOZjBNcU4xRy0wbEpPZFlCS2JtQld2eGhjNHhrczBBRzJhdWZaRWg2Ny1NSERsM2ZrQU9ZSzgtdFEta09nU01oVDNTTlphX0ZlWDFpRlJFeTRvU1pUSEVrNFlxOGR6SXFWUjZndUpwZk5Pdm9jX3VqTVhsblg?oc=5",
@@ -2604,7 +2591,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508007.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:42+00:00"
       },
       "name_en": "CICC Shandong Hi-Speed REIT",
@@ -2670,7 +2657,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 55.0,
       "latest_news": {
-        "title": "城投宽庭保租房REIT披露运营机构涉租金诉讼 - 新浪网",
+        "title": "城投宽庭保租房REIT披露运营机构涉租金诉讼 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-07-03T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE83MEwycGRrT2lha1gxd2xrMFJtNUVYRkZsV0QwcW45bmFUZDRnaGxEcDhtU0d2THgzaVM1c1ZVZU1yWG1MOTY3bXVhVG5QSlhidmVOSEpuV1p0RVJFUVdfa0VkaXlodzhEaFlHTXo3aFpCSnVfcUE?oc=5",
@@ -2691,7 +2678,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508031.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:12:01+00:00"
       },
       "name_en": "Guotai Haitong Chengtou Kuan Ting Rental Housing REIT",
@@ -2778,7 +2765,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508017.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:55+00:00"
       },
       "name_en": "Huaxia Jinmao Consumer Infrastructure REIT",
@@ -2865,7 +2852,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508011.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:51+00:00"
       },
       "name_en": "Harvest Wumart Consumer Infrastructure REIT",
@@ -2952,7 +2939,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180601.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:51+00:00"
       },
       "name_en": "Huaxia China Resources Consumer Infrastructure REIT",
@@ -3018,7 +3005,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "易方达基金副总经理马骏因退休离任 对深高速REIT无重大影响 - 新浪网",
+        "title": "易方达基金副总经理马骏因退休离任 对深高速REIT无重大影响 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-06-30T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNc3UtWU5uWUFJT3lfLVZoRF9rcHltQTRJaVFQMlc2VEdKSzdfS25fYzJLR3JteVR2UjJBX1luTXVkOHFLTVAwclpWZmFnX04tcVQ2cnVrYjE4VUdBUUw0WmhIdHo0a3k1VWJCb1dfcXUway11REtqeEhMYWZ4TVNCaTZLQlU?oc=5",
@@ -3039,7 +3026,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508033.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:56+00:00"
       },
       "name_en": "E Fund Shenzhen Expressway REIT",
@@ -3126,7 +3113,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508026.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:43+00:00"
       },
       "name_en": "Harvest PowerChina Clean Energy REIT",
@@ -3213,7 +3200,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180602.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:15+00:00"
       },
       "name_en": "CICC InCity Consumer Infrastructure REIT",
@@ -3293,7 +3280,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508086.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:54+00:00"
       },
       "name_en": "ICBC Hebei Expressway REIT",
@@ -3359,7 +3346,14 @@
       "pipeline_readiness_score": null,
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
-      "latest_news": null,
+      "latest_news": {
+        "title": "连续反弹后，公募REITs二级市场上周出现调整 - 新浪财经",
+        "category": "market_context",
+        "published_at": "2026-07-13T08:09:22+00:00",
+        "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQZTFYSjloaVIxQTFNVjJDQ05uLWlkQS1DV2Y5dzdMTldwR25nb2l2OV9NU3Q2bnNEZzNrVi1UWllyRllxVWpQcDZmS2ROYVNrOTAtb2lrQ1ItSV9QcVNZZ1RUN3dyeFFWQkVsY2tvUTdudGpPNFJOb09CN0RZazZMODJlWWVpaGthT250ck96QmdKYVppZ1VoSFc3WXNvdDQ1WFdQM000cGNwRUFtZUNZRHZQUFo3VklYbmY4b2hlMnFPZ1pBSzJWUUU1WUtSWHh2QXJ5Q2U4ZUtrVTh0UFBqVTFua1pXakw2SjgxV0t0YXVOc1lRMGRFOWtQbmNNN01uQ2tLbmhHWFRyMDBn?oc=5",
+        "confidence": 0.72,
+        "match_tier": "inferred"
+      },
       "source_url": "https://quote.eastmoney.com/sh508089.html",
       "source_asof": "2026-07-13",
       "source_confidence": "public_quote",
@@ -3374,7 +3368,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508089.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:50+00:00"
       },
       "name_en": "Huaxia TBEA New Energy REIT",
@@ -3401,8 +3395,7 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets",
-        "latest_news"
+        "pipeline_multiple_of_initial_assets"
       ],
       "fetch_priority": "prices_first",
       "nav_rmb": null,
@@ -3462,7 +3455,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180302.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:45+00:00"
       },
       "name_en": "Huaxia Shenzhen International REIT",
@@ -3542,7 +3535,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508002.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:49+00:00"
       },
       "name_en": "Hua An Bailian Consumer Infrastructure REIT",
@@ -3623,7 +3616,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508015.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:45+00:00"
       },
       "name_en": "CSC Mingyang Smart Energy REIT",
@@ -3711,7 +3704,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508005.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:56+00:00"
       },
       "name_en": "Huaxia Capital Outlets REIT",
@@ -3777,7 +3770,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "公募REITs二级市场继续小幅调整，算力REITs获政策明确支持 - 新浪网",
+        "title": "公募REITs二级市场继续小幅调整，算力REITs获政策明确支持 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-05-12T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBMeGszOHZYYllIb1ZPN0FxVHAyNjRwZXpYYl91amJGWUtHX0ZXWjRWOGkwSkxNc2YwQWtHemM1SVpDejhqR1R5eDVLaDNqc3FoN0U4Z1hsVWw1OW9HbnhwQlZRVnZMSzJIS1B6d2oySjNkb25yb1J4cQ?oc=5",
@@ -3798,7 +3791,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508022.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:44+00:00"
       },
       "name_en": "Bosera Tianjin Development Industrial Park REIT",
@@ -3867,7 +3860,7 @@
         "title": "易方达广开产园REIT：截至6月末整体出租率67.26% - 观点网",
         "category": "market_context",
         "published_at": "2026-07-10T12:01:49+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5zLWNPV1dPeDVnRUdEUmctdVVDM2l0OFFRcXhaWmswa0tJbjZsWm1xVkdJMFplRFNneXFZMzlxT05pTHI4dFZQdDVYV1Z6dzREb0JUVFpBeUExQkRISktGMnh3?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB6XzdieUFMcFkzbHB2OGJaVVU0S2t1dzhFYlFwdGJPaWpoYjhJbGhsU2JGZ1lTNFdjY3RkNzFuVzZxV2ZSYWtjWjNXWlRCUQ?oc=5",
         "confidence": 0.88,
         "match_tier": "explicit"
       },
@@ -3885,7 +3878,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180105.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:27+00:00"
       },
       "name_en": "E Fund Guangzhou Development Industrial Park REIT",
@@ -3951,7 +3944,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 70.0,
       "latest_news": {
-        "title": "华夏大悦城消费REIT今日大宗交易折价成交226万股，成交额1005.7万元 - 新浪网",
+        "title": "华夏大悦城消费REIT今日大宗交易折价成交226万股，成交额1005.7万元 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-07-10T12:06:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbktlT1hSV1JBY1ZxcWVsS1RMRnROWWtoMVllVDlBQlJJUTVReUhsQWZael9YM0cxUHI5MVlMSnlsQ0lGTEwxYldUdVIzb2VuMVd5M3plSEVneVk0U2NYM1JmZUlZWGNsNG1ZRDJ4RjlSb2NJRzBxU1I5amtsUUlVYmw4M3ZkOW8?oc=5",
@@ -3972,7 +3965,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180603.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:54+00:00"
       },
       "name_en": "Huaxia Joy City Consumer Infrastructure REIT",
@@ -4059,7 +4052,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180303.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:12+00:00"
       },
       "name_en": "Huatai Blogis Logistics REIT",
@@ -4146,7 +4139,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180502.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:51+00:00"
       },
       "name_en": "China Merchants Fund Shekou Rental Housing REIT",
@@ -4233,7 +4226,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180203.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:54+00:00"
       },
       "name_en": "China Merchants Expressway REIT",
@@ -4299,7 +4292,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "中金联东科创REIT原始权益人调整回收资金投向 新增多区域产业园项目 - 新浪网",
+        "title": "中金联东科创REIT原始权益人调整回收资金投向 新增多区域产业园项目 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-06-23T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObTYxMlNLY2dNOWRpSkpOejZuOTk2MkNndW9oTnVYVUQ0Y3l4YmVPOXdLWFVRRThzWGw0alQ5RVJzcll1OERpZ05sSHp5OXZXR0VCakh6Tk1NNUZsSE9tTFBjb3ZtalBMSXRMNGZhY2N5Z0FYY0tGZFJhaEFMUHdVN1RKYl8?oc=5",
@@ -4320,7 +4313,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508003.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:47+00:00"
       },
       "name_en": "CICC Liando Sci-Tech Innovation REIT",
@@ -4400,7 +4393,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508069.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:53+00:00"
       },
       "name_en": "Huaxia Expressway Nanjing Transportation REIT",
@@ -4481,7 +4474,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180701.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:21+00:00"
       },
       "name_en": "Yinhua Shaoxing Raw Water REIT",
@@ -4548,10 +4541,10 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "连续反弹后，公募REITs二级市场上周出现调整 - 搜狐网",
+        "title": "连续反弹后，公募REITs二级市场上周出现调整 - 每日经济新闻",
         "category": "market_context",
-        "published_at": "2026-07-13T07:52:26+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS09zcGlHeVV0YmhzWThTMTI4T214N1RYYXZ2UmFGUEZ2cURDYjI0MHFmdk9UUzMzX3ZaSXlQRUx4UzdWUVpHRnM5dHhqZ3VOWWFPbDVlekdiNExoRGdia1R2R1UxcnhjUFpRVEdlZDdpV2YtWjZVd2RFRE10bjNMajVPdmhJb2Rl?oc=5",
+        "published_at": "2026-07-13T07:52:00+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE43NlF3RHd3ODhZUVpJd2UxTVJWS19udWhKZ0hpZlk0enpBdm02UTRfNU82ZEZJZFpvRkhIRUU3bkZYUXhuNDAtbUJCRUxuaThZQmkyQkFwV3A1dmgtSWpoVHZsVHYyUQ?oc=5",
         "confidence": 0.72,
         "match_tier": "inferred"
       },
@@ -4569,7 +4562,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508097.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:35+00:00"
       },
       "name_en": "Huatai Nanjing Jianye REIT",
@@ -4649,7 +4642,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180402.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:30+00:00"
       },
       "name_en": "ICBC Mengneng Clean Energy REIT",
@@ -4730,7 +4723,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508010.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:54+00:00"
       },
       "name_en": "CICC Chongqing Liangjiang REIT",
@@ -4818,7 +4811,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180106.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:51+00:00"
       },
       "name_en": "GF Chengdu Gaotou Industrial Park REIT",
@@ -4905,7 +4898,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508036.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:33+00:00"
       },
       "name_en": "Ping An Ningbo Communications Investment REIT",
@@ -4992,7 +4985,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508048.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:12:00+00:00"
       },
       "name_en": "Hua An Waigaoqiao REIT",
@@ -5079,7 +5072,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508078.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:43+00:00"
       },
       "name_en": "AVIC ESR Warehousing Logistics REIT",
@@ -5144,14 +5137,7 @@
       "pipeline_readiness_score": null,
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
-      "latest_news": {
-        "title": "连续反弹后，公募REITs二级市场上周出现调整 - 手机网易网",
-        "category": "market_context",
-        "published_at": "2026-07-13T08:00:25+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBGRG50XzF1ZW1lTHZPZVg1ZzdjOHo5bWVtTWVOMW01UEs3cWhaQ0FyYm9PNHNLRU9WYTViVVNPSDg2Y2U3aFBZbTNoZ3V5MzBWTlVmSVI4dkFWMEtjakY2VWRR?oc=5",
-        "confidence": 0.72,
-        "match_tier": "inferred"
-      },
+      "latest_news": null,
       "source_url": "https://quote.eastmoney.com/sh508012.html",
       "source_asof": "2026-07-13",
       "source_confidence": "public_quote",
@@ -5166,7 +5152,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508012.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:39+00:00"
       },
       "name_en": "China Merchants Sci-Tech Innovation REIT",
@@ -5193,7 +5179,8 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first",
       "nav_rmb": null,
@@ -5253,7 +5240,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180605.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:57+00:00"
       },
       "name_en": "E Fund Huawei Market REIT",
@@ -5333,7 +5320,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508087.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:51+00:00"
       },
       "name_en": "Guotai Haitong Jinan Energy Heating REIT",
@@ -5414,7 +5401,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508092.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:37+00:00"
       },
       "name_en": "Huaxia BBMG Intelligent Manufacturing REIT",
@@ -5484,7 +5471,7 @@
         "title": "汇添富九州通医药REIT上半年租金收缴率100% - 观点网",
         "category": "market_context",
         "published_at": "2026-07-10T09:11:30+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE15NHRvR2tmSmJwellZaWhmNmFtUThkY2JiQlN1TDZqYmlyYzRtWWJQWG9HVFd3RjIydGlxSmNsUXpib2VULUI5M3lhWGxqZw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0tZGZicjlDcWFFMDBaUjNUOGhGNEs5bWRkQ3JIeTdLLUZZbnN0N0xKcDA3UEtLM3lkWHVLa2JLZi1TV0hUeWhWNVN6MGRrbE9Jb3B3eS1iX0luazNvVlJ0c01n?oc=5",
         "confidence": 0.88,
         "match_tier": "explicit"
       },
@@ -5502,7 +5489,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508084.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:33+00:00"
       },
       "name_en": "China Universal Jointown Pharmaceutical REIT",
@@ -5589,7 +5576,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508055.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:47+00:00"
       },
       "name_en": "China Universal Shanghai Real Estate Rental Housing REIT",
@@ -5676,7 +5663,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180305.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:48+00:00"
       },
       "name_en": "China Southern SF Logistics REIT",
@@ -5756,7 +5743,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508085.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:50+00:00"
       },
       "name_en": "Huatai Suzhou Hengtai Rental Housing REIT",
@@ -5844,7 +5831,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508080.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:52+00:00"
       },
       "name_en": "CICC Yizhuang Industrial Park REIT",
@@ -5931,7 +5918,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180606.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:03+00:00"
       },
       "name_en": "CICC China Green Development Commercial REIT",
@@ -6018,7 +6005,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508090.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:47+00:00"
       },
       "name_en": "BOC Sinotrans Warehousing Logistics REIT",
@@ -6098,7 +6085,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508016.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:44+00:00"
       },
       "name_en": "Huaxia Huadian Clean Energy REIT",
@@ -6186,7 +6173,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508039.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:12:01+00:00"
       },
       "name_en": "First Seafront Shounong REIT",
@@ -6273,7 +6260,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180901.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:57+00:00"
       },
       "name_en": "China Southern Range Technology Data Center REIT",
@@ -6339,10 +6326,10 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 50.0,
       "latest_news": {
-        "title": "南方万国数据中心REIT拟扩募购入廊坊曙成数据中心项目 - 搜狐网",
+        "title": "南方万国数据中心REIT拟扩募购入廊坊曙成数据中心项目 - 手机网易网",
         "category": "expansion_acquisition",
-        "published_at": "2026-07-10T11:19:43+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB4NDh3TU1Jc1dreWVQM1ZNWWk4cWN1N1BpQ0VIaVoxZ2hDRjFoOGFWNnJsM2owSXRBMFg4WlZGVzBWTTM3bW5rcmNvNVB3cFdjSlE?oc=5",
+        "published_at": "2026-07-10T14:24:27+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE11bVR0T1VhdGNiLTZCQnVRa2p3SGgzc2JsSXIyV0RKNzV1dG50a2ZRZzRmdW14Q0RTSnRaX0VSMFJqZjAwTldxZTlTeUZfaTNBbzhtSEhrb3UtTVRjUmQzcWpR?oc=5",
         "confidence": 0.96,
         "match_tier": "explicit"
       },
@@ -6360,7 +6347,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508060.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:59+00:00"
       },
       "name_en": "China Southern GDS Data Center REIT",
@@ -6447,7 +6434,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508082.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:48+00:00"
       },
       "name_en": "CICC Vipshop Outlets REIT",
@@ -6513,7 +6500,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 70.0,
       "latest_news": {
-        "title": "一年多审核收官 凯德商业31.5亿机构间REITs获上交所通过 - 新浪网",
+        "title": "一年多审核收官 凯德商业31.5亿机构间REITs获上交所通过 - 新浪财经",
         "category": "listing_approval",
         "published_at": "2026-06-11T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1IVzNad0FwclQyZlJuQWNKelo0Z0d6Y243Vy14Z2FTX2FIU2dmVFprc2xMUlFiSEFXVzZBamNUeWpfcDIxM3QzZTU0U044NWUzXzhySnZkOHhEUmw4N09jQlVDZEEzWW9uZ0FFLWlUTEcyWTNINzA0d0E5NWVYUQ?oc=5",
@@ -6534,7 +6521,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508091.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:40+00:00"
       },
       "name_en": "Huaxia CapitaLand Consumer Infrastructure REIT",
@@ -6614,7 +6601,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180607.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:18+00:00"
       },
       "name_en": "Huaxia China Overseas Consumer Infrastructure REIT",
@@ -6702,7 +6689,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508029.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:43+00:00"
       },
       "name_en": "CSC Shenyang International Software Park REIT",
@@ -6789,7 +6776,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180306.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:57+00:00"
       },
       "name_en": "Huaxia AMB Warehousing REIT",
@@ -6855,7 +6842,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "华夏基金领跑公募REITs赛道：19只产品、445亿市值 市场份额超两成 - 新浪网",
+        "title": "华夏基金领跑公募REITs赛道：19只产品、445亿市值 市场份额超两成 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-06-26T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMitwpBVV95cUxPMGR2NEU4d2pjeHk2VENRaFcxT2Q0UFRGclF2Q0tQQnZWWV9xcldkZWZvbF9Ld3hUYUZ4WlVjMDdJYU14U1djdVpuWEFMbjY1ZE51RFdwQnZ4Tk1VMDlXOGJweFFBQ2gzWllFUG9hYVY5OWI0aVlUS0huNUxkQTJ4SFNnOUpiQ1FKMlRVS3YtRVlXM3ZWUWxjTjJtbzBDUVJwM05vN0hwZjU3TV9WQlBtbHh4T29UbVdoOVIxZ3hNRVpNZDkzZFJYOHNXYUNHbk5hZTlhZXVENzh3RmV6bWVYbTdud19BOHRJcW1TbVVrbVBYWmF4RVNKdlhRLVB0WWp2MlZJYUVSMjJZYjNOYTQzMzJSYXVfUW5MWm5JcWUtTFRQdFVxU3NtOXVnYmVBUnBlLXdSdG83TDBuazlVc2M5WVFaZWt1bEVDa3VuODlSLU9oOWRjVXQ5Z3lqMGtWS0tDYW9kVXJiOWp3X05UUmlIQlpvWDNselNOd0ZZVFY2Q0ROMTJQV0xpN1pmblh5MHFwRlFoT3FWX3VSclRPcG5TeXVoZWlxLWVfV0JqQ1I0VFdKYzV4U3JWbmJ6b0FZN3I3dkphbC1mdXc3V3dxQ2RGVTdoNjdkT0ZKMTlEa1g0SV9QZWhpWVlNWVdMY1RPUmJfbEpWLUVEdXZHYWJEV3pZVUlMcERRWDZZOGZ2X2FLd2MxYVdoQ0FGVlQzTG5LREFuS0FmSXNZVXVUQjVKODgxeVBmeV90T0hNLXhEYkpucEdPSm9kS3plOEwzaGZNZUc3WnhNNE85ZVpFMmxxbmhtYS1rOHBoOElPdnlMeDFxaTdrVE5uaXFxRlBQMVM2aV9SMlEydGtDU1VPUlJHX2NkVzhDSDMwbUxlY3MyLWU4ODNoZlU3bmlOd19Vb0hBbU4yenlKZzAyVEcxUUtZc1JCOXZ2U1NQY19vTEtRRmJ0S0wzME0wV09NQXVSMWQybUkzSll4b19PczVGR1Q5Y0JXMzlHdjhDeDhqRlprd1kyQnhaMWpLcXNIZ3RXSW5WT3lqaUtjdndzbjE0RFJVSUJvLTgwanB0cEJoMS15WkNOWlBSd0pVTUFsTzdkUjRjRE5lZV9aYlc3bnBHUV9rRkl1QTlOWHJIYVJJbUdUc3hSMjB0My1salBGRUxXQkxCNkVfTlV2a3BXbUVVN0M0dGdWNzFycVU4YnNCZ2owODByYjhWZWZJQVRiZ0pGWFJyRkxUUnUtazFZak91S0phcDhOc181ZHBaT204TTlBY21WbmpEVmRmVkdlZDVBcXh2Q200ckwyZ2lsbmJ3amRGZVhvbGZCbExXOFFkSG4tYWxxaWVlaVAxZnk1SmJKRlc5OWRRRlNMWXFaVjNTUE1NdlIzM2JIM3ZIUXAtbEFvYVlQYlpBejdwQjdCWjZvS2xzRWNHUVhTUmRpR3cyS0dTMC1IYUdESmJPQmp2bnFwdThJRkQzZVZxbjYtd18zWnJDbEJKQjFYOEs3VWxGTDBQTTBQaUlHaXk3bXJhQnJOQU1LV3J1RUFnajdMMUlYdFhYQWtGdUpwWVZ5WTB3TWVWSWFWZjNONjlCU0lGblU4UVFFZ0JCQUlHazlBb1BDWG5zSXUtV05NYTJEOExocGNrekY2TzU2aGMwMVFQUEtSZkRUN01TYUt1X0prbnltM0haUFFpR254SFN4d2Q3VUZ0SGlHUDVua2dtT3JPWGJSMEZ0eWxOV3M0ckpPRlhiNzRhbGRGTXVFaTltdF9aaW9iaWhJU1FwUm9ySTg?oc=5",
@@ -6876,7 +6863,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508050.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:55+00:00"
       },
       "name_en": "Huaxia CNNC Clean Energy REIT",
@@ -6963,7 +6950,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508020.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:33+00:00"
       },
       "name_en": "Orient Securities Asset Management Expressway REIT",
@@ -7050,7 +7037,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180503.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T07:34:54+00:00"
       },
       "name_en": "AVIC Beijing Changbao Rental Housing REIT",
@@ -7116,7 +7103,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "易方达北投高速REIT披露5月运营数据，假期政策扰动车流环比回落 - 新浪网",
+        "title": "易方达北投高速REIT披露5月运营数据，假期政策扰动车流环比回落 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-06-17T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNnRwTjBVcTU4ZlVHSUF6cjFfTGJFaTJNQmJhTzZIX2s4WWNZRUw2cl9BcjZ1X3NTMXJKS1kzcVl3UUlianJwSjBwS1A5bkxEcVg0WFpHd04yWG51NXJWeXdnWE03c1Z3QmlUWmRTelhmTjBtVGJCYzVBUHM3Ry1ZLXJEYnY?oc=5",
@@ -7137,7 +7124,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508093.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-07-13T09:47:52+00:00",
+        "fetch_time": "2026-07-13T15:12:17+00:00",
         "quote_time": "2026-07-13T08:11:56+00:00"
       },
       "name_en": "E Fund Guangxi Beitou Expressway REIT",
@@ -7203,7 +7190,7 @@
       "regulatory_complexity_score": 55.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "多只公募REITs申报迎新进展 商业不动产REITs试点积极推进 - 新浪网",
+        "title": "多只公募REITs申报迎新进展 商业不动产REITs试点积极推进 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-06-29T07:03:28+00:00",
         "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQT3c5UG5WN1ExaWRaY2NMZ3dhNG1hUFk3ckVpazJ3bXNZdFVZajRLVUN1SXVXNXRlQmtGZDI0MVBjSzNmcXNxMlZvSW9MVVZzNHhYMWY1OUJqTC1iOGVTWFF2WkVmZzJjazRRamJLTVZYU09lVWhHMHEya3BQdHgzT3FoX2FwVUJaSHdqeHMtNmlFQVFJRWpqc01wMmF6YzRVakc3YmhVSUVWZ096LThUcTRCT0hhLUZSWDBUaFNSd2o0YW42NDNIR1BYZW83WUF1RVRDXzU3UE8tdHJlc1hjQkZJdWNaY0VMZmt2ZzZGa2hzVHRweW5WaU5BYWRxVEtxbS0tcDZwSlVrblN3UmZTUGh6cTUwT21ydDZFYk5OdlNyWDBQcEFaejRFSzRrM2tEVWdPQ3I3X0Y?oc=5",
@@ -7452,7 +7439,7 @@
       "regulatory_complexity_score": 40.0,
       "deflation_sensitivity_score": 80.0,
       "latest_news": {
-        "title": "首程控股参投国泰海通砂之船商业REIT和中信建投首农商业REIT - 新浪网",
+        "title": "首程控股参投国泰海通砂之船商业REIT和中信建投首农商业REIT - 新浪财经",
         "category": "market_context",
         "published_at": "2026-07-02T17:09:10+00:00",
         "url": "https://news.google.com/rss/articles/CBMikAVBVV95cUxOSU45UTFXLVJrUThmZU5CYlVCNGU0XzZFSHoyek1QWjJXNWNtZmkySUs1eW5seTE1MHk5NG5KVEhGZV9JSVBqbElKSm9YdmR4ZHRkRHBJYzBIVGJ0cmI3bFFnYVI5OTZKUExVLWtJNXRPaWR2NlJ5ZUVpNHVSWk1ybGhzOXFYN3FYcG5tOVpkM1l0WENvMUJubU1LU1BsLUNLdE84ZmMxWVpyOUU3UUFZT25rdFdzNGdaUmZIa20xeXgwNGk2WGNEN3FjNGc1d2dQX0prRTZDX2xBMlNMWThFQUZhUnRiUWtjZGo1ZC1JeFJWTG9OUFlzVjNRTEw0WDBDTDZhbWRPeG1EZGNfQUZiOFlOTjdUZ190YWZmU0t0QktMdHRvX2QyN1MyZV9EWGpDTlk5MVJFaFcyWnpsb2dybVVlalV3VTRXcEQ0LVo4RzN3bFFnSjczVkJKeW9VRVExZmVsR0tDZTVWenVvT2ZwUW8tbnJJYzV2YWR1NURSUHRMcU1mSko0bVozQ1FDQ1ZpZE52b0pVSVI1ZW9aTmpuelk3SDd3eGU5aGZobFlZY3owZU8wZnFkUEJSenoxZmJjQUxqdElYM0lvTTBYdG56bEl3RWlaN3kzWkxTaXZPeVZqWXlMbl9xanMwQUhzXzJXNmpGbGRWazNrdm44T2QxX2w2U1UzU2s0NFdidFI3akExclBqN2E0Uzg3UjVOVXJhTHk4NEhKVDAxVjEwVFBLZ19rNEdOc2JuancyWU1mMzg2ZmlrVTJhMHZyVHVYYkhrLTMxVUtiTkFFdkR0S2hkZU42dzg2RDNOMlJlZDVxYlFCcEo4bVl1eVNZSUluMXhpcTB4bmRFMEVWeEtGX21sTg?oc=5",
@@ -7535,7 +7522,7 @@
       "regulatory_complexity_score": 55.0,
       "deflation_sensitivity_score": 80.0,
       "latest_news": {
-        "title": "银行理财扎堆布局REITs：有机构年赚27%，有产品提前终止 - 新浪网",
+        "title": "银行理财扎堆布局REITs：有机构年赚27%，有产品提前终止 - 新浪财经",
         "category": "market_context",
         "published_at": "2026-07-03T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMiwANBVV95cUxOUWVMX2luSWtnOG4xd25Fak1UelVZeElYWlM5TWUyZm9sVlZUV0VCd2w5TW1yZEhydFU5VThURnh6T19GbWVpeDRCQkNYeWx4RmtVRnpHVXlQUV8ybjhsV2dUajFrZm5RMmRzcVY4UVZlbVZXLTZBZlRKeGlVNUtuZW1WZ3ZaYVF6VmdTWEhaU3lBX3BfcHl0TTFHclVianpYOWl3VUlSUU9JZU95R0RJZ09nWk9aM3RfVndyWlI4SFMxeFFWdWtJcV90SlpzbHp5WGV4djY3MV9ISlBfRVczckFxYjZPN3NERW4xN2I0M3JZOFFNVWM4Z2xoaUhENHNLeW83UTI2V0pjUTJzSkplR2FuakUwYTRyeDFpZlQ0aXgwV29vU0xFZmQ3SkxldjJmNVoxRkU4c0g0VGp5QzVwUDd1WHJLTzJ1dThOSHdOQTV2c1ZlU0Z6RWlNZHFYYnhFZUZSVUw1MXBqSW04U1VoWHQ5M2JlSnpnOXdhNE1OblozOFVFRXhNeTBKQTQ0d0hKd3Z3NU9nZmRreEw0M1hMZ1JtUElNWGh5Rmp3UzlhcE80eTh6N1hEOTV2QWJwVXdG?oc=5",
