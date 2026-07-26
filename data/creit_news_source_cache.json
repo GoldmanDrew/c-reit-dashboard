@@ -1,30 +1,58 @@
 {
-  "build_time": "2026-07-26T13:57:43+00:00",
-  "status": "ok",
+  "build_time": "2026-07-26T19:37:01+00:00",
+  "status": "failed",
   "provider": "google_news_rss",
   "stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 1026,
-    "items_before_dedupe": 257,
-    "items_after_dedupe": 256,
-    "errors": [],
-    "error_count": 0,
-    "category_counts": {
-      "market_context": 146,
-      "nav_report": 4,
-      "offering_result": 18,
-      "listing_schedule": 47,
-      "expansion_acquisition": 16,
-      "pipeline_asset_update": 2,
-      "distribution": 16,
-      "listing_approval": 7
-    },
-    "match_tier_counts": {
-      "inferred": 57,
-      "explicit": 169,
-      "market": 30
-    },
-    "symbols_with_news": 75
+    "raw_articles_seen": 0,
+    "items_before_dedupe": 0,
+    "items_after_dedupe": 0,
+    "errors": [
+      {
+        "query": "\"REIT\" \"发改委\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"公募REIT\" \"获批\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"基础设施REIT\" \"监管\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"基础设施REIT\" \"收益分配\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"公募REIT\" \"上市\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"公募REIT\" \"分红\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"商业不动产REIT\" \"上市\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"公募REIT\" \"扩募\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"中金唯品会商业REIT\" OR \"508603\" REIT",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"中航中核汇能新能源REIT\" OR \"508030\" REIT",
+        "error": "HTTP Error 503: Service Unavailable"
+      }
+    ],
+    "error_count": 95,
+    "category_counts": {},
+    "match_tier_counts": {},
+    "symbols_with_news": 0
   }
 }
