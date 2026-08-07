@@ -1,5 +1,5 @@
 {
-  "build_time": "2026-08-06T14:35:43+00:00",
+  "build_time": "2026-08-07T00:16:15+00:00",
   "schema_v": 1,
   "source_workbook": "公募reits已发行项目清单.xlsx",
   "price_asof": "2026-08-06",
@@ -146,22 +146,26 @@
     "pending_records": 5,
     "stale_seed_price_rows": 0,
     "stale_seed_rows": 0,
-    "stale_non_seed_price_rows": 0,
-    "fresh_price_rows": 82,
+    "stale_non_seed_price_rows": 82,
+    "fresh_price_rows": 0,
     "pending_price_rows": 5,
     "unexpected_missing_price_rows": 0,
     "rows_missing_source_url": 5,
     "status_counts": {
-      "ok": 82,
+      "stale": 82,
       "pending_not_listed": 5
     },
     "adapter_gap_counts": {
       "zoning_type": 87,
       "pipeline_multiple_of_initial_assets": 87,
-      "latest_news": 14,
+      "latest_news": 15,
       "source_url": 5
     },
-    "stale_field_counts": {},
+    "stale_field_counts": {
+      "last_close_rmb": 82,
+      "return_since_listing_pct": 82,
+      "price_asof": 82
+    },
     "unexpected_missing_counts": {}
   },
   "records": [
@@ -197,15 +201,15 @@
       "latest_news": {
         "title": "公募REITs二级市场止跌回稳，保障房板块强势领涨 - 新浪财经",
         "category": "market_context",
-        "published_at": "2026-08-04T07:00:00+00:00",
-        "url": "https://news.google.com/rss/articles/CBMisARBVV95cUxOYmpFc1BlZGtISzlmYXBYU05Ia3JvV21JbzZEa3o4YkdpU08wYWV5SDkydWx1V19hcjRmWWZSREpzMk1qWXp5dVNvME5hRjBJYmpyQUd6dTRkSGRZRXQwOF9IMUhxcG0yTFhXRFMxTVRtZkVCUlJ6Y3c3S1N4SEJoZXRhNXc5QUlHajBxRXFxSi1fTG1JSk14OTlrTVVIRGExd3otSEhFT29UZFpjNkZnc1NhdTZQVUhpeWFOdFd0QmluUGszS0FLN3M2elN2dFB0UGlTMDdyNElqR3JpN0hubkRHSkIyeHVsM0YybjJYUzIxMHJXNmZQZmN3QkFReXowNm85dWEyWlM2YVBURDVQM2UwekJqR1d6UnVOSDlUT3Zleno0bnhZVGFBSTdjVFpzQW11T182MTdCemtLanVyRUdvVVZjWUt1aVYtUXhld2x1RzZnODRxMFBSSU1qdDhEU3c4eW11OGNmc0Q4WUhTUER3cTJMaE56N2h1cjc4c1ZDT01LRGd0SGp0N2pFNEdlaVh1aEU0bmQ4X05naWhYNE52MU5lVVJMVUxmOEVKSUdCcGh6b0lUTGtLVW4xRFNLemlhMEtLOGxHbjlMc203Rnc1ZHZsTjZhMm5kejV6Z1V6Ukx3VV9ncXVDcHY5OXhSMWRJR2RuaXBBS2RUQi14RG9RMWdpTDBVMWVucHphMEhKbVB1VV82RDZWZlRpbEpKSFFhWDdaU2p6Y3hRREMyUw?oc=5",
+        "published_at": "2026-08-05T03:07:29+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiwwRBVV95cUxQYmJUejdNWk40aldJdVoxWlZhQm8xZGlaSnRpRFhILXBpRHZpaE9ZX3dSODgzV2w3X0x6bDBTX2Q0SnpvV0QxcE1IekpaS1I2UnR0OVZ0QmhuVXp5WW0yUTdGQksyUXd4c0ZtWkIxeU9qcDJ1LVRfekZOcGEtajdoS3JDMjhCaDAzMXdUUGUyM2dIUkxOQnRRelFaODUzR25XSUFfYU5BcktXM1RNYjlYS1NWcHFveHNuamVKZERlMXU3RmdXMHJTdnBma0pLczB6VXBuc3JXQ29yMVIyalNUUDI3QXRSektTNDFMdWtlWlVsTDAza25MRmxsd2c3by05Tko3UndtVXdCZnpuQ3JQaWx0QjA3cXZ1YXBnSk96ZTMwVm5xWFJYZTBvZldIU1J1QzkyMEVCd0ZIRU5yTFVYOGdMbVVNN2dTQ1kxZ2ZfWUlQbnJodE9aaklVb1hsSGlPVXYwMThpVXQtb0JmTUtyWFRtaGl1bTEwR19OOW5SVmg2bTRRQnpBWnJmQ3kzMVFiSTVaaUZhR2FRVDNLYi1Ibkh0SGdnSlFqVEFaR2V5VWd4Y3hjYWtmLW1YNVJNOTNlR2x5QkFMS0dsMkVZdzlZVjZGM0U4YWI4M3pVbmRRWm0ya3pYMlB0bE91Y29ic0h5b3lkNS0zSXFtaUZmbWtBOGJjY3NGUWZHOWVfZm9FVjJuOEUyRG5IczRwNXlzZUJrYTVha3FxUjdPTGswRDNsak5QdGRvcDZXdGlRUlFJbnhoME0?oc=5",
         "confidence": 0.72,
         "match_tier": "inferred"
       },
       "source_url": "https://quote.eastmoney.com/sz180301.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.058,
       "daily_return_pct": -0.68,
       "daily_change_rmb": -0.014,
@@ -216,7 +220,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180301.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:54+00:00"
       },
       "name_en": "Hongtu Innovation Yan Tian Port REIT",
@@ -235,10 +239,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -292,7 +300,7 @@
       "source_url": "https://quote.eastmoney.com/sz180801.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 11.598,
       "daily_return_pct": 0.96,
       "daily_change_rmb": 0.111,
@@ -303,7 +311,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180801.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:42+00:00"
       },
       "name_en": "AVIC Shougang Green Energy REIT",
@@ -322,10 +330,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -369,17 +381,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "华安张江产业园REIT：二季度继续亏损，核心项目租金同比降超27% - 东方财富",
+        "title": "华安张江产业园REIT：二季度继续亏损，核心项目租金同比降超27% - thepaper.cn",
         "category": "market_context",
         "published_at": "2026-07-22T07:00:00+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pTk5Fa0I5cHM0MlNETE84ZmxmNDZTZk5RQXM4bmxXQjVRQnZLNG1kc083cnZQSW1YMHhENnYybGpKeXl0di1NaGVoZUZrbS1lczdnbzZUU1FfTVdaZ1F5bw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9PVm1iUGRVcm9VX1B2OTFyOVI5Nm84OFNGaFJhS29kQW54MmhXQV9Mbm5fMmJpUUNwTjF6SUZSVTdvUXZHeEJ4VnJKU3luZjlJTUozVWlYbjgxRVNtaFE?oc=5",
         "confidence": 0.88,
         "match_tier": "explicit"
       },
       "source_url": "https://quote.eastmoney.com/sh508000.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 1.774,
       "daily_return_pct": -1.58,
       "daily_change_rmb": -0.028,
@@ -390,7 +402,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508000.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:51+00:00"
       },
       "name_en": "Hua An Zhangjiang Industrial Park REIT",
@@ -409,10 +421,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -466,7 +482,7 @@
       "source_url": "https://quote.eastmoney.com/sh508001.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 4.802,
       "daily_return_pct": -0.35,
       "daily_change_rmb": -0.017,
@@ -477,7 +493,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508001.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:47+00:00"
       },
       "name_en": "Zheshang Shanghai-Hangzhou-Ningbo REIT",
@@ -496,10 +512,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -546,7 +566,7 @@
       "source_url": "https://quote.eastmoney.com/sh508006.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.485,
       "daily_return_pct": -0.2,
       "daily_change_rmb": -0.007,
@@ -557,7 +577,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508006.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:34+00:00"
       },
       "name_en": "Fullgoal Capital Water REIT",
@@ -576,10 +596,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -627,7 +651,7 @@
       "source_url": "https://quote.eastmoney.com/sh508027.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.536,
       "daily_return_pct": -0.99,
       "daily_change_rmb": -0.025,
@@ -638,7 +662,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508027.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:50+00:00"
       },
       "name_en": "Soochow Suzhou Industrial Park REIT",
@@ -657,10 +681,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -715,7 +743,7 @@
       "source_url": "https://quote.eastmoney.com/sh508056.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.258,
       "daily_return_pct": -0.27,
       "daily_change_rmb": -0.006,
@@ -726,7 +754,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508056.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:38+00:00"
       },
       "name_en": "CICC GLP REIT",
@@ -745,10 +773,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -792,17 +824,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "博时蛇口产园REIT（180101）低开高走跌0.05%，成交额476.89万元 快报 - 手机网易网",
+        "title": "#其它# 博时蛇口产园REIT：6月16日6253.57万份基金份额解除限售 - 搜狐网",
         "category": "market_context",
-        "published_at": "2026-07-23T03:58:30+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ZOHE0Szd6bmVTZV9ETGg3RGxZUFoyTTZYU2JHeHU4Um9md3NYbHV3Uk1VdlMyVUVWcERHeTZ4MFJNOE0zQ2dPV1RfXzZ1UlRnaXFGRA?oc=5",
+        "published_at": "2026-08-06T01:29:42+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5wNlRvU0Z5dFVmZ2ZaOU9VQlRhXzN6WERmUmJVMUpSSTVhN2hFNTZ6ek9iTDM3QmVYcjdjd1hEZ3pXUDRuWEI2MGVyMmZKWWc?oc=5",
         "confidence": 0.88,
         "match_tier": "explicit"
       },
       "source_url": "https://quote.eastmoney.com/sz180101.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 1.393,
       "daily_return_pct": -1.36,
       "daily_change_rmb": -0.019,
@@ -813,7 +845,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180101.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:00+00:00"
       },
       "name_en": "Bosera Shekou Industrial Park REIT",
@@ -832,10 +864,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -889,7 +925,7 @@
       "source_url": "https://quote.eastmoney.com/sz180201.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 7.565,
       "daily_return_pct": -0.2,
       "daily_change_rmb": -0.015,
@@ -900,7 +936,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180201.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:48+00:00"
       },
       "name_en": "Ping An Guangzhou Guanghe Expressway REIT",
@@ -919,10 +955,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -976,7 +1016,7 @@
       "source_url": "https://quote.eastmoney.com/sh508099.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 1.1,
       "daily_return_pct": -0.45,
       "daily_change_rmb": -0.005,
@@ -987,7 +1027,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508099.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:52+00:00"
       },
       "name_en": "CCB Principal Zhongguancun REIT",
@@ -1006,10 +1046,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -1063,7 +1107,7 @@
       "source_url": "https://quote.eastmoney.com/sz180202.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 4.746,
       "daily_return_pct": -0.29,
       "daily_change_rmb": -0.014,
@@ -1074,7 +1118,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180202.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:51+00:00"
       },
       "name_en": "Huaxia Yuexiu Expressway REIT",
@@ -1093,10 +1137,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -1150,7 +1198,7 @@
       "source_url": "https://quote.eastmoney.com/sh508018.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 5.93,
       "daily_return_pct": 0.17,
       "daily_change_rmb": 0.01,
@@ -1161,7 +1209,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508018.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:45+00:00"
       },
       "name_en": "Huaxia China Communications Construction REIT",
@@ -1180,10 +1228,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -1227,17 +1279,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "本周REITs快报 - chnfund.com",
+        "title": "国金中国铁建REIT二季度可供分配金额9031.25万元，同比下滑15.24% - 新浪财经",
         "category": "market_context",
-        "published_at": "2026-07-11T00:01:00+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5hWjNHS2YxdWkyb3BIc0tZVFJFUVVCa1M1Sk9OUENLbGladEFETU5mdHAwd2c4SDFkZTdyTXVzS3M2V3k4aWU3YmRZdzBucXdGVHNBLWpuOVBUOGJveHItVnRFaWVZV2JTSmZiTUdTR0RoMHZrMk5zR05n?oc=5",
-        "confidence": 0.64,
-        "match_tier": "inferred"
+        "published_at": "2026-07-20T07:00:00+00:00",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQ0ZlcEdzdG41cHJMUmlpcVVmakp1cWxsM3JrVmNBRkdmYlE1NVAzQmpQdllSSDNCNjZvcmxtcUVodEVvNlpiVUVVVUd3Zno1YXpVLWFUY2V5X25ub0V0OFNVMzBDT3VQN1JNWi1kaFd2ZkN4dlcwU1lKeWtBYVAwRg?oc=5",
+        "confidence": 0.88,
+        "match_tier": "explicit"
       },
       "source_url": "https://quote.eastmoney.com/sh508008.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 7.645,
       "daily_return_pct": 0.35,
       "daily_change_rmb": 0.027,
@@ -1248,7 +1300,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508008.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:47+00:00"
       },
       "name_en": "Sinolink China Railway Construction REIT",
@@ -1267,10 +1319,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -1324,7 +1380,7 @@
       "source_url": "https://quote.eastmoney.com/sz180401.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 5.575,
       "daily_return_pct": 0.59,
       "daily_change_rmb": 0.033,
@@ -1335,7 +1391,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180401.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:03+00:00"
       },
       "name_en": "Penghua Shenzhen Energy REIT",
@@ -1354,10 +1410,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -1411,7 +1471,7 @@
       "source_url": "https://quote.eastmoney.com/sz180501.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.248,
       "daily_return_pct": 0.22,
       "daily_change_rmb": 0.007,
@@ -1422,7 +1482,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180501.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:00+00:00"
       },
       "name_en": "Hongtu Innovation Shenzhen Anju REIT",
@@ -1441,10 +1501,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -1498,7 +1562,7 @@
       "source_url": "https://quote.eastmoney.com/sh508058.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.871,
       "daily_return_pct": -0.39,
       "daily_change_rmb": -0.015,
@@ -1509,7 +1573,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508058.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:44+00:00"
       },
       "name_en": "CICC Xiamen Anju REIT",
@@ -1528,10 +1592,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -1578,7 +1646,7 @@
       "source_url": "https://quote.eastmoney.com/sh508068.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.868,
       "daily_return_pct": -0.05,
       "daily_change_rmb": -0.002,
@@ -1589,7 +1657,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508068.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:12:00+00:00"
       },
       "name_en": "Huaxia Beijing Affordable Housing REIT",
@@ -1608,10 +1676,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -1656,17 +1728,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "华夏合肥高新REIT (180102): 关于举办华夏合肥高新创新产业园封闭式基础设施证券投资基金投资者开放日活动 - 中财网",
+        "title": "华夏合肥高新REIT二季度可供分配金额732.77万，同比下降57.19万元 - 新浪财经",
         "category": "market_context",
-        "published_at": "2026-08-04T11:57:36+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5hX0JIZDJROXBCS0xVLWgtM0h2cElOSURMRU85QnotWDJUeTl3bW45c2ZTYktvVUdNb29UYWpRRmNmQ1Y1VEF2S0hHWEJoZDVoNDJTRFl3?oc=5",
+        "published_at": "2026-07-21T07:00:00+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSnBiTWFMRzExLVVfS1FJMi10ZElaQkpvemMtdENJVXhYakJ2X2lpTlNtNlVjTXl2OFB5aFQ3bWtXVFBCQnpac3dZclI3ay1yTzRkaTMxdEMtTmJXa3NzN2ctTk1ZdUJteTBSRlZob3RvUFROcFY5UkZJOHdBSEp1VHdDX1NWV1MtVi1v?oc=5",
         "confidence": 0.88,
         "match_tier": "explicit"
       },
       "source_url": "https://quote.eastmoney.com/sz180102.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 0.999,
       "daily_return_pct": 0.1,
       "daily_change_rmb": 0.001,
@@ -1677,7 +1749,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180102.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:45+00:00"
       },
       "name_en": "Huaxia Hefei High-Tech REIT",
@@ -1696,10 +1768,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -1753,7 +1829,7 @@
       "source_url": "https://quote.eastmoney.com/sh508021.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.071,
       "daily_return_pct": -0.33,
       "daily_change_rmb": -0.01,
@@ -1764,7 +1840,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508021.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:47+00:00"
       },
       "name_en": "Guotai Haitong Lingang Innovation Industrial Park REIT",
@@ -1783,10 +1859,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -1840,7 +1920,7 @@
       "source_url": "https://quote.eastmoney.com/sh508088.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.488,
       "daily_return_pct": 0.14,
       "daily_change_rmb": 0.005,
@@ -1851,7 +1931,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508088.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:43+00:00"
       },
       "name_en": "Guotai Haitong D&J New Economy REIT",
@@ -1870,10 +1950,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -1927,7 +2011,7 @@
       "source_url": "https://quote.eastmoney.com/sh508066.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 5.86,
       "daily_return_pct": 0.85,
       "daily_change_rmb": 0.05,
@@ -1938,7 +2022,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508066.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:57+00:00"
       },
       "name_en": "Huatai Jiangsu Communications Holding REIT",
@@ -1957,10 +2041,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2007,7 +2095,7 @@
       "source_url": "https://quote.eastmoney.com/sh508009.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 5.776,
       "daily_return_pct": -0.36,
       "daily_change_rmb": -0.021,
@@ -2018,7 +2106,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508009.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:44+00:00"
       },
       "name_en": "CICC Anhui Transportation Holding REIT",
@@ -2037,10 +2125,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2095,7 +2187,7 @@
       "source_url": "https://quote.eastmoney.com/sh508077.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.651,
       "daily_return_pct": 0.41,
       "daily_change_rmb": 0.011,
@@ -2106,7 +2198,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508077.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:45+00:00"
       },
       "name_en": "Huaxia Fund China Resources Youchao REIT",
@@ -2125,10 +2217,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2182,7 +2278,7 @@
       "source_url": "https://quote.eastmoney.com/sz180103.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 1.757,
       "daily_return_pct": 0.68,
       "daily_change_rmb": 0.012,
@@ -2193,7 +2289,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180103.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:39+00:00"
       },
       "name_en": "Huaxia Heda High-Tech REIT",
@@ -2212,10 +2308,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2262,7 +2362,7 @@
       "source_url": "https://quote.eastmoney.com/sh508098.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.386,
       "daily_return_pct": -1.48,
       "daily_change_rmb": -0.05,
@@ -2273,7 +2373,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508098.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:48+00:00"
       },
       "name_en": "Harvest JD Warehousing REIT",
@@ -2292,10 +2392,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2350,7 +2454,7 @@
       "source_url": "https://quote.eastmoney.com/sh508028.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 9.561,
       "daily_return_pct": 0.21,
       "daily_change_rmb": 0.02,
@@ -2361,7 +2465,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508028.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:12:01+00:00"
       },
       "name_en": "CSC SPIC New Energy REIT",
@@ -2380,10 +2484,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2430,7 +2538,7 @@
       "source_url": "https://quote.eastmoney.com/sh508096.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 9.309,
       "daily_return_pct": 0.66,
       "daily_change_rmb": 0.061,
@@ -2441,7 +2549,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508096.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:51+00:00"
       },
       "name_en": "AVIC Jingneng International Energy REIT",
@@ -2460,10 +2568,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2511,7 +2623,7 @@
       "source_url": "https://quote.eastmoney.com/sh508019.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 1.2,
       "daily_return_pct": -0.67,
       "daily_change_rmb": -0.008,
@@ -2522,7 +2634,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508019.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:50+00:00"
       },
       "name_en": "CICC Hubei Science & Technology Investment Optics Valley REIT",
@@ -2541,10 +2653,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2599,7 +2715,7 @@
       "source_url": "https://quote.eastmoney.com/sh508007.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 7.912,
       "daily_return_pct": -0.06,
       "daily_change_rmb": -0.005,
@@ -2610,7 +2726,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508007.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:53+00:00"
       },
       "name_en": "CICC Shandong Hi-Speed REIT",
@@ -2629,10 +2745,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2686,7 +2806,7 @@
       "source_url": "https://quote.eastmoney.com/sh508031.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.742,
       "daily_return_pct": -0.03,
       "daily_change_rmb": -0.001,
@@ -2697,7 +2817,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508031.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:49+00:00"
       },
       "name_en": "Guotai Haitong Chengtou Kuan Ting Rental Housing REIT",
@@ -2716,10 +2836,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2773,7 +2897,7 @@
       "source_url": "https://quote.eastmoney.com/sh508017.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.79,
       "daily_return_pct": -0.03,
       "daily_change_rmb": -0.001,
@@ -2784,7 +2908,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508017.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:57+00:00"
       },
       "name_en": "Huaxia Jinmao Consumer Infrastructure REIT",
@@ -2803,10 +2927,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2860,7 +2988,7 @@
       "source_url": "https://quote.eastmoney.com/sh508011.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.42,
       "daily_return_pct": -1.08,
       "daily_change_rmb": -0.037,
@@ -2871,7 +2999,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508011.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:34+00:00"
       },
       "name_en": "Harvest Wumart Consumer Infrastructure REIT",
@@ -2890,10 +3018,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -2947,7 +3079,7 @@
       "source_url": "https://quote.eastmoney.com/sz180601.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 9.376,
       "daily_return_pct": -0.92,
       "daily_change_rmb": -0.086,
@@ -2958,7 +3090,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180601.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:36+00:00"
       },
       "name_en": "Huaxia China Resources Consumer Infrastructure REIT",
@@ -2977,10 +3109,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -3034,7 +3170,7 @@
       "source_url": "https://quote.eastmoney.com/sh508033.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 6.304,
       "daily_return_pct": -0.3,
       "daily_change_rmb": -0.019,
@@ -3045,7 +3181,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508033.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:37+00:00"
       },
       "name_en": "E Fund Shenzhen Expressway REIT",
@@ -3064,10 +3200,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -3114,7 +3254,7 @@
       "source_url": "https://quote.eastmoney.com/sh508026.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.681,
       "daily_return_pct": 0.11,
       "daily_change_rmb": 0.004,
@@ -3125,7 +3265,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508026.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:12:01+00:00"
       },
       "name_en": "Harvest PowerChina Clean Energy REIT",
@@ -3144,10 +3284,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -3195,7 +3339,7 @@
       "source_url": "https://quote.eastmoney.com/sz180602.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.86,
       "daily_return_pct": -0.8,
       "daily_change_rmb": -0.031,
@@ -3206,7 +3350,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180602.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:39+00:00"
       },
       "name_en": "CICC InCity Consumer Infrastructure REIT",
@@ -3225,10 +3369,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -3276,7 +3424,7 @@
       "source_url": "https://quote.eastmoney.com/sh508086.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 4.302,
       "daily_return_pct": -1.39,
       "daily_change_rmb": -0.06,
@@ -3287,7 +3435,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508086.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:37+00:00"
       },
       "name_en": "ICBC Hebei Expressway REIT",
@@ -3306,10 +3454,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -3353,18 +3505,11 @@
       "pipeline_readiness_score": null,
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
-      "latest_news": {
-        "title": "连续反弹后，公募REITs二级市场上周出现调整 - 新浪财经",
-        "category": "market_context",
-        "published_at": "2026-08-03T18:36:09+00:00",
-        "url": "https://news.google.com/rss/articles/CBMi8AJBVV95cUxNWkZKdk45QTVRQUltMXBNRTVRTkRrcnE5Q3phclByaXUtcFNkSXJDTGRsNHdTSkZFTXdlcEkwX3FkRnFZVkhNdkZlQ3liMXZGanJrbHlURDhJbU94SS1QLUNrSjNlYnIxc3ZCYXFFU3Y2cDNueWdodnBHamw4N0ZhQ1Q5YnB1WUtxdlpyNmZmS0ppd3NZWjZhelNWcnpVRV9oR2lkX2Z1ZmVpTUQ4am5hRFN3bU44M3RkV1hPTHF4Mm80N3FFM1hBRGdncTQzeGF1clRaV3hvNHF0SDlaa2VZa3ZHM1c5S0xYZXNyUEZjTDR6Z0JGaWE2MkhwSzUweTMyRkdidjFRa2x3dGZ5ajNPX21wRHFfQy03Vk1uV0ZrY2ZES0o4dUxYdEYydGhqSEYzZlR0OTdBTlAwUHJxTGFjaXhCRFZ3bjFEYmI0SzUtM3RxSU1vNU1uWWRrZklpQkNNaTg4a3RZMVJzaEdJX01ONQ?oc=5",
-        "confidence": 0.72,
-        "match_tier": "inferred"
-      },
+      "latest_news": null,
       "source_url": "https://quote.eastmoney.com/sh508089.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 4.403,
       "daily_return_pct": -0.34,
       "daily_change_rmb": -0.015,
@@ -3375,7 +3520,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508089.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:12:01+00:00"
       },
       "name_en": "Huaxia TBEA New Energy REIT",
@@ -3394,15 +3539,20 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first",
       "nav_rmb": null,
@@ -3451,7 +3601,7 @@
       "source_url": "https://quote.eastmoney.com/sz180302.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.66,
       "daily_return_pct": -0.64,
       "daily_change_rmb": -0.017,
@@ -3462,7 +3612,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180302.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:48+00:00"
       },
       "name_en": "Huaxia Shenzhen International REIT",
@@ -3481,10 +3631,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -3530,7 +3684,7 @@
       "latest_news": {
         "title": "华安百联消费REIT二季度收入5350.55万元 可供分配金额3223.91万元 - Moomoo",
         "category": "market_context",
-        "published_at": "2026-07-20T09:27:56+00:00",
+        "published_at": "2026-07-20T07:00:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9WMVNGeXZ3Y3NNa00yaVE2cjBWUkxldzYzY1B1YV8zTTFDY2hMbmhYdWhwTWJfWFd6VmhKbk8yWlp5WkdET0tfSGp1V21oWEtsRnNj?oc=5",
         "confidence": 0.88,
         "match_tier": "explicit"
@@ -3538,7 +3692,7 @@
       "source_url": "https://quote.eastmoney.com/sh508002.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.602,
       "daily_return_pct": -2.27,
       "daily_change_rmb": -0.059,
@@ -3549,7 +3703,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508002.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:52+00:00"
       },
       "name_en": "Hua An Bailian Consumer Infrastructure REIT",
@@ -3568,10 +3722,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -3625,7 +3783,7 @@
       "source_url": "https://quote.eastmoney.com/sh508015.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 5.151,
       "daily_return_pct": 0.25,
       "daily_change_rmb": 0.013,
@@ -3636,7 +3794,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508015.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:59+00:00"
       },
       "name_en": "CSC Mingyang Smart Energy REIT",
@@ -3655,10 +3813,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -3712,7 +3874,7 @@
       "source_url": "https://quote.eastmoney.com/sh508005.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 4.059,
       "daily_return_pct": -1.48,
       "daily_change_rmb": -0.06,
@@ -3723,7 +3885,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508005.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:37+00:00"
       },
       "name_en": "Huaxia Capital Outlets REIT",
@@ -3742,10 +3904,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -3789,17 +3955,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "博时津开产园REIT收盘价涨5.11% 出租率83.98% - QQ News",
+        "title": "博时津开产园REIT收盘价涨5.11% 出租率83.98% - 观点网",
         "category": "market_context",
-        "published_at": "2026-08-02T21:44:00+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE00ZUQwV3NySUphaTVaV0ZsNTFCU0sycHgzQ21UcWJUVlRkakdNc1NSTWNTY3N6bVllaExpTjNCNWtILUpfazZ4UmxMU3NleVdtdndNWTIzUQ?oc=5",
+        "published_at": "2026-08-02T12:21:32+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8wUFhmZ0VMNXJXMmVQZnVHN2xreWI1Z3NHdGFDYTltYzRVX0lfb0RyUGhyN3dwbURqSWhhNXY2M1o0bUxxeDg1bzQ5Umlhdw?oc=5",
         "confidence": 0.88,
         "match_tier": "explicit"
       },
       "source_url": "https://quote.eastmoney.com/sh508022.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.44,
       "daily_return_pct": -1.39,
       "daily_change_rmb": -0.034,
@@ -3810,7 +3976,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508022.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:32+00:00"
       },
       "name_en": "Bosera Tianjin Development Industrial Park REIT",
@@ -3829,10 +3995,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -3876,7 +4046,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "广州开发区产业园REIT价格较发行价“腰斩” 底层资产出租率降至67% - 财新",
+        "title": "广州开发区产业园REIT价格较发行价“腰斩” 底层资产出租率降至67% - companies.caixin.com",
         "category": "offering_result",
         "published_at": "2026-08-05T10:29:00+00:00",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE92X1NteGpHeXhFRlJIQkhRWDBXMnBRVDd2MUdzajJJZVphLXZwMlFIRVhUZElXWGVuMmhIOTVjMXA3V1RxM1dJQllWUzNqT0xxYkpra01MYnlEd2RtOFhWQ2sxWGhkM2s?oc=5",
@@ -3886,7 +4056,7 @@
       "source_url": "https://quote.eastmoney.com/sz180105.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 1.283,
       "daily_return_pct": -0.08,
       "daily_change_rmb": -0.001,
@@ -3897,7 +4067,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180105.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:33+00:00"
       },
       "name_en": "E Fund Guangzhou Development Industrial Park REIT",
@@ -3916,10 +4086,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -3963,17 +4137,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 70.0,
       "latest_news": {
-        "title": "GDIRI观察 | 打包天津项目 大悦城双REIT平台后的资管规模化考验 - 搜狐网",
-        "category": "market_context",
-        "published_at": "2026-07-29T14:49:02+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBvWW5MUGNGMi01Y21qdVJrcXRyTncxLTJaZ1VrZnlBTm9iOTdSaWxuQXpnMVRJSnRCd3J2VEQ3YW0zaW1td1Y1UjdfeXB3R2FxTnc?oc=5",
-        "confidence": 0.64,
-        "match_tier": "inferred"
+        "title": "华夏大悦城消费REIT二季报：收入8838.97万元 出租率97.17% - 搜狐网",
+        "category": "nav_report",
+        "published_at": "2026-07-22T14:55:47+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB4TmhoMlVlWUhUeVlXbVhqRDF2ekpXeFNJSGRQYkIzSGtCVXkwQ3hQbDcyeGxqTl80MDZEeHlXMEdZcVFublpmWHNfaURMRy1UY1E?oc=5",
+        "confidence": 0.88,
+        "match_tier": "explicit"
       },
       "source_url": "https://quote.eastmoney.com/sz180603.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 4.348,
       "daily_return_pct": -0.02,
       "daily_change_rmb": -0.001,
@@ -3984,7 +4158,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180603.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:51+00:00"
       },
       "name_en": "Huaxia Joy City Consumer Infrastructure REIT",
@@ -4003,10 +4177,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -4060,7 +4238,7 @@
       "source_url": "https://quote.eastmoney.com/sz180303.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.263,
       "daily_return_pct": -2.24,
       "daily_change_rmb": -0.073,
@@ -4071,7 +4249,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180303.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:57+00:00"
       },
       "name_en": "Huatai Blogis Logistics REIT",
@@ -4090,10 +4268,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -4147,7 +4329,7 @@
       "source_url": "https://quote.eastmoney.com/sz180502.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.385,
       "daily_return_pct": -0.86,
       "daily_change_rmb": -0.029,
@@ -4158,7 +4340,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180502.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:09+00:00"
       },
       "name_en": "China Merchants Fund Shekou Rental Housing REIT",
@@ -4177,10 +4359,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -4234,7 +4420,7 @@
       "source_url": "https://quote.eastmoney.com/sz180203.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 7.121,
       "daily_return_pct": 0.13,
       "daily_change_rmb": 0.009,
@@ -4245,7 +4431,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180203.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:45+00:00"
       },
       "name_en": "China Merchants Expressway REIT",
@@ -4264,10 +4450,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -4321,7 +4511,7 @@
       "source_url": "https://quote.eastmoney.com/sh508003.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.48,
       "daily_return_pct": -2.59,
       "daily_change_rmb": -0.09,
@@ -4332,7 +4522,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508003.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:35+00:00"
       },
       "name_en": "CICC Liando Sci-Tech Innovation REIT",
@@ -4351,10 +4541,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -4408,7 +4602,7 @@
       "source_url": "https://quote.eastmoney.com/sh508069.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 5.204,
       "daily_return_pct": 0.0,
       "daily_change_rmb": 0.0,
@@ -4419,7 +4613,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508069.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:42+00:00"
       },
       "name_en": "Huaxia Expressway Nanjing Transportation REIT",
@@ -4438,10 +4632,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -4485,7 +4683,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 60.0,
       "latest_news": {
-        "title": "首亏叠加可供分配同比连降，银华绍兴原水水利REIT修正 “类固收” 预期 - user.guancha.cn",
+        "title": "首亏叠加可供分配同比连降，银华绍兴原水水利REIT修正 “类固收” 预期 - 风闻",
         "category": "market_context",
         "published_at": "2026-07-23T03:12:23+00:00",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE80cGhQWFFTTzhhemNRcTFvVU1EYjdjYVFBMVphcXhKWGlzZmI0bWx6NXdTU19rLTFqVTRqS0swTGJwN2oxbVZTSnVtS2h6c3ZfcEx3MkxOcnJ6WnRhcmluY0JrWFNWWHJzdllaN2xR?oc=5",
@@ -4495,7 +4693,7 @@
       "source_url": "https://quote.eastmoney.com/sz180701.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.763,
       "daily_return_pct": -0.43,
       "daily_change_rmb": -0.016,
@@ -4506,7 +4704,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180701.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:09+00:00"
       },
       "name_en": "Yinhua Shaoxing Raw Water REIT",
@@ -4525,10 +4723,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -4582,7 +4784,7 @@
       "source_url": "https://quote.eastmoney.com/sh508097.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 1.856,
       "daily_return_pct": -0.81,
       "daily_change_rmb": -0.015,
@@ -4593,7 +4795,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508097.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:37+00:00"
       },
       "name_en": "Huatai Nanjing Jianye REIT",
@@ -4612,10 +4814,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -4659,17 +4865,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "公募REITs二级市场止跌回稳，保障房板块强势领涨 - 每日经济新闻",
+        "title": "工银蒙能清洁能源REIT (180402): 工银瑞信蒙能清洁能源封闭式基础设施证券投资基金关于交易情况的提示公告 - 中财网",
         "category": "market_context",
-        "published_at": "2026-08-04T07:26:00+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBBbmdORnNQWVppN2pLVHZGdFY5eUljQUx3aFliZURLTUluTm5OUl82N1VIaHNBVVhsM1NRdlhpZk1TbG9Rd2tqSFZhQTd5Vkh0TVplZW85RmxPY2p4d2lzcVUtZTllQQ?oc=5",
-        "confidence": 0.72,
-        "match_tier": "inferred"
+        "published_at": "2026-07-31T12:51:49+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1FMHQ2dmtNNUc2Z1ZJbFNZNjIzelE4cHp1R0hES0VCWi1jTlNxZFNET2x3TG90bVlDYUJLemxXdmhUMFBVRnVyYmcybWF0Q3NfSmc2eF9n?oc=5",
+        "confidence": 0.88,
+        "match_tier": "explicit"
       },
       "source_url": "https://quote.eastmoney.com/sz180402.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 4.607,
       "daily_return_pct": -2.32,
       "daily_change_rmb": -0.107,
@@ -4680,7 +4886,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180402.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:06+00:00"
       },
       "name_en": "ICBC Mengneng Clean Energy REIT",
@@ -4699,10 +4905,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -4746,17 +4956,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "公募REITs二级市场止跌回稳，保障房板块强势领涨 - 新浪财经",
+        "title": "中金重庆两江REIT(508010)基金经理_ 基金档案 - 天天基金",
         "category": "market_context",
-        "published_at": "2026-08-05T06:11:15+00:00",
-        "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNUHZhYmQ5UmtXX1JVaFVaNDVKNWNacmhWeV9wNjN3T0g0U2VwYWpHclg5MkljX25aWFd3WFhOdjRQQTJ5Q0tzUzgwT2NYMVd1aFpHQVYxbGNraVMzRmkybkxQY21MSkowajFjYnIzdnFsUF93a3NGYWstZzV6VkJBQ0RLeHQxdTVEVFBnQk9CTnVKRkNDTERUNGVqVE1QV0hiY1hYZUlIMEw0Q1djWUFaMXpvMXhQN2c4a2Q5azJrQ0dpVjBvRU05eXQ2eWdoVDBLUDZTa2stOTJ3czZHWGt3Y08xVGFydzkydUszT0IyNk1DcV9FeWRZS1BIc2c5Wk5wNDdqdTl5em9BdGpQazBxQTAyWjEtUGc?oc=5",
-        "confidence": 0.72,
-        "match_tier": "inferred"
+        "published_at": "2026-08-03T15:19:52+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBtdkI5NmJUNEhaa2RmNERZeGxNdThVX3RDbDd0azV0bTVxMTNwSTdRbUVybkxGRkVfUEJmdGFhWDhUbnhIbW44aFVFUS03SWdpNkk1SGZrM01lMmM?oc=5",
+        "confidence": 0.88,
+        "match_tier": "explicit"
       },
       "source_url": "https://quote.eastmoney.com/sh508010.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.085,
       "daily_return_pct": 0.86,
       "daily_change_rmb": 0.018,
@@ -4767,7 +4977,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508010.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:35+00:00"
       },
       "name_en": "CICC Chongqing Liangjiang REIT",
@@ -4786,10 +4996,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -4833,7 +5047,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "广发成都高投产业园REIT：上市19个月折价14%，双资产走势深度分化 - user.guancha.cn",
+        "title": "广发成都高投产业园REIT：上市19个月折价14%，双资产走势深度分化 - 风闻",
         "category": "listing_schedule",
         "published_at": "2026-07-20T13:45:01+00:00",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBHUnBLWndYbzdmUUlQeGQ4dENsMktLU3dneTQxTjR0M05rUkd0Z2tjR0c0enRGNlpfdWhxaGMxQlpFcjRQaWhPbmFiTXBaM0RzUTNzcW9oaUJZLVpHZkYyaHBDQ3RWYmFHUS1sR3hB?oc=5",
@@ -4843,7 +5057,7 @@
       "source_url": "https://quote.eastmoney.com/sz180106.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.493,
       "daily_return_pct": -2.53,
       "daily_change_rmb": -0.063,
@@ -4854,7 +5068,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180106.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:42+00:00"
       },
       "name_en": "GF Chengdu Gaotou Industrial Park REIT",
@@ -4873,10 +5087,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -4920,7 +5138,7 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "平安宁波交投REIT披露2026年首次分红：每10份派3元，分红比例94.15% - 同花顺财经",
+        "title": "平安宁波交投REIT披露2026年首次分红：每10份派3元，分红比例94.15% - 同花顺",
         "category": "distribution",
         "published_at": "2026-07-15T08:37:09+00:00",
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4yRmxXbUpLYmlzb0s1aHg0Q2NoM3l4Wk0wbUtaVmR5Nll4b3AzYXV4RUs1UXNMUzZuNy1XbnhVZFR0WXJpMjF3blpIUXZFdGI1OEVlaXE3ME04T25QdF9wUmdn?oc=5",
@@ -4930,7 +5148,7 @@
       "source_url": "https://quote.eastmoney.com/sh508036.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 7.589,
       "daily_return_pct": -0.84,
       "daily_change_rmb": -0.064,
@@ -4941,7 +5159,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508036.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:51+00:00"
       },
       "name_en": "Ping An Ningbo Communications Investment REIT",
@@ -4960,10 +5178,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5007,17 +5229,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 45.0,
       "latest_news": {
-        "title": "利空落地，中证REITs指数重回1000点，仓储物流板块领涨 - 东方财富",
+        "title": "华安外高桥REIT二季度收入2147万 可供分配金额降14.36% - 观点网",
         "category": "market_context",
-        "published_at": "2026-08-05T03:43:49+00:00",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE84Nlp0WWU0aVBnRkJYVFRLVnFDblQ4VmU3Z01wMTVNVWFQN2RQczJkN1JQLXU4bm16YnJXYmxDYjVNM3JVZDBiVG9VQVM2cDZlakVVMnJPVXFpS2wwd2drSS13?oc=5",
-        "confidence": 0.64,
-        "match_tier": "inferred"
+        "published_at": "2026-07-20T07:00:00+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB6NF9VV2JwcEhyV0t0YVBvSGtPN1BXN1pmRUttWHpkQXJ0Vi11dGFya2xCSUpoTEMyei1VX2ZfbE9MUUlKR2kySEluT3NuUQ?oc=5",
+        "confidence": 0.88,
+        "match_tier": "explicit"
       },
       "source_url": "https://quote.eastmoney.com/sh508048.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.843,
       "daily_return_pct": 0.18,
       "daily_change_rmb": 0.005,
@@ -5028,7 +5250,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508048.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:41+00:00"
       },
       "name_en": "Hua An Waigaoqiao REIT",
@@ -5047,10 +5269,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5104,7 +5330,7 @@
       "source_url": "https://quote.eastmoney.com/sh508078.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 1.755,
       "daily_return_pct": -2.28,
       "daily_change_rmb": -0.04,
@@ -5115,7 +5341,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508078.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:57+00:00"
       },
       "name_en": "AVIC ESR Warehousing Logistics REIT",
@@ -5134,10 +5360,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5191,7 +5421,7 @@
       "source_url": "https://quote.eastmoney.com/sh508012.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 1.682,
       "daily_return_pct": -1.01,
       "daily_change_rmb": -0.017,
@@ -5202,7 +5432,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508012.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:57+00:00"
       },
       "name_en": "China Merchants Sci-Tech Innovation REIT",
@@ -5221,10 +5451,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5271,7 +5505,7 @@
       "source_url": "https://quote.eastmoney.com/sz180605.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 4.321,
       "daily_return_pct": -0.46,
       "daily_change_rmb": -0.02,
@@ -5282,7 +5516,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180605.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:15+00:00"
       },
       "name_en": "E Fund Huawei Market REIT",
@@ -5301,10 +5535,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5352,7 +5590,7 @@
       "source_url": "https://quote.eastmoney.com/sh508087.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 10.413,
       "daily_return_pct": 0.29,
       "daily_change_rmb": 0.03,
@@ -5363,7 +5601,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508087.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:40+00:00"
       },
       "name_en": "Guotai Haitong Jinan Energy Heating REIT",
@@ -5382,10 +5620,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5430,17 +5672,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "走进金隅智造工场：产业园REITs基本面修复进行时- 21世纪经济报道 - ZAKER新闻",
+        "title": "走进金隅智造工场：产业园REITs基本面修复进行时 - 21财经",
         "category": "market_context",
-        "published_at": "2026-08-04T08:35:43+00:00",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8zNlVlRlhGVlRBUXpRS0UwQThadWZWS0xmNE9qNnMyWFFpMllOSzk0SjFpQmkxNGI2ZExJRGdneFFzbkpTSDFXV1dKQUhwUjJubHROeDhXb29ZdzVjNzA5T2FZbHl2dVVKM1Zubnl2MUphSXRtSFNN?oc=5",
+        "published_at": "2026-08-03T07:00:00+00:00",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQkUwandzS2lfV1pUdkJYUzZ2d1BoRnRVMXFkeDFZQmc2cmoyTG1nTTdQdl9wZXBGVldtTFdjRUs4cGVCT3dEbV9PN0l4M3VyZUF0cUhmbTBZeVdZTmY1WTI5VlJEcjUzUWxHTWV5RDY3Y1dCNkVRN2syamlFVF9jd2E4R1R5NVJIRHdLeGxuZWZlbF9R?oc=5",
         "confidence": 0.64,
         "match_tier": "inferred"
       },
       "source_url": "https://quote.eastmoney.com/sh508092.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.867,
       "daily_return_pct": -1.74,
       "daily_change_rmb": -0.05,
@@ -5451,7 +5693,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508092.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:55+00:00"
       },
       "name_en": "Huaxia BBMG Intelligent Manufacturing REIT",
@@ -5470,10 +5712,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5527,7 +5773,7 @@
       "source_url": "https://quote.eastmoney.com/sh508084.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.772,
       "daily_return_pct": -0.72,
       "daily_change_rmb": -0.027,
@@ -5538,7 +5784,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508084.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:35+00:00"
       },
       "name_en": "China Universal Jointown Pharmaceutical REIT",
@@ -5557,10 +5803,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5614,7 +5864,7 @@
       "source_url": "https://quote.eastmoney.com/sh508055.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.292,
       "daily_return_pct": 0.15,
       "daily_change_rmb": 0.005,
@@ -5625,7 +5875,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508055.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:12:01+00:00"
       },
       "name_en": "China Universal Shanghai Real Estate Rental Housing REIT",
@@ -5644,10 +5894,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5701,7 +5955,7 @@
       "source_url": "https://quote.eastmoney.com/sz180305.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.3,
       "daily_return_pct": 0.61,
       "daily_change_rmb": 0.02,
@@ -5712,7 +5966,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180305.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:09+00:00"
       },
       "name_en": "China Southern SF Logistics REIT",
@@ -5731,10 +5985,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5781,7 +6039,7 @@
       "source_url": "https://quote.eastmoney.com/sh508085.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.466,
       "daily_return_pct": -0.72,
       "daily_change_rmb": -0.025,
@@ -5792,7 +6050,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508085.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:39+00:00"
       },
       "name_en": "Huatai Suzhou Hengtai Rental Housing REIT",
@@ -5811,10 +6069,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5869,7 +6131,7 @@
       "source_url": "https://quote.eastmoney.com/sh508080.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.41,
       "daily_return_pct": 0.04,
       "daily_change_rmb": 0.001,
@@ -5880,7 +6142,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508080.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:41+00:00"
       },
       "name_en": "CICC Yizhuang Industrial Park REIT",
@@ -5899,10 +6161,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -5956,7 +6222,7 @@
       "source_url": "https://quote.eastmoney.com/sz180606.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.73,
       "daily_return_pct": 0.54,
       "daily_change_rmb": 0.02,
@@ -5967,7 +6233,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180606.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:03+00:00"
       },
       "name_en": "CICC China Green Development Commercial REIT",
@@ -5986,10 +6252,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6043,7 +6313,7 @@
       "source_url": "https://quote.eastmoney.com/sh508090.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.472,
       "daily_return_pct": -0.14,
       "daily_change_rmb": -0.005,
@@ -6054,7 +6324,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508090.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:36+00:00"
       },
       "name_en": "BOC Sinotrans Warehousing Logistics REIT",
@@ -6073,10 +6343,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6123,7 +6397,7 @@
       "source_url": "https://quote.eastmoney.com/sh508016.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 4.195,
       "daily_return_pct": 0.1,
       "daily_change_rmb": 0.004,
@@ -6134,7 +6408,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508016.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:32+00:00"
       },
       "name_en": "Huaxia Huadian Clean Energy REIT",
@@ -6153,10 +6427,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6201,17 +6479,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 65.0,
       "latest_news": {
-        "title": "公募REITs二级市场缩量小幅调整，二季度经营表现延续分化 - 新浪财经",
+        "title": "利空落地，中证REITs指数重回1000点，仓储物流板块领涨 - 东方财富",
         "category": "market_context",
-        "published_at": "2026-08-05T00:26:21+00:00",
-        "url": "https://news.google.com/rss/articles/CBMi-glBVV95cUxPOE96OFl0ZWItcE5aLUhLWXRyVnZqWmVtUFlZa1NLSUJkSXVoQml1dTRBLU1OYzctZGtqOEtjTGpXMkxXQVB6ZDhxdjVHbFdJNXFad21DakNobFRLYVhTUFE3aElObGJZNXV4cDRMOE5nUmVVTW5aQXNBMXVOT1dhcHRkQkhxSWY1TFlQeG83blFLa0VQa2xJVkYxd1JCYmZnM1I0d0dKak9LNERXVXBSdkVFNW9kWHRXbGE5d3JkcGVyVFl0MVlDQ1NFdl94Nm1TZFBYV0tQNUFEVUJVLTNzRUNwQWpjTU1MdmZmQUF0Y3dtNDZRUmVHdmtieGoyajB2MkdTSldfLV9ONjUxZFlWZm1HM3pldXRmQUYxcG9nbURzVU1aYTljMXNqSmxfSVlqbmtkNWdKRE4xWklFM3RNSkdYc2FveDE4QmZldm0tS0syZ2JYckwyaEQ3Sjk4alBZamtWd1ZWcmViU1ozQktDWEtzYlhHc1ZlV0VHT3BZTUFOZlRYdExxRGsyb1g1Rnl1X1NBdUVoX09YbnYwYWdibzFzNE56TXJfbXJsMWx4dnlTTjgxYUxSeEJTcGtKdkx6SG5jS3pVN3VPTHZVU2lOT2MzTmJGQ3dqaUJqdmxKbk9mWXVtSlJEOWtnN2tfNjFPdXppd2std2tsS01aSUVJM0tob3QwbTl2SldXMGJDd1lvaEw2RTc4dTF5VDJqUTdOXzZzQS1lV3ZhZlAwSVA2NGNqWDIxVmhEMnFDMkYyVEFzWlEtaFgweFAycHl2dWYxeVRlTXRKQmVNU3prcnJ0YWd1bmZ3SC1YTE9FajZHaUYwN2lETVRvX3c3U3JsZVB3b3RyWFFiTXpMTklueFU2UXdSNnJtTXJfRDdSeE5LMFhDR20yYTRQVEh6X3dCZTMwR0hXblZmVlVUVFNRNGRyUUd4em8zcmV6ZTZ6VXRyRzRNeXl3WWN6c0p3MFBDelJoY1gzMjVtaHBZcWNlakROQnU3U1l6TWxvU0VqMW9EcklXU3VPZnJZR2ZhbF81aDk2VlFYZ2puYUdkaWNTc0lhWVE0blN5MDlMUnphaXItTWNQdmdtSVpROHpMSUVfMXRLdUR2cC1wcjJwLUpJRVBhbWV5NlNETkJHQkxWVUhnSjZRTHpoZTRnSEVoWDdNZWtvbjRIcVdwZk1hOFRBVzZHd09ndGxaajRaa0ZxSllJVHhCanNIejhJX0YxbmRjNXg0Z2pCZmMxc3pZcDQ2aDZ3MTdqLU1fZVN2eUh6al9DN0MzSmFtSGU0M3E4a255Zk1rVjk3bDVrRkNNeDJfLUYzTTE2SHc1MVZJdFE1RHJwbUpGQzZ2TXFYRXYwY0FXd1FCZVczaFRjTmpxM094cFc5ckZkcWNEeW8tYVNXSUN3blpnVjRTZVktaEZGN2kyTjRzcHJKWUpWcmM3ckh3NUF1ODk0YXMxRXV1eGc2eXpxVGlidkVNa3FpR3Q4a09DQWxJLWZDRHZ4WVpqZHJHNmU5RXJGVmFyVm1hZ01wdzJjNFN6cGd6RUU0TkxmRFZrVGM3a2gyTk5id0E0VnlFc0U5RU9lMW5PTTdUM3pkdkNsU196U2FsY2RXV1dyRjVsUER0Zm83WFU3ZjN1LUQ5S292ZS1iN3NwZTdIV2tjS2k3TDR1cDhoUkFFVVlCamlRdnE1NjN0YVpldmZWZw?oc=5",
-        "confidence": 0.72,
+        "published_at": "2026-08-05T03:43:49+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE84Nlp0WWU0aVBnRkJYVFRLVnFDblQ4VmU3Z01wMTVNVWFQN2RQczJkN1JQLXU4bm16YnJXYmxDYjVNM3JVZDBiVG9VQVM2cDZlakVVMnJPVXFpS2wwd2drSS13?oc=5",
+        "confidence": 0.64,
         "match_tier": "inferred"
       },
       "source_url": "https://quote.eastmoney.com/sh508039.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.23,
       "daily_return_pct": -2.32,
       "daily_change_rmb": -0.075,
@@ -6222,7 +6500,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508039.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:49+00:00"
       },
       "name_en": "First Seafront Shounong REIT",
@@ -6241,10 +6519,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6298,7 +6580,7 @@
       "source_url": "https://quote.eastmoney.com/sz180901.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 5.4,
       "daily_return_pct": -1.3,
       "daily_change_rmb": -0.07,
@@ -6309,7 +6591,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180901.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:45+00:00"
       },
       "name_en": "China Southern Range Technology Data Center REIT",
@@ -6328,10 +6610,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6385,7 +6671,7 @@
       "source_url": "https://quote.eastmoney.com/sh508060.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 3.61,
       "daily_return_pct": -1.0,
       "daily_change_rmb": -0.036,
@@ -6396,7 +6682,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508060.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:47+00:00"
       },
       "name_en": "China Southern GDS Data Center REIT",
@@ -6415,10 +6701,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6472,7 +6762,7 @@
       "source_url": "https://quote.eastmoney.com/sh508082.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 4.003,
       "daily_return_pct": -0.87,
       "daily_change_rmb": -0.035,
@@ -6483,7 +6773,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508082.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:37+00:00"
       },
       "name_en": "CICC Vipshop Outlets REIT",
@@ -6502,10 +6792,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6559,7 +6853,7 @@
       "source_url": "https://quote.eastmoney.com/sh508091.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 5.629,
       "daily_return_pct": -0.69,
       "daily_change_rmb": -0.039,
@@ -6570,7 +6864,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508091.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:58+00:00"
       },
       "name_en": "Huaxia CapitaLand Consumer Infrastructure REIT",
@@ -6589,10 +6883,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6646,7 +6944,7 @@
       "source_url": "https://quote.eastmoney.com/sz180607.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 5.435,
       "daily_return_pct": -2.3,
       "daily_change_rmb": -0.125,
@@ -6657,7 +6955,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180607.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:06+00:00"
       },
       "name_en": "Huaxia China Overseas Consumer Infrastructure REIT",
@@ -6676,10 +6974,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6733,7 +7035,7 @@
       "source_url": "https://quote.eastmoney.com/sh508029.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.633,
       "daily_return_pct": -2.66,
       "daily_change_rmb": -0.07,
@@ -6744,7 +7046,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508029.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:12:01+00:00"
       },
       "name_en": "CSC Shenyang International Software Park REIT",
@@ -6763,10 +7065,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6820,7 +7126,7 @@
       "source_url": "https://quote.eastmoney.com/sz180306.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 4.814,
       "daily_return_pct": -1.91,
       "daily_change_rmb": -0.092,
@@ -6831,7 +7137,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180306.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:12+00:00"
       },
       "name_en": "Huaxia AMB Warehousing REIT",
@@ -6850,10 +7156,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6907,7 +7217,7 @@
       "source_url": "https://quote.eastmoney.com/sh508050.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 6.3,
       "daily_return_pct": 0.02,
       "daily_change_rmb": 0.001,
@@ -6918,7 +7228,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508050.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:43+00:00"
       },
       "name_en": "Huaxia CNNC Clean Energy REIT",
@@ -6937,10 +7247,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -6994,7 +7308,7 @@
       "source_url": "https://quote.eastmoney.com/sh508020.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 5.145,
       "daily_return_pct": 0.06,
       "daily_change_rmb": 0.003,
@@ -7005,7 +7319,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508020.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:51+00:00"
       },
       "name_en": "Orient Securities Asset Management Expressway REIT",
@@ -7024,10 +7338,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -7081,7 +7399,7 @@
       "source_url": "https://quote.eastmoney.com/sz180503.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 2.809,
       "daily_return_pct": -0.71,
       "daily_change_rmb": -0.02,
@@ -7092,7 +7410,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sz180503.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T07:34:12+00:00"
       },
       "name_en": "AVIC Beijing Changbao Rental Housing REIT",
@@ -7111,10 +7429,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -7158,17 +7480,17 @@
       "regulatory_complexity_score": 20.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "多只公募REITs申报迎新进展 商业不动产REITs试点积极推进 - 新浪财经",
-        "category": "market_context",
-        "published_at": "2026-08-04T02:15:58+00:00",
-        "url": "https://news.google.com/rss/articles/CBMi_gNBVV95cUxPbWpLSXhIRGkwZi1aWW5QRUd2UVJkX25Zc056VW5VVVViNzVPY1RVNnZydFBsOS1Na0x6bk5aQTY2RzBTVm4ySGw5QUFNcVBvRjRYNjUzTkVQMm9aTjZfY1VNWXEtcFFPTHBoWWpGRWVEZTh5cGRqMlZsMjEtZGhTNGxTZktsTG5HWEg0RlJ5N0N6Vy1uWHRXeGhYLVk1U2VrUUcwLWtJZFRQbVVVNmtDTlg1Z3FZd1ZLYXVPUmliN2VjSmZsSDd3YVVHM3cyeUZxMDJNSUZrRGJ1Zmh4LTRhUUlXZUtjeFdnS3R4dzhtV2tBSkxfZk13V2d0cExoMXhqT3dzRVdwaklSNFoxVjFyZnZHeC1zRHA1TUQ5S0xyVmpLdUk4djBlUmJZN3lzLWxrbzZUWEJGMUpVQTN4cEVVSDBDamRKTWczXzJGTU5vRjhlSnBuRmNiNVh0dUdKRzlJaHVMdER0bXJvcHVyNVQ0cjBmYUFGaVplajQtMFBLS196alN5SThPY3BqclQ0Xy1XaVV6ZVdMODJFeXk5dWdXRVdwVzg5SXRzUEhsMFppQjVhakJRemdIbE5RdFJ2ejR2bUFUNURRenQ5UW4yeFNpXzRuUWpLRWh1c2V1Zl9jT1c3Vm1wcHFXek85c0Y2V0NtRGh2Um4wNjV2d3VfMUE?oc=5",
-        "confidence": 0.72,
+        "title": "总市值突破2200亿、年内拟发行规模超千亿 REITs市场加速扩容至82只 - 观点网",
+        "category": "offering_result",
+        "published_at": "2026-06-23T07:00:00+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE00d3ZiNU5KZC1YUGc3a0IzVUxGSHgwOWdLZXhXTDdMOFRDRTZtUW5LMUFLd05uejZlOUJMTEpxc1ZLWE9taFh1TnlvRlROOEFBVDJTNV9GLU45T0hZVGNyVmd3?oc=5",
+        "confidence": 0.64,
         "match_tier": "inferred"
       },
       "source_url": "https://quote.eastmoney.com/sh508093.html",
       "source_asof": "2026-08-06",
       "source_confidence": "public_quote",
-      "source_freshness": "fresh",
+      "source_freshness": "stale",
       "previous_close_rmb": 8.26,
       "daily_return_pct": -0.01,
       "daily_change_rmb": -0.001,
@@ -7179,7 +7501,7 @@
         "source_name": "Eastmoney public quote endpoint",
         "source_url": "https://quote.eastmoney.com/sh508093.html",
         "source_type": "public_quote",
-        "fetch_time": "2026-08-06T14:35:31+00:00",
+        "fetch_time": "2026-08-07T00:16:04+00:00",
         "quote_time": "2026-08-06T08:11:44+00:00"
       },
       "name_en": "E Fund Guangxi Beitou Expressway REIT",
@@ -7198,10 +7520,14 @@
         "regulatory_complexity_score": "Lifecycle proxy until source-backed regulator stages are online.",
         "deflation_sensitivity_score": "Asset-type heuristic until property-level operating data is online."
       },
-      "data_quality_status": "ok",
-      "data_quality_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "data_quality_severity": "ok",
-      "stale_fields": [],
+      "data_quality_status": "stale",
+      "data_quality_reason": "Listed REIT price is older than the latest expected trading day.",
+      "data_quality_severity": "warn",
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
@@ -7245,12 +7571,12 @@
       "regulatory_complexity_score": 55.0,
       "deflation_sensitivity_score": 35.0,
       "latest_news": {
-        "title": "中航中核汇能新能源REIT（508030.SH）今日在上交所上市 - 新浪财经",
-        "category": "listing_schedule",
-        "published_at": "2026-07-29T10:02:41+00:00",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZzNxa0RqYmEtVndwZmRJaVZXVWhQRC1ieHhZaEZUNjRteVhvUDJvQ1JKTUJYb1NmamlubDNCUnVmRm9ZRXVyc1ltUVpYOFZhS25CTW5ScC1sTlhxblVWdVBPOTI5ZVVfSDJhZUlvb2hOOC1PbUN1QVFNVk1hRHdJNzFNekw4YTljdTJlVVVWQUtiQ1hxcktuaEk4cWdLSFhy?oc=5",
-        "confidence": 0.88,
-        "match_tier": "explicit"
+        "title": "公募REITs二级市场止跌回稳，保障房板块强势领涨 - 每日经济新闻",
+        "category": "market_context",
+        "published_at": "2026-08-04T07:26:00+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBBbmdORnNQWVppN2pLVHZGdFY5eUljQUx3aFliZURLTUluTm5OUl82N1VIaHNBVVhsM1NRdlhpZk1TbG9Rd2tqSFZhQTd5Vkh0TVplZW85RmxPY2p4d2lzcVUtZTllQQ?oc=5",
+        "confidence": 0.72,
+        "match_tier": "inferred"
       },
       "source_url": null,
       "source_asof": null,
@@ -7411,10 +7737,10 @@
       "regulatory_complexity_score": 40.0,
       "deflation_sensitivity_score": 80.0,
       "latest_news": {
-        "title": "首批REITs指数基金发售，上周公募REITs二级市场企稳反弹 - 新浪财经",
+        "title": "首批REITs指数基金发售，上周公募REITs二级市场企稳反弹 - 每日经济新闻",
         "category": "offering_result",
-        "published_at": "2026-07-30T00:07:27+00:00",
-        "url": "https://news.google.com/rss/articles/CBMimwVBVV95cUxQbGk3VzBkR3JiN29OY3ZSbnFka21tcVpmVi1wcThwdWVTQWxWekR5ajZKVERzdk5td1UxdWpYR0VzTl9BOVp0Qm5peUJETkFYdU9URHhHSklLSkFvcFNjZENWeWE2TTRSTlVXOFRLM2FrdGUyaW5GanNxLWxiNWtlTmpBX3duQlFKb19JbEFuVm1KRVhEbEhrNWhqSlU3ZVh6SXFwbHN2U0g5cFpuT0RLSnZKUWNBVjlNeURXdVYtN25OUWsyOHpESkVoMjd2QlVwZ2VsYUxQbjI5dVpPVEd4bHliZDdlRUlDR01LNlFwTlR2VkdJSTgyVWotdEE0b0pJS05yeTBvZmVjV1lYWWI3eWNLNzVBdk1wNW15eG1JVHVzLXpGN1ZWTzExYl9nOXZaQ0J1UUJYTEJ0MzFaNUNUdHYtUnB5dURKMEthS1FzZzJmUnRJZWNReFpfM3AyYlQ5VmRjclBnNWVDM25kcGFCZjVLT0d4ZnpsTmVrNmxKZmRHUkpISzJuZTVOWWRzQjVWMGw1Yk52UkI2QzBBRnNuZ3p3UkIxWWY4em9mem5GZlBJU1NsckFQTHo3MldDdmRLTFg4LVgyTllrY3FCbWs4VUtETWRDSk1NYU5PODlVdEhWc2dlbGthMldBMzIwVFhkekstTzRHMHMzaDZqMnRyUjRmMlJQQVpmZnpXOUZOT1QyYXJVWkNUX1Nyak1Zby1WVEhoUjhyRWZ5UGVrMXhRVHZWMUMyRHdfRUZlclNUNlVUdmZJMHBQM2haZmpmZS1LQ1RuLW92U0JtYVV3QXFUWUhJcFBfa2VwUnVRLUgzeEpHNGNvU0syMDh4VWN2ZmowUXozZmxRb0Y3eWtDYi1yQ3NWOXJPM2FPWW1N?oc=5",
+        "published_at": "2026-07-06T07:00:00+00:00",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9EX2t0c1dZdXpZS0FiRm9oM2NXbVlGd2FBWWNKRk0yRDF6b0pORFY1cGI4OUltdk1DUFktS0lUTHdfVV9rZjFVREZMNEpmeHphbmxsNjVUUFZpaWxuQWlncGhnOHdGUQ?oc=5",
         "confidence": 0.64,
         "match_tier": "inferred"
       },
