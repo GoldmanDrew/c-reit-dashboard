@@ -1,33 +1,53 @@
 {
-  "build_time": "2026-08-07T19:15:50+00:00",
-  "status": "empty",
+  "build_time": "2026-08-08T02:22:12+00:00",
+  "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 896,
-    "items_before_dedupe": 235,
-    "items_after_dedupe": 230,
+    "raw_articles_seen": 895,
+    "items_before_dedupe": 241,
+    "items_after_dedupe": 236,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 129,
-      "listing_schedule": 45,
+      "listing_schedule": 47,
+      "market_context": 133,
       "offering_result": 12,
+      "regulatory_policy": 1,
       "pipeline_asset_update": 4,
       "distribution": 17,
       "expansion_acquisition": 12,
-      "nav_report": 5,
+      "nav_report": 4,
       "listing_approval": 6
     },
     "match_tier_counts": {
-      "explicit": 158,
-      "market": 27,
-      "inferred": 44,
+      "market": 31,
+      "explicit": 161,
+      "inferred": 43,
       "high": 1
     },
-    "symbols_with_news": 71
+    "symbols_with_news": 73
   },
-  "items": []
+  "items": [
+    {
+      "id": "google_news_rss:regulatory_policy:508078.SH:2026-08-06:中航易商仓储物流reit-将自2026年8月7日上海证券交易所开市起停牌1小时-并于当日上午10-30起复牌-cj-sina-cn",
+      "symbols": [
+        "508078.SH"
+      ],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-06",
+      "headline_zh": "中航易商仓储物流REIT：将自2026年8月7日上海证券交易所开市起停牌1小时，并于当日上午10:30起复牌。 - cj.sina.cn",
+      "headline_en": null,
+      "summary_zh": "中航易商仓储物流REIT：将自2026年8月7日上海证券交易所开市起停牌1小时，并于当日上午10:30起复牌。 cj.sina.cn",
+      "summary_en": null,
+      "source": "cj.sina.cn",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1RNzVidzVxdVFLc01RVlh0eU03bW54ZE1pMjV5SHJZYnB0WXV2aTlGT0I0aVVCc2o2bFBXVjBNb1g2SXhBZ0VSWXBHUXpLMHFVUklFSzlrblE2aDEyeU1YanBxM3dBRkZmTUpadWlmdWttVTlvb3NEWUszUlBrdw?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    }
+  ]
 }
