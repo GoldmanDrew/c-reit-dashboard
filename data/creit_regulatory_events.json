@@ -1,36 +1,54 @@
 {
-  "build_time": "2026-08-12T02:45:29+00:00",
+  "build_time": "2026-08-12T07:53:08+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 825,
+    "raw_articles_seen": 814,
     "items_before_dedupe": 200,
     "items_after_dedupe": 199,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 106,
+      "listing_approval": 9,
+      "regulatory_policy": 2,
       "expansion_acquisition": 11,
-      "listing_schedule": 38,
-      "listing_approval": 5,
+      "listing_schedule": 34,
+      "market_context": 106,
       "distribution": 17,
-      "regulatory_policy": 1,
       "pipeline_asset_update": 4,
-      "offering_result": 13,
+      "offering_result": 12,
       "nav_report": 4
     },
     "match_tier_counts": {
-      "inferred": 56,
-      "explicit": 114,
-      "market": 28,
+      "market": 31,
+      "inferred": 57,
+      "explicit": 110,
       "high": 1
     },
-    "symbols_with_news": 65
+    "symbols_with_news": 66
   },
   "items": [
+    {
+      "id": "google_news_rss:regulatory_policy:180203.SZ:2026-08-12:天津首单商业不动产reits项目申报证监会-chinanews-com-cn",
+      "symbols": [
+        "180203.SZ"
+      ],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-12",
+      "headline_zh": "天津首单商业不动产REITs项目申报证监会 - chinanews.com.cn",
+      "headline_en": null,
+      "summary_zh": "天津首单商业不动产REITs项目申报证监会 chinanews.com.cn",
+      "summary_en": null,
+      "source": "chinanews.com.cn",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPZnpuWFRES19tcEdPVmx3cy11Zm96ZDR1TndBUE1WTndmM0ZoQzJjZjhMY2Q1Zkk3OE44RnJ6dkp5TWI3YUo0Q0h6NkVxSmxndGo2a3lQNld0VGdlRUJXTjRYMUVwRDFO?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
     {
       "id": "google_news_rss:regulatory_policy:508078.SH:2026-08-06:中航易商仓储物流reit-将自2026年8月7日上海证券交易所开市起停牌1小时-并于当日上午10-30起复牌-新浪财经",
       "symbols": [
