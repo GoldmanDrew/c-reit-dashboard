@@ -1,89 +1,60 @@
 {
-  "build_time": "2026-08-14T02:46:52+00:00",
-  "status": "ok",
+  "build_time": "2026-08-14T07:52:37+00:00",
+  "status": "empty",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 685,
-    "items_before_dedupe": 161,
-    "items_after_dedupe": 159,
-    "errors": [],
-    "error_count": 0,
-    "category_counts": {
-      "pipeline_asset_update": 4,
-      "regulatory_policy": 3,
-      "market_context": 84,
-      "distribution": 18,
-      "listing_schedule": 22,
-      "listing_approval": 7,
-      "expansion_acquisition": 6,
-      "nav_report": 5,
-      "offering_result": 10
-    },
-    "match_tier_counts": {
-      "inferred": 52,
-      "market": 25,
-      "explicit": 81,
-      "high": 1
-    },
-    "symbols_with_news": 57
+    "raw_articles_seen": 0,
+    "items_before_dedupe": 0,
+    "items_after_dedupe": 0,
+    "errors": [
+      {
+        "query": "\"公募REIT\" \"上市\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"公募REIT\" \"分红\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"公募REIT\" \"获批\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"基础设施REIT\" \"收益分配\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"基础设施REIT\" \"监管\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"REIT\" \"发改委\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"商业不动产REIT\" \"上市\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"公募REIT\" \"扩募\"",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"中金唯品会商业REIT\" OR \"508603\" REIT",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "query": "\"国泰海通砂之船商业REIT\" OR \"508602\" REIT",
+        "error": "HTTP Error 503: Service Unavailable"
+      }
+    ],
+    "error_count": 95,
+    "category_counts": {},
+    "match_tier_counts": {},
+    "symbols_with_news": 0
   },
-  "items": [
-    {
-      "id": "google_news_rss:regulatory_policy:180701.SZ:2026-08-13:第3单水利reits申报至交易所-sohu",
-      "symbols": [
-        "180701.SZ"
-      ],
-      "category": "regulatory_policy",
-      "status": "observed",
-      "event_date": "2026-08-13",
-      "headline_zh": "第3单水利REITs申报至交易所 - Sohu",
-      "headline_en": null,
-      "summary_zh": "第3单水利REITs申报至交易所 Sohu",
-      "summary_en": null,
-      "source": "Sohu",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbmpnTkFUaFFUbV8xa0x3OU1qVG9QalFzc1dySlVlMGdOVlRwaUJURkJrMTQwRFVzSFdhT25XSTJZQVMzZm9uUXRKV3JFVzEzZ2Jvc1JlcElQakhCUGNvNzAyR2hLSy11dXYxajIyNUctbnBJc2dIVHc1RE9RbjE5Ty1BNzQ3TFBKVGJkUQ?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
-      "id": "google_news_rss:regulatory_policy:180203.SZ:2026-08-12:天津首单商业不动产reits项目申报证监会-chinanews-com-cn",
-      "symbols": [
-        "180203.SZ"
-      ],
-      "category": "regulatory_policy",
-      "status": "observed",
-      "event_date": "2026-08-12",
-      "headline_zh": "天津首单商业不动产REITs项目申报证监会 - chinanews.com.cn",
-      "headline_en": null,
-      "summary_zh": "天津首单商业不动产REITs项目申报证监会 chinanews.com.cn",
-      "summary_en": null,
-      "source": "chinanews.com.cn",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPZnpuWFRES19tcEdPVmx3cy11Zm96ZDR1TndBUE1WTndmM0ZoQzJjZjhMY2Q1Zkk3OE44RnJ6dkp5TWI3YUo0Q0h6NkVxSmxndGo2a3lQNld0VGdlRUJXTjRYMUVwRDFO?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
-      "id": "google_news_rss:regulatory_policy:508078.SH:2026-08-06:中航易商仓储物流reit-将自2026年8月7日上海证券交易所开市起停牌1小时-并于当日上午10-30起复牌-cj-sina-cn",
-      "symbols": [
-        "508078.SH"
-      ],
-      "category": "regulatory_policy",
-      "status": "observed",
-      "event_date": "2026-08-06",
-      "headline_zh": "中航易商仓储物流REIT：将自2026年8月7日上海证券交易所开市起停牌1小时，并于当日上午10:30起复牌。 - cj.sina.cn",
-      "headline_en": null,
-      "summary_zh": "中航易商仓储物流REIT：将自2026年8月7日上海证券交易所开市起停牌1小时，并于当日上午10:30起复牌。 cj.sina.cn",
-      "summary_en": null,
-      "source": "cj.sina.cn",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1RNzVidzVxdVFLc01RVlh0eU03bW54ZE1pMjV5SHJZYnB0WXV2aTlGT0I0aVVCc2o2bFBXVjBNb1g2SXhBZ0VSWXBHUXpLMHFVUklFSzlrblE2aDEyeU1YanBxM3dBRkZmTUpadWlmdWttVTlvb3NEWUszUlBrdw?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
-    }
-  ]
+  "items": []
 }
