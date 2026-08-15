@@ -1,53 +1,35 @@
 {
-  "build_time": "2026-08-14T19:14:41+00:00",
+  "build_time": "2026-08-15T06:58:10+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 645,
-    "items_before_dedupe": 163,
-    "items_after_dedupe": 160,
+    "raw_articles_seen": 619,
+    "items_before_dedupe": 156,
+    "items_after_dedupe": 153,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 86,
+      "distribution": 12,
       "pipeline_asset_update": 4,
-      "regulatory_policy": 3,
-      "distribution": 13,
-      "listing_schedule": 25,
+      "market_context": 82,
+      "listing_schedule": 26,
       "listing_approval": 8,
-      "expansion_acquisition": 6,
+      "regulatory_policy": 2,
+      "expansion_acquisition": 5,
       "nav_report": 5,
-      "offering_result": 10
+      "offering_result": 9
     },
     "match_tier_counts": {
-      "explicit": 74,
-      "inferred": 57,
-      "market": 29
+      "explicit": 72,
+      "inferred": 54,
+      "market": 27
     },
-    "symbols_with_news": 61
+    "symbols_with_news": 58
   },
   "items": [
-    {
-      "id": "google_news_rss:regulatory_policy:180701.SZ:2026-08-13:第3单水利reits申报至交易所-sohu",
-      "symbols": [
-        "180701.SZ"
-      ],
-      "category": "regulatory_policy",
-      "status": "observed",
-      "event_date": "2026-08-13",
-      "headline_zh": "第3单水利REITs申报至交易所 - Sohu",
-      "headline_en": null,
-      "summary_zh": "第3单水利REITs申报至交易所 Sohu",
-      "summary_en": null,
-      "source": "Sohu",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbmpnTkFUaFFUbV8xa0x3OU1qVG9QalFzc1dySlVlMGdOVlRwaUJURkJrMTQwRFVzSFdhT25XSTJZQVMzZm9uUXRKV3JFVzEzZ2Jvc1JlcElQakhCUGNvNzAyR2hLSy11dXYxajIyNUctbnBJc2dIVHc1RE9RbjE5Ty1BNzQ3TFBKVGJkUQ?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
     {
       "id": "google_news_rss:regulatory_policy:180203.SZ:2026-08-12:天津首单商业不动产reits项目申报证监会-chinanews-com-cn",
       "symbols": [
@@ -80,7 +62,7 @@
       "summary_en": null,
       "source": "新浪财经",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1RNzVidzVxdVFLc01RVlh0eU03bW54ZE1pMjV5SHJZYnB0WXV2aTlGT0I0aVVCc2o2bFBXVjBNb1g2SXhBZ0VSWXBHUXpLMHFVUklFSzlrblE2aDEyeU1YanBxM3dBRkZmTUpadWlmdWttVTlvb3NEWUszUlBrdw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1EbmtIblJnRHZ5SUpXQXBBYVJLbUhpMW9XdWpwazR5bjdxSTFvTW91UFo0b1VDOUt0Ym1MRjF5Mk5QMGMtVTNRTnA3b2podURGLTE3ZFhMcmNxWURVMl9XcUduc01hOUtpbjN6Yy1PLU1HTnZUelB3VDdkN1drUQ?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     }
