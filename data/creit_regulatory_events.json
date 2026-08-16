@@ -1,35 +1,55 @@
 {
-  "build_time": "2026-08-16T01:57:46+00:00",
+  "build_time": "2026-08-16T13:01:15+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 618,
+    "raw_articles_seen": 634,
     "items_before_dedupe": 149,
-    "items_after_dedupe": 147,
+    "items_after_dedupe": 145,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "distribution": 12,
-      "pipeline_asset_update": 4,
-      "market_context": 78,
+      "originator_credit_event": 2,
+      "market_context": 75,
+      "distribution": 13,
+      "pipeline_asset_update": 3,
+      "regulatory_policy": 3,
       "listing_schedule": 25,
       "listing_approval": 7,
-      "regulatory_policy": 2,
-      "expansion_acquisition": 7,
-      "nav_report": 5,
+      "expansion_acquisition": 6,
+      "nav_report": 4,
       "offering_result": 7
     },
     "match_tier_counts": {
+      "inferred": 51,
+      "high": 1,
       "explicit": 66,
-      "inferred": 54,
       "market": 27
     },
-    "symbols_with_news": 56
+    "symbols_with_news": 60
   },
   "items": [
+    {
+      "id": "google_news_rss:regulatory_policy:180701.SZ:2026-08-13:第3单水利reits申报至交易所-新浪财经",
+      "symbols": [
+        "180701.SZ"
+      ],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-13",
+      "headline_zh": "第3单水利REITs申报至交易所 - 新浪财经",
+      "headline_en": null,
+      "summary_zh": "第3单水利REITs申报至交易所 新浪财经",
+      "summary_en": null,
+      "source": "新浪财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORDQ0N3lrTVdqWTJURVI5dVRhMm5MNUQ1YXBnQTFOVjg5Z1p4eTBsMGFQdmE1NEM2ZHpYVFNpV0FzQW51NnlKeUNvRlhRUGRxLVM4dkIwampyM2NaeFc0NjUzNDFyUDU0R3ZvcEdRMjNEMmF2VmxzdS0yVUhyMUFrLXFhbzg?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
     {
       "id": "google_news_rss:regulatory_policy:180203.SZ:2026-08-12:天津首单商业不动产reits项目申报证监会-chinanews-com-cn",
       "symbols": [
