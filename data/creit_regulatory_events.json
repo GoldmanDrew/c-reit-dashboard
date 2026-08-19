@@ -1,55 +1,37 @@
 {
-  "build_time": "2026-08-18T13:08:38+00:00",
+  "build_time": "2026-08-19T01:53:27+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 731,
-    "items_before_dedupe": 163,
-    "items_after_dedupe": 162,
+    "raw_articles_seen": 723,
+    "items_before_dedupe": 172,
+    "items_after_dedupe": 171,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 84,
-      "distribution": 16,
+      "market_context": 90,
+      "distribution": 19,
       "originator_credit_event": 1,
       "pipeline_asset_update": 3,
-      "regulatory_policy": 2,
       "listing_schedule": 34,
       "listing_approval": 5,
+      "regulatory_policy": 2,
       "nav_report": 3,
       "expansion_acquisition": 7,
       "offering_result": 7
     },
     "match_tier_counts": {
-      "explicit": 74,
-      "inferred": 58,
+      "inferred": 60,
+      "explicit": 81,
       "high": 1,
       "market": 29
     },
     "symbols_with_news": 56
   },
   "items": [
-    {
-      "id": "google_news_rss:regulatory_policy:180701.SZ:2026-08-13:第3单水利reits申报至交易所-新浪财经",
-      "symbols": [
-        "180701.SZ"
-      ],
-      "category": "regulatory_policy",
-      "status": "observed",
-      "event_date": "2026-08-13",
-      "headline_zh": "第3单水利REITs申报至交易所 - 新浪财经",
-      "headline_en": null,
-      "summary_zh": "第3单水利REITs申报至交易所 新浪财经",
-      "summary_en": null,
-      "source": "新浪财经",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORDQ0N3lrTVdqWTJURVI5dVRhMm5MNUQ1YXBnQTFOVjg5Z1p4eTBsMGFQdmE1NEM2ZHpYVFNpV0FzQW51NnlKeUNvRlhRUGRxLVM4dkIwampyM2NaeFc0NjUzNDFyUDU0R3ZvcEdRMjNEMmF2VmxzdS0yVUhyMUFrLXFhbzg?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
     {
       "id": "google_news_rss:regulatory_policy:180203.SZ:2026-08-12:天津首单商业不动产reits项目申报证监会-chinanews-com-cn",
       "symbols": [
@@ -67,6 +49,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPZnpuWFRES19tcEdPVmx3cy11Zm96ZDR1TndBUE1WTndmM0ZoQzJjZjhMY2Q1Zkk3OE44RnJ6dkp5TWI3YUo0Q0h6NkVxSmxndGo2a3lQNld0VGdlRUJXTjRYMUVwRDFO?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
+    },
+    {
+      "id": "google_news_rss:regulatory_policy:508078.SH:2026-08-06:中航易商仓储物流reit-将自2026年8月7日上海证券交易所开市起停牌1小时-并于当日上午10-30起复牌-新浪财经",
+      "symbols": [
+        "508078.SH"
+      ],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-06",
+      "headline_zh": "中航易商仓储物流REIT：将自2026年8月7日上海证券交易所开市起停牌1小时，并于当日上午10:30起复牌。 - 新浪财经",
+      "headline_en": null,
+      "summary_zh": "中航易商仓储物流REIT：将自2026年8月7日上海证券交易所开市起停牌1小时，并于当日上午10:30起复牌。 新浪财经",
+      "summary_en": null,
+      "source": "新浪财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1EbmtIblJnRHZ5SUpXQXBBYVJLbUhpMW9XdWpwazR5bjdxSTFvTW91UFo0b1VDOUt0Ym1MRjF5Mk5QMGMtVTNRTnA3b2podURGLTE3ZFhMcmNxWURVMl9XcUduc01hOUtpbjN6Yy1PLU1HTnZUelB3VDdkN1drUQ?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
     }
   ]
 }
