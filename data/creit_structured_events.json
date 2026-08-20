@@ -1,37 +1,53 @@
 {
-  "build_time": "2026-08-19T18:53:32+00:00",
+  "build_time": "2026-08-20T01:52:32+00:00",
   "status": "ok",
   "kind": "structured_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 740,
-    "items_before_dedupe": 173,
-    "items_after_dedupe": 173,
+    "raw_articles_seen": 757,
+    "items_before_dedupe": 178,
+    "items_after_dedupe": 177,
     "errors": [],
     "error_count": 0,
     "category_counts": {
+      "market_context": 90,
       "listing_approval": 9,
       "distribution": 21,
-      "market_context": 89,
+      "listing_schedule": 35,
+      "regulatory_policy": 3,
       "originator_credit_event": 1,
       "pipeline_asset_update": 3,
-      "listing_schedule": 34,
-      "regulatory_policy": 2,
-      "nav_report": 3,
+      "nav_report": 4,
       "expansion_acquisition": 7,
       "offering_result": 4
     },
     "match_tier_counts": {
-      "inferred": 63,
-      "high": 2,
-      "explicit": 78,
-      "market": 30
+      "explicit": 82,
+      "market": 31,
+      "inferred": 62,
+      "high": 2
     },
-    "symbols_with_news": 60
+    "symbols_with_news": 64
   },
   "items": [
+    {
+      "id": "google_news_rss:listing_approval:MARKET:2026-08-19:陕西首单公募reits获批-zaker新闻",
+      "symbols": [],
+      "category": "listing_approval",
+      "status": "observed",
+      "event_date": "2026-08-19",
+      "headline_zh": "陕西首单公募REITs获批 - ZAKER新闻",
+      "headline_en": null,
+      "summary_zh": "陕西首单公募REITs获批 ZAKER新闻",
+      "summary_en": null,
+      "source": "ZAKER新闻",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0yZlVuYVlRMmVYeGN0QTFSNWtQQi1FX204b25zd0RPNlV2bUtEQVA4ZDh0NGE4WHRscWV0LVhZeWRDZUtkMkMzS0gwUG5oVU1yNUY3cFN0dEo2TmhNYkFQSFBOcnRXNDNoemJBZXNadkFUQXFOUVFr?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    },
     {
       "id": "google_news_rss:listing_approval:508003.SH:2026-08-19:本周5只公募reits密集获批-chnfund-com",
       "symbols": [
@@ -51,72 +67,72 @@
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:distribution:180303.SZ:2026-08-19:华泰证券-上海-资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配-cfi-net-cn",
+      "id": "google_news_rss:distribution:180303.SZ:2026-08-19:华泰证券-上海-资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配-中财网",
       "symbols": [
         "180303.SZ"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-08-19",
-      "headline_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 - cfi.net.cn",
+      "headline_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 - 中财网",
       "headline_en": null,
-      "summary_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 cfi.net.cn",
+      "summary_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBMUngzSGV5LW83V1FJREJkc1pFVFp6T05vWDFwTFJjdHJEcWxXNUdVX0M3YTdMNWJHYzBCRmZyYnVvM3VudGRLa0dVeVhIbTA5?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:distribution:508066.SH:2026-08-19:华泰证券-上海-资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配-cfi-net-cn",
+      "id": "google_news_rss:distribution:508066.SH:2026-08-19:华泰证券-上海-资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配-中财网",
       "symbols": [
         "508066.SH"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-08-19",
-      "headline_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 - cfi.net.cn",
+      "headline_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 - 中财网",
       "headline_en": null,
-      "summary_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 cfi.net.cn",
+      "summary_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBMUngzSGV5LW83V1FJREJkc1pFVFp6T05vWDFwTFJjdHJEcWxXNUdVX0M3YTdMNWJHYzBCRmZyYnVvM3VudGRLa0dVeVhIbTA5?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:distribution:508085.SH:2026-08-19:华泰证券-上海-资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配-cfi-net-cn",
+      "id": "google_news_rss:distribution:508085.SH:2026-08-19:华泰证券-上海-资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配-中财网",
       "symbols": [
         "508085.SH"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-08-19",
-      "headline_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 - cfi.net.cn",
+      "headline_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 - 中财网",
       "headline_en": null,
-      "summary_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 cfi.net.cn",
+      "summary_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBMUngzSGV5LW83V1FJREJkc1pFVFp6T05vWDFwTFJjdHJEcWxXNUdVX0M3YTdMNWJHYzBCRmZyYnVvM3VudGRLa0dVeVhIbTA5?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:distribution:508097.SH:2026-08-19:华泰证券-上海-资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配-cfi-net-cn",
+      "id": "google_news_rss:distribution:508097.SH:2026-08-19:华泰证券-上海-资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配-中财网",
       "symbols": [
         "508097.SH"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-08-19",
-      "headline_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 - cfi.net.cn",
+      "headline_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 - 中财网",
       "headline_en": null,
-      "summary_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 cfi.net.cn",
+      "summary_zh": "华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBMUngzSGV5LW83V1FJREJkc1pFVFp6T05vWDFwTFJjdHJEcWxXNUdVX0M3YTdMNWJHYzBCRmZyYnVvM3VudGRLa0dVeVhIbTA5?oc=5",
       "confidence": 0.82,
@@ -157,20 +173,22 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_approval:MARKET:2026-08-19:陕西首单公募reits获批-搜狐网",
-      "symbols": [],
-      "category": "listing_approval",
+      "id": "google_news_rss:listing_schedule:180201.SZ:2026-08-19:平安西安高科产业园reit正式获批-陕西首单公募reits即将登陆深交所-新浪财经",
+      "symbols": [
+        "180201.SZ"
+      ],
+      "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-08-19",
-      "headline_zh": "陕西首单公募REITs获批 - 搜狐网",
+      "headline_zh": "平安西安高科产业园REIT正式获批，陕西首单公募REITs即将登陆深交所 - 新浪财经",
       "headline_en": null,
-      "summary_zh": "陕西首单公募REITs获批 搜狐网",
+      "summary_zh": "平安西安高科产业园REIT正式获批，陕西首单公募REITs即将登陆深交所 新浪财经",
       "summary_en": null,
-      "source": "搜狐网",
+      "source": "新浪财经",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZngzbXBSbkZZVDlmLUV4QzNGM2JsMlVJTVJmWWR1YUUxRVlHWGlVWWlDWmlkMUd5VWdtSFZGNDk5MkhRUVdLemZsUmNQaG5UeWtNYzN6aHpRUmlKdWF4M2hIZ1BxOHFWWFM5VWkzdmR5RHR3LV9BNENtYXNZSEJCVDFBdGtJcEVTTTYwZw?oc=5",
-      "confidence": 0.68,
-      "match_tier": "market"
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMEs4ZjJLcFZQT0kycEJfTi1UMTR4TjBPQl9NMkpXRVVMRkpWcmZkakZHM1I2NzNYdjVHRWpfWTJ6ZVNwcGNZR0NBV0NJanRUMUpQc05TZE1UVXVjUHNFaWRlc21VRWVoTFZpZGdjWE9MWWpybDNVazRxOXZDbEc3RS16TlFvYWs?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
     },
     {
       "id": "google_news_rss:listing_approval:MARKET:2026-08-19:山西首单丨山证晋中公投瑞阳供热reit获批-搜狐网",
@@ -207,18 +225,18 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:distribution:180603.SZ:2026-08-18:华夏大悦城消费reit-180603-华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金收益分配-cfi-net-cn",
+      "id": "google_news_rss:distribution:180603.SZ:2026-08-18:华夏大悦城消费reit-180603-华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金收益分配-中财网",
       "symbols": [
         "180603.SZ"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-08-18",
-      "headline_zh": "华夏大悦城消费REIT (180603): 华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金收益分配 - cfi.net.cn",
+      "headline_zh": "华夏大悦城消费REIT (180603): 华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金收益分配 - 中财网",
       "headline_en": null,
-      "summary_zh": "华夏大悦城消费REIT (180603): 华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金收益分配 cfi.net.cn",
+      "summary_zh": "华夏大悦城消费REIT (180603): 华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金收益分配 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1FR3ZKNDFFdmxCUEd1Y3BJVjBhMjZmTm9SZmhPbXBJM05vTDk4Wjc5WndfNnhIVW9MekNQVGNELUhaamZmYldXSC1zdmxCdUtHWjg5TjN3?oc=5",
       "confidence": 0.88,
@@ -261,216 +279,216 @@
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:originator_credit_event:180602.SZ:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:180602.SZ:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "180602.SZ"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:originator_credit_event:180606.SZ:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:180606.SZ:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "180606.SZ"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:originator_credit_event:508003.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:508003.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "508003.SH"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:originator_credit_event:508007.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:508007.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "508007.SH"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:originator_credit_event:508009.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:508009.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "508009.SH"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:originator_credit_event:508010.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:508010.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "508010.SH"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:originator_credit_event:508019.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:508019.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "508019.SH"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:originator_credit_event:508056.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:508056.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "508056.SH"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:originator_credit_event:508058.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:508058.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "508058.SH"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:originator_credit_event:508080.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:508080.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "508080.SH"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:originator_credit_event:508082.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:508082.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "508082.SH"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
       "match_tier": "high"
     },
     {
-      "id": "google_news_rss:originator_credit_event:508603.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-cfi-net-cn",
+      "id": "google_news_rss:originator_credit_event:508603.SH:2026-08-16:中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商-cfi-cn-中财网-中财网",
       "symbols": [
         "508603.SH"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-08-16",
-      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "中金基金管理有限公司关于中金中国绿发消费封闭式基础设施证券投资基金新增流动性服务商- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZWlCS1dDNUQyRnB1UFJONHJ3ODZjOEJ5TVJYa09iZktUc0dBcHYzVjZOM1F3QjBaRktrMC1CUmdSS3pJYnFkVE93c1phVWFVZjNtdjN3?oc=5",
       "confidence": 0.82,
@@ -544,7 +562,7 @@
       "summary_en": null,
       "source": "观点网",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5VXZTRWRHWEM3OHBEQXh0YjRreGp2MWlCT2RKclV6OWVVUjdGdDdUUW5xVkpmbUxfSFNRYnNOQUUyejRjLWV4YnEtTWlWYzFRRE1lNmhoaUFVaTZ4eTJienpB?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBQamU0VVZnNUZLZU1BakV5aWJsUmd5ZDdvQVdyRHYySFEzYTNxTXotVXJRRmNNOFM1UUdvOUZFdjFfaVFPSXM3YXNqTkFlQQ?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
@@ -624,15 +642,31 @@
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-08-11",
-      "headline_zh": "南方润泽科技数据中心REIT (180901): 南方基金管理股份有限公司关于收到深圳证券交易所《关于南方润泽科技数据中心封闭式基础设施证券投资基金产品变更暨扩募份额上市和南方资本-润泽科技数据中心2期基.- CFi.CN 中财网 - cfi.net.cn",
+      "headline_zh": "南方润泽科技数据中心REIT (180901): 南方基金管理股份有限公司关于收到深圳证券交易所《关于南方润泽科技数据中心封闭式基础设施证券投资基金产品变更暨扩募份额上市和南方资本-润泽科技数据中心2期基.- CFi.CN 中财网 - 中财网",
       "headline_en": null,
-      "summary_zh": "南方润泽科技数据中心REIT (180901): 南方基金管理股份有限公司关于收到深圳证券交易所《关于南方润泽科技数据中心封闭式基础设施证券投资基金产品变更暨扩募份额上市和南方资本-润泽科技数据中心2期基.- CFi.CN 中财网 cfi.net.cn",
+      "summary_zh": "南方润泽科技数据中心REIT (180901): 南方基金管理股份有限公司关于收到深圳证券交易所《关于南方润泽科技数据中心封闭式基础设施证券投资基金产品变更暨扩募份额上市和南方资本-润泽科技数据中心2期基.- CFi.CN 中财网 中财网",
       "summary_en": null,
-      "source": "cfi.net.cn",
+      "source": "中财网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzS1YxbEZFdV9Zbm9fX29tamMxZ0JaeEhaaDRzNXNmY0ZZbkhjR01xM3dFcmdIX2JtamYyZFZkdkttNGFWRWQ2amZWbDk1cGtzNVdMbmxR?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:nav_report:MARKET:2026-08-11:2024商业reits估值逻辑重塑深度解析-行业投资新趋势与定价体系变革全指南-36kr",
+      "symbols": [],
+      "category": "nav_report",
+      "status": "observed",
+      "event_date": "2026-08-11",
+      "headline_zh": "2024商业REITs估值逻辑重塑深度解析 行业投资新趋势与定价体系变革全指南 - 36Kr",
+      "headline_en": null,
+      "summary_zh": "2024商业REITs估值逻辑重塑深度解析 行业投资新趋势与定价体系变革全指南 36Kr",
+      "summary_en": null,
+      "source": "36Kr",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ULUZlRm1LTDAwbmQ5UkhscUpaMTNKQW9XN3k0YnZuU3BzUGNLekxzUWtnc3V0dmZPZzA3VnVMZVY5T0hyejIwUl9zRF9jQWxEVWgw?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
     },
     {
       "id": "google_news_rss:listing_approval:MARKET:2026-08-11:嘉实京东仓储reit首次扩募获上交所正式受理-完成后管理面积合计将超60万平米-观点网",
@@ -669,18 +703,18 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:distribution:508017.SH:2026-08-10:出租率升至99-67-创历史新高-华夏金茂消费reit累计分红1-23亿-财联社",
+      "id": "google_news_rss:distribution:508017.SH:2026-08-10:出租率升至99-67-创历史新高-华夏金茂消费reit累计分红1-23亿-cls-cn",
       "symbols": [
         "508017.SH"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-08-10",
-      "headline_zh": "出租率升至99.67%创历史新高 华夏金茂消费REIT累计分红1.23亿 - 财联社",
+      "headline_zh": "出租率升至99.67%创历史新高 华夏金茂消费REIT累计分红1.23亿 - cls.cn",
       "headline_en": null,
-      "summary_zh": "出租率升至99.67%创历史新高 华夏金茂消费REIT累计分红1.23亿 财联社",
+      "summary_zh": "出租率升至99.67%创历史新高 华夏金茂消费REIT累计分红1.23亿 cls.cn",
       "summary_en": null,
-      "source": "财联社",
+      "source": "cls.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAxWGVxSHpCRTVXaU1ORnU1Rm8yVzJZYVc3b1h3QThYX0wtOUVGaWdJbkl0eE5qMVc1bWhKVVF2S0JIbjg3WExXdw?oc=5",
       "confidence": 0.88,
@@ -705,18 +739,18 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:distribution:508017.SH:2026-08-09:出租率升至99-67-创历史新高-华夏金茂消费reit累计分红1-23亿-财联社",
+      "id": "google_news_rss:distribution:508017.SH:2026-08-09:出租率升至99-67-创历史新高-华夏金茂消费reit累计分红1-23亿-cls-cn",
       "symbols": [
         "508017.SH"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-08-09",
-      "headline_zh": "出租率升至99.67%创历史新高 华夏金茂消费REIT累计分红1.23亿 - 财联社",
+      "headline_zh": "出租率升至99.67%创历史新高 华夏金茂消费REIT累计分红1.23亿 - cls.cn",
       "headline_en": null,
-      "summary_zh": "出租率升至99.67%创历史新高 华夏金茂消费REIT累计分红1.23亿 财联社",
+      "summary_zh": "出租率升至99.67%创历史新高 华夏金茂消费REIT累计分红1.23亿 cls.cn",
       "summary_en": null,
-      "source": "财联社",
+      "source": "cls.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA0VWY4di1XdDF5UVJvSk1RN19VZ01ROU40R0JuS3Nuc0FKWE9kcXNqSFN6RkduUGQ4SlhFNGpRdVFrcklTNXc?oc=5",
       "confidence": 0.88,
@@ -757,18 +791,18 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_schedule:MARKET:2026-08-07:什么情况-又有公募reits上市首日盘中破发-东方财富",
+      "id": "google_news_rss:listing_schedule:MARKET:2026-08-07:什么情况-又有公募reits上市首日盘中破发-每日经济新闻",
       "symbols": [],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-08-07",
-      "headline_zh": "什么情况？又有公募REITs上市首日盘中破发 - 东方财富",
+      "headline_zh": "什么情况？又有公募REITs上市首日盘中破发 - 每日经济新闻",
       "headline_en": null,
-      "summary_zh": "什么情况？又有公募REITs上市首日盘中破发 东方财富",
+      "summary_zh": "什么情况？又有公募REITs上市首日盘中破发 每日经济新闻",
       "summary_en": null,
-      "source": "东方财富",
+      "source": "每日经济新闻",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB2ZVl5d2VLWUZTb2UzX2VDbGNGTUhiZklDWFlzc1I2M3hFbVl4SVNNN3pmNGxkc29KNU85RDJPbGVhMzVPaDc0UlZCa2tmQVAtWlNxZmE2NkFXUDNDRkhnYWtYc3hNQQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TRWhZV09RYVpPWG01U1ZuLVU4bjVFckhmOVF6Vm9uVUpmX3dreW93YzFLQ3lUcDVEYTRqcHAxWk1IbTlBX1E1d0d1eW5VeDNKT0pJZDc4ZFhvRzdTWEpHakxR?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
     },
@@ -985,18 +1019,18 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:distribution:508007.SH:2026-07-24:80只reits二季报全景-最高涨近20-超7成底层板块业绩承压-3-88-分红登顶-财联社",
+      "id": "google_news_rss:distribution:508007.SH:2026-07-24:80只reits二季报全景-最高涨近20-超7成底层板块业绩承压-3-88-分红登顶-cls-cn",
       "symbols": [
         "508007.SH"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-07-24",
-      "headline_zh": "80只REITs二季报全景：最高涨近20%，超7成底层板块业绩承压，3.88%分红登顶 - 财联社",
+      "headline_zh": "80只REITs二季报全景：最高涨近20%，超7成底层板块业绩承压，3.88%分红登顶 - cls.cn",
       "headline_en": null,
-      "summary_zh": "80只REITs二季报全景：最高涨近20%，超7成底层板块业绩承压，3.88%分红登顶 财联社",
+      "summary_zh": "80只REITs二季报全景：最高涨近20%，超7成底层板块业绩承压，3.88%分红登顶 cls.cn",
       "summary_en": null,
-      "source": "财联社",
+      "source": "cls.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBYcms5VWVxVHJHUU1UajdKZF95cld3aHhlT3dMNnZQMTZSdmg5WEhaZ3lXblE5UW8zMDkyWTJUOUMyMS1xWDVDLQ?oc=5",
       "confidence": 0.64,
@@ -1263,16 +1297,16 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_schedule:MARKET:2026-06-23:上市三日-首批商业不动产reits多单已破发-二级市场整体承压-公募reits面面观-财联社",
+      "id": "google_news_rss:listing_schedule:MARKET:2026-06-23:上市三日-首批商业不动产reits多单已破发-二级市场整体承压-公募reits面面观-cls-cn",
       "symbols": [],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-06-23",
-      "headline_zh": "上市三日，首批商业不动产REITs多单已破发，二级市场整体承压| 公募REITs面面观 - 财联社",
+      "headline_zh": "上市三日，首批商业不动产REITs多单已破发，二级市场整体承压| 公募REITs面面观 - cls.cn",
       "headline_en": null,
-      "summary_zh": "上市三日，首批商业不动产REITs多单已破发，二级市场整体承压| 公募REITs面面观 财联社",
+      "summary_zh": "上市三日，首批商业不动产REITs多单已破发，二级市场整体承压| 公募REITs面面观 cls.cn",
       "summary_en": null,
-      "source": "财联社",
+      "source": "cls.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0zQmVUc05SbEtCcVVfS3RNd290amhPOWZud1NEZGRQSUxQWF9FUVBwZGczSVNhaWw4M08wUlJVclVzSWVpWllxdQ?oc=5",
       "confidence": 0.68,
@@ -1613,9 +1647,9 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:expansion_acquisition:508048.SH:2026-06-07:外高桥-暂停参与华安外高桥仓储物流reit扩募-观点网",
+      "id": "google_news_rss:expansion_acquisition:508060.SH:2026-06-07:外高桥-暂停参与华安外高桥仓储物流reit扩募-观点网",
       "symbols": [
-        "508048.SH"
+        "508060.SH"
       ],
       "category": "expansion_acquisition",
       "status": "observed",
@@ -1647,36 +1681,36 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_schedule:508093.SH:2026-05-29:中伦助力易方达广西北投高速reit成功上市-lexology",
+      "id": "google_news_rss:listing_schedule:508093.SH:2026-05-29:中伦助力易方达广西北投高速reit成功上市-lexology-com",
       "symbols": [
         "508093.SH"
       ],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-05-29",
-      "headline_zh": "中伦助力易方达广西北投高速REIT成功上市 - Lexology",
+      "headline_zh": "中伦助力易方达广西北投高速REIT成功上市 - lexology.com",
       "headline_en": null,
-      "summary_zh": "中伦助力易方达广西北投高速REIT成功上市 Lexology",
+      "summary_zh": "中伦助力易方达广西北投高速REIT成功上市 lexology.com",
       "summary_en": null,
-      "source": "Lexology",
+      "source": "lexology.com",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNd0x5MkhYbEE1dnZVQ20yclBZSVFlTU9GLXZfazFYaUVZcUtiZmtkU2tQZnZRdk94RTlvYi1GNEJUQTRVZXZDdG5pc1gwZXhmSkZhaDZfT2cwR1lTM1JzZUg1ODc1MFdGcXNuNW5pTVFwdnhxd2s2R0xRWTdYcjhMdmpkZnlSbllXQXpZ?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:offering_result:508603.SH:2026-05-26:三单商业不动产reits提前结募-网下认购热度不一-公募reits面面观-财联社",
+      "id": "google_news_rss:offering_result:508603.SH:2026-05-26:三单商业不动产reits提前结募-网下认购热度不一-公募reits面面观-cls-cn",
       "symbols": [
         "508603.SH"
       ],
       "category": "offering_result",
       "status": "observed",
       "event_date": "2026-05-26",
-      "headline_zh": "三单商业不动产REITs提前结募，网下认购热度不一 | 公募REITs面面观 - 财联社",
+      "headline_zh": "三单商业不动产REITs提前结募，网下认购热度不一 | 公募REITs面面观 - cls.cn",
       "headline_en": null,
-      "summary_zh": "三单商业不动产REITs提前结募，网下认购热度不一 | 公募REITs面面观 财联社",
+      "summary_zh": "三单商业不动产REITs提前结募，网下认购热度不一 | 公募REITs面面观 cls.cn",
       "summary_en": null,
-      "source": "财联社",
+      "source": "cls.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBETEhzdWVuRlZ3TEZkZmdPcTFqbEgtSm5jbkFXRW9iX1BpMUNNUmlHQkZta2huWkJRa2hhaGgzaDZCTmo2T2FrSg?oc=5",
       "confidence": 0.64,
