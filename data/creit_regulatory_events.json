@@ -1,34 +1,34 @@
 {
-  "build_time": "2026-08-22T06:59:39+00:00",
+  "build_time": "2026-08-23T02:00:07+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 789,
-    "items_before_dedupe": 189,
-    "items_after_dedupe": 185,
+    "raw_articles_seen": 770,
+    "items_before_dedupe": 175,
+    "items_after_dedupe": 172,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 90,
-      "listing_schedule": 36,
-      "regulatory_policy": 2,
+      "market_context": 79,
+      "listing_schedule": 32,
+      "regulatory_policy": 3,
       "distribution": 29,
-      "listing_approval": 9,
+      "listing_approval": 11,
       "pipeline_asset_update": 3,
       "nav_report": 4,
       "expansion_acquisition": 7,
-      "offering_result": 5
+      "offering_result": 4
     },
     "match_tier_counts": {
-      "inferred": 56,
-      "explicit": 98,
-      "market": 30,
+      "inferred": 58,
+      "explicit": 86,
+      "market": 27,
       "high": 1
     },
-    "symbols_with_news": 67
+    "symbols_with_news": 65
   },
   "items": [
     {
@@ -46,6 +46,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Ddm12RXdaTUxGbmlSMndJVjNtaUs3Qmx0c01VZzVKZ0M5UURaUU5wT2ZNc0xDUHRzOGlSbmJOVm00UDlIVEJkaldJaF81UlNTcHFfY0JaTXlnWnJORTVwOG9TR3hBaGFYOEZSeTN3?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:regulatory_policy:180303.SZ:2026-08-19:中国建筑租赁住房reit等三单公募reits获证监会批复-观点网",
+      "symbols": [
+        "180303.SZ"
+      ],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-19",
+      "headline_zh": "中国建筑租赁住房REIT等三单公募REITs获证监会批复 - 观点网",
+      "headline_en": null,
+      "summary_zh": "中国建筑租赁住房REIT等三单公募REITs获证监会批复 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ZYUNUOUR6Wk1NZVpnVlVHaDlmbmItMTVvb0taQV9jZTREUXFTSjM2OUpLbmhjOHc5NjRMOGljVTdRVjJpNTVvdlVaQVFDQQ?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
     },
     {
       "id": "google_news_rss:regulatory_policy:508078.SH:2026-08-06:中航易商仓储物流reit-将自2026年8月7日上海证券交易所开市起停牌1小时-并于当日上午10-30起复牌-新浪财经",
