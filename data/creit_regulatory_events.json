@@ -1,36 +1,52 @@
 {
-  "build_time": "2026-08-26T07:09:26+00:00",
+  "build_time": "2026-08-26T13:17:22+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 742,
-    "items_before_dedupe": 148,
-    "items_after_dedupe": 142,
+    "raw_articles_seen": 732,
+    "items_before_dedupe": 152,
+    "items_after_dedupe": 148,
     "errors": [],
     "error_count": 0,
     "category_counts": {
+      "regulatory_policy": 3,
       "distribution": 28,
-      "market_context": 65,
-      "offering_result": 5,
-      "regulatory_policy": 2,
-      "listing_approval": 8,
+      "market_context": 67,
+      "offering_result": 6,
+      "listing_approval": 9,
       "listing_schedule": 24,
       "pipeline_asset_update": 3,
-      "nav_report": 2,
+      "nav_report": 3,
       "expansion_acquisition": 5
     },
     "match_tier_counts": {
+      "market": 28,
       "explicit": 63,
-      "inferred": 54,
-      "market": 24,
+      "inferred": 56,
       "high": 1
     },
-    "symbols_with_news": 60
+    "symbols_with_news": 61
   },
   "items": [
+    {
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-08-26:信義能源新能源reit获发改委推荐至中国证监会-观点网",
+      "symbols": [],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-26",
+      "headline_zh": "信義能源新能源REIT获发改委推荐至中国证监会 - 观点网",
+      "headline_en": null,
+      "summary_zh": "信義能源新能源REIT获发改委推荐至中国证监会 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBpbFJtc0NHZnFqdGJuS2ZxUDlOWllFZ0g1MFZST3VPQmoyNl9BdGx2WGRGNTZlbU1zT3h1b2JBNVV6MWZjak9RNEx4NjFiUE95SHRQTlVpRHoyV25iVGRMT0tn?oc=5",
+      "confidence": 0.76,
+      "match_tier": "market"
+    },
     {
       "id": "google_news_rss:regulatory_policy:MARKET:2026-08-21:11-17亿新工产园reit获发改委推荐-南京机电集团的五年证券化路-风闻",
       "symbols": [],
