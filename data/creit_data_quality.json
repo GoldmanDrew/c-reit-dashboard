@@ -1,30 +1,35 @@
 {
-  "build_time": "2026-08-25T18:57:49+00:00",
+  "build_time": "2026-08-26T01:59:04+00:00",
   "schema_v": 1,
-  "price_asof": "2026-08-25",
-  "audit_date": "2026-08-25",
+  "price_asof": "2026-08-26",
+  "audit_date": "2026-08-26",
   "summary": {
     "total_records": 87,
     "listed_records": 82,
     "pending_records": 5,
-    "stale_seed_price_rows": 0,
-    "stale_seed_rows": 0,
+    "stale_seed_price_rows": 4,
+    "stale_seed_rows": 4,
     "stale_non_seed_price_rows": 0,
-    "fresh_price_rows": 82,
+    "fresh_price_rows": 78,
     "pending_price_rows": 5,
     "unexpected_missing_price_rows": 0,
-    "rows_missing_source_url": 5,
+    "rows_missing_source_url": 9,
     "status_counts": {
-      "ok": 82,
+      "ok": 78,
+      "stale_seed": 4,
       "pending_not_listed": 5
     },
     "adapter_gap_counts": {
       "zoning_type": 87,
       "pipeline_multiple_of_initial_assets": 87,
       "latest_news": 27,
-      "source_url": 5
+      "source_url": 9
     },
-    "stale_field_counts": {},
+    "stale_field_counts": {
+      "last_close_rmb": 4,
+      "return_since_listing_pct": 4,
+      "price_asof": 4
+    },
     "unexpected_missing_counts": {}
   },
   "adapter_gaps": [
@@ -166,8 +171,7 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets",
-        "latest_news"
+        "pipeline_multiple_of_initial_assets"
       ],
       "fetch_priority": "prices_first"
     },
@@ -219,7 +223,8 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first"
     },
@@ -532,7 +537,8 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first"
     },
@@ -566,7 +572,8 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first"
     },
@@ -775,8 +782,7 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets",
-        "latest_news"
+        "pipeline_multiple_of_initial_assets"
       ],
       "fetch_priority": "prices_first"
     },
@@ -1051,7 +1057,8 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first"
     },
@@ -1137,8 +1144,7 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets",
-        "latest_news"
+        "pipeline_multiple_of_initial_assets"
       ],
       "fetch_priority": "prices_first"
     },
@@ -1146,14 +1152,19 @@
       "symbol": "180605.SZ",
       "name_cn": "易方达华威市场REIT",
       "lifecycle_status": "listed",
-      "status": "ok",
-      "severity": "ok",
-      "primary_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "price_age_days": 0,
-      "stale_fields": [],
+      "status": "stale_seed",
+      "severity": "warn",
+      "primary_reason": "Listed REIT price comes from the stale workbook seed.",
+      "price_age_days": null,
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
+        "source_url",
         "zoning_type",
         "pipeline_multiple_of_initial_assets",
         "latest_news"
@@ -1199,14 +1210,19 @@
       "symbol": "508084.SH",
       "name_cn": "汇添富九州通医药REIT",
       "lifecycle_status": "listed",
-      "status": "ok",
-      "severity": "ok",
-      "primary_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "price_age_days": 0,
-      "stale_fields": [],
+      "status": "stale_seed",
+      "severity": "warn",
+      "primary_reason": "Listed REIT price comes from the stale workbook seed.",
+      "price_age_days": null,
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
+        "source_url",
         "zoning_type",
         "pipeline_multiple_of_initial_assets"
       ],
@@ -1225,8 +1241,7 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets",
-        "latest_news"
+        "pipeline_multiple_of_initial_assets"
       ],
       "fetch_priority": "prices_first"
     },
@@ -1243,7 +1258,8 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first"
     },
@@ -1294,8 +1310,7 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets",
-        "latest_news"
+        "pipeline_multiple_of_initial_assets"
       ],
       "fetch_priority": "prices_first"
     },
@@ -1303,14 +1318,19 @@
       "symbol": "508090.SH",
       "name_cn": "中银中外运仓储物流REIT",
       "lifecycle_status": "listed",
-      "status": "ok",
-      "severity": "ok",
-      "primary_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "price_age_days": 0,
-      "stale_fields": [],
+      "status": "stale_seed",
+      "severity": "warn",
+      "primary_reason": "Listed REIT price comes from the stale workbook seed.",
+      "price_age_days": null,
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
+        "source_url",
         "zoning_type",
         "pipeline_multiple_of_initial_assets"
       ],
@@ -1474,14 +1494,19 @@
       "symbol": "508050.SH",
       "name_cn": "华夏中核清洁能源REIT",
       "lifecycle_status": "listed",
-      "status": "ok",
-      "severity": "ok",
-      "primary_reason": "Listed REIT price was refreshed by the automated price adapter.",
-      "price_age_days": 0,
-      "stale_fields": [],
+      "status": "stale_seed",
+      "severity": "warn",
+      "primary_reason": "Listed REIT price comes from the stale workbook seed.",
+      "price_age_days": null,
+      "stale_fields": [
+        "last_close_rmb",
+        "return_since_listing_pct",
+        "price_asof"
+      ],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
+        "source_url",
         "zoning_type",
         "pipeline_multiple_of_initial_assets",
         "latest_news"
