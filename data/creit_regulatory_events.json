@@ -1,34 +1,34 @@
 {
-  "build_time": "2026-08-27T09:50:50+00:00",
+  "build_time": "2026-08-27T22:16:48+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 758,
-    "items_before_dedupe": 150,
-    "items_after_dedupe": 145,
+    "raw_articles_seen": 763,
+    "items_before_dedupe": 164,
+    "items_after_dedupe": 162,
     "errors": [],
     "error_count": 0,
     "category_counts": {
+      "distribution": 30,
+      "nav_report": 6,
+      "market_context": 76,
       "listing_approval": 8,
-      "market_context": 66,
-      "regulatory_policy": 2,
-      "distribution": 28,
+      "regulatory_policy": 3,
       "offering_result": 6,
-      "listing_schedule": 25,
-      "pipeline_asset_update": 2,
-      "nav_report": 3,
+      "pipeline_asset_update": 4,
+      "listing_schedule": 24,
       "expansion_acquisition": 5
     },
     "match_tier_counts": {
-      "market": 30,
-      "inferred": 47,
-      "explicit": 67,
+      "explicit": 73,
+      "inferred": 55,
+      "market": 33,
       "high": 1
     },
-    "symbols_with_news": 62
+    "symbols_with_news": 66
   },
   "items": [
     {
@@ -62,6 +62,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Ddm12RXdaTUxGbmlSMndJVjNtaUs3Qmx0c01VZzVKZ0M5UURaUU5wT2ZNc0xDUHRzOGlSbmJOVm00UDlIVEJkaldJaF81UlNTcHFfY0JaTXlnWnJORTVwOG9TR3hBaGFYOEZSeTN3?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:regulatory_policy:180303.SZ:2026-08-19:中国建筑租赁住房reit等三单公募reits获证监会批复-观点网",
+      "symbols": [
+        "180303.SZ"
+      ],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-19",
+      "headline_zh": "中国建筑租赁住房REIT等三单公募REITs获证监会批复 - 观点网",
+      "headline_en": null,
+      "summary_zh": "中国建筑租赁住房REIT等三单公募REITs获证监会批复 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ZYUNUOUR6Wk1NZVpnVlVHaDlmbmItMTVvb0taQV9jZTREUXFTSjM2OUpLbmhjOHc5NjRMOGljVTdRVjJpNTVvdlVaQVFDQQ?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
     }
   ]
 }
