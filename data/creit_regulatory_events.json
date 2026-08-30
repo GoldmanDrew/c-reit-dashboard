@@ -1,36 +1,52 @@
 {
-  "build_time": "2026-08-29T20:56:44+00:00",
+  "build_time": "2026-08-30T05:26:08+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 810,
-    "items_before_dedupe": 184,
-    "items_after_dedupe": 183,
+    "raw_articles_seen": 811,
+    "items_before_dedupe": 182,
+    "items_after_dedupe": 182,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 84,
-      "nav_report": 12,
+      "regulatory_policy": 4,
+      "market_context": 87,
+      "nav_report": 11,
       "pipeline_asset_update": 3,
       "expansion_acquisition": 7,
-      "distribution": 28,
+      "distribution": 27,
       "listing_approval": 11,
-      "offering_result": 5,
-      "regulatory_policy": 3,
-      "listing_schedule": 30
+      "offering_result": 4,
+      "listing_schedule": 28
     },
     "match_tier_counts": {
+      "market": 33,
       "inferred": 62,
-      "explicit": 85,
-      "market": 35,
+      "explicit": 86,
       "high": 1
     },
-    "symbols_with_news": 70
+    "symbols_with_news": 68
   },
   "items": [
+    {
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-08-30:reits周报-8-22-8-28-两监管部门强化reits政策支持-市场持续反弹-搜狐网",
+      "symbols": [],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-30",
+      "headline_zh": "REITs周报（8.22-8.28）：两监管部门强化REITs政策支持，市场持续反弹 - 搜狐网",
+      "headline_en": null,
+      "summary_zh": "REITs周报（8.22-8.28）：两监管部门强化REITs政策支持，市场持续反弹 搜狐网",
+      "summary_en": null,
+      "source": "搜狐网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSWh3UHcxMGxxU2pLWUFFV0xrbGF1OXVQZW5va0dkOEtITzg3aUN5MlhsWklVeUNzTl9MOGxzbXg0RWg0QTBuTExBTXFuNHZ4SWl4MWpTc3J3WWdjbFo5Uy1KU3NLajFwRm9Dd1B6REsyaEtFb0VxRUhoQkxNMWFPNUpiSF9VZU55YUxNcw?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    },
     {
       "id": "google_news_rss:regulatory_policy:MARKET:2026-08-26:信義能源新能源reit获发改委推荐至中国证监会-观点网",
       "symbols": [],
