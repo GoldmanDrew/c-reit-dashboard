@@ -1,5 +1,5 @@
 {
-  "build_time": "2026-09-01T05:10:51+00:00",
+  "build_time": "2026-09-01T11:40:31+00:00",
   "schema_v": 1,
   "price_asof": "2026-09-01",
   "audit_date": "2026-09-01",
@@ -7,29 +7,24 @@
     "total_records": 87,
     "listed_records": 82,
     "pending_records": 5,
-    "stale_seed_price_rows": 1,
-    "stale_seed_rows": 1,
+    "stale_seed_price_rows": 0,
+    "stale_seed_rows": 0,
     "stale_non_seed_price_rows": 0,
-    "fresh_price_rows": 81,
+    "fresh_price_rows": 82,
     "pending_price_rows": 5,
     "unexpected_missing_price_rows": 0,
-    "rows_missing_source_url": 6,
+    "rows_missing_source_url": 5,
     "status_counts": {
-      "ok": 81,
-      "stale_seed": 1,
+      "ok": 82,
       "pending_not_listed": 5
     },
     "adapter_gap_counts": {
       "zoning_type": 87,
       "pipeline_multiple_of_initial_assets": 87,
-      "latest_news": 21,
-      "source_url": 6
+      "latest_news": 20,
+      "source_url": 5
     },
-    "stale_field_counts": {
-      "last_close_rmb": 1,
-      "return_since_listing_pct": 1,
-      "price_asof": 1
-    },
+    "stale_field_counts": {},
     "unexpected_missing_counts": {}
   },
   "adapter_gaps": [
@@ -171,8 +166,7 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets",
-        "latest_news"
+        "pipeline_multiple_of_initial_assets"
       ],
       "fetch_priority": "prices_first"
     },
@@ -189,7 +183,8 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first"
     },
@@ -500,8 +495,7 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets",
-        "latest_news"
+        "pipeline_multiple_of_initial_assets"
       ],
       "fetch_priority": "prices_first"
     },
@@ -981,7 +975,8 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first"
     },
@@ -1162,19 +1157,14 @@
       "symbol": "508087.SH",
       "name_cn": "国泰海通济南能源供热REIT",
       "lifecycle_status": "listed",
-      "status": "stale_seed",
-      "severity": "warn",
-      "primary_reason": "Listed REIT price comes from the stale workbook seed.",
-      "price_age_days": null,
-      "stale_fields": [
-        "last_close_rmb",
-        "return_since_listing_pct",
-        "price_asof"
-      ],
+      "status": "ok",
+      "severity": "ok",
+      "primary_reason": "Listed REIT price was refreshed by the automated price adapter.",
+      "price_age_days": 0,
+      "stale_fields": [],
       "missing_expected": [],
       "missing_unexpected": [],
       "adapter_gaps": [
-        "source_url",
         "zoning_type",
         "pipeline_multiple_of_initial_assets",
         "latest_news"
@@ -1486,8 +1476,7 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets",
-        "latest_news"
+        "pipeline_multiple_of_initial_assets"
       ],
       "fetch_priority": "prices_first"
     },
@@ -1504,8 +1493,7 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets",
-        "latest_news"
+        "pipeline_multiple_of_initial_assets"
       ],
       "fetch_priority": "prices_first"
     },
@@ -1522,7 +1510,8 @@
       "missing_unexpected": [],
       "adapter_gaps": [
         "zoning_type",
-        "pipeline_multiple_of_initial_assets"
+        "pipeline_multiple_of_initial_assets",
+        "latest_news"
       ],
       "fetch_priority": "prices_first"
     },
