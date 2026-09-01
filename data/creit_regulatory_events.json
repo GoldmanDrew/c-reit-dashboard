@@ -1,34 +1,34 @@
 {
-  "build_time": "2026-09-01T11:40:30+00:00",
+  "build_time": "2026-09-01T16:41:19+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 804,
-    "items_before_dedupe": 185,
+    "raw_articles_seen": 799,
+    "items_before_dedupe": 184,
     "items_after_dedupe": 181,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 92,
       "distribution": 30,
-      "regulatory_policy": 5,
+      "market_context": 91,
+      "regulatory_policy": 4,
       "nav_report": 6,
-      "listing_approval": 10,
-      "listing_schedule": 29,
+      "listing_approval": 11,
+      "listing_schedule": 28,
       "offering_result": 3,
-      "pipeline_asset_update": 2,
-      "expansion_acquisition": 4
+      "pipeline_asset_update": 3,
+      "expansion_acquisition": 5
     },
     "match_tier_counts": {
-      "explicit": 90,
-      "inferred": 63,
-      "market": 27,
+      "explicit": 87,
+      "inferred": 65,
+      "market": 28,
       "high": 1
     },
-    "symbols_with_news": 67
+    "symbols_with_news": 66
   },
   "items": [
     {
@@ -94,24 +94,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Ddm12RXdaTUxGbmlSMndJVjNtaUs3Qmx0c01VZzVKZ0M5UURaUU5wT2ZNc0xDUHRzOGlSbmJOVm00UDlIVEJkaldJaF81UlNTcHFfY0JaTXlnWnJORTVwOG9TR3hBaGFYOEZSeTN3?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
-    },
-    {
-      "id": "google_news_rss:regulatory_policy:508078.SH:2026-08-06:中航易商仓储物流reit-将自2026年8月7日上海证券交易所开市起停牌1小时-并于当日上午10-30起复牌-finance-sina-com-cn",
-      "symbols": [
-        "508078.SH"
-      ],
-      "category": "regulatory_policy",
-      "status": "observed",
-      "event_date": "2026-08-06",
-      "headline_zh": "中航易商仓储物流REIT：将自2026年8月7日上海证券交易所开市起停牌1小时，并于当日上午10:30起复牌。 - finance.sina.com.cn",
-      "headline_en": null,
-      "summary_zh": "中航易商仓储物流REIT：将自2026年8月7日上海证券交易所开市起停牌1小时，并于当日上午10:30起复牌。 finance.sina.com.cn",
-      "summary_en": null,
-      "source": "finance.sina.com.cn",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1EbmtIblJnRHZ5SUpXQXBBYVJLbUhpMW9XdWpwazR5bjdxSTFvTW91UFo0b1VDOUt0Ym1MRjF5Mk5QMGMtVTNRTnA3b2podURGLTE3ZFhMcmNxWURVMl9XcUduc01hOUtpbjN6Yy1PLU1HTnZUelB3VDdkN1drUQ?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
     }
   ]
 }
