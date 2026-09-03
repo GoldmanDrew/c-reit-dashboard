@@ -1,60 +1,68 @@
 {
-  "build_time": "2026-09-03T11:18:03+00:00",
-  "status": "empty",
+  "build_time": "2026-09-03T21:03:25+00:00",
+  "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 0,
-    "items_before_dedupe": 0,
-    "items_after_dedupe": 0,
-    "errors": [
-      {
-        "query": "\"基础设施REIT\" \"监管\"",
-        "error": "HTTP Error 503: Service Unavailable"
-      },
-      {
-        "query": "\"公募REIT\" \"获批\"",
-        "error": "HTTP Error 503: Service Unavailable"
-      },
-      {
-        "query": "\"基础设施REIT\" \"收益分配\"",
-        "error": "HTTP Error 503: Service Unavailable"
-      },
-      {
-        "query": "\"商业不动产REIT\" \"上市\"",
-        "error": "HTTP Error 503: Service Unavailable"
-      },
-      {
-        "query": "\"REIT\" \"发改委\"",
-        "error": "HTTP Error 503: Service Unavailable"
-      },
-      {
-        "query": "\"公募REIT\" \"分红\"",
-        "error": "HTTP Error 503: Service Unavailable"
-      },
-      {
-        "query": "\"公募REIT\" \"上市\"",
-        "error": "HTTP Error 503: Service Unavailable"
-      },
-      {
-        "query": "\"公募REIT\" \"扩募\"",
-        "error": "HTTP Error 503: Service Unavailable"
-      },
-      {
-        "query": "\"中金唯品会商业REIT\" OR \"508603\" REIT",
-        "error": "HTTP Error 503: Service Unavailable"
-      },
-      {
-        "query": "\"国泰海通砂之船商业REIT\" OR \"508602\" REIT",
-        "error": "HTTP Error 503: Service Unavailable"
-      }
-    ],
-    "error_count": 95,
-    "category_counts": {},
-    "match_tier_counts": {},
-    "symbols_with_news": 0
+    "raw_articles_seen": 673,
+    "items_before_dedupe": 115,
+    "items_after_dedupe": 115,
+    "errors": [],
+    "error_count": 0,
+    "category_counts": {
+      "market_context": 55,
+      "listing_schedule": 24,
+      "originator_credit_event": 1,
+      "distribution": 16,
+      "regulatory_policy": 2,
+      "nav_report": 5,
+      "listing_approval": 8,
+      "pipeline_asset_update": 1,
+      "expansion_acquisition": 2,
+      "offering_result": 1
+    },
+    "match_tier_counts": {
+      "inferred": 48,
+      "market": 22,
+      "explicit": 44,
+      "high": 1
+    },
+    "symbols_with_news": 47
   },
-  "items": []
+  "items": [
+    {
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-08-30:reits周报-8-22-8-28-两监管部门强化reits政策支持-市场持续反弹-sohu",
+      "symbols": [],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-30",
+      "headline_zh": "REITs周报（8.22-8.28）：两监管部门强化REITs政策支持，市场持续反弹 - Sohu",
+      "headline_en": null,
+      "summary_zh": "REITs周报（8.22-8.28）：两监管部门强化REITs政策支持，市场持续反弹 Sohu",
+      "summary_en": null,
+      "source": "Sohu",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSWh3UHcxMGxxU2pLWUFFV0xrbGF1OXVQZW5va0dkOEtITzg3aUN5MlhsWklVeUNzTl9MOGxzbXg0RWg0QTBuTExBTXFuNHZ4SWl4MWpTc3J3WWdjbFo5Uy1KU3NLajFwRm9Dd1B6REsyaEtFb0VxRUhoQkxNMWFPNUpiSF9VZU55YUxNcw?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-08-21:11-17亿新工产园reit获发改委推荐-南京机电集团的五年证券化路-user-guancha-cn",
+      "symbols": [],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-21",
+      "headline_zh": "11.17亿新工产园REIT获发改委推荐：南京机电集团的五年证券化路 - user.guancha.cn",
+      "headline_en": null,
+      "summary_zh": "11.17亿新工产园REIT获发改委推荐：南京机电集团的五年证券化路 user.guancha.cn",
+      "summary_en": null,
+      "source": "user.guancha.cn",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Ddm12RXdaTUxGbmlSMndJVjNtaUs3Qmx0c01VZzVKZ0M5UURaUU5wT2ZNc0xDUHRzOGlSbmJOVm00UDlIVEJkaldJaF81UlNTcHFfY0JaTXlnWnJORTVwOG9TR3hBaGFYOEZSeTN3?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    }
+  ]
 }
