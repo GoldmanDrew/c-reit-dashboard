@@ -1,34 +1,35 @@
 {
-  "build_time": "2026-09-04T04:35:47+00:00",
+  "build_time": "2026-09-04T11:19:33+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 637,
-    "items_before_dedupe": 115,
-    "items_after_dedupe": 114,
+    "raw_articles_seen": 657,
+    "items_before_dedupe": 125,
+    "items_after_dedupe": 125,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 57,
-      "listing_schedule": 24,
-      "originator_credit_event": 2,
+      "listing_approval": 7,
+      "nav_report": 5,
+      "market_context": 64,
+      "listing_schedule": 22,
+      "originator_credit_event": 3,
       "distribution": 15,
-      "regulatory_policy": 2,
-      "nav_report": 3,
-      "listing_approval": 8,
+      "regulatory_policy": 3,
       "pipeline_asset_update": 1,
-      "expansion_acquisition": 2
+      "expansion_acquisition": 4,
+      "offering_result": 1
     },
     "match_tier_counts": {
-      "inferred": 51,
-      "market": 22,
-      "explicit": 40,
+      "inferred": 53,
+      "market": 23,
+      "explicit": 48,
       "high": 1
     },
-    "symbols_with_news": 52
+    "symbols_with_news": 56
   },
   "items": [
     {
@@ -48,16 +49,32 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:regulatory_policy:MARKET:2026-08-21:11-17亿新工产园reit获发改委推荐-南京机电集团的五年证券化路-user-guancha-cn",
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-08-26:信義能源新能源reit获发改委推荐至中国证监会-观点网",
+      "symbols": [],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-26",
+      "headline_zh": "信義能源新能源REIT获发改委推荐至中国证监会 - 观点网",
+      "headline_en": null,
+      "summary_zh": "信義能源新能源REIT获发改委推荐至中国证监会 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1yeWxlckxTQ05QM2s1emxhc3BDYm1sNzdtSGJuOTdSWHRTcEg4bFBmVU1KQUo0OHZSSm1KOUlxWFZlVUFPVldGZkVnSUx0Zw?oc=5",
+      "confidence": 0.76,
+      "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-08-21:11-17亿新工产园reit获发改委推荐-南京机电集团的五年证券化路-风闻",
       "symbols": [],
       "category": "regulatory_policy",
       "status": "observed",
       "event_date": "2026-08-21",
-      "headline_zh": "11.17亿新工产园REIT获发改委推荐：南京机电集团的五年证券化路 - user.guancha.cn",
+      "headline_zh": "11.17亿新工产园REIT获发改委推荐：南京机电集团的五年证券化路 - 风闻",
       "headline_en": null,
-      "summary_zh": "11.17亿新工产园REIT获发改委推荐：南京机电集团的五年证券化路 user.guancha.cn",
+      "summary_zh": "11.17亿新工产园REIT获发改委推荐：南京机电集团的五年证券化路 风闻",
       "summary_en": null,
-      "source": "user.guancha.cn",
+      "source": "风闻",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Ddm12RXdaTUxGbmlSMndJVjNtaUs3Qmx0c01VZzVKZ0M5UURaUU5wT2ZNc0xDUHRzOGlSbmJOVm00UDlIVEJkaldJaF81UlNTcHFfY0JaTXlnWnJORTVwOG9TR3hBaGFYOEZSeTN3?oc=5",
       "confidence": 0.68,
