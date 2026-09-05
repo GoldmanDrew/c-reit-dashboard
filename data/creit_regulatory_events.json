@@ -1,37 +1,52 @@
 {
-  "build_time": "2026-09-04T20:46:43+00:00",
+  "build_time": "2026-09-05T10:36:56+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 701,
-    "items_before_dedupe": 146,
-    "items_after_dedupe": 146,
+    "raw_articles_seen": 748,
+    "items_before_dedupe": 155,
+    "items_after_dedupe": 154,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 76,
+      "listing_approval": 14,
       "listing_schedule": 29,
       "expansion_acquisition": 5,
-      "listing_approval": 10,
-      "nav_report": 4,
+      "market_context": 75,
+      "nav_report": 5,
       "originator_credit_event": 3,
-      "distribution": 15,
-      "regulatory_policy": 1,
-      "offering_result": 2,
+      "distribution": 17,
+      "regulatory_policy": 2,
+      "offering_result": 3,
       "pipeline_asset_update": 1
     },
     "match_tier_counts": {
-      "inferred": 56,
-      "market": 29,
-      "explicit": 60,
-      "high": 1
+      "inferred": 57,
+      "market": 35,
+      "explicit": 62
     },
     "symbols_with_news": 57
   },
   "items": [
+    {
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-08-26:信義能源新能源reit获发改委推荐至中国证监会-观点网",
+      "symbols": [],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-26",
+      "headline_zh": "信義能源新能源REIT获发改委推荐至中国证监会 - 观点网",
+      "headline_en": null,
+      "summary_zh": "信義能源新能源REIT获发改委推荐至中国证监会 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1yeWxlckxTQ05QM2s1emxhc3BDYm1sNzdtSGJuOTdSWHRTcEg4bFBmVU1KQUo0OHZSSm1KOUlxWFZlVUFPVldGZkVnSUx0Zw?oc=5",
+      "confidence": 0.76,
+      "match_tier": "market"
+    },
     {
       "id": "google_news_rss:regulatory_policy:MARKET:2026-08-21:11-17亿新工产园reit获发改委推荐-南京机电集团的五年证券化路-风闻",
       "symbols": [],
