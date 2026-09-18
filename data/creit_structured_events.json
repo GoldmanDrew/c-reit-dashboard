@@ -1,107 +1,71 @@
 {
-  "build_time": "2026-09-18T04:45:21+00:00",
+  "build_time": "2026-09-18T16:25:18+00:00",
   "status": "ok",
   "kind": "structured_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 821,
-    "items_before_dedupe": 178,
-    "items_after_dedupe": 176,
+    "raw_articles_seen": 839,
+    "items_before_dedupe": 197,
+    "items_after_dedupe": 194,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 97,
-      "distribution": 21,
-      "listing_schedule": 23,
+      "market_context": 109,
+      "listing_schedule": 27,
+      "distribution": 24,
+      "offering_result": 3,
+      "listing_approval": 17,
       "nav_report": 3,
-      "offering_result": 4,
-      "listing_approval": 18,
-      "expansion_acquisition": 6,
-      "originator_credit_event": 1,
-      "regulatory_policy": 2,
-      "pipeline_asset_update": 1
+      "expansion_acquisition": 5,
+      "pipeline_asset_update": 1,
+      "originator_credit_event": 3,
+      "regulatory_policy": 2
     },
     "match_tier_counts": {
-      "inferred": 49,
-      "explicit": 95,
-      "market": 32
+      "explicit": 104,
+      "inferred": 55,
+      "market": 35
     },
-    "symbols_with_news": 68
+    "symbols_with_news": 71
   },
   "items": [
     {
-      "id": "google_news_rss:distribution:508048.SH:2026-09-17:华安外高桥reit年内首次分红-每10份派0-69元-合计2760万元-新浪财经",
-      "symbols": [
-        "508048.SH"
-      ],
-      "category": "distribution",
-      "status": "observed",
-      "event_date": "2026-09-17",
-      "headline_zh": "华安外高桥REIT年内首次分红：每10份派0.69元，合计2760万元 - 新浪财经",
-      "headline_en": null,
-      "summary_zh": "华安外高桥REIT年内首次分红：每10份派0.69元，合计2760万元 新浪财经",
-      "summary_en": null,
-      "source": "新浪财经",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTXhpS2dhTkdqOVVYTmJ6N0ZYZ3JTb3QwYkxHczZxNzBzcTVUTEpMUnAxSVdlS1p3MzRBRFJvQzdKaTBVU1MtVHM3WjcwRXpsaEl1UExVNXk2dWEybFJjd08tcGNLSVVOTVNBRk1CcDg1WUt0T2FRNVlZZnBSWmhRQ3liRm1LbWg3QTFn?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
-    },
-    {
-      "id": "google_news_rss:listing_schedule:508036.SH:2026-09-17:公募reits二级市场缩量回落-又有新产品上市-新浪财经",
+      "id": "google_news_rss:listing_schedule:508036.SH:2026-09-17:公募reits二级市场缩量回落-又有新产品上市-新浪财经-金融信息服务商",
       "symbols": [
         "508036.SH"
       ],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-09-17",
-      "headline_zh": "公募REITs二级市场缩量回落 又有新产品上市 - 新浪财经",
+      "headline_zh": "公募REITs二级市场缩量回落 又有新产品上市 - 新浪财经_金融信息服务商",
       "headline_en": null,
-      "summary_zh": "公募REITs二级市场缩量回落 又有新产品上市 新浪财经",
+      "summary_zh": "公募REITs二级市场缩量回落 又有新产品上市 新浪财经_金融信息服务商",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "新浪财经_金融信息服务商",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxNZjgyV3E5c1NIbGEyOHBKczFQd2tmbHZwT2J4aWEtX1VEVWVPRnJVcjlqakNGcjNOYTh1MXQ2eVVaVzVkcm1nUk10cXR1QTFZMDNNM3Nka1J6aDNzend6ckVoRjhEbU5UeTh6dENzcjFrT1llbzBCTG5NbDhEWV8wb2pOOFJTdkNybUhGcWxjNTM1VkxuREM3SVltOFFBVk01T3JKV3A1dzdObHl1ZHhyekJ5OEtQcmRVTW9QSURJaWtCV3ZyMm5KQ21YSFctS3M0TV9nZVFTN0JBY0tNOV9RUWIyWEMzOFRib3gyQzk2QXJhTEc4Qk82Tzd2QnI0OXVnUW9kV2xPXzQ5VHFqN1pyakhSdW1CTXptTVNhZ3J4RE5jeWdzQjlRS05OTDhIbGN3X2RoVmlhdnBnRDlaU05kTGQybHU?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWFZQTFpYdWtEbGtTVV9GLVJ0OFd0blVPNUdxTEtXbTFsUEo3Y1RfTG5wUEJDQm9OTWVKRXNGSWgweFNJcmp1TVhFOVNEdTBhZjNqUGNTVk43bTU4Wl90eDJHMERDMmpsUzJIMW5vdHdQUTBhMXNybmlaRnk1WDY5Rm1PZWx4cVFHQ3V1Rkk4UDhMdlI4RU53U1hyc2pqN21SaUhNMEZrdF9SZnpuRHRpNWpxZWk?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:nav_report:508085.SH:2026-09-16:华泰苏州恒泰租赁住房reit中报数据出错遭更正-涉及前十大持有人名单-新浪财经",
+      "id": "google_news_rss:distribution:508048.SH:2026-09-17:华安外高桥reit年内首次分红-每10份派0-69元-合计2760万元-cj-sina-cn",
       "symbols": [
-        "508085.SH"
+        "508048.SH"
       ],
-      "category": "nav_report",
+      "category": "distribution",
       "status": "observed",
-      "event_date": "2026-09-16",
-      "headline_zh": "华泰苏州恒泰租赁住房REIT中报数据出错遭更正，涉及前十大持有人名单 - 新浪财经",
+      "event_date": "2026-09-17",
+      "headline_zh": "华安外高桥REIT年内首次分红：每10份派0.69元，合计2760万元 - cj.sina.cn",
       "headline_en": null,
-      "summary_zh": "华泰苏州恒泰租赁住房REIT中报数据出错遭更正，涉及前十大持有人名单 新浪财经",
+      "summary_zh": "华安外高桥REIT年内首次分红：每10份派0.69元，合计2760万元 cj.sina.cn",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "cj.sina.cn",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPR3pIcjhkUHVQOFZhNW9PdFhtOWZPakpHLUJPWDdIRjllb1RUNm13RmpZaF9ZRmNxazF2TDNiZ0hIVGVudWh1TlZ0ZXhTY3kwYzVYYzllNDh0WDRvMEFSejZyNC1pN05pcE9aOXpELTE1N0Y5Z1Ntc1hWelpSNnJHaEJpVnlrX3dETzZvVGNBbkpZeFNSRXZEdHRlREFPcXdiMDc4eEtwc2hJQTA3T3JCdFl4Tjc1cHB1akJQcklDV1NGSXZSR3FJeGt2MHFVZ25ZMnJIOEFURFhiMi1TWWJQVGRxMTBGdGk2M3JJM1FTbUhGT2lzRE9lNU9rVGN6TENZVWxXS2ZEZ2Z3UXB2dFdpZ0pyakpoQW5yT0VBODNNb3g0eFRrb25qd2lWX3FnVGxiUndYLV9ibHIwd2RBbERwLTItNXNhUQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTXhpS2dhTkdqOVVYTmJ6N0ZYZ3JTb3QwYkxHczZxNzBzcTVUTEpMUnAxSVdlS1p3MzRBRFJvQzdKaTBVU1MtVHM3WjcwRXpsaEl1UExVNXk2dWEybFJjd08tcGNLSVVOTVNBRk1CcDg1WUt0T2FRNVlZZnBSWmhRQ3liRm1LbWg3QTFn?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
-    },
-    {
-      "id": "google_news_rss:listing_schedule:508030.SH:2026-09-15:reits发行感受冷热不均-一边是一日售罄-高倍认购-一边是上市即破发-finance-eastmoney-com",
-      "symbols": [
-        "508030.SH"
-      ],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-09-15",
-      "headline_zh": "REITs发行感受冷热不均，一边是一日售罄、高倍认购，一边是上市即破发 - finance.eastmoney.com",
-      "headline_en": null,
-      "summary_zh": "REITs发行感受冷热不均，一边是一日售罄、高倍认购，一边是上市即破发 finance.eastmoney.com",
-      "summary_en": null,
-      "source": "finance.eastmoney.com",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBzenhGZEFkWlhBWmRHNEUwNlZTS3J2N0g0eXhFemZTYXBzeWVtejVlRzFhNjZtejA5X0FUNGdiY1RHeHk4dW82Zlp4QTBGOXZQZ1dEb0dYYWw1eDdkTFIxanRyNWdlUQ?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
     },
     {
       "id": "google_news_rss:offering_result:508093.SH:2026-09-15:公募reits打新再升温-一产品提前结束公众认购-环球网",
@@ -140,16 +104,16 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_approval:MARKET:2026-09-14:机构动态-金融赋能安居事业-杭州银行助力浙江首单保租房公募reit顺利获批-新浪财经",
+      "id": "google_news_rss:listing_approval:MARKET:2026-09-14:机构动态-金融赋能安居事业-杭州银行助力浙江首单保租房公募reit顺利获批-finance-sina-com-cn",
       "symbols": [],
       "category": "listing_approval",
       "status": "observed",
       "event_date": "2026-09-14",
-      "headline_zh": "【机构动态】金融赋能安居事业 杭州银行助力浙江首单保租房公募REIT顺利获批 - 新浪财经",
+      "headline_zh": "【机构动态】金融赋能安居事业 杭州银行助力浙江首单保租房公募REIT顺利获批 - finance.sina.com.cn",
       "headline_en": null,
-      "summary_zh": "【机构动态】金融赋能安居事业 杭州银行助力浙江首单保租房公募REIT顺利获批 新浪财经",
+      "summary_zh": "【机构动态】金融赋能安居事业 杭州银行助力浙江首单保租房公募REIT顺利获批 finance.sina.com.cn",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "finance.sina.com.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1jS0ZGcjV4SlZEM2haLTdmb1dJWTBvVUxvaWFCMWx4ZUVZWUxLTVI0bllua0xURmNsLVlrald1aTlPaV9FbVdIek1LSjM2WFJwODdsNXZkTGs0TWw3T0NBczZlalFLSXFBUUJCYjByV3BaR1lDLVF4Yg?oc=5",
       "confidence": 0.68,
@@ -188,38 +152,38 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_approval:508026.SH:2026-09-14:今年首单获批的仓储物流reits来了-监管发声支持市场供需两端稳步发展-新浪财经",
+      "id": "google_news_rss:listing_approval:508020.SH:2026-09-14:今年首单获批的仓储物流reits来了-监管发声支持市场供需两端稳步发展-finance-sina-com-cn",
+      "symbols": [
+        "508020.SH"
+      ],
+      "category": "listing_approval",
+      "status": "observed",
+      "event_date": "2026-09-14",
+      "headline_zh": "今年首单获批的仓储物流REITs来了！监管发声支持市场供需两端稳步发展 - finance.sina.com.cn",
+      "headline_en": null,
+      "summary_zh": "今年首单获批的仓储物流REITs来了！监管发声支持市场供需两端稳步发展 finance.sina.com.cn",
+      "summary_en": null,
+      "source": "finance.sina.com.cn",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOVzRkM01CUTZ3ZVZWd0p4ZjlvZXRfUEVPYlltaFlfWjdwUHhQOGE2X2E0V2RrM0diVDFpcVJpRFlobUZQVlJHekZqa3NFQUdscXE5SUpUazRia045NkJVQURRS3pMTmlUbGJxcTZQY1FncDd6aG9GVTdWcFdLejlXWWhEYzFRa0k?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
+      "id": "google_news_rss:listing_approval:508026.SH:2026-09-14:今年首单获批的仓储物流reits来了-监管发声支持市场供需两端稳步发展-finance-sina-com-cn",
       "symbols": [
         "508026.SH"
       ],
       "category": "listing_approval",
       "status": "observed",
       "event_date": "2026-09-14",
-      "headline_zh": "今年首单获批的仓储物流REITs来了！监管发声支持市场供需两端稳步发展 - 新浪财经",
+      "headline_zh": "今年首单获批的仓储物流REITs来了！监管发声支持市场供需两端稳步发展 - finance.sina.com.cn",
       "headline_en": null,
-      "summary_zh": "今年首单获批的仓储物流REITs来了！监管发声支持市场供需两端稳步发展 新浪财经",
+      "summary_zh": "今年首单获批的仓储物流REITs来了！监管发声支持市场供需两端稳步发展 finance.sina.com.cn",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "finance.sina.com.cn",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5jSDFLUHRmRHdqQWNFVkhkSXlrS29HeWZUbnpvZ1lROWhTSldmeDJISFpNTk84eWxYOGdWQVdSRjRxTmE5WVZteF9NUFdLUlNMUkNwZmY3UXZiRHcwU0Vzc1M0cFRfN3BfRThCSTE0aUpxU2JvZTRJNg?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
-      "id": "google_news_rss:expansion_acquisition:508085.SH:2026-09-13:恒泰租住reit半年答卷-扩募仍在推进-凤凰网",
-      "symbols": [
-        "508085.SH"
-      ],
-      "category": "expansion_acquisition",
-      "status": "observed",
-      "event_date": "2026-09-13",
-      "headline_zh": "恒泰租住REIT半年答卷：扩募仍在推进 - 凤凰网",
-      "headline_en": null,
-      "summary_zh": "恒泰租住REIT半年答卷：扩募仍在推进 凤凰网",
-      "summary_en": null,
-      "source": "凤凰网",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5vNjF0OVpWOGpCMHdWamxRVWl3Z19HSGFQY3pRUjVwaWZEbXdMd3NUdlZZUDliaXplZWkxTEI3RklJajM0WV9pcg?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOVzRkM01CUTZ3ZVZWd0p4ZjlvZXRfUEVPYlltaFlfWjdwUHhQOGE2X2E0V2RrM0diVDFpcVJpRFlobUZQVlJHekZqa3NFQUdscXE5SUpUazRia045NkJVQURRS3pMTmlUbGJxcTZQY1FncDd6aG9GVTdWcFdLejlXWWhEYzFRa0k?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
     },
@@ -240,18 +204,36 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_approval:MARKET:2026-09-11:中海第二只公募reit获受理-近满租的千灯湖环宇城-租金增速为何转负-wenxuan-news",
+      "id": "google_news_rss:nav_report:508085.SH:2026-09-11:华泰苏州恒泰租赁住房reit中报数据出错遭更正-涉及前十大持有人名单-新浪财经-金融信息服务商",
+      "symbols": [
+        "508085.SH"
+      ],
+      "category": "nav_report",
+      "status": "observed",
+      "event_date": "2026-09-11",
+      "headline_zh": "华泰苏州恒泰租赁住房REIT中报数据出错遭更正，涉及前十大持有人名单 - 新浪财经_金融信息服务商",
+      "headline_en": null,
+      "summary_zh": "华泰苏州恒泰租赁住房REIT中报数据出错遭更正，涉及前十大持有人名单 新浪财经_金融信息服务商",
+      "summary_en": null,
+      "source": "新浪财经_金融信息服务商",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxOei1HZllpYm1Nd2NyVWNsUUl5dURBWmRjMjdrSFlZcHYyV3lhbklDdEI1YUY4MEF4Q0c2dG9vV2VnekR4US10WjBUa3I1d1R3V3RucHBocnFzakNMODJjV0t1elVFMkVUT1pxRUFyLTZHRXVEN1k1OVlia2ZtRTB0YmlZS2xmaVBKSndoZUN4X3ZsNk1KWG9qVUFFemtScU1CMEk5WXZhaE81ZjhndUNRZUV0dHlfaXNjYmczRVBnM1I1N2NQS0ZEaWlvRW93NVp4RTJTN3JqWm9MZENIaFJQamJLOFZ5czlVbHpZaXNDNnBqQWdqWjd2VHo5UWViS0JYQVhaNEpZT1NyTm01cmd4TmpRTGo4bEU3ejhRbHpkeEM5aHBPZlUzWGU1MHo3NHd0WWs3R2ljNG5FZ3FxV3c?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:listing_approval:MARKET:2026-09-10:阿里旗下-中金菜鸟reit-获批准注册-中金基金管理-cj-sina-cn",
       "symbols": [],
       "category": "listing_approval",
       "status": "observed",
-      "event_date": "2026-09-11",
-      "headline_zh": "中海第二只公募REIT获受理：近满租的千灯湖环宇城，租金增速为何转负 - wenxuan.news",
+      "event_date": "2026-09-10",
+      "headline_zh": "阿里旗下“中金菜鸟REIT”获批准注册，中金基金管理 - cj.sina.cn",
       "headline_en": null,
-      "summary_zh": "中海第二只公募REIT获受理：近满租的千灯湖环宇城，租金增速为何转负 wenxuan.news",
+      "summary_zh": "阿里旗下“中金菜鸟REIT”获批准注册，中金基金管理 cj.sina.cn",
       "summary_en": null,
-      "source": "wenxuan.news",
+      "source": "cj.sina.cn",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE85VFdVNmFlXzNLbUdKR2V1YkJEWFBwZXBXT3UtckhweUVFMDhaekdycnl5WEdJY2xjZmZTQjBWQTZzTGlGSnNXbERfRXlSOGdY?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1sQlZFaTRwVHNsLTdkYnZyR3NmUVZLLTRKVUw1dW1NWlNyOHFYQVAxdDE0bndhN0QydE9nekgxNE1fYlpEc25kRWpTUTFGOEtnQTlvdWdTTVVCeUNGQ0NBRG5nc3RRSGJTWHJkdk1R?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
     },
@@ -272,6 +254,22 @@
       "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5fQWZEckY0QWtfU3k0dEVTaDJMQVBCMEdfWkxDR1c5ZDYydjNmNm5VdHRUM01FV3BSY0J0RVRrRGpXMEp1UXF2Y3JwcVVjZw?oc=5",
       "confidence": 0.98,
       "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:listing_schedule:MARKET:2026-09-09:阿里旗下仓储物流公募reit-中金菜鸟reit-赴深上市获中证监批准注册-moomoo",
+      "symbols": [],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-09-09",
+      "headline_zh": "阿里旗下仓储物流公募REIT“中金菜鸟REIT”赴深上市获中证监批准注册 - Moomoo",
+      "headline_en": null,
+      "summary_zh": "阿里旗下仓储物流公募REIT“中金菜鸟REIT”赴深上市获中证监批准注册 Moomoo",
+      "summary_en": null,
+      "source": "Moomoo",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMUxvWmVFRHVpVVVrRkhFYWVzRks3R0xWSmZ4M2xQdWJtU0x1SjJEVUh4cXJMRHppU3hQYmduYU96cjc0NVJWV2c0MEtIQXdPZWhrTWl4VVlSOXFKZlE1OXV4MzNNX0RYdlZYWUZZWG1jeDFpNk5UUkREM1g1RmxjcktUS0pvR3hYb1gxVmo1bDcxVmZodnE2a2F4Sm5OLUtQaTZLdi1DOWM1WkFNQVJKLXBITjVzN1k1dzZJS29n?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
     },
     {
       "id": "google_news_rss:listing_schedule:MARKET:2026-09-09:阿里旗下仓储物流公募reit-中金菜鸟reit-赴深上市获中证监批准注册-凤凰网",
@@ -308,6 +306,24 @@
       "match_tier": "explicit"
     },
     {
+      "id": "google_news_rss:listing_schedule:508012.SH:2026-09-08:公募reits二级市场缩量回落-又有新产品上市-新浪财经-金融信息服务商",
+      "symbols": [
+        "508012.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-09-08",
+      "headline_zh": "公募REITs二级市场缩量回落 又有新产品上市 - 新浪财经_金融信息服务商",
+      "headline_en": null,
+      "summary_zh": "公募REITs二级市场缩量回落 又有新产品上市 新浪财经_金融信息服务商",
+      "summary_en": null,
+      "source": "新浪财经_金融信息服务商",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5wQUVqVktwci1QS015Q0pZVmVpYXRBYlJEd2x1bHlfeEFIU25uUkNnVUxmVE5rOWxEMmF1OWo3djZNVVNlN1ZwQ0lhcEkyNnJxN3puNkVDWVZpbXg1SUlJb2lLXzRreDBoX3VxTmp3ckl0Z3gzRGlwdQ?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
       "id": "google_news_rss:listing_schedule:MARKET:2026-09-08:中海申请第二单reit上市-底层资产为佛山千灯湖环宇城项目-拟募资15-34亿元-thepaper-cn",
       "symbols": [],
       "category": "listing_schedule",
@@ -324,38 +340,36 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_approval:MARKET:2026-09-07:首单水务类机构间reit启动扩募-首创环保9-61亿新购项目获受理-新浪财经",
+      "id": "google_news_rss:pipeline_asset_update:MARKET:2026-09-07:中海申报华夏中海商业reit-底层资产为佛山千灯湖环宇城-观点网",
       "symbols": [],
-      "category": "listing_approval",
+      "category": "pipeline_asset_update",
       "status": "observed",
       "event_date": "2026-09-07",
-      "headline_zh": "首单水务类机构间REIT启动扩募，首创环保9.61亿新购项目获受理 - 新浪财经",
+      "headline_zh": "中海申报华夏中海商业REIT：底层资产为佛山千灯湖环宇城 - 观点网",
       "headline_en": null,
-      "summary_zh": "首单水务类机构间REIT启动扩募，首创环保9.61亿新购项目获受理 新浪财经",
+      "summary_zh": "中海申报华夏中海商业REIT：底层资产为佛山千灯湖环宇城 观点网",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "观点网",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbmZ6UDhYMlZBbE0wUllkOEU1VzBmMUs1QWlOeDRCY180bVdjOXVmcFpscWtuMTFMTWZRNnRPYl84c2Q5M3FuZkFoWkZGZEUzOWkyOUtNc2xqdkNBa1plc0R5N2FackhjVFRoNXIzMTVRTjVPcElkVFJQRGlIeTRpak52UEJiMkotX3NF?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9FQ0FqVkpEcGVRbEdzM0p2SmxCV0hsXzVtc1NRSmhUSk1TcmtZSGpRN2RXem1nM0tiMWFrd3VrS0RlYWZNZHBsYVRSeXBmZw?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_schedule:180105.SZ:2026-09-07:公募reits二级市场缩量回落-又有新产品上市-凤凰网",
-      "symbols": [
-        "180105.SZ"
-      ],
-      "category": "listing_schedule",
+      "id": "google_news_rss:listing_approval:MARKET:2026-09-07:中金菜鸟reit正式获批-壹览商业",
+      "symbols": [],
+      "category": "listing_approval",
       "status": "observed",
       "event_date": "2026-09-07",
-      "headline_zh": "公募REITs二级市场缩量回落，又有新产品上市 - 凤凰网",
+      "headline_zh": "中金菜鸟REIT正式获批 - 壹览商业",
       "headline_en": null,
-      "summary_zh": "公募REITs二级市场缩量回落，又有新产品上市 凤凰网",
+      "summary_zh": "中金菜鸟REIT正式获批 壹览商业",
       "summary_en": null,
-      "source": "凤凰网",
+      "source": "壹览商业",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5BTUFFemIxcTJoVVNKbjM4NTU1Sm5WSEkyVVF0czNmMFNydmtLOGlkSUJNYk9lMlNLeVlPbHJLNXVjaWRSS1lFaExEanA?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
+      "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBWQUZpM1A1dkVRYl9QNzVYUXc2dHAtaVpyUkRuXzkyVWl4VzI2VmthRGxLcGlodzA4STVhWExWNGdTcnUza3pVYkc2M0c?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
     },
     {
       "id": "google_news_rss:listing_schedule:MARKET:2026-09-04:双首单-上市首日跌10-99-创金合信北京国资公司reit遭遇定价考验-sohu",
@@ -370,74 +384,6 @@
       "source": "Sohu",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNU3FRX0dveDVYUU9ISDViNEpqVWhfWXZYeVdLbHpEdEY5bDNzWl9PTGlsWm80Tm4wS2RxREs1bmE4MGlTMjdWLVJOak9SNjRBdWJBUlVwYUgtcDNyemVncmJqemhxc2F2Y0RHNTRTUVA5bDRodm1TNERUSzNzZXpUTVRKVlIxb3B1LXZjSA?oc=5",
-      "confidence": 0.68,
-      "match_tier": "market"
-    },
-    {
-      "id": "google_news_rss:listing_approval:MARKET:2026-09-04:新城控股商业不动产reits获证监会准予注册-募集份额总额5亿份-观点网",
-      "symbols": [],
-      "category": "listing_approval",
-      "status": "observed",
-      "event_date": "2026-09-04",
-      "headline_zh": "新城控股商业不动产REITs获证监会准予注册 募集份额总额5亿份 - 观点网",
-      "headline_en": null,
-      "summary_zh": "新城控股商业不动产REITs获证监会准予注册 募集份额总额5亿份 观点网",
-      "summary_en": null,
-      "source": "观点网",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE81X1ZZbDEySU9qZmZvNER1bkhiSzBZODFjdUh6eW1tRmVKSWh1TDhOR2lWdlNPelNIMzZ2MnpfaXFzUXlCTkpmQmlKandyUQ?oc=5",
-      "confidence": 0.68,
-      "match_tier": "market"
-    },
-    {
-      "id": "google_news_rss:listing_approval:180701.SZ:2026-09-04:银华基金-首单-频出-银华粤海水务水利reit获批-sohu",
-      "symbols": [
-        "180701.SZ"
-      ],
-      "category": "listing_approval",
-      "status": "observed",
-      "event_date": "2026-09-04",
-      "headline_zh": "银华基金“首单”频出 银华粤海水务水利REIT获批 - Sohu",
-      "headline_en": null,
-      "summary_zh": "银华基金“首单”频出 银华粤海水务水利REIT获批 Sohu",
-      "summary_en": null,
-      "source": "Sohu",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWlRTT1VhTkRDdUlJUjVRRkFRRHRtMlVEY1RrQkJSUDdyajBIWGxwbFU4WmU5b0NLejRVSVFsZlFaWjlkTk1HZWRnMUtpZlR3Y0xsaEVtTmNsRzVUYmdBaTRCSl9xUnh2bDl5WDk5cEZiNHktaUhLeGlmRFhUNUdZX0MwZXg2Tklj?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
-      "id": "google_news_rss:listing_approval:180701.SZ:2026-09-04:全国首单水利设施发电reits落地-银华粤海水务水利reit获批-chnfund-com",
-      "symbols": [
-        "180701.SZ"
-      ],
-      "category": "listing_approval",
-      "status": "observed",
-      "event_date": "2026-09-04",
-      "headline_zh": "全国首单水利设施发电REITs落地 银华粤海水务水利REIT获批 - chnfund.com",
-      "headline_en": null,
-      "summary_zh": "全国首单水利设施发电REITs落地 银华粤海水务水利REIT获批 chnfund.com",
-      "summary_en": null,
-      "source": "chnfund.com",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE94V0htYXctazVFSER3dnNmV2hTSi15WE1tRlZyNy1Td0w4ZWdlNzk5YXpQa2V0T0ZOYmVPYWtycGx6MW5rSkEtQzZSNS03RFR6cy1wNHlqZzRHcVM4WElZODhiQmZRWHU3R1YxUXZpUjQ3WHEzR2otb3p3?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
-      "id": "google_news_rss:listing_approval:MARKET:2026-09-04:中金菜鸟reit获证监会注册-系2026年首单获批仓储物流公募reit-观点网",
-      "symbols": [],
-      "category": "listing_approval",
-      "status": "observed",
-      "event_date": "2026-09-04",
-      "headline_zh": "中金菜鸟REIT获证监会注册 系2026年首单获批仓储物流公募REIT - 观点网",
-      "headline_en": null,
-      "summary_zh": "中金菜鸟REIT获证监会注册 系2026年首单获批仓储物流公募REIT 观点网",
-      "summary_en": null,
-      "source": "观点网",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBEc0I4RWN2dmpGTlBFRTdzcnJYbVdsNHBWU20zLWl0MGd4NVFHXzZaWTBNZjdHS0RWSHRWQzA4NVB5dEZtcmJhdDFRQzFxQQ?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
     },
@@ -460,36 +406,106 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:全国首单-科技创新-城市更新-主题商业不动产公募reit上市-京报网",
+      "id": "google_news_rss:listing_approval:180701.SZ:2026-09-04:银华基金-首单-频出-银华粤海水务水利reit获批-sohu",
+      "symbols": [
+        "180701.SZ"
+      ],
+      "category": "listing_approval",
+      "status": "observed",
+      "event_date": "2026-09-04",
+      "headline_zh": "银华基金“首单”频出 银华粤海水务水利REIT获批 - Sohu",
+      "headline_en": null,
+      "summary_zh": "银华基金“首单”频出 银华粤海水务水利REIT获批 Sohu",
+      "summary_en": null,
+      "source": "Sohu",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWlRTT1VhTkRDdUlJUjVRRkFRRHRtMlVEY1RrQkJSUDdyajBIWGxwbFU4WmU5b0NLejRVSVFsZlFaWjlkTk1HZWRnMUtpZlR3Y0xsaEVtTmNsRzVUYmdBaTRCSl9xUnh2bDl5WDk5cEZiNHktaUhLeGlmRFhUNUdZX0MwZXg2Tklj?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
+      "id": "google_news_rss:listing_approval:MARKET:2026-09-04:中金菜鸟reit获证监会注册-系2026年首单获批仓储物流公募reit-观点网",
+      "symbols": [],
+      "category": "listing_approval",
+      "status": "observed",
+      "event_date": "2026-09-04",
+      "headline_zh": "中金菜鸟REIT获证监会注册 系2026年首单获批仓储物流公募REIT - 观点网",
+      "headline_en": null,
+      "summary_zh": "中金菜鸟REIT获证监会注册 系2026年首单获批仓储物流公募REIT 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBEc0I4RWN2dmpGTlBFRTdzcnJYbVdsNHBWU20zLWl0MGd4NVFHXzZaWTBNZjdHS0RWSHRWQzA4NVB5dEZtcmJhdDFRQzFxQQ?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:listing_approval:180601.SZ:2026-09-04:中金杭州安居保租房reit获批-募集份额总额3亿份-观点网",
+      "symbols": [
+        "180601.SZ"
+      ],
+      "category": "listing_approval",
+      "status": "observed",
+      "event_date": "2026-09-04",
+      "headline_zh": "中金杭州安居保租房REIT获批 募集份额总额3亿份 - 观点网",
+      "headline_en": null,
+      "summary_zh": "中金杭州安居保租房REIT获批 募集份额总额3亿份 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9wMDdmekg2cU11U1dFdkdXWE5JaGNiRmZPU0RCdDFZZVBKb3oycHlSNE4xaUpianpFRUhraUdkbTh5eVpMX3VaaDdzQm9EZw?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
+      "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:全国首单-科技创新-城市更新-主题商业不动产公募reit上市-news-bjd-com-cn",
       "symbols": [],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-09-03",
-      "headline_zh": "全国首单！“科技创新+城市更新”主题商业不动产公募REIT上市 - 京报网",
+      "headline_zh": "全国首单！“科技创新+城市更新”主题商业不动产公募REIT上市 - news.bjd.com.cn",
       "headline_en": null,
-      "summary_zh": "全国首单！“科技创新+城市更新”主题商业不动产公募REIT上市 京报网",
+      "summary_zh": "全国首单！“科技创新+城市更新”主题商业不动产公募REIT上市 news.bjd.com.cn",
       "summary_en": null,
-      "source": "京报网",
+      "source": "news.bjd.com.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5oMFVWOWZ2QU5ldDVaeV8tQzNISDhJOFVvWldNVmpFNk9CNGc2eHVLbFBRbkpFY185eWhKT0ozTHVrclhvc3hQQTFmeHVIRERUeTU0c1lOWGZFUVROREE?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:首单双主题商业不动产reit上市-科创园区-遇见-文化地标-21财经",
+      "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:上市仅一周-首批商业reits-产业资本集体增持-一级二级定价矛盾集中显现-wenxuan-news",
       "symbols": [],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-09-03",
-      "headline_zh": "首单双主题商业不动产REIT上市，科创园区“遇见”文化地标 - 21财经",
+      "headline_zh": "上市仅一周！首批商业REITs 产业资本集体增持，一级二级定价矛盾集中显现 - wenxuan.news",
       "headline_en": null,
-      "summary_zh": "首单双主题商业不动产REIT上市，科创园区“遇见”文化地标 21财经",
+      "summary_zh": "上市仅一周！首批商业REITs 产业资本集体增持，一级二级定价矛盾集中显现 wenxuan.news",
       "summary_en": null,
-      "source": "21财经",
+      "source": "wenxuan.news",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTktaNzRLbGlJalJRbUs1eDdKMjlFWmttVU4zTUZ4NDZIZzk0QWdsY0JxUG1lOTRVM2JRQVlLYV9TNG5JQnBNUUFpMXpZZ3JjeG9IQjYwYmNoQW5zVmVabTI2OUtMLVN4THYyN0I3enZYSC1NbzlneGY3SUExT3FxT2NxenN0YUVVY29DLQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9lQV82ZkxySTlWNHVHR0tKbWRrUzlFUm5TZGVac0pwVHowUThMRXg2V0pkYTk2ckhScjhZdy0xY1U5OGphNHljdkxSRmt0QlhvTnRBeU1n?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:originator_credit_event:180305.SZ:2026-09-03:南方顺丰物流reit新增国泰海通为流动性服务商-观点网",
+      "symbols": [
+        "180305.SZ"
+      ],
+      "category": "originator_credit_event",
+      "status": "observed",
+      "event_date": "2026-09-03",
+      "headline_zh": "南方顺丰物流REIT新增国泰海通为流动性服务商 - 观点网",
+      "headline_en": null,
+      "summary_zh": "南方顺丰物流REIT新增国泰海通为流动性服务商 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9kaUJGTGVvLWh6amhsbDlydVhNVHlBMW1zdldrcDNGcVZreXBNX3MtSDdHSFFkR0dvdEtLZ1FoemxIWFdsVmpHam5GTGtzdw?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
     },
     {
       "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:大悦城凯德加速打通退出通道-16只上市reits遭遇估值回调-观点网",
@@ -524,74 +540,106 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:originator_credit_event:180305.SZ:2026-09-03:南方顺丰物流reit新增国泰海通为流动性服务商-新浪财经",
+      "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:第一创业-创金合信助力深交所首单商业不动产reits-北京国资公司reit在深交所成功上市-finance-sina-com-cn",
+      "symbols": [],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-09-03",
+      "headline_zh": "第一创业、创金合信助力深交所首单商业不动产REITs--北京国资公司REIT在深交所成功上市 - finance.sina.com.cn",
+      "headline_en": null,
+      "summary_zh": "第一创业、创金合信助力深交所首单商业不动产REITs--北京国资公司REIT在深交所成功上市 finance.sina.com.cn",
+      "summary_en": null,
+      "source": "finance.sina.com.cn",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5xWUFNc3o2WGVoS1pCNU9IcndSbEJRaC1CZXQxQ1pYeWN4RUZBdXZhX3hFZFJOUlNHNWx1ck5jbnZQaEZETG00ekRuNUVzd3ZTTWhXeXVKRXJRYXdYbS1FRkY4NlkwZU1lZ01RQXR1Y19tcjVYNzZiWg?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:首单双主题商业不动产reit上市-科创园区-遇见-文化地标-21财经",
+      "symbols": [],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-09-03",
+      "headline_zh": "首单双主题商业不动产REIT上市，科创园区“遇见”文化地标 - 21财经",
+      "headline_en": null,
+      "summary_zh": "首单双主题商业不动产REIT上市，科创园区“遇见”文化地标 21财经",
+      "summary_en": null,
+      "source": "21财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNGtKZ09PTFFFODRTQUcteENDclhMQXhJS2I1eDJjRE9jMm1nTFVnMGdCUFZuZnpJQng0TTVyNWpieWZiNkoyR040TURvU1hrdGlONG54UHNuaHZZYy1VTjd5T1BHRmZxM1ZlOTlmaHRTVnNqenBsZGVHTjJoVVNqRkJXZEJmZExmZkRQS3ZMMGEyaER0?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:originator_credit_event:180305.SZ:2026-09-03:南方顺丰物流reit新增国泰海通为流动性服务商-cj-sina-cn",
       "symbols": [
         "180305.SZ"
       ],
       "category": "originator_credit_event",
       "status": "observed",
       "event_date": "2026-09-03",
-      "headline_zh": "南方顺丰物流REIT新增国泰海通为流动性服务商 - 新浪财经",
+      "headline_zh": "南方顺丰物流REIT新增国泰海通为流动性服务商 - cj.sina.cn",
       "headline_en": null,
-      "summary_zh": "南方顺丰物流REIT新增国泰海通为流动性服务商 新浪财经",
+      "summary_zh": "南方顺丰物流REIT新增国泰海通为流动性服务商 cj.sina.cn",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "cj.sina.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAwWHBfdXNOQWpVRjhGSUlMQTZ6Y08tN3dyT0tMMUtkWm10YmZrTG9GcnpveVVKWHN6WnA5bHBkSWFpcWtZaUVDSjg5bmZTRVhDYXdnZGQ2V1Rqb3pzbkZKQ2tLZ2JfWHJqX3ZXYmJn?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:distribution:180305.SZ:2026-09-01:南方顺丰物流reit启动年内首次分红-拟分配8050万元-观点网",
+      "id": "google_news_rss:distribution:180105.SZ:2026-09-01:年化现金分红回报率超4-易方达广开产园reit延续亏损-东方财富",
       "symbols": [
-        "180305.SZ"
+        "180105.SZ"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-09-01",
-      "headline_zh": "南方顺丰物流REIT启动年内首次分红 拟分配8050万元 - 观点网",
+      "headline_zh": "年化现金分红回报率超4%，易方达广开产园REIT延续亏损 - 东方财富",
       "headline_en": null,
-      "summary_zh": "南方顺丰物流REIT启动年内首次分红 拟分配8050万元 观点网",
+      "summary_zh": "年化现金分红回报率超4%，易方达广开产园REIT延续亏损 东方财富",
       "summary_en": null,
-      "source": "观点网",
+      "source": "东方财富",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9IYnNma0VYMVhoWVM1X1BUOXhEMVo5OC1UXzlMcnhqTkw4T2UtcnBUQjByb1ptclVmR0N0WGtNUzYxak4zaG0xa0p4M0REQQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1WOHFZcmJYN2gzcVVfdWNnejR1Rnltb2V3eS1sM0dBcUMyY3gwMXltcmVZbENZcGo0bnpZZ3ZrdWRmdmpocEh3TExncTFvMXRJcXQ4eTN4ai11RXJ2c3JNMQ?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:distribution:180105.SZ:2026-08-31:年化现金分红回报率超4-易方达广开产园reit延续亏损-qq-news",
+      "id": "google_news_rss:distribution:180105.SZ:2026-08-31:年化现金分红回报率超4-易方达广开产园reit延续亏损-news-qq-com",
       "symbols": [
         "180105.SZ"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-08-31",
-      "headline_zh": "年化现金分红回报率超4%，易方达广开产园REIT延续亏损 - QQ News",
+      "headline_zh": "年化现金分红回报率超4%，易方达广开产园REIT延续亏损 - news.qq.com",
       "headline_en": null,
-      "summary_zh": "年化现金分红回报率超4%，易方达广开产园REIT延续亏损 QQ News",
+      "summary_zh": "年化现金分红回报率超4%，易方达广开产园REIT延续亏损 news.qq.com",
       "summary_en": null,
-      "source": "QQ News",
+      "source": "news.qq.com",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wT3FIeWZkS0gzVURoZFBhcUJCeVZfVWdPLUNLNk9sd2k0cmNyVlEzRnlZSDJrVUR4dFNzcGdYMGdVVFc2TDhPNWoycGpXbVJoMmd6U0xB?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:distribution:180301.SZ:2026-08-30:红土创新盐田港reit拟分红4216万元-每10份派0-4421元-凤凰网",
+      "id": "google_news_rss:distribution:180501.SZ:2026-08-30:红土创新深圳安居reit-每10份派0-2386元-为2026年第三次分红-cj-sina-cn",
       "symbols": [
-        "180301.SZ"
+        "180501.SZ"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-08-30",
-      "headline_zh": "红土创新盐田港REIT拟分红4216万元 每10份派0.4421元 - 凤凰网",
+      "headline_zh": "红土创新深圳安居REIT：每10份派0.2386元 为2026年第三次分红 - cj.sina.cn",
       "headline_en": null,
-      "summary_zh": "红土创新盐田港REIT拟分红4216万元 每10份派0.4421元 凤凰网",
+      "summary_zh": "红土创新深圳安居REIT：每10份派0.2386元 为2026年第三次分红 cj.sina.cn",
       "summary_en": null,
-      "source": "凤凰网",
+      "source": "cj.sina.cn",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE11SFlEeUlDSFdyVzJtUGRLUWhvdVB2UEI2VDJDNWJuRC1uZV9JVW83T2VfOG1yMElFcUVXVEhfZ01CNWpmeVFqNw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE83b3U4RVJuSTE2YXZVakxXOVdXS3ZZc3hFN05UWXh5UXBrN0trWWNfLWZyN2w3NXdnZUs4SnZkS2xoOExWWEN6eE5naw?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
@@ -610,6 +658,24 @@
       "source": "观点网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ScTY5eWNYTDF2NGtVbVk5X0ZMaTduZFFHSGZMb0VGUmhUQnFBTmdtQmRwQnZmdXlQWWpSdEdOWXJPWER5TmdLOGl0bTNTQQ?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:distribution:180301.SZ:2026-08-30:红土创新盐田港reit拟分红4216万元-每10份派0-4421元-凤凰网",
+      "symbols": [
+        "180301.SZ"
+      ],
+      "category": "distribution",
+      "status": "observed",
+      "event_date": "2026-08-30",
+      "headline_zh": "红土创新盐田港REIT拟分红4216万元 每10份派0.4421元 - 凤凰网",
+      "headline_en": null,
+      "summary_zh": "红土创新盐田港REIT拟分红4216万元 每10份派0.4421元 凤凰网",
+      "summary_en": null,
+      "source": "凤凰网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE11SFlEeUlDSFdyVzJtUGRLUWhvdVB2UEI2VDJDNWJuRC1uZV9JVW83T2VfOG1yMElFcUVXVEhfZ01CNWpmeVFqNw?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
@@ -684,16 +750,16 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_approval:MARKET:2026-08-20:陕西首单本土产业园公募reit获批-中国科技网",
+      "id": "google_news_rss:listing_approval:MARKET:2026-08-20:陕西首单本土产业园公募reit获批-stdaily-com",
       "symbols": [],
       "category": "listing_approval",
       "status": "observed",
       "event_date": "2026-08-20",
-      "headline_zh": "陕西首单本土产业园公募REIT获批 - 中国科技网",
+      "headline_zh": "陕西首单本土产业园公募REIT获批 - stdaily.com",
       "headline_en": null,
-      "summary_zh": "陕西首单本土产业园公募REIT获批 中国科技网",
+      "summary_zh": "陕西首单本土产业园公募REIT获批 stdaily.com",
       "summary_en": null,
-      "source": "中国科技网",
+      "source": "stdaily.com",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ROG5oeWs3elJaYWlZaV9HYWJVTm55cUxYUS05WFlMSW1pRlBYc0lFREVGUXViMGFDZjk4UDdWTlhiSGlBblp6cFRvT2VkR2xBZTJMRVhqR0ZTYjBsTWdoWC1xTkp2VGFoRTB0ZUU3T1E?oc=5",
       "confidence": 0.68,
@@ -772,20 +838,38 @@
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:distribution:180303.SZ:2026-08-19:华泰宝湾物流reit每10份派现0-994元-2026年第二次分红-观点网",
+      "id": "google_news_rss:distribution:180303.SZ:2026-08-19:华泰宝湾物流reit公布年内第二次分红-每10份派0-994元-cj-sina-cn",
       "symbols": [
         "180303.SZ"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-08-19",
-      "headline_zh": "华泰宝湾物流REIT每10份派现0.994元 2026年第二次分红 - 观点网",
+      "headline_zh": "华泰宝湾物流REIT公布年内第二次分红 每10份派0.994元 - cj.sina.cn",
       "headline_en": null,
-      "summary_zh": "华泰宝湾物流REIT每10份派现0.994元 2026年第二次分红 观点网",
+      "summary_zh": "华泰宝湾物流REIT公布年内第二次分红 每10份派0.994元 cj.sina.cn",
       "summary_en": null,
-      "source": "观点网",
+      "source": "cj.sina.cn",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1jN2VlN2kwT0dVel9kQlpHY3BtdDRGVkppdWhZN3A3LW5xOUpkVkVPWEtDbm5TY29iYkRsa2dOLU5LQzFneGYzdUYxRVF6Zw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWWRvTVZOMkFsSnQwTEdJS3VjQWRMUFh4TkhTZnZWNG1HREh4UjhFODJuQm5JNU1Wc1poMU1YZFNHQVhvUUxGdnBfRVlYSHpmbjV6bHhuTDl2dVZ1bTF3eUFQQnRZbVVxN0dhSHZ2YUdYZGozdVVZS010UWVucjNhWmtpUHlJbk5WVXI1RThhTGJHRkU?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:distribution:180303.SZ:2026-08-19:华泰宝湾物流reit每10份派现0-994元-2026年第二次分红-凤凰网",
+      "symbols": [
+        "180303.SZ"
+      ],
+      "category": "distribution",
+      "status": "observed",
+      "event_date": "2026-08-19",
+      "headline_zh": "华泰宝湾物流REIT每10份派现0.994元 2026年第二次分红 - 凤凰网",
+      "headline_en": null,
+      "summary_zh": "华泰宝湾物流REIT每10份派现0.994元 2026年第二次分红 凤凰网",
+      "summary_en": null,
+      "source": "凤凰网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBkOWdWUElLWm83VFNwbU1aZTM1S3FqRTBFZlY3TGJ6VDZFYkt2Q2NOZmx5OW5DWkZBajdUdExQT3hhQTVpaDBBOA?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
@@ -808,16 +892,34 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_approval:MARKET:2026-08-12:首单民营企业仓储物流公募reit首次扩募获受理-新浪财经",
+      "id": "google_news_rss:originator_credit_event:180601.SZ:2026-08-16:中金中国绿发消费reit新增华泰证券为流动性服务商-观点网",
+      "symbols": [
+        "180601.SZ"
+      ],
+      "category": "originator_credit_event",
+      "status": "observed",
+      "event_date": "2026-08-16",
+      "headline_zh": "中金中国绿发消费REIT新增华泰证券为流动性服务商 - 观点网",
+      "headline_en": null,
+      "summary_zh": "中金中国绿发消费REIT新增华泰证券为流动性服务商 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5YdTFNbnpfUVRmZ25qUjQ3cW40Z0JIa0c1QkZJcEhPOE4yNzVia3J4RkIzQ3duSmNqTmsyb1dSWi1hLU5uU0ZxOF9ER2Zudw?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
+      "id": "google_news_rss:listing_approval:MARKET:2026-08-12:首单民营企业仓储物流公募reit首次扩募获受理-cj-sina-cn",
       "symbols": [],
       "category": "listing_approval",
       "status": "observed",
       "event_date": "2026-08-12",
-      "headline_zh": "首单民营企业仓储物流公募REIT首次扩募获受理 - 新浪财经",
+      "headline_zh": "首单民营企业仓储物流公募REIT首次扩募获受理 - cj.sina.cn",
       "headline_en": null,
-      "summary_zh": "首单民营企业仓储物流公募REIT首次扩募获受理 新浪财经",
+      "summary_zh": "首单民营企业仓储物流公募REIT首次扩募获受理 cj.sina.cn",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "cj.sina.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8yQ05IeGdrbFhmbVJxMlRkd0prTm4yaXR6WDRyMzFpQk1VLUdXNFc3R1JSZFhwRHQ3a0Vic3dlM1NSdW43Q1puT3lRbw?oc=5",
       "confidence": 0.68,
@@ -840,16 +942,16 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:nav_report:MARKET:2026-08-11:商业reits的估值逻辑要变了-36-kr",
+      "id": "google_news_rss:nav_report:MARKET:2026-08-11:商业reits的估值逻辑要变了-36kr-com",
       "symbols": [],
       "category": "nav_report",
       "status": "observed",
       "event_date": "2026-08-11",
-      "headline_zh": "商业REITs的估值逻辑要变了 - 36 Kr",
+      "headline_zh": "商业REITs的估值逻辑要变了 - 36kr.com",
       "headline_en": null,
-      "summary_zh": "商业REITs的估值逻辑要变了 36 Kr",
+      "summary_zh": "商业REITs的估值逻辑要变了 36kr.com",
       "summary_en": null,
-      "source": "36 Kr",
+      "source": "36kr.com",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA3TkE4aWo4b0lfMlhWMnVPdGxTT1BFOFlPZWpjd2R1cTBOT1k0XzBxZXZxOTVOWWhMSzRDWE1uRlFVemZndmdmZnZ2dXpWQQ?oc=5",
       "confidence": 0.68,
@@ -910,50 +1012,86 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:distribution:508003.SH:2026-08-04:中金联东科创reit实施2026年第三次分红-每10份派0-38元-新浪财经",
+      "id": "google_news_rss:listing_schedule:180901.SZ:2026-08-08:公募reits上市首日再现涨停-优质资产供需矛盾待解-证券时报",
+      "symbols": [
+        "180901.SZ"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-08-08",
+      "headline_zh": "公募REITs上市首日再现涨停 优质资产供需矛盾待解 - 证券时报",
+      "headline_en": null,
+      "summary_zh": "公募REITs上市首日再现涨停 优质资产供需矛盾待解 证券时报",
+      "summary_en": null,
+      "source": "证券时报",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4tSzBZSEhHZGNCT3EtM0ZDMWUyak93VzdmdUNJVl9fUWhOelZueUplZi1xZlphblo3VTJvLWxvdHJUTEtXZ1VCanFHM2loNWNXN3Z0bk0yVQ?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
+      "id": "google_news_rss:distribution:508060.SH:2026-08-06:南方万国数据中心reit-2026年度第一次分红5200万元-观点网",
+      "symbols": [
+        "508060.SH"
+      ],
+      "category": "distribution",
+      "status": "observed",
+      "event_date": "2026-08-06",
+      "headline_zh": "南方万国数据中心REIT：2026年度第一次分红5200万元 - 观点网",
+      "headline_en": null,
+      "summary_zh": "南方万国数据中心REIT：2026年度第一次分红5200万元 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE16MTBFSzB4SHFnLUJ3OW0xWWhyYWhlWWJwV2JMNXVDa3VlS0ZQOW9vMDhlcVhXcENwMkc0Q0JMc1NFdGY5T25tNUlIWU54UQ?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:distribution:508003.SH:2026-08-04:中金联东科创reit实施2026年第三次分红-每10份派0-38元-cj-sina-cn",
       "symbols": [
         "508003.SH"
       ],
       "category": "distribution",
       "status": "observed",
       "event_date": "2026-08-04",
-      "headline_zh": "中金联东科创REIT实施2026年第三次分红 每10份派0.38元 - 新浪财经",
+      "headline_zh": "中金联东科创REIT实施2026年第三次分红 每10份派0.38元 - cj.sina.cn",
       "headline_en": null,
-      "summary_zh": "中金联东科创REIT实施2026年第三次分红 每10份派0.38元 新浪财经",
+      "summary_zh": "中金联东科创REIT实施2026年第三次分红 每10份派0.38元 cj.sina.cn",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "cj.sina.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWThNM1VlZENfaDNjZlN6U0pHenRpZWhCMEZNaGJSREZMZkFSMzV2c1VQOTR2ellxdWQ2ZmZieXN4NnFjdnFjTDltdDJ6OHc2MjYxMl9nMEVuVzQ1R1k1ckxtQ3N0U3phTVd4cDB0WklmUVhpWnNYaTc4ZWNsaTV3a19RYXR6NHNaQzRxc3FwWQ?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_schedule:MARKET:2026-08-03:再添稀缺标的-东北地区首单能源公募reit上市在即-finance-eastmoney-com",
+      "id": "google_news_rss:listing_schedule:MARKET:2026-08-03:再添稀缺标的-东北地区首单能源公募reit上市在即-东方财富",
       "symbols": [],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-08-03",
-      "headline_zh": "再添稀缺标的 东北地区首单能源公募REIT上市在即 - finance.eastmoney.com",
+      "headline_zh": "再添稀缺标的 东北地区首单能源公募REIT上市在即 - 东方财富",
       "headline_en": null,
-      "summary_zh": "再添稀缺标的 东北地区首单能源公募REIT上市在即 finance.eastmoney.com",
+      "summary_zh": "再添稀缺标的 东北地区首单能源公募REIT上市在即 东方财富",
       "summary_en": null,
-      "source": "finance.eastmoney.com",
+      "source": "东方财富",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1YYUFfcTJ1ME41NGE1eGhsOTVNVG5EQTUzdEZtOFhET1Y2SS0zRy1FejF3c0hlNVcwbTZ5dXo2S0JrOHpkTG8tQVZ5aWdrbEQ1a2hySEwyZ0FZdlJXX1J3RnkzbUY1UQ?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_schedule:MARKET:2026-07-30:上市92天就扩募-昌保reit的-加速度-撞进保租房reits的增长瓶颈-新浪财经",
+      "id": "google_news_rss:listing_schedule:MARKET:2026-07-30:上市92天就扩募-昌保reit的-加速度-撞进保租房reits的增长瓶颈-cj-sina-cn",
       "symbols": [],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-07-30",
-      "headline_zh": "上市92天就扩募：昌保REIT的 “加速度”，撞进保租房REITs的增长瓶颈 - 新浪财经",
+      "headline_zh": "上市92天就扩募：昌保REIT的 “加速度”，撞进保租房REITs的增长瓶颈 - cj.sina.cn",
       "headline_en": null,
-      "summary_zh": "上市92天就扩募：昌保REIT的 “加速度”，撞进保租房REITs的增长瓶颈 新浪财经",
+      "summary_zh": "上市92天就扩募：昌保REIT的 “加速度”，撞进保租房REITs的增长瓶颈 cj.sina.cn",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "cj.sina.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1jYVRVN2lpaDdEbXBCZG5Hb1FoT1d1dVlHa1llZ21tTURZZW9tY1oxR21kVENQYlFyWVB2WlYwa2tYLUZYMFU2Sk9ZdFRyV0o2Mk51djV0Nko2VFNuT1V0TjA4dmJpMV9JYnZJMWJWTQ?oc=5",
       "confidence": 0.68,
@@ -978,6 +1116,24 @@
       "match_tier": "explicit"
     },
     {
+      "id": "google_news_rss:listing_schedule:508030.SH:2026-07-29:中航中核汇能新能源reit登陆资本市场-国际新能源网",
+      "symbols": [
+        "508030.SH"
+      ],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-07-29",
+      "headline_zh": "中航中核汇能新能源REIT登陆资本市场！ - 国际新能源网",
+      "headline_en": null,
+      "summary_zh": "中航中核汇能新能源REIT登陆资本市场！ 国际新能源网",
+      "summary_en": null,
+      "source": "国际新能源网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1qbXcwd0o0TnZQdVN0YmY4Wi0yNVJVSjVRaGJGSlRvV1JUV3FlbFZacXhzSUljbWVUT2hTX1ROSW1EQWZzYnpYZlhfMi1rZUw4WVZfNHdla3VNZEpJZWVpN0trb05Sd0lZ?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
       "id": "google_news_rss:listing_schedule:508030.SH:2026-07-29:中核新能reit登陆资本市场-中证核能精选指数正式发布-能源界",
       "symbols": [
         "508030.SH"
@@ -996,18 +1152,18 @@
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:listing_schedule:508030.SH:2026-07-29:中核新能reit登陆资本市场-中证核能精选指数发布-wedoany-com",
+      "id": "google_news_rss:listing_schedule:508030.SH:2026-07-29:中核新能reit登陆资本市场-中证核能精选指数发布-维度网",
       "symbols": [
         "508030.SH"
       ],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-07-29",
-      "headline_zh": "中核新能REIT登陆资本市场 中证核能精选指数发布！ - wedoany.com",
+      "headline_zh": "中核新能REIT登陆资本市场 中证核能精选指数发布！ - 维度网",
       "headline_en": null,
-      "summary_zh": "中核新能REIT登陆资本市场 中证核能精选指数发布！ wedoany.com",
+      "summary_zh": "中核新能REIT登陆资本市场 中证核能精选指数发布！ 维度网",
       "summary_en": null,
-      "source": "wedoany.com",
+      "source": "维度网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5xQXBUWll2MTAxMExRd3BXU0ZrUmVfaTJYMTdYNENSRWM1UkpSVWNqZTRCbW9YT1JzWFIwbEFJcGdhbTFMeEZ3clFVRUVSczdaRllLZ094TGg?oc=5",
       "confidence": 0.64,
@@ -1050,24 +1206,6 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:pipeline_asset_update:180607.SZ:2026-07-21:华夏中海消费reit底层资产满租状态下现亏损-二季度净利润-51-93万元-新浪财经",
-      "symbols": [
-        "180607.SZ"
-      ],
-      "category": "pipeline_asset_update",
-      "status": "observed",
-      "event_date": "2026-07-21",
-      "headline_zh": "华夏中海消费REIT底层资产满租状态下现亏损，二季度净利润-51.93万元 - 新浪财经",
-      "headline_en": null,
-      "summary_zh": "华夏中海消费REIT底层资产满租状态下现亏损，二季度净利润-51.93万元 新浪财经",
-      "summary_en": null,
-      "source": "新浪财经",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxQWVdURlNjSE5YSHNJajEtcHlXZkVIQXlNZmdxd2Q4eEE4ZXZlR0taY0VqNDNCZ25NdXZJS2dPYzFtWEllQThUcVpkekFMVUs3QW5tRUxRT296YS1GMC1lcmxBWHFLMVVaaFlCQml6QWJGLW1ROVBCbnc2eF82b0NRRS16bmdMMHpzbTNXdWUxT3hEa1ZqYlJ2ejVkLXFsQlpXLW96SXIyUVlpUzg0NU9zLUhGT1JtVWJyVERTMFd0NldHTlRDUlhXSGg1alpPR3liMTd1M1VEY2ptT29FZ0FDTGxWRFpsajVHZ3RReUZ4Ri1HZkhJSVdUc0NPSUNoNW9uQjI1UWRReVh3WEs4b3dGTDF3X3ZSWUt2bUIwSXk5MGwtckwyUmNRbFRTeURyb244MndsemxjLWRzSHAtbkNhYmUyR2xfR3FhRGhiRlZBX3dMTE9JWHcyaW9qblJMTDBrSjNIVA?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
-    },
-    {
       "id": "google_news_rss:listing_approval:180901.SZ:2026-07-17:南方润泽科技数据中心reit扩募申请获受理-拟新购廊坊两座数据中心-观点网",
       "symbols": [
         "180901.SZ"
@@ -1104,9 +1242,9 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:offering_result:508600.SH:2026-07-06:首批reits指数基金发售-上周公募reits二级市场企稳反弹-每日经济新闻",
+      "id": "google_news_rss:offering_result:508000.SH:2026-07-06:首批reits指数基金发售-上周公募reits二级市场企稳反弹-每日经济新闻",
       "symbols": [
-        "508600.SH"
+        "508000.SH"
       ],
       "category": "offering_result",
       "status": "observed",
@@ -1118,24 +1256,6 @@
       "source": "每日经济新闻",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9EX2t0c1dZdXpZS0FiRm9oM2NXbVlGd2FBWWNKRk0yRDF6b0pORFY1cGI4OUltdk1DUFktS0lUTHdfVV9rZjFVREZMNEpmeHphbmxsNjVUUFZpaWxuQWlncGhnOHdGUQ?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
-      "id": "google_news_rss:offering_result:508048.SH:2026-06-30:公募reits二级市场上周环比下跌-首批reits指数基金将发售-东方财富",
-      "symbols": [
-        "508048.SH"
-      ],
-      "category": "offering_result",
-      "status": "observed",
-      "event_date": "2026-06-30",
-      "headline_zh": "公募REITs二级市场上周环比下跌，首批REITs指数基金将发售 - 东方财富",
-      "headline_en": null,
-      "summary_zh": "公募REITs二级市场上周环比下跌，首批REITs指数基金将发售 东方财富",
-      "summary_en": null,
-      "source": "东方财富",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE95OUszM2V1VlFDb1NHR1FFOXdxTmU0cEdWb1VDNGpzSUNxdGpCRTZnNjQyOXVPRmhQSUs1cnZJLVpJbFZaY0dyNGtBc3dBajZoLWR2YndTc0Z0ems5dm92OXdn?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
     },
@@ -1205,7 +1325,7 @@
       "summary_en": null,
       "source": "21财经",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOT3FzNHZwMFFueEoteXJCRmphQWRhWmxHcWtMUVZlTk15bldnU3poSV9YaEFrUm9rTDQ5T2ZGMGhjOG8tN1JEYXI2T3hZRkVwUWF5S3R2SHlQWnJyWjR6X216RTlPTTdWbnI1TTJNaGRKbTc2VjRiR0R2NWt1S0M0by1SOWUzVFFYSFZGbw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQb1d3MnJENC1XZXI0RW5MZmtNT05oQi13UEFnV2VYRkF6WVBLYTJiMjZuOEFQU3VTSW5ENGg3bmNMOUd3VzZBWDhQSnZKU3ROU1hjNmMwTkdWbV9lNHNIOTZobkJCWkpUbHRiUlNLZERMWHF4bXVpRk1tUnNLeF9aNk5KMHFubGVBUmx6N1BfOV9EYTVZ?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
     },
@@ -1310,18 +1430,18 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_schedule:508602.SH:2026-06-22:国泰海通砂之船商业reit于6月18日成功上市-紫牛新闻",
+      "id": "google_news_rss:listing_schedule:508602.SH:2026-06-22:国泰海通砂之船商业reit于6月18日成功上市-yzwb-net",
       "symbols": [
         "508602.SH"
       ],
       "category": "listing_schedule",
       "status": "observed",
       "event_date": "2026-06-22",
-      "headline_zh": "国泰海通砂之船商业REIT于6月18日成功上市 - 紫牛新闻",
+      "headline_zh": "国泰海通砂之船商业REIT于6月18日成功上市 - yzwb.net",
       "headline_en": null,
-      "summary_zh": "国泰海通砂之船商业REIT于6月18日成功上市 紫牛新闻",
+      "summary_zh": "国泰海通砂之船商业REIT于6月18日成功上市 yzwb.net",
       "summary_en": null,
-      "source": "紫牛新闻",
+      "source": "yzwb.net",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBlbGRxajhIT3A4TkZkOUpEY1Jjd0lrM2czeWZ2QXRtTUxiNHVTZXd1QzJKTkVhTXJKcUVhZmlWbENyWVVZOVgtRnQ4TmRlZlNFckZwT2RaeHB2Y1lNbmNnWXpmOUhCMlM3?oc=5",
       "confidence": 0.88,
