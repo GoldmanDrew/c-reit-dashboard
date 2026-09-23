@@ -1,36 +1,54 @@
 {
-  "build_time": "2026-09-23T17:01:28+00:00",
+  "build_time": "2026-09-23T21:31:10+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 782,
-    "items_before_dedupe": 142,
-    "items_after_dedupe": 142,
+    "raw_articles_seen": 779,
+    "items_before_dedupe": 140,
+    "items_after_dedupe": 140,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "distribution": 14,
-      "listing_approval": 14,
-      "market_context": 80,
+      "distribution": 15,
+      "listing_approval": 13,
+      "market_context": 75,
       "offering_result": 5,
-      "listing_schedule": 16,
+      "listing_schedule": 17,
       "nav_report": 6,
-      "expansion_acquisition": 3,
+      "regulatory_policy": 2,
+      "expansion_acquisition": 4,
       "pipeline_asset_update": 2,
-      "originator_credit_event": 1,
-      "regulatory_policy": 1
+      "originator_credit_event": 1
     },
     "match_tier_counts": {
-      "explicit": 66,
+      "explicit": 65,
       "market": 33,
-      "inferred": 43
+      "inferred": 42
     },
-    "symbols_with_news": 58
+    "symbols_with_news": 57
   },
   "items": [
+    {
+      "id": "google_news_rss:regulatory_policy:180302.SZ:2026-09-20:证监会准予三单公募reits注册-含市场首批燃煤发电reits-观点网",
+      "symbols": [
+        "180302.SZ"
+      ],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-09-20",
+      "headline_zh": "证监会准予三单公募REITs注册 含市场首批燃煤发电REITs - 观点网",
+      "headline_en": null,
+      "summary_zh": "证监会准予三单公募REITs注册 含市场首批燃煤发电REITs 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1mcDRfS09DckRaMFdjOV93N0tzOGFyTk5wNVhid3IySGZGRmx4clJteDMzQU8xSzlBWG9xSUVvd2Jfd1FnSUFGTFcycWVkdEtza1NScmc4cXd4dU9iOWZmNlhR?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
     {
       "id": "google_news_rss:regulatory_policy:MARKET:2026-08-21:11-17亿新工产园reit获发改委推荐-南京机电集团的五年证券化路-风闻",
       "symbols": [],
