@@ -1,33 +1,33 @@
 {
-  "build_time": "2026-09-25T21:36:06+00:00",
+  "build_time": "2026-09-26T04:59:44+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 736,
-    "items_before_dedupe": 130,
-    "items_after_dedupe": 128,
+    "raw_articles_seen": 742,
+    "items_before_dedupe": 128,
+    "items_after_dedupe": 127,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 61,
-      "distribution": 14,
+      "market_context": 66,
+      "listing_schedule": 17,
+      "distribution": 13,
       "listing_approval": 10,
-      "listing_schedule": 20,
-      "offering_result": 6,
+      "offering_result": 5,
       "nav_report": 5,
-      "regulatory_policy": 3,
-      "expansion_acquisition": 6,
-      "pipeline_asset_update": 3
+      "regulatory_policy": 4,
+      "expansion_acquisition": 5,
+      "pipeline_asset_update": 2
     },
     "match_tier_counts": {
-      "explicit": 59,
-      "inferred": 41,
-      "market": 28
+      "inferred": 46,
+      "explicit": 55,
+      "market": 26
     },
-    "symbols_with_news": 53
+    "symbols_with_news": 55
   },
   "items": [
     {
@@ -79,6 +79,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Ddm12RXdaTUxGbmlSMndJVjNtaUs3Qmx0c01VZzVKZ0M5UURaUU5wT2ZNc0xDUHRzOGlSbmJOVm00UDlIVEJkaldJaF81UlNTcHFfY0JaTXlnWnJORTVwOG9TR3hBaGFYOEZSeTN3?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:regulatory_policy:180203.SZ:2026-08-12:天津首单商业不动产reits项目申报证监会-chinanews-com-cn",
+      "symbols": [
+        "180203.SZ"
+      ],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-12",
+      "headline_zh": "天津首单商业不动产REITs项目申报证监会 - chinanews.com.cn",
+      "headline_en": null,
+      "summary_zh": "天津首单商业不动产REITs项目申报证监会 chinanews.com.cn",
+      "summary_en": null,
+      "source": "chinanews.com.cn",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPZnpuWFRES19tcEdPVmx3cy11Zm96ZDR1TndBUE1WTndmM0ZoQzJjZjhMY2Q1Zkk3OE44RnJ6dkp5TWI3YUo0Q0h6NkVxSmxndGo2a3lQNld0VGdlRUJXTjRYMUVwRDFO?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
     }
   ]
 }
