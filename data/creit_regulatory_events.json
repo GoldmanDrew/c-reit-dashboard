@@ -1,35 +1,51 @@
 {
-  "build_time": "2026-09-26T16:25:00+00:00",
+  "build_time": "2026-09-26T21:11:39+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 768,
-    "items_before_dedupe": 124,
-    "items_after_dedupe": 123,
+    "raw_articles_seen": 777,
+    "items_before_dedupe": 129,
+    "items_after_dedupe": 129,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "market_context": 63,
-      "listing_schedule": 16,
-      "distribution": 13,
-      "listing_approval": 10,
+      "market_context": 66,
+      "listing_schedule": 19,
+      "distribution": 12,
+      "listing_approval": 9,
       "offering_result": 5,
-      "nav_report": 6,
-      "regulatory_policy": 3,
+      "nav_report": 7,
+      "regulatory_policy": 4,
       "expansion_acquisition": 4,
       "pipeline_asset_update": 3
     },
     "match_tier_counts": {
-      "inferred": 46,
-      "explicit": 52,
-      "market": 25
+      "inferred": 49,
+      "explicit": 53,
+      "market": 27
     },
-    "symbols_with_news": 55
+    "symbols_with_news": 52
   },
   "items": [
+    {
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-09-20:今日三只公募reits集中获证监会批复-chnfund-com",
+      "symbols": [],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-09-20",
+      "headline_zh": "今日三只公募REITs集中获证监会批复 - chnfund.com",
+      "headline_en": null,
+      "summary_zh": "今日三只公募REITs集中获证监会批复 chnfund.com",
+      "summary_en": null,
+      "source": "chnfund.com",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBGRjJidEY3T3RDc3JQbWpjUVRiTTFOemp2Z1N1aXFSYV84TWZDMUl0cXNJRkczX1kwOG5ZUXpEQldYdXJBbWJpRVBwcWJxOHFwSF9JUjNTNWpWR1lma3ItZW5mZWFrcngtbHdUMExBTE5MT29LQVpaanB3?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    },
     {
       "id": "google_news_rss:regulatory_policy:180302.SZ:2026-09-20:证监会准予三单公募reits注册-含市场首批燃煤发电reits-观点网",
       "symbols": [
@@ -49,16 +65,16 @@
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:regulatory_policy:MARKET:2026-09-17:广发新世界商业不动产reit已申报至证监会-新浪财经",
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-09-17:广发新世界商业不动产reit已申报至证监会-finance-sina-com-cn",
       "symbols": [],
       "category": "regulatory_policy",
       "status": "observed",
       "event_date": "2026-09-17",
-      "headline_zh": "广发新世界商业不动产REIT已申报至证监会 - 新浪财经",
+      "headline_zh": "广发新世界商业不动产REIT已申报至证监会 - finance.sina.com.cn",
       "headline_en": null,
-      "summary_zh": "广发新世界商业不动产REIT已申报至证监会 新浪财经",
+      "summary_zh": "广发新世界商业不动产REIT已申报至证监会 finance.sina.com.cn",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "finance.sina.com.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8tN1JYdkdkYjRxcmJIUTNtSXRVeW54WC1aTnBCNFd6XzNmUFZ1MzFJaHJYdHNoUzhvMFFFd2xJaTN2SFdsbzlUYUNTa2tENmc5T3RVZ1lWbHZrTjhERWZuQXNxT3RydUo0TFFONV8wUzBJN0dZb25mbQ?oc=5",
       "confidence": 0.68,
