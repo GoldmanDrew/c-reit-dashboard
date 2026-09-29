@@ -1,52 +1,50 @@
 {
-  "build_time": "2026-09-29T05:45:26+00:00",
+  "build_time": "2026-09-29T12:56:55+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 802,
-    "items_before_dedupe": 110,
-    "items_after_dedupe": 108,
+    "raw_articles_seen": 813,
+    "items_before_dedupe": 115,
+    "items_after_dedupe": 111,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "listing_approval": 12,
-      "market_context": 59,
+      "market_context": 57,
+      "expansion_acquisition": 5,
+      "listing_approval": 14,
       "listing_schedule": 15,
       "distribution": 6,
       "offering_result": 6,
-      "expansion_acquisition": 3,
-      "nav_report": 4,
       "regulatory_policy": 1,
+      "nav_report": 5,
       "pipeline_asset_update": 2
     },
     "match_tier_counts": {
-      "market": 25,
-      "inferred": 45,
-      "explicit": 38
+      "inferred": 46,
+      "explicit": 37,
+      "market": 28
     },
-    "symbols_with_news": 51
+    "symbols_with_news": 50
   },
   "items": [
     {
-      "id": "google_news_rss:regulatory_policy:180203.SZ:2026-08-12:天津首单商业不动产reits项目申报证监会-chinanews-com-cn",
-      "symbols": [
-        "180203.SZ"
-      ],
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-09-20:今日三只公募reits集中获证监会批复-chnfund-com",
+      "symbols": [],
       "category": "regulatory_policy",
       "status": "observed",
-      "event_date": "2026-08-12",
-      "headline_zh": "天津首单商业不动产REITs项目申报证监会 - chinanews.com.cn",
+      "event_date": "2026-09-20",
+      "headline_zh": "今日三只公募REITs集中获证监会批复 - chnfund.com",
       "headline_en": null,
-      "summary_zh": "天津首单商业不动产REITs项目申报证监会 chinanews.com.cn",
+      "summary_zh": "今日三只公募REITs集中获证监会批复 chnfund.com",
       "summary_en": null,
-      "source": "chinanews.com.cn",
+      "source": "chnfund.com",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPZnpuWFRES19tcEdPVmx3cy11Zm96ZDR1TndBUE1WTndmM0ZoQzJjZjhMY2Q1Zkk3OE44RnJ6dkp5TWI3YUo0Q0h6NkVxSmxndGo2a3lQNld0VGdlRUJXTjRYMUVwRDFO?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
+      "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBGRjJidEY3T3RDc3JQbWpjUVRiTTFOemp2Z1N1aXFSYV84TWZDMUl0cXNJRkczX1kwOG5ZUXpEQldYdXJBbWJpRVBwcWJxOHFwSF9JUjNTNWpWR1lma3ItZW5mZWFrcngtbHdUMExBTE5MT29LQVpaanB3?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
     }
   ]
 }
