@@ -1,52 +1,68 @@
 {
-  "build_time": "2026-10-07T13:26:23+00:00",
+  "build_time": "2026-10-07T23:06:18+00:00",
   "status": "ok",
   "kind": "structured_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 617,
-    "items_before_dedupe": 75,
-    "items_after_dedupe": 75,
+    "raw_articles_seen": 608,
+    "items_before_dedupe": 76,
+    "items_after_dedupe": 76,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "listing_approval": 15,
-      "market_context": 37,
-      "regulatory_policy": 4,
+      "listing_approval": 13,
+      "market_context": 39,
+      "regulatory_policy": 6,
       "listing_schedule": 8,
       "offering_result": 1,
-      "distribution": 4,
+      "distribution": 3,
       "expansion_acquisition": 2,
       "pipeline_asset_update": 2,
       "nav_report": 2
     },
     "match_tier_counts": {
-      "inferred": 33,
-      "market": 23,
-      "explicit": 19
+      "explicit": 20,
+      "market": 25,
+      "inferred": 31
     },
-    "symbols_with_news": 34
+    "symbols_with_news": 33
   },
   "items": [
     {
-      "id": "google_news_rss:listing_approval:508000.SH:2026-10-07:二级市场延续回暖-首批燃煤发电公募reits获批-每日经济新闻-不动产-商业-基础设施-华夏-新浪财经",
+      "id": "google_news_rss:listing_approval:508055.SH:2026-10-07:汇添富上海地产租赁住房reit首次扩募申请获上交所正式受理-证券日报",
       "symbols": [
-        "508000.SH"
+        "508055.SH"
       ],
       "category": "listing_approval",
       "status": "observed",
       "event_date": "2026-10-07",
-      "headline_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批|每日经济新闻|不动产|商业|基础设施|华夏 - 新浪财经",
+      "headline_zh": "汇添富上海地产租赁住房REIT首次扩募申请获上交所正式受理 - 证券日报",
       "headline_en": null,
-      "summary_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批|每日经济新闻|不动产|商业|基础设施|华夏 新浪财经",
+      "summary_zh": "汇添富上海地产租赁住房REIT首次扩募申请获上交所正式受理 证券日报",
       "summary_en": null,
-      "source": "新浪财经",
+      "source": "证券日报",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOdHVjeUtwQkJPSDJPRG9nS1VVYkpWX1RxbUNWS21JV2xQVGEzVUx4UlJPMXpiUnloUmFtYm1PdVQtdWRBMWo0akZXYU96UjVoOTZ4cjZNc3VXTWo3UHluMkJnTU5ZZHVoTU8zT3VwQmx1cW9qREF3Mm8wUWlMMDFic0xTZjh1VWNWTEtMVUNMelpqYTdRTks4VUFOdzBRdktiZjd0bjJ4RjlYTVBHa2tLSUdiWFdhT3lSWm9kRnlEQWNIbURSZmNRSlQxUVR6WjByeEt4dGZqbUhSUlg5QWhaZmFhbjZ6RlU3RGF4M3laU3VrV1BLdExuLVVsaWxfRk11V3J3NzNDMzBTQzlUbUZueGxISE04Z1U0OVVWdw?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
+      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00T1ZoTUs3bkFFRHJKbUJCaUo0RjIxZ3FKXzNfTFJjcHJYYkZDRllpM3lZZWkxU1EyZnVQZmlaNnNBYjl0ZUFudFZKbUhmVUh2U2lQVHR3bDNUckJyQkUtdEdGUUFOdzk2bGlOT0ZmcjFUV2k4VnVJ?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:listing_approval:MARKET:2026-10-06:二级市场延续回暖-首批燃煤发电公募reits获批-finance-sina-com-cn",
+      "symbols": [],
+      "category": "listing_approval",
+      "status": "observed",
+      "event_date": "2026-10-06",
+      "headline_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批 - finance.sina.com.cn",
+      "headline_en": null,
+      "summary_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批 finance.sina.com.cn",
+      "summary_en": null,
+      "source": "finance.sina.com.cn",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxOX1ZVVjNXWmV1bWxRVl85UEtVWkRZYWtWaXFLSXAyV2tXZ3ZDbWZ2ZGM4ak5hc2pGaEhfSE52OXFCekthdkFfUTVBWnIxLW1yM3FHb1NYYVNDNFhxbXhvUGdiVHJCRW5EWko5UGk4dEZadFYwNHRnbEp4MGFBbUt6YU9xZGpyU0ZtVEhDVUFEdFB6Tl83eVlxOTdMcERaRlJrT0JaZXFtZFg0bnpxb01NR1VHcW56R1A2b3RBTzdZbXNldEFOa3lXbkx1ZjJwUkxVUUYxS3dMZjE1R1RqMko4XzlHN3dQamF3MENtS0pGZEJuQ3pQdDV6X0hjZ2d5VzdLWi10WDhnTEpNQTMtNlNJUlRMWnUtY3pzZzlaMjF6bUllV3FJNTR0MWh1bWIta3V4Y1pBZi1DTGQ2UzhGMHJTQlQ5QmctVmxwSE1aeEFyclRDNjd6LXdHaDMwOG41aWpQUWVR?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
     },
     {
       "id": "google_news_rss:listing_approval:508055.SH:2026-10-05:汇添富上海地产租赁住房reit扩募申请获受理-观点网",
@@ -67,36 +83,20 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_approval:MARKET:2026-10-03:二级市场延续回暖-首批燃煤发电公募reits获批-新浪财经",
-      "symbols": [],
-      "category": "listing_approval",
-      "status": "observed",
-      "event_date": "2026-10-03",
-      "headline_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批 - 新浪财经",
-      "headline_en": null,
-      "summary_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批 新浪财经",
-      "summary_en": null,
-      "source": "新浪财经",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxQNTlVWlZmcTlmZlJPMXdya1RTU2ZfSy1FUkhGX2VrVzNHZXRtOEF1MTdScWZuVFI2ZE9fUUFMdWxxM2JvcTJDZS1rLUYxTnF2aEZxa0RFWHU1bDNfWFBwQTdFU1pFRk55bXNaWUtaSEFkNzFKMk5ZT3Rwa2VKRlltSlktQmd0eWZYaEpCY2VGRzlzWTU1dWVpY2I5YV9zVVZ6S0h0SEE3aWJwdXlfdlMtdDNGSTdTR3VweVpacE5PNVI4UTRnaXJNN092NHh2c2ZRbGVnckRzMDNzNmNhZlVtYThJSmx1WWVidHJvQ3MxclF5VEFwV1Y1M2V1UkRFTHlnRnBpVnVqejBQQ1FfLS1OTERjdmNuY3lXcllnRXdOWWUtSnAtZ05CcEZpVmstRmNKcmw1QWlnejE0MTBkMEhCQ08wYjVYclRyV01pNTFn?oc=5",
-      "confidence": 0.68,
-      "match_tier": "market"
-    },
-    {
-      "id": "google_news_rss:listing_approval:508090.SH:2026-09-28:二级市场延续回暖-首批燃煤发电公募reits获批-凤凰网",
+      "id": "google_news_rss:listing_approval:508090.SH:2026-09-28:二级市场延续回暖-首批燃煤发电公募reits获批-每日经济新闻",
       "symbols": [
         "508090.SH"
       ],
       "category": "listing_approval",
       "status": "observed",
       "event_date": "2026-09-28",
-      "headline_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批 - 凤凰网",
+      "headline_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批 - 每日经济新闻",
       "headline_en": null,
-      "summary_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批 凤凰网",
+      "summary_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批 每日经济新闻",
       "summary_en": null,
-      "source": "凤凰网",
+      "source": "每日经济新闻",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1lTUxBWWZmemluV2tBcExpSUlZWXZKa0hQd2NxSzRzaF9Gb0RfZW1ENEFGcDl5YVo0OWtoUXlhYkI4VENRREMwMTMwTUM?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE84TlVYclVJbFRzaWIzd200bUluVG5Jc01tQzVZZTZob2doSk1JdHlZem5BRzg5MVMyZlhJRl85TEw3T1J6ZHQ0TnphUVJGdFV0dnNWcHJzZnhxX2ZaYUhZTE9RYU1Mdw?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
     },
@@ -287,24 +287,6 @@
       "match_tier": "inferred"
     },
     {
-      "id": "google_news_rss:listing_approval:180701.SZ:2026-09-04:银华基金-首单-频出-银华粤海水务水利reit获批-搜狐网",
-      "symbols": [
-        "180701.SZ"
-      ],
-      "category": "listing_approval",
-      "status": "observed",
-      "event_date": "2026-09-04",
-      "headline_zh": "银华基金“首单”频出 银华粤海水务水利REIT获批 - 搜狐网",
-      "headline_en": null,
-      "summary_zh": "银华基金“首单”频出 银华粤海水务水利REIT获批 搜狐网",
-      "summary_en": null,
-      "source": "搜狐网",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWlRTT1VhTkRDdUlJUjVRRkFRRHRtMlVEY1RrQkJSUDdyajBIWGxwbFU4WmU5b0NLejRVSVFsZlFaWjlkTk1HZWRnMUtpZlR3Y0xsaEVtTmNsRzVUYmdBaTRCSl9xUnh2bDl5WDk5cEZiNHktaUhLeGlmRFhUNUdZX0MwZXg2Tklj?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
       "id": "google_news_rss:listing_approval:MARKET:2026-09-04:中金菜鸟reit获证监会注册-系2026年首单获批仓储物流公募reit-观点网",
       "symbols": [],
       "category": "listing_approval",
@@ -439,24 +421,6 @@
       "match_tier": "explicit"
     },
     {
-      "id": "google_news_rss:listing_approval:180701.SZ:2026-08-21:温州珊溪水利reit获受理-全周期irr-5-11-量价波动可撬动28-估值-风闻",
-      "symbols": [
-        "180701.SZ"
-      ],
-      "category": "listing_approval",
-      "status": "observed",
-      "event_date": "2026-08-21",
-      "headline_zh": "温州珊溪水利REIT获受理：全周期IRR 5.11%，量价波动可撬动28%估值 - 风闻",
-      "headline_en": null,
-      "summary_zh": "温州珊溪水利REIT获受理：全周期IRR 5.11%，量价波动可撬动28%估值 风闻",
-      "summary_en": null,
-      "source": "风闻",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1DOG90WEE4QWM0M0syWmlNeVgtNW05cENUbjh5WlpuOEg3LThiTHBERFhTNWIzemVVdWdFS1VOdkdjaE1vV3VseVlFdVc2VkVCdy1iY1VkRy14RGdHUl9iM1paZXFBTmZOX18wY1VB?oc=5",
-      "confidence": 0.64,
-      "match_tier": "inferred"
-    },
-    {
       "id": "google_news_rss:listing_approval:MARKET:2026-08-19:陕西首单-平安西安高科产业园公募reit正式获批-西部网",
       "symbols": [],
       "category": "listing_approval",
@@ -489,24 +453,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9xUE5tNEFpVVRjOWdTZjZhZzl6dlprTUoxbEdTeGkxQVZNcHN0WFRhMVI4WFRDVzVxMHk4SUU3U2FmVTJ6N25aMWF2WlZLeFpJdjgwSl83bUlCblpZUWZadzdTS0NtdWwwc0ZhZndTMTJXQWpQSFY5NzVR?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
-    },
-    {
-      "id": "google_news_rss:distribution:508077.SH:2026-08-18:华夏基金华润有巢reit拟分红每10份0-2402元-凤凰网",
-      "symbols": [
-        "508077.SH"
-      ],
-      "category": "distribution",
-      "status": "observed",
-      "event_date": "2026-08-18",
-      "headline_zh": "华夏基金华润有巢REIT拟分红每10份0.2402元 - 凤凰网",
-      "headline_en": null,
-      "summary_zh": "华夏基金华润有巢REIT拟分红每10份0.2402元 凤凰网",
-      "summary_en": null,
-      "source": "凤凰网",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAzR0drWGlWQzlsTTFyZFFwVEhya3BDcU5rWHhnTklLSlp4UXMycVFyN1I0NGFwLUpNSmlfam0zUTYyLWlfOG9heA?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
     },
     {
       "id": "google_news_rss:listing_schedule:508030.SH:2026-08-10:公募reits冷热分化-新品上市遇破发-机构认为配置价值显现-新浪网",

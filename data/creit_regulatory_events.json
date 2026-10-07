@@ -1,33 +1,33 @@
 {
-  "build_time": "2026-10-07T13:26:23+00:00",
+  "build_time": "2026-10-07T23:06:18+00:00",
   "status": "ok",
   "kind": "regulatory_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 617,
-    "items_before_dedupe": 75,
-    "items_after_dedupe": 75,
+    "raw_articles_seen": 608,
+    "items_before_dedupe": 76,
+    "items_after_dedupe": 76,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "listing_approval": 15,
-      "market_context": 37,
-      "regulatory_policy": 4,
+      "listing_approval": 13,
+      "market_context": 39,
+      "regulatory_policy": 6,
       "listing_schedule": 8,
       "offering_result": 1,
-      "distribution": 4,
+      "distribution": 3,
       "expansion_acquisition": 2,
       "pipeline_asset_update": 2,
       "nav_report": 2
     },
     "match_tier_counts": {
-      "inferred": 33,
-      "market": 23,
-      "explicit": 19
+      "explicit": 20,
+      "market": 25,
+      "inferred": 31
     },
-    "symbols_with_news": 34
+    "symbols_with_news": 33
   },
   "items": [
     {
@@ -59,6 +59,38 @@
       "source": "观点网",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBpbFJtc0NHZnFqdGJuS2ZxUDlOWllFZ0g1MFZST3VPQmoyNl9BdGx2WGRGNTZlbU1zT3h1b2JBNVV6MWZjak9RNEx4NjFiUE95SHRQTlVpRHoyV25iVGRMT0tn?oc=5",
+      "confidence": 0.76,
+      "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-08-26:信义能源-新能源reit获发改委推荐至证监会-东方财富",
+      "symbols": [],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-26",
+      "headline_zh": "信义能源：新能源REIT获发改委推荐至证监会 - 东方财富",
+      "headline_en": null,
+      "summary_zh": "信义能源：新能源REIT获发改委推荐至证监会 东方财富",
+      "summary_en": null,
+      "source": "东方财富",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9nSFpKYkxKQ0lnMUtjNEtjUnNjeHBmUHhzZVA4X0JNakNBbkxqR3FnWDZfOGI1eE45NUY0R2I1VjZaNmV0NmtCUDE0R0hjTFVqZnEtZl8xZ0FCM1paR2w1VkpOdC1sZw?oc=5",
+      "confidence": 0.76,
+      "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:regulatory_policy:MARKET:2026-08-26:信义能源-03868-新能源-reit-获发改委推荐报送证监会-凤凰网",
+      "symbols": [],
+      "category": "regulatory_policy",
+      "status": "observed",
+      "event_date": "2026-08-26",
+      "headline_zh": "信义能源(03868)：新能源 REIT 获发改委推荐报送证监会 - 凤凰网",
+      "headline_en": null,
+      "summary_zh": "信义能源(03868)：新能源 REIT 获发改委推荐报送证监会 凤凰网",
+      "summary_en": null,
+      "source": "凤凰网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9MSTBibjVGMGh4c2xpSlZhUmpsbjNodVlVb25GeVlsS3pfVXBWcnpTRGhDbFVtQUZjRkhJZGpsZXlDNWt6bFlaRg?oc=5",
       "confidence": 0.76,
       "match_tier": "market"
     },
