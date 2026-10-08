@@ -1,48 +1,66 @@
 {
-  "build_time": "2026-10-07T23:06:18+00:00",
+  "build_time": "2026-10-08T06:06:55+00:00",
   "status": "ok",
   "kind": "structured_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 608,
-    "items_before_dedupe": 76,
-    "items_after_dedupe": 76,
+    "raw_articles_seen": 609,
+    "items_before_dedupe": 81,
+    "items_after_dedupe": 81,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "listing_approval": 13,
-      "market_context": 39,
+      "listing_approval": 14,
+      "market_context": 40,
       "regulatory_policy": 6,
-      "listing_schedule": 8,
+      "listing_schedule": 9,
       "offering_result": 1,
-      "distribution": 3,
+      "distribution": 5,
       "expansion_acquisition": 2,
       "pipeline_asset_update": 2,
       "nav_report": 2
     },
     "match_tier_counts": {
-      "explicit": 20,
-      "market": 25,
+      "explicit": 24,
+      "market": 26,
       "inferred": 31
     },
-    "symbols_with_news": 33
+    "symbols_with_news": 36
   },
   "items": [
     {
-      "id": "google_news_rss:listing_approval:508055.SH:2026-10-07:汇添富上海地产租赁住房reit首次扩募申请获上交所正式受理-证券日报",
+      "id": "google_news_rss:listing_approval:508055.SH:2026-10-08:金融赋能安居-扩容续写新篇-汇添富上海地产租赁住房reit扩募已获受理-搜狐网",
+      "symbols": [
+        "508055.SH"
+      ],
+      "category": "listing_approval",
+      "status": "observed",
+      "event_date": "2026-10-08",
+      "headline_zh": "金融赋能安居，扩容续写新篇，汇添富上海地产租赁住房REIT扩募已获受理 - 搜狐网",
+      "headline_en": null,
+      "summary_zh": "金融赋能安居，扩容续写新篇，汇添富上海地产租赁住房REIT扩募已获受理 搜狐网",
+      "summary_en": null,
+      "source": "搜狐网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVy1wQUFSZTg0UTZ4VlpIaFo5MjdqVHpHTHV3M19TeEplem4tZlV6Z3NXNnJVdnM1Tm1oUlRSVWoxQ3RTYTB2Rm5FcjBIUkJ3OUluTTZjNkFQS1h4eGJOYmpBUEhRWEh3cjgxZktaZE9Rb1ZaZGlMVmxjZ1l4V2dGX0pLc2U3NW1FZlR3?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:listing_approval:508055.SH:2026-10-07:汇添富上海地产租赁住房reit首次扩募申请获上交所正式受理-zqrb-cn",
       "symbols": [
         "508055.SH"
       ],
       "category": "listing_approval",
       "status": "observed",
       "event_date": "2026-10-07",
-      "headline_zh": "汇添富上海地产租赁住房REIT首次扩募申请获上交所正式受理 - 证券日报",
+      "headline_zh": "汇添富上海地产租赁住房REIT首次扩募申请获上交所正式受理 - zqrb.cn",
       "headline_en": null,
-      "summary_zh": "汇添富上海地产租赁住房REIT首次扩募申请获上交所正式受理 证券日报",
+      "summary_zh": "汇添富上海地产租赁住房REIT首次扩募申请获上交所正式受理 zqrb.cn",
       "summary_en": null,
-      "source": "证券日报",
+      "source": "zqrb.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00T1ZoTUs3bkFFRHJKbUJCaUo0RjIxZ3FKXzNfTFJjcHJYYkZDRllpM3lZZWkxU1EyZnVQZmlaNnNBYjl0ZUFudFZKbUhmVUh2U2lQVHR3bDNUckJyQkUtdEdGUUFOdzk2bGlOT0ZmcjFUV2k4VnVJ?oc=5",
       "confidence": 0.88,
@@ -337,6 +355,22 @@
       "match_tier": "market"
     },
     {
+      "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:北京国资公司商业不动产reit深交所上市-中新社-北京分社-北京新闻",
+      "symbols": [],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-09-03",
+      "headline_zh": "北京国资公司商业不动产REIT深交所上市_中新社_北京分社 - 北京新闻",
+      "headline_en": null,
+      "summary_zh": "北京国资公司商业不动产REIT深交所上市_中新社_北京分社 北京新闻",
+      "summary_en": null,
+      "source": "北京新闻",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE56SzByNG9zcDdEYTg0VXl3T3RpNHVwYlU0X1EtTk44ZmE1MGd1VXBwb0VJdU1LTWNtZGplaFZXSG02RU9tOVd3M1dQRzZTc192V3M1UkdESW5XOGlTQWJuUkpuZm83SDQ5aEE?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    },
+    {
       "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:北京国资公司商业不动产reit在深交所成功上市-新京报",
       "symbols": [],
       "category": "listing_schedule",
@@ -351,6 +385,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5TlNiWi1rLWt2RDg2cEtncFFEQnRXQUVVWkRRRE5ST1lueEM0WU5ReVRDSmdabmpnWkphV1hXWmx1NUlTcnBWeXhHYkFqRE55c2lEWUdWV05HTEdhRGhDbl9B?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:distribution:180305.SZ:2026-09-01:南方顺丰物流reit启动年内首次分红-拟分配8050万元-观点网",
+      "symbols": [
+        "180305.SZ"
+      ],
+      "category": "distribution",
+      "status": "observed",
+      "event_date": "2026-09-01",
+      "headline_zh": "南方顺丰物流REIT启动年内首次分红 拟分配8050万元 - 观点网",
+      "headline_en": null,
+      "summary_zh": "南方顺丰物流REIT启动年内首次分红 拟分配8050万元 观点网",
+      "summary_en": null,
+      "source": "观点网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9IYnNma0VYMVhoWVM1X1BUOXhEMVo5OC1UXzlMcnhqTkw4T2UtcnBUQjByb1ptclVmR0N0WGtNUzYxak4zaG0xa0p4M0REQQ?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
     },
     {
       "id": "google_news_rss:distribution:180501.SZ:2026-08-30:红土创新深圳安居reit拟分红1193万元-每10份派0-2386元-观点网",
@@ -453,6 +505,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9xUE5tNEFpVVRjOWdTZjZhZzl6dlprTUoxbEdTeGkxQVZNcHN0WFRhMVI4WFRDVzVxMHk4SUU3U2FmVTJ6N25aMWF2WlZLeFpJdjgwSl83bUlCblpZUWZadzdTS0NtdWwwc0ZhZndTMTJXQWpQSFY5NzVR?oc=5",
       "confidence": 0.64,
       "match_tier": "inferred"
+    },
+    {
+      "id": "google_news_rss:distribution:508017.SH:2026-08-10:出租率升至99-67-创历史新高-华夏金茂消费reit累计分红1-23亿-财联社",
+      "symbols": [
+        "508017.SH"
+      ],
+      "category": "distribution",
+      "status": "observed",
+      "event_date": "2026-08-10",
+      "headline_zh": "出租率升至99.67%创历史新高 华夏金茂消费REIT累计分红1.23亿 - 财联社",
+      "headline_en": null,
+      "summary_zh": "出租率升至99.67%创历史新高 华夏金茂消费REIT累计分红1.23亿 财联社",
+      "summary_en": null,
+      "source": "财联社",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAxWGVxSHpCRTVXaU1ORnU1Rm8yVzJZYVc3b1h3QThYX0wtOUVGaWdJbkl0eE5qMVc1bWhKVVF2S0JIbjg3WExXdw?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
     },
     {
       "id": "google_news_rss:listing_schedule:508030.SH:2026-08-10:公募reits冷热分化-新品上市遇破发-机构认为配置价值显现-新浪网",
