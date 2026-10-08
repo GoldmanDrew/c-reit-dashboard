@@ -1,35 +1,53 @@
 {
-  "build_time": "2026-10-08T13:31:55+00:00",
+  "build_time": "2026-10-08T23:22:08+00:00",
   "status": "ok",
   "kind": "structured_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 599,
+    "raw_articles_seen": 574,
     "items_before_dedupe": 77,
     "items_after_dedupe": 77,
     "errors": [],
     "error_count": 0,
     "category_counts": {
       "listing_approval": 13,
-      "nav_report": 3,
       "market_context": 37,
       "regulatory_policy": 6,
+      "offering_result": 2,
       "listing_schedule": 9,
-      "offering_result": 1,
       "distribution": 5,
       "expansion_acquisition": 1,
-      "pipeline_asset_update": 2
+      "pipeline_asset_update": 2,
+      "nav_report": 2
     },
     "match_tier_counts": {
       "explicit": 24,
-      "market": 24,
-      "inferred": 29
+      "market": 23,
+      "inferred": 30
     },
     "symbols_with_news": 34
   },
   "items": [
+    {
+      "id": "google_news_rss:listing_approval:508055.SH:2026-10-08:汇添富上海地产租赁住房reit首次扩募申请获上交所受理-新浪财经",
+      "symbols": [
+        "508055.SH"
+      ],
+      "category": "listing_approval",
+      "status": "observed",
+      "event_date": "2026-10-08",
+      "headline_zh": "汇添富上海地产租赁住房REIT首次扩募申请获上交所受理 - 新浪财经",
+      "headline_en": null,
+      "summary_zh": "汇添富上海地产租赁住房REIT首次扩募申请获上交所受理 新浪财经",
+      "summary_en": null,
+      "source": "新浪财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNWpOZkFnZHRkSzNBYmNYc2RnUFVRZFdQQVJqSjFXbWRHUHNvem5uSl9TazJCS0lNZEhMSVF2R2hadXVweERkVzVkMUxTSGRlRUxleHpaXzZkOEVMOGptbEtJWTlKUXV0Umd2RFBlX0xpbTlzNjducF8yMjFiUU1jSg?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
     {
       "id": "google_news_rss:listing_approval:508055.SH:2026-10-08:金融赋能安居-扩容续写新篇-汇添富上海地产租赁住房reit扩募已获受理-搜狐网",
       "symbols": [
@@ -63,24 +81,6 @@
       "source": "zqrb.cn",
       "source_type": "google_news_rss",
       "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00T1ZoTUs3bkFFRHJKbUJCaUo0RjIxZ3FKXzNfTFJjcHJYYkZDRllpM3lZZWkxU1EyZnVQZmlaNnNBYjl0ZUFudFZKbUhmVUh2U2lQVHR3bDNUckJyQkUtdEdGUUFOdzk2bGlOT0ZmcjFUV2k4VnVJ?oc=5",
-      "confidence": 0.88,
-      "match_tier": "explicit"
-    },
-    {
-      "id": "google_news_rss:nav_report:508085.SH:2026-10-07:华泰苏州恒泰租赁住房reit中报数据出错遭更正-涉及前十大持有人名单-finance-sina-com-cn",
-      "symbols": [
-        "508085.SH"
-      ],
-      "category": "nav_report",
-      "status": "observed",
-      "event_date": "2026-10-07",
-      "headline_zh": "华泰苏州恒泰租赁住房REIT中报数据出错遭更正，涉及前十大持有人名单 - finance.sina.com.cn",
-      "headline_en": null,
-      "summary_zh": "华泰苏州恒泰租赁住房REIT中报数据出错遭更正，涉及前十大持有人名单 finance.sina.com.cn",
-      "summary_en": null,
-      "source": "finance.sina.com.cn",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMikANBVV95cUxPSmI5X0tPTkJqeDBhemJ4aFNnVjNQaFJ3ZjhFY0pCM1NLNzh3R0pHSEdJMEFScDZ6Y0s2YnVreWUxaXZ5MG9RYnh4WW10X2U1VVIyb29mOUlUdmhSbHhXNzlQUzZIdFNVLUg2VTBCb1hiQ1I4Q0h0U2plU2U0MVVHVW9mdzM1dGxLQTNDd0pBRHI1WkJWTWVhWkhoU0ZudEdPWGIwVi1UME1zMkRRVEEzdnZzWl8yYndUQkcxRGh2M3RSWlJBV25qUnBxVTcxUy15RmRNNDk3QTNIb3VyeFRLakVTN00wRTU3OUJwYjNUZWhidmI4WngwcEdyQkpaVzJXQmo4OGFHYzh0cXBScG5uZVhfWEJzcVFhY09TWFZjWUpSd1RrbzVLYkZ4TzdCLVBxRjZ6VldUaWVoUVN6SmZ4d2pMYjNzWmwxU2hDX0RfY0F0TWpaZlNibmJPY04xNXBTOEtWTVJLRW40MlBTanQtVmhIZUR3TWxuY3FjdzR6Zk5oSEw0al9YNmFkdXQ0NDBH?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
@@ -167,6 +167,24 @@
       "source_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE92ZnJvMDY2QWVnTUQxelV1VklaUnJ0WU85emZyanplUF9FLWp3NlFZWDIxbUJTSUNMd0ZTZzZvaUYwVlh0OEJjYi1CT3dXMW1RT0V4NWtNYWF3dmVO?oc=5",
       "confidence": 0.68,
       "match_tier": "market"
+    },
+    {
+      "id": "google_news_rss:offering_result:508058.SH:2026-09-20:中金杭州安居宁巢-reit发行分析-财富号",
+      "symbols": [
+        "508058.SH"
+      ],
+      "category": "offering_result",
+      "status": "observed",
+      "event_date": "2026-09-20",
+      "headline_zh": "中金杭州安居宁巢 REIT发行分析！ - 财富号",
+      "headline_en": null,
+      "summary_zh": "中金杭州安居宁巢 REIT发行分析！ 财富号",
+      "summary_en": null,
+      "source": "财富号",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1OV2lrd1FVdjRxaUpxWjJtdUxZbnVUN1A2T2tJbWsyN29jMDBlOFQ3SUJaOUVYQlJjeUp6RWpIcTJLZ3hIRjBTMjhnLUJzdWdBdGZ2LXlFYUNxd3FxSlp0Q2UtcHFLdGtEb0tj?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
     },
     {
       "id": "google_news_rss:listing_schedule:508030.SH:2026-09-16:reits发行感受冷热不均-一边是一日售罄-高倍认购-一边是上市即破发-东方财富",
@@ -341,6 +359,22 @@
       "match_tier": "inferred"
     },
     {
+      "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:北京国资公司商业不动产reit在深交所成功上市-搜狐网",
+      "symbols": [],
+      "category": "listing_schedule",
+      "status": "observed",
+      "event_date": "2026-09-03",
+      "headline_zh": "北京国资公司商业不动产REIT在深交所成功上市 - 搜狐网",
+      "headline_en": null,
+      "summary_zh": "北京国资公司商业不动产REIT在深交所成功上市 搜狐网",
+      "summary_en": null,
+      "source": "搜狐网",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdUthMnRTZmNtMGxCUzctTnhHZGc4Vjc5Q1VCa1RibmZnWTVCMm90YzB5bnc0ek5jdEdFaF9FcDlKMEZZRFhLQ1lTY1R6S2U3TjVfcklTS2NPWW1Xa2NUaWRlR1FLWGZ4d2ZlLV9QdWZxRy14NDRFZWlOWEdHTlluMGwwOXFaOU9Q?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
+    },
+    {
       "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:首单双主题商业不动产reit上市-科创园区-遇见-文化地标-21财经",
       "symbols": [],
       "category": "listing_schedule",
@@ -357,36 +391,22 @@
       "match_tier": "market"
     },
     {
-      "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:北京国资公司商业不动产reit深交所上市-中新社-北京分社-北京新闻",
-      "symbols": [],
+      "id": "google_news_rss:listing_schedule:508091.SH:2026-09-02:创金合信北京国资公司reit上市预估-财富号",
+      "symbols": [
+        "508091.SH"
+      ],
       "category": "listing_schedule",
       "status": "observed",
-      "event_date": "2026-09-03",
-      "headline_zh": "北京国资公司商业不动产REIT深交所上市_中新社_北京分社 - 北京新闻",
+      "event_date": "2026-09-02",
+      "headline_zh": "创金合信北京国资公司REIT上市预估！ - 财富号",
       "headline_en": null,
-      "summary_zh": "北京国资公司商业不动产REIT深交所上市_中新社_北京分社 北京新闻",
+      "summary_zh": "创金合信北京国资公司REIT上市预估！ 财富号",
       "summary_en": null,
-      "source": "北京新闻",
+      "source": "财富号",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE56SzByNG9zcDdEYTg0VXl3T3RpNHVwYlU0X1EtTk44ZmE1MGd1VXBwb0VJdU1LTWNtZGplaFZXSG02RU9tOVd3M1dQRzZTc192V3M1UkdESW5XOGlTQWJuUkpuZm83SDQ5aEE?oc=5",
-      "confidence": 0.68,
-      "match_tier": "market"
-    },
-    {
-      "id": "google_news_rss:listing_schedule:MARKET:2026-09-03:北京国资公司商业不动产reit在深交所成功上市-新京报",
-      "symbols": [],
-      "category": "listing_schedule",
-      "status": "observed",
-      "event_date": "2026-09-03",
-      "headline_zh": "北京国资公司商业不动产REIT在深交所成功上市 - 新京报",
-      "headline_en": null,
-      "summary_zh": "北京国资公司商业不动产REIT在深交所成功上市 新京报",
-      "summary_en": null,
-      "source": "新京报",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5TlNiWi1rLWt2RDg2cEtncFFEQnRXQUVVWkRRRE5ST1lueEM0WU5ReVRDSmdabmpnWkphV1hXWmx1NUlTcnBWeXhHYkFqRE55c2lEWUdWV05HTEdhRGhDbl9B?oc=5",
-      "confidence": 0.68,
-      "match_tier": "market"
+      "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ReDJJVkJ6NTZDNGJQOGhILTFETGFNdVdUQXdVMUJEVjlSWXdONDJ2Y1M1WG95cGJDNlMyaUsyVnRDRVRqUUtEX1ZWTzBCREc4QWFCMmE3NVVEdVBkQTlsUFVKTWlNcnZLUHAw?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
     },
     {
       "id": "google_news_rss:distribution:180305.SZ:2026-09-01:南方顺丰物流reit启动年内首次分红-拟分配8050万元-观点网",
@@ -423,22 +443,6 @@
       "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ScTY5eWNYTDF2NGtVbVk5X0ZMaTduZFFHSGZMb0VGUmhUQnFBTmdtQmRwQnZmdXlQWWpSdEdOWXJPWER5TmdLOGl0bTNTQQ?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
-    },
-    {
-      "id": "google_news_rss:listing_approval:MARKET:2026-08-29:首单文创街区reit获上交所受理-陶溪川的特殊性-亦是现实考验-风闻",
-      "symbols": [],
-      "category": "listing_approval",
-      "status": "observed",
-      "event_date": "2026-08-29",
-      "headline_zh": "首单文创街区REIT获上交所受理：陶溪川的特殊性，亦是现实考验 - 风闻",
-      "headline_en": null,
-      "summary_zh": "首单文创街区REIT获上交所受理：陶溪川的特殊性，亦是现实考验 风闻",
-      "summary_en": null,
-      "source": "风闻",
-      "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5KQ3BfeUxSeG1yVFloOUdXQ295YWs4Ym9nbmEwdEs3LTF1OWRtb0t1UGVwQkgtX0FvUjZNYXRUVHRwd0g0Q1VTSFYwdWlRTFZYblY1Zzd0Yk9nZGhLN1JrVTVPbEl6cHItN2hhcXp3?oc=5",
-      "confidence": 0.68,
-      "match_tier": "market"
     },
     {
       "id": "google_news_rss:listing_approval:MARKET:2026-08-27:首单文创街区reit获上交所受理-陶溪川一期拟募13-22亿元-观点网",
@@ -610,7 +614,7 @@
       "summary_en": null,
       "source": "新浪财经",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOOS0tR3BWbFVsQWZwV25tMEJ6VE5DaU9zeVMwM25ndUlheWNCRkJEbXdQOVNMdXlERmcwTmtOQnBBWTl0QjJuemVaMHJLRDFnVlM3R2hTNEU5TFZyWTRycEl4OW4tTnZIejlldXotM0V1TWRHWllLbHR5cHAwUm4xYV9XM3VXSDI2Q25TR3lCODV0U2R2YVpCbGhaTXFzbHdEN1J6NjJsUmJtMm8xNjRvTm9hdFVuYVh4YkRLdS16VGJBelhVOFZDRGlZWGgxMVh2T1FNS0YyNUxrNWV0MkNpM1ktN3NQU3V5VFJwM19Rb1JuVGVGS3VtLWkzNnVteDBIeGFyaWhDUE51aVJDeGc?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMipARBVV95cUxQTl8tanRTVmI4ZW9FZlhoSmpLWEtzZEQ2MDhIZWZJc1VlYzRHellvMVFXNVVNa3ZZd1I3WkFteVZxV2kzaUREZ0QzYXRoQzJETmc1bXQ1M0hWMWN5dVVFTmFlaXJ5TFRlNEtRNE95Nm1qZGYwU1p6aHdYMmZNQUU2X3ZuU2h6VjBwT1gxVTNudEttcm54dVhuWTBXVW5zQk9Cd1hucjV4eEMyQ2ZIMUlTRHJ2cEltMXNjM1gzaWZDVmdRSXJObndEYk5kRlJGSkJVQndLek1SWjNUcHJ2UG8zQ1hlMUJOaXhLU1FfbEszUUZDRFVTOG1DaGxBRTRNRF9CQ3JfaF9xZlNadVB2VGsyTUtrdXNOemxENjRQQkZkVFNhelF6S0diUHhSd3FrVHZZVDRhcjd4YllpUzdpUXNyendIR2ZOVHRjY3I5Ukl5OVg1S0gtN1VnMlRhVkdWMzRtUzJOYXNrV0pmRlpkZy1jYlYwTGJMSFZzMXVEbWpQSnMxZDNrekJTTnFLVkFIQzV4TTVDamZRaFBZVzQ0Q2N2OWxyWVREZXhEc1VvbHVlMVpNYkJOcFNpcGtHZE9GbzRhU2YycXZVM1NqdlBEaHhaWEhDZHpUYWtHWkV0eUREdEN3X2VqT09CVTZBRTVqN25CZmp3Qjk4WlhDRXhwS2lQbUo2UDFxTjRwbTRXdlBsVS1ZaUtCUnMtYjYzVzI2SWlJZVA0MQ?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     }
