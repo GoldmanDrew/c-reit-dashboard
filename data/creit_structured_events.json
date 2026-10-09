@@ -1,35 +1,53 @@
 {
-  "build_time": "2026-10-09T06:10:53+00:00",
+  "build_time": "2026-10-09T13:19:18+00:00",
   "status": "ok",
   "kind": "structured_events",
   "window_days": 90,
   "source_stats": {
     "provider": "google_news_rss",
     "queries_run": 95,
-    "raw_articles_seen": 574,
-    "items_before_dedupe": 78,
-    "items_after_dedupe": 78,
+    "raw_articles_seen": 548,
+    "items_before_dedupe": 79,
+    "items_after_dedupe": 79,
     "errors": [],
     "error_count": 0,
     "category_counts": {
-      "listing_approval": 12,
-      "market_context": 39,
+      "offering_result": 3,
+      "listing_approval": 14,
+      "nav_report": 3,
+      "market_context": 36,
       "regulatory_policy": 5,
-      "offering_result": 2,
       "listing_schedule": 10,
       "distribution": 5,
       "expansion_acquisition": 1,
-      "pipeline_asset_update": 2,
-      "nav_report": 2
+      "pipeline_asset_update": 2
     },
     "match_tier_counts": {
-      "explicit": 23,
-      "market": 23,
-      "inferred": 32
+      "inferred": 32,
+      "explicit": 24,
+      "market": 23
     },
-    "symbols_with_news": 36
+    "symbols_with_news": 37
   },
   "items": [
+    {
+      "id": "google_news_rss:offering_result:180701.SZ:2026-10-08:聚焦两大水电核心枢纽-银华粤海水务水利reit今起发行-21财经",
+      "symbols": [
+        "180701.SZ"
+      ],
+      "category": "offering_result",
+      "status": "observed",
+      "event_date": "2026-10-08",
+      "headline_zh": "聚焦两大水电核心枢纽 银华粤海水务水利REIT今起发行 - 21财经",
+      "headline_en": null,
+      "summary_zh": "聚焦两大水电核心枢纽 银华粤海水务水利REIT今起发行 21财经",
+      "summary_en": null,
+      "source": "21财经",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNTJwZkdHX2hGWXNHNVhMa1ZsbFRRTkNTelp4ckVueXo4azBpZHZhV1B1NXJ0aTNRWnNSSXppQ0NrUVc1LXpQaGNaa3Q1ODYwb3RSblEtWkJfOEl5SW4tZ3Q1QXA0Zk5NS3NhTzhWOGZZNXhuaFQ3cW1EX1BBWklrZkt4a1U0LUlrakZ2TGU0UEJNYzls?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
     {
       "id": "google_news_rss:listing_approval:508055.SH:2026-10-08:金融赋能安居-扩容续写新篇-汇添富上海地产租赁住房reit扩募已获受理-搜狐网",
       "symbols": [
@@ -62,7 +80,43 @@
       "summary_en": null,
       "source": "zqrb.cn",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00T1ZoTUs3bkFFRHJKbUJCaUo0RjIxZ3FKXzNfTFJjcHJYYkZDRllpM3lZZWkxU1EyZnVQZmlaNnNBYjl0ZUFudFZKbUhmVUh2U2lQVHR3bDNUckJyQkUtdEdGUUFOdzk2bGlOT0ZmcjFUV2k4VnVJ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1BMnJ4UHJUVjJuNmF2VHZkQ3BvY19jRnlkNlk0T3pMWkt5UGZXWnZ6T1VHeXZmR3JJQXE0Nm1SZm9ESlFvNk9lb2xreWZleDJUVUVrTmlWc0doNzFsaWVCVFNVT2ZnX0JUR2FyTkstWkNNQ2tZ?oc=5",
+      "confidence": 0.88,
+      "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:listing_approval:508000.SH:2026-10-07:二级市场延续回暖-首批燃煤发电公募reits获批-每日经济新闻-不动产-商业-基础设施-华夏-finance-sina-com-cn",
+      "symbols": [
+        "508000.SH"
+      ],
+      "category": "listing_approval",
+      "status": "observed",
+      "event_date": "2026-10-07",
+      "headline_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批|每日经济新闻|不动产|商业|基础设施|华夏 - finance.sina.com.cn",
+      "headline_en": null,
+      "summary_zh": "二级市场延续回暖，首批燃煤发电公募REITs获批|每日经济新闻|不动产|商业|基础设施|华夏 finance.sina.com.cn",
+      "summary_en": null,
+      "source": "finance.sina.com.cn",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQaVctWVprYUVKNUtwOTJ5QTR0WmxaQ3R6NjVvQ3c5SkhQRkx5ZlhxVHFXQmFNYWlzV2FiaUcxOFNLcExXRUJrNk9FQVhEQnNDWWtURlRwSHdSTGZaNXVtYVFORHJaTi1vaW5KblBuWXY0c3VRZUJmcENqcXBNaVdjdlN3OW92OVdPekx2N2pzODFHNFZwZ2FvRG41NW1VaEJXaTJjY0VfNjBMTTdOX1J2UTdseWU?oc=5",
+      "confidence": 0.64,
+      "match_tier": "inferred"
+    },
+    {
+      "id": "google_news_rss:nav_report:508085.SH:2026-10-07:华泰苏州恒泰租赁住房reit中报数据出错遭更正-涉及前十大持有人名单-finance-sina-com-cn",
+      "symbols": [
+        "508085.SH"
+      ],
+      "category": "nav_report",
+      "status": "observed",
+      "event_date": "2026-10-07",
+      "headline_zh": "华泰苏州恒泰租赁住房REIT中报数据出错遭更正，涉及前十大持有人名单 - finance.sina.com.cn",
+      "headline_en": null,
+      "summary_zh": "华泰苏州恒泰租赁住房REIT中报数据出错遭更正，涉及前十大持有人名单 finance.sina.com.cn",
+      "summary_en": null,
+      "source": "finance.sina.com.cn",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMikANBVV95cUxPSmI5X0tPTkJqeDBhemJ4aFNnVjNQaFJ3ZjhFY0pCM1NLNzh3R0pHSEdJMEFScDZ6Y0s2YnVreWUxaXZ5MG9RYnh4WW10X2U1VVIyb29mOUlUdmhSbHhXNzlQUzZIdFNVLUg2VTBCb1hiQ1I4Q0h0U2plU2U0MVVHVW9mdzM1dGxLQTNDd0pBRHI1WkJWTWVhWkhoU0ZudEdPWGIwVi1UME1zMkRRVEEzdnZzWl8yYndUQkcxRGh2M3RSWlJBV25qUnBxVTcxUy15RmRNNDk3QTNIb3VyeFRLakVTN00wRTU3OUJwYjNUZWhidmI4WngwcEdyQkpaVzJXQmo4OGFHYzh0cXBScG5uZVhfWEJzcVFhY09TWFZjWUpSd1RrbzVLYkZ4TzdCLVBxRjZ6VldUaWVoUVN6SmZ4d2pMYjNzWmwxU2hDX0RfY0F0TWpaZlNibmJPY04xNXBTOEtWTVJLRW40MlBTanQtVmhIZUR3TWxuY3FjdzR6Zk5oSEw0al9YNmFkdXQ0NDBH?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     },
@@ -221,6 +275,22 @@
       "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1TMGNBLS0ycWM2RzhjalM2OURCNkxlNUtQanNnMDI2NEJ4TkdxRmNwS3RqNC1Ld0Nod19sVEFVR05XVW5PbFl5ZlQ0eFU4S0QwTlRnQXF3?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
+    },
+    {
+      "id": "google_news_rss:listing_approval:MARKET:2026-09-14:中海第二只公募reit获受理-近满租的千灯湖环宇城-租金增速为何转负-风闻",
+      "symbols": [],
+      "category": "listing_approval",
+      "status": "observed",
+      "event_date": "2026-09-14",
+      "headline_zh": "中海第二只公募REIT获受理：近满租的千灯湖环宇城，租金增速为何转负 - 风闻",
+      "headline_en": null,
+      "summary_zh": "中海第二只公募REIT获受理：近满租的千灯湖环宇城，租金增速为何转负 风闻",
+      "summary_en": null,
+      "source": "风闻",
+      "source_type": "google_news_rss",
+      "source_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBXdFBUMUxFUlktTml4R1luSGlaV0ZqZ2JiNnJrYy01OGRGcTlfcWZWeVRMVnJDTm5FQjZtb2MxX0hkZ29JWFhScUV5WloxSHFyMVI0c3Jtc3I3Z0NCY29iNkQyTE9iS0dfQ1lYQlNn?oc=5",
+      "confidence": 0.68,
+      "match_tier": "market"
     },
     {
       "id": "google_news_rss:expansion_acquisition:180601.SZ:2026-09-10:华夏华润消费reit扩募并新购入不动产项目审核终止-公司新闻-财经-证券之星",
@@ -612,7 +682,7 @@
       "summary_en": null,
       "source": "新浪财经",
       "source_type": "google_news_rss",
-      "source_url": "https://news.google.com/rss/articles/CBMipARBVV95cUxQTl8tanRTVmI4ZW9FZlhoSmpLWEtzZEQ2MDhIZWZJc1VlYzRHellvMVFXNVVNa3ZZd1I3WkFteVZxV2kzaUREZ0QzYXRoQzJETmc1bXQ1M0hWMWN5dVVFTmFlaXJ5TFRlNEtRNE95Nm1qZGYwU1p6aHdYMmZNQUU2X3ZuU2h6VjBwT1gxVTNudEttcm54dVhuWTBXVW5zQk9Cd1hucjV4eEMyQ2ZIMUlTRHJ2cEltMXNjM1gzaWZDVmdRSXJObndEYk5kRlJGSkJVQndLek1SWjNUcHJ2UG8zQ1hlMUJOaXhLU1FfbEszUUZDRFVTOG1DaGxBRTRNRF9CQ3JfaF9xZlNadVB2VGsyTUtrdXNOemxENjRQQkZkVFNhelF6S0diUHhSd3FrVHZZVDRhcjd4YllpUzdpUXNyendIR2ZOVHRjY3I5Ukl5OVg1S0gtN1VnMlRhVkdWMzRtUzJOYXNrV0pmRlpkZy1jYlYwTGJMSFZzMXVEbWpQSnMxZDNrekJTTnFLVkFIQzV4TTVDamZRaFBZVzQ0Q2N2OWxyWVREZXhEc1VvbHVlMVpNYkJOcFNpcGtHZE9GbzRhU2YycXZVM1NqdlBEaHhaWEhDZHpUYWtHWkV0eUREdEN3X2VqT09CVTZBRTVqN25CZmp3Qjk4WlhDRXhwS2lQbUo2UDFxTjRwbTRXdlBsVS1ZaUtCUnMtYjYzVzI2SWlJZVA0MQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMihwdBVV95cUxOWXBmU2l2eHluSG10VlV5ejRRcDNxTm91MmhPZVB2Yk5yXzFjTGFpTVlkUVNoMVEtTGR5M0xPMzJjZmJUOFEtcVEzZXd6enVVUF91aGFJVEJNLXAxU0ZidlFRZVozcjNIQ0N0bGZmbEp1Rk1CMl9qNmQ5TmtsNE9KY0lfdzIxbUd2RkEzX3h6aHJOU3ZreVRVbEhuSlRlRGRGR3FTX1F3YUk5QW0xeVN3OWwwaUt1Y0hMOEZXdkt6dk56UTZndko1UGdUR20wWnpSVTlHNDZhSVo3azdGYWd4bUhxM0R4Zkl2MVpVZ2dxQkNsSVp1OGp1MXVXQXZsR1A3Y1lDTFgyTlY2SGoxMHlMeVkzMXJWZFdXVTM5STByZEpudG5vOHpuU3FQenZZdkdxUUpzWjdnOUxTTDhpTW1DS2VBcjNRN0lyc083aGhfalJsYkhZZldmXzBxNlY0YnZCVXJYZDdQZlJMYkQ0TDE5MEViT0xHMldXU19PdkRWN2hiYWtERGxqSk5zMU9aZWZZYW1La3FVdXN2WlU2UTlxM1g0WnFRN0tGai1KazJiYm13WnMyOTN1YlNEWkJocnBrQWJoRW56WGFrQmVrZEZLSlJEVVNVaTlETGdPVGZIeDIzZU1SY2dNcTBudG84Z2wwVzVnVWJQV1pEOEVHRDV0cnY2aU1ETXFlMFNGWjdkNGxScTNCX0ktZEJTVTRlMXRVQ3Zhck13dFdKSGF0dnBCVkt3OS1jYTBEMmV2R1BBSTVubTJHVU9QMzJZNlREQWJ4OXVvUHhLbHhmcG1QQk9IZGVRaVdrMUNscThKdlVVWUh4TlBVb3l3M194cHpaRWc0RzRYZ2ozM0ExNzc0d3p3RHNnbm9BY3NESWJlbmRnYnVlQ0pnMXowa0JzUFgyUEVfQjRrRk9OdV9DZHRhN3ZyMFV0OUxmZ1F0TmZEbjJtYzZOVS1BLUEwTC1kTWVlTmoxaFVLMkRkdzR5N190Ujh3bmxYTHRxWVF4ZTdNWHlKWk52MzhOZjZpNExPdE9YMW1hOGVJNkxrajM0UjZ1bGJ4ZHRfelZvY1Z4eXBwWlVZRUdFV2Ryc1pQQ3FPcnhZYzBLM3RVQklVZjZ3NV9EbVJQUWxGT3IxZUlrRks0NllmLUktb01LN1podUxZSV9FbWF1NmFUeUhYemdvbjIzQW5NTFFURGowVE0?oc=5",
       "confidence": 0.88,
       "match_tier": "explicit"
     }
